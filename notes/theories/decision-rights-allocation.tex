@@ -1,0 +1,96 @@
+% !TEX root = ../main.tex
+\section{Allokering av beslutningsrettigheter}\label{thr:decision-rights-allocation}
+
+\paragraph{Definisjon.} \emph{Allokering av beslutningsrettigheter} er det første benet (\SOne) i \thref{organizational-architecture}{organizational architecture}: den eksplisitte tildelingen av myndighet til å initiere, ratifisere, gjennomføre og monitorere ulike beslutninger til personer, team og organer i virksomheten. Den grunnleggende designregelen er Jensen \& Mecklings (1992) \emph{co-location of knowledge and decision rights}: plasser beslutningsretten der den \thref{specific-vs-general-knowledge}{spesifikke videnen} er, så fremt agentkostnader og koordinasjonskostnader tillater det. [SLIDE/BOK]
+
+\subsection*{Forklaring}
+
+Alle beslutninger i en organisasjon må allokeres. Trade-off-en mellom to ekstremer driver designet:
+\begin{itemize}
+\item \textbf{Sentralisere} -- flytt informasjonen oppover til en sentral beslutningstaker. Fordeler: koordinering, skalafordeler, internalisering av eksternaliteter, mindre agentkostnad. Ulemper: dyrt å overføre spesifik viden, langsommere, demotiverende lokalt.
+\item \textbf{Desentralisere} -- flytt beslutningen ned til der videnen er. Fordeler: bruker lokal viden, raskere, frigjør toppledelsens tid, motiverer. Ulemper: agentkostnader (lokal leder $\neq$ residual claimant), \thref{externalities}{eksternaliteter} mellom enheter, koordinasjonskostnader.
+\end{itemize}
+Optimal allokering ligger derfor mellom ytterpunktene og avhenger av: videnstruktur, agentkostnader, eksternaliteter, koordinasjonsbehov, og hvor godt \STwo\ og \SThree\ kan erstatte tapt direkte kontroll. [SLIDE]
+
+\textbf{Det formelle valget} (BSZ kap.\ 12) brytes ned i fire spørsmål:
+\begin{enumerate}
+\item \emph{Hvilke} beslutninger skal allokeres? (pris, mengde, ansettelse, investering, strategisk valg).
+\item \emph{Til hvilket nivå} (CEO, divisjonsleder, team, individ)?
+\item \emph{Skal Management og Control separeres}? (jf.\ \thref{decision-management-control}{Decision Management vs.\ Decision Control}.)
+\item \emph{Hvilken centertype} matcher allokeringen? (cost / revenue / profit / investment center; \thref{responsibility-centers}{responsibility centers}.)
+\end{enumerate}
+
+\textbf{Empowerment-vinklingen:} Slidens \emph{empowerment} er allokering nedover, men kun når (a) den ansatte har relevant spesifik viden, (b) det finnes måltall til å holde henne ansvarlig (S2), og (c) insentivene er innrettet (S3). Empowerment uten S2/S3 er meningsløst. [SLIDE]
+
+\textbf{Optimal desentraliseringsgrad} (modell fra slide 11-12):
+$NB = BD - AD - CD^2 \Rightarrow D^* = (B-A)/2C$, der $B$ = marginalnytte av desentralisering (lokal viden), $A$ = lineær kostnad (agentkostnad), $C$ = konveks kostnad (koordinasjon/eksternaliteter). Sentralt poeng: jo større lokal viden, jo høyere $D^*$; jo større eksternaliteter, jo lavere. [SLIDE]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item Beslutninger kan identifiseres, separeres og tildeles eksplisitt.
+\item Spesifik vs.\ generell viden er observerbar og stabil nok til design.
+\item Måltall finnes (eller kan utvikles) som erstatning for direkte observasjon når man desentraliserer.
+\item Insentiver kan kobles til måltallene (\SThree).
+\item Eksternaliteter mellom enheter kan kartlegges og adresseres (priser, regler, sentralisering).
+\item Organisasjonen kan endre allokeringen når omgivelsene endrer seg (ikke fanget i path dependence).
+\end{itemize}
+
+\subsection*{Muligheter}
+\begin{itemize}
+\item Gir et eksplisitt rammeverk for å diagnostisere organisasjonsproblemer: hvor sitter videnen, hvor sitter beslutningsretten, og samsvarer de?
+\item Forklarer hvorfor IT/AI endrer optimal allokering: gjør tidligere spesifik viden generell $\Rightarrow$ rom for re-sentralisering (centralized dashboards, algorithmic pricing).
+\item Forklarer franchise, divisjonalisering, og M-form: alle er svar på hvor beslutningsretten bør ligge.
+\item Forklarer hvorfor noen beslutninger \emph{må} være sentrale (M\&A, kapitalstruktur, merkevare) -- store eksternaliteter / strategiske valg.
+\item Begrunner separasjon av Management og Control: når desentraliserer man til ikke-residualkravshaver, må man legge til \thref{decision-management-control}{Control}-mekanismer.
+\item Anvendelig på alle nivå: konsern $\to$ divisjon, divisjon $\to$ team, team $\to$ individ.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item \textbf{Underspesifisert:} Modellen sier ``plasser beslutningsretten der videnen er'', men spesifikk grenseflate (hvilken eksakt beslutning) krever skjønn.
+\item \textbf{Endogen viden:} Hvor videnen sitter, avhenger av tidligere allokering -- selvforsterkende. Sentraliserte selskaper utvikler ikke lokal viden.
+\item \textbf{Strategisk:} Lokale ledere overdriver hvor spesifikk videnen er for å beholde makt. Sentralledere overdriver eksternaliteter for å re-sentralisere.
+\item \textbf{Politiske kostnader:} \emph{Endring} av allokering møter motstand, lobbying og influence costs (Milgrom \& Roberts).
+\item \textbf{Multi-task / interdependence:} Når oppgaver er vevd inn i hverandre, kan ikke beslutninger separeres rent -- modellen forutsetter klar dekomponering.
+\item \textbf{Kvantifisering av modellen} ($D^* = (B-A)/2C$) er pedagogisk, men i praksis kan man sjelden måle $B$, $A$, $C$.
+\item \textbf{Ignorerer kultur/identitet:} Stark organisasjonskultur kan erstatte formell allokering -- modellen er ren formell-rational.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.65\linewidth]{BSZ_kap_12_2026/by_slide/slide_012/BSZ_kap_12_2026_slide_012_asset_01_image3.png}
+  \caption{Trade-off mellom benefits og costs av desentralisering. Optimal $D^* = (B-A)/2C$. (BSZ kap.\ 12, slide 12) [SLIDE]}
+\end{figure}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}p{3.7cm}p{4.4cm}p{5.4cm}@{}}
+\toprule
+\textbf{Driver} & \textbf{Trekker mot} & \textbf{Eksempel} \\
+\midrule
+Spesifik viden lokalt & Desentralisering & Lokal butikkpris (AutoMart) \\
+Eksternaliteter mellom enheter & Sentralisering & Merkevare, IT, M\&A \\
+Skalafordeler & Sentralisering & Innkjøp, treasury \\
+Agentkostnader & Sentralisering & Når S2/S3 svake \\
+Hastighet / lokal tilpasning & Desentralisering & Markeder med rask endring \\
+Residual claimant lokalt & Desentralisering & Franchise \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{AutoMart (slide-eksempel):} Hvem skal sette pris -- CEO, regionsjef eller butikksjef? Lokal viden om kundepreferanser og konkurrenter ligger lokalt $\Rightarrow$ desentraliser til butikksjef, men sentraliser merkevaren og prislister-ramme. [SLIDE]
+\item \textbf{Equinor E\&P:} Letevirksomhet desentralisert til prosjektledere (geologisk spesifikk viden), men store CAPEX-investeringer ratifiseres av styret (eksternalitet mot konsernrisiko, kapitalmarkedssignal). [EKS]
+\item \textbf{Norsk Hydro -- pris vs.\ M\&A:} Pris på aluminium settes ikke lokalt (LME-marked), men teknologivalg på det enkelte smelteverk er desentralisert til verksledelse. M\&A-beslutninger ligger sentralt -- eksternaliteter for hele konsernet. [EKS]
+\item \textbf{IKEA -- franchising vs.\ design:} Salgsbeslutninger desentralisert til varehus / franchisetaker (lokal viden). Design og produktkatalog er sentralisert i Älmhult (kodifiserbar viden + merkevareeksternalitet). [EKS]
+\item \textbf{Spotify -- ``Squad model'':} Eksperiment med radikal desentralisering til autonome team. Senere delvis re-sentralisert -- viste at koordinasjonskostnader og eksternaliteter ble undervurdert. [EKS]
+\item \textbf{Mærsk PtX-divisjonen:} Teknologi- og partnervalg desentralisert (spesifikk kjemisk viden), pricing av grønt drivstoff har store eksternaliteter mot Ocean-divisjonen $\Rightarrow$ koordinert; CAPEX over terskel ratifiseres sentralt. Klassisk balanseskap. [CASE]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: \SOne\ definisjonelt -- dette \emph{er} S1. Driver \STwo\ (måltall som speiler den allokerte beslutningen, jf.\ \thref{controllability-principle}{controllability}) og \SThree\ (insentiver på det som er allokert). Relaterte: \thref{specific-vs-general-knowledge}{Spesifik vs.\ generell viden} (kjernedriver), \thref{centralization-vs-decentralization}{Centralisering vs.\ desentralisering} (graden), \thref{decision-management-control}{Decision Management vs.\ Decision Control} (separasjon innen S1), \thref{externalities}{Eksternaliteter} (begrenser desentralisering), \thref{residual-claimants}{Residual claimants} (sentral for Control-allokering), \thref{agency-costs}{Agentomkostninger}, \thref{principal-agent}{Principal-agent}, \thref{moral-hazard}{Moral hazard}, \thref{responsibility-centers}{Responsibility centers} (implementering), \thref{organizational-architecture}{Organizational architecture} (helheten).
+
+\paragraph{Brukt i spørsmål:} Q07.

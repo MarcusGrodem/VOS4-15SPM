@@ -279,7 +279,9 @@ theory file if the theory is not yet covered.
 
 1. SPØRSMÅLET (gjengi ordrett fra Pensum-filen — på dansk er ok her)
 
-2. SVAR I ÉN SETNING — kjerneargumentet/tesen.
+2. SVAR (kort) — kjerneargumentet/tesen.
+   Sikt mot én setning, men 2–3 setninger er greit hvis det gjør svaret
+   tydeligere og lettere å forstå. Klarhet > kunstig korthet.
 
 3. RELEVANTE TEORIER (kort form, 3–6 setninger per teori)
    - 2–4 teorier. Hver teori introduseres med en KLIKKBAR LENKE:
@@ -362,8 +364,8 @@ Be specific: list every file written/revised and flag any content you were uncer
 % notes/questions/qNN.tex
 \section{Q\,NN: [Gjengi spørsmålet ordrett]}\label{q:NN}
 
-\subsection*{Svar i én setning}
-% Kjerneargumentet
+\subsection*{Svar (kort)}
+% Kjerneargumentet. 1–3 setninger — prioriter klarhet over korthet.
 
 \subsection*{Relevante teorier (kort)}
 

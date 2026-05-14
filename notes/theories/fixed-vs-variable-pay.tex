@@ -1,0 +1,92 @@
+% !TEX root = ../main.tex
+\section{Præstationsuafhængig vs.\ variabel lønn ($W_0$ vs.\ $\beta Q$)}\label{thr:fixed-vs-variable-pay}
+
+\paragraph{Definisjon.} Lønnskontrakten $W=W_0+\beta Q$ består av to konseptuelt forskjellige komponenter: $W_0$ er den \emph{præstationsuafhængige} (faste) lønnen, uavhengig av prestasjonen, mens $\beta Q$ er den \emph{variable} delen, hvor $\beta\in[0,1]$ er incitamentskoefficienten og $Q$ prestasjonsmålet. De to delene tjener \emph{ulike} formål i kontraktsdesignet og må analyseres separat. [SLIDE]
+
+\subsection*{Forklaring}
+
+I optimal effort-modellen (\thref{optimal-effort-model}{se modell A}) er agentens FOC:
+\[
+\beta\alpha\;=\;c'(e^{*}).
+\]
+$W_0$ faller ut. Det er en \emph{ren nivåvariabel}: den endrer agentens forventede inntekt uten å vri marginalbeslutningen om innsats. $\beta Q$ er derimot \emph{ren marginalvariabel}: den vrir innsats fordi marginal lønn øker med $\beta\alpha$ per enhet innsats. [SLIDE]
+
+\textbf{Rollen til $W_0$ -- tre funksjoner.}
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\item \textbf{Participation / IR-skranke.} $W_0$ justeres slik at agentens sikkerhetsekvivalent når reservasjonsnytten $\overline{U}$. Hvis $W_0$ er for lav, takker agenten nei.
+\item \textbf{Risikopremie-kompensasjon.} Når agenten bærer risiko ($\beta>0$), pålegger hun seg en risikopremie $\tfrac{r}{2}\beta^{2}\sigma^{2}$. $W_0$ må heves for å kompensere for dette, ellers brytes IR-skranken.
+\item \textbf{Forsikring / risikodeling.} Høy $W_0$ overfører eksogen risiko fra agenten til prinsipalen -- effektiv risikodeling, særlig når prinsipalen er diversifisert.
+\end{enumerate}
+$W_0$ vrir altså \emph{ikke} innsats, men er likevel nødvendig for at kontrakten skal fungere. [BOK]
+
+\textbf{Rollen til $\beta Q$ -- to funksjoner.}
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\item \textbf{Innsats-vridning (incentive).} Vrir agentens valg via $e^{*}=e^{*}(\beta)$.
+\item \textbf{Risikoeksponering.} Bringer eksogen $\mu$-risiko inn i agentens lønn. Dette er kostnaden ved å bruke insentivlønn.
+\end{enumerate}
+Det er nettopp denne todelte funksjonen som skaper insentiv-risiko-trade-offen i \thref{risk-sharing}{risikodeling}. [SLIDE]
+
+\textbf{Hvorfor begge komponenter trengs.}
+\begin{itemize}\setlength{\itemsep}{1pt}
+\item \textbf{Bare $W_0$ (ren fastlønn):} Ingen marginalt insentiv $\Rightarrow$ agenten velger minimal innsats (shirking). Effektiv risikodeling, men null produksjonsgevinst. \thref{moral-hazard}{Moral hazard} ikke håndtert.
+\item \textbf{Bare $\beta Q$ (ren prestasjonslønn, $W_0=0$ eller negativ ``franchise fee''):} Agenten må kjøpe seg inn. Maksimal innsats hvis $\beta=1$, men hele $\mu$-risikoen lastes på agenten, som krever stor risikopremie. Realistisk kun for risikonøytrale agenter eller helt observerbart $e$.
+\item \textbf{Hybrid (normen):} $W_0$ dekker IR + risikopremie; $\beta Q$ vrir innsats. Second-best-løsning.
+\end{itemize}
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}\setlength{\itemsep}{1pt}
+\item Lineær kontrakt og lineær teknologi.
+\item Reservasjonsnytte $\overline{U}$ er positiv (ellers $W_0$ kan settes til null).
+\item $W_0$ er tidsmessig stabil -- ikke renforhandlet hver gang $\beta$ endres (ratchet effect ignorert).
+\item Agenten kan ikke ``flyttes'' kostnadsfritt mellom kontrakter (ellers konkurrerer arbeidsmarkedet bort $W_0$).
+\end{itemize}
+
+\subsection*{Muligheter}
+\begin{itemize}\setlength{\itemsep}{1pt}
+\item Gir et klart språk for å diskutere lønnsdesign: $W_0$ for deltakelse og risiko; $\beta$ for innsats.
+\item Forklarer hvorfor fastlønn og variabel lønn ikke er substitutter -- de gjør forskjellige ting.
+\item Lar oss analysere effekter av endringer separat (f.eks.\ regulering av variabel lønn i banksektoren -- EU bonus-cap -- påvirker $\beta$ men må kompenseres med høyere $W_0$, som forklarer empirisk drift mot ``role-based pay'').
+\item Forklarer hvorfor \emph{lønnsforhøyelse} (i $W_0$) ikke nødvendigvis gir mer innsats -- en klassisk leder-villfarelse.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}\setlength{\itemsep}{1pt}
+\item Skarpt skille mellom $W_0$ og $\beta Q$ forutsetter linearitet -- terskler, stair-step-bonus og opsjoner gjør at fastlønnen \emph{kan} indirekte påvirke insentiver (når den nærmer seg gulvet i en bonusplan).
+\item Atferdsforskning: høy $W_0$ kan ha \emph{gave-utveksling}-effekt (Akerlof) -- ansatte yter mer enn FOC tilsier av lojalitet/normer. Modellen fanger ikke dette.
+\item Karriere-insentiver, status og ``promotion tournament'' fungerer som implisitte variable komponenter selv når formelt $\beta=0$ -- den lineære modellen underestimerer faktiske insentiver i tariffjobber.
+\item Skattelovgivning og pensjonsordninger gjør faktisk verdi av $W_0$ vs.\ $\beta Q$ asymmetrisk -- modellen ignorerer dette.
+\item Internasjonale forskjeller (USA: mer $\beta Q$; Skandinavia/Tyskland: mer $W_0$) viser at institusjonelle og normative faktorer dominerer FOC i mange tilfeller.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}p{3.0cm}p{4.2cm}p{6.5cm}@{}}
+\toprule
+\textbf{Komponent} & \textbf{Hva den gjør} & \textbf{Hva den \emph{ikke} gjør} \\
+\midrule
+$W_0$ (fast) & Oppfyller IR, kompenserer risikopremie, gir forsikring & Vrir ikke marginal innsats \\
+$\beta Q$ (variabel) & Vrir innsats, kobler agent til prinsipalens mål & Gir ikke effektiv risikodeling alene \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.55\linewidth]{BSZ_kap_15_2026/by_slide/slide_020/BSZ_kap_15_2026_slide_020_asset_01_image7.jpeg}
+\caption{Lønnskontrakten dekomponert: fast del ($W_0$) + variabel del ($\beta Q$). [SLIDE -- BSZ kap.\ 15, slide 20]}
+\end{figure}
+
+\subsection*{Eksempler}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item \textbf{Norsk tariffstilling (sykepleier):} Alt $W_0$, $\beta\approx 0$. Output (omsorgskvalitet) er umålbart, agenten er risikoavers, og fagforening favoriserer kollektive ordninger. [EKS]
+\item \textbf{Norsk Hydro-bonusplan for divisjonsledelse:} Grunnlønn (~70\%) + årsbonus knyttet til divisjons-EBITDA (~20\%) + LTI (~10\%). Hybrid -- $W_0$ dekker risikopremien, $\beta Q$ vrir innsats. [EKS]
+\item \textbf{Ren provisjonsselger (uten grunnlønn):} $W_0=0$, $\beta=1$ på salgsverdi. Krever lav risikoaversjon og høy målbarhet -- bare anvendelig i bransjer som dør-til-dør-salg eller renessanseaktige modeller. [EKS]
+\item \textbf{Bankenes EU bonus-cap (2014):} Variabel del begrenset til $100$--$200$\% av $W_0$. Banker responderte med å heve $W_0$ (``allowances'') for å beholde total lønn -- modellen forutsa nettopp dette: $W_0$ og $\beta Q$ er ikke perfekte substitutter, men kan tilpasses så total CE forblir. [EKS]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: \SThree\ (kontraktens designvariabler). Relaterte: \thref{optimal-effort-model}{Optimal effort-modell}, \thref{incentive-coefficient}{Incentive coefficient}, \thref{risk-sharing}{Risk sharing}, \thref{principal-agent}{Principal-agent}, \thref{moral-hazard}{Moral hazard}, \thref{agency-costs}{Agency costs}, \thref{informativeness-principle}{Informativeness-prinsippet}.
+
+\paragraph{Brukt i spørsmål:} Q09.

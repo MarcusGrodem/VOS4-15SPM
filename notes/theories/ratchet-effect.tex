@@ -1,0 +1,64 @@
+% !TEX root = ../main.tex
+\section{Ratchet-system og ratchet-effekten}\label{thr:ratchet-effect}
+
+\paragraph{Definisjon.} Et \emph{ratchet-system} er en målsettingsmekanisme der fremtidige prestasjonsmål bygges direkte på inneværende periodes faktiske ytelse -- jo bedre du presterer i år, jo strammere mål får du neste år. \emph{Ratchet-effekten} er agentens rasjonelle respons: hun holder igjen innsatsen i dag for å unngå at standarden skrus opp i morgen. Den ekstreme formen heter \emph{sandbagging} -- bevisst underprestering for å skape lettere fremtidige mål. [SLIDE]
+
+\subsection*{Forklaring}
+
+Ratchet-effekten er et dynamisk insentivproblem: en ettperiodisk \thref{principal-agent}{principal-agent}-kontrakt bryter sammen når både prinsipal og agent vet at \emph{neste} periodes kontrakt skrives på grunnlag av \emph{denne} periodens utfall. Selv en agent med høyt innsatsnivå har incentiv til å skjule kapasiteten sin, fordi å avsløre den koster henne i alle fremtidige perioder. Mekanismen er analog til en skrallsnøkkel (en \emph{ratchet}): bevegelsen går bare én vei -- målet skrus opp, aldri ned -- og fastlåses der. [SLIDE/BOK]
+
+Begrepet ble først dokumentert systematisk i analyser av sovjetisk planøkonomi (Berliner 1957, Weitzman 1980): fabrikksjefer som leverte over plan i år fikk strammere plan neste år. Resultatet var en kultur for konstant ``95\,\% leveranse'' -- aldri 100 \% -- selv om reell kapasitet var langt høyere. Det samme mønsteret ses i moderne salgsbudsjetter, regnskapsmessige budsjetter med årlig påslag, og i offentlig sektor med årlige effektivitetskrav (``Rattle the Cage''-effekten, ABE-kravet i NO). [BOK]
+
+Ratchet-effekten er en spesifik form for \thref{gaming-in-performance-measurement}{gaming}: i stedet for å manipulere selve målingen, manipulerer agenten \emph{tempoet} hvori god prestasjon avsløres. Den er også en direkte konsekvens av at samme målesystem brukes til både feedback og belønning -- jf.\ \thref{performance-measurement-purposes}{formålene med prestasjonsmåling}. [SLIDE]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item \textbf{Gjentakelse:} Spillet mellom prinsipal og agent gjentas; én-periodisk kontrakt ville ikke gi ratchet.
+\item \textbf{Asymmetrisk informasjon:} Prinsipalen kjenner ikke agentens sanne kapasitet og må lære den av observerte resultater (\emph{ratcheting from history}).
+\item \textbf{Mangel på commitment:} Prinsipalen kan ikke troverdig binde seg til \emph{ikke} å bruke årets resultat når neste års mål settes -- selv om det ville være optimalt ex ante.
+\item \textbf{Rasjonell, fremtidsorientert agent:} Agenten verdsetter fremtidige perioders nytte tilstrekkelig høyt til at sandbagging lønner seg.
+\item \textbf{Liten konkurransepress:} Ratchet-effekten er sterkest når agenten ikke kan erstattes -- ellers vinner en konkurrent ved å vise sin sanne kapasitet.
+\end{itemize}
+
+\subsection*{Muligheter (hva forklarer teorien?)}
+\begin{itemize}
+\item Forklarer hvorfor mange budsjetter ``alltid'' treffer 95--100 \% av målet -- distribusjonen er truncated nedenfra og over.
+\item Forklarer hvorfor selskaper introduserer flerårige incentivprogram (LTI), bonusbanker eller fastsatte måltallsformler.
+\item Forklarer hvorfor relative og eksterne benchmarks (\thref{absolute-vs-relative-performance}{relative performance evaluation}) er attraktive -- de bryter koblingen mellom \emph{egen} prestasjon og \emph{eget} fremtidig mål.
+\item Forklarer hvorfor private equity-eide selskaper ofte gir kraftig produktivitetshopp etter overtakelse: nye eiere bryter den implisitte ratchet-kontrakten.
+\item Jensen-kritikken av budgetbaserte bonuser (BSZ kap.\ 16) hviler direkte på ratchet-logikken: når neste års budsjett settes fra årets resultat, blir budsjettet både plan- og belønningsverktøy, og begge formål korrumperes.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item \textbf{Empirisk størrelse er omstridt.} Sandbagging er vanskelig å skille fra reell kapasitetsbegrensning -- studier overestimerer ofte ratchet-effektens omfang.
+\item \textbf{Karrierebekymringer kan oppveie ratchet.} Yngre ansatte ønsker å vise topp-prestasjon for å bli forfremmet, selv om det øker fremtidig målnivå. \emph{Career concerns} (Holmström 1982) trekker motsatt vei.
+\item \textbf{Implicit relational contracts.} Hvis prinsipal og agent har et langvarig tillitsforhold, kan ratchet-fellen unngås ved norm: ``Vi straffer deg ikke for å overlevere.'' Vanskelig å håndheve, men empirisk observert.
+\item \textbf{Løsningen kan skape nye problemer.} Eksterne benchmarks introduserer relativ måling med egne problemer (sabotasje, manipulasjon av peer-gruppe).
+\item \textbf{Ratchet kan også være effektivt.} Hvis kapasiteten faktisk endrer seg over tid, er det rasjonelt å oppdatere mål -- skillet mellom ``rettferdig oppdatering'' og ``ratchet-utnyttelse'' er ikke skarpt.
+\item \textbf{Modellene er ofte stiliserte.} Reelle bonusbudsjetter har glattere mekanismer (kapp, bunner, sjettesninger) som demper, men ikke fjerner, ratchet-effekten.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+I et stilisert toperiode-spill: agenten velger $e_1$ i periode 1 vel vitende om at neste periodes mål blir $\bar{Q}_2 = \gamma Q_1$ for $\gamma \in (0, 1]$. Optimal innsats er derfor lavere enn ved engangsspill -- agenten internaliserer at $\partial \bar{Q}_2 / \partial Q_1 > 0$ koster henne nytte i periode 2. Jensen foreslår at man bryter koblingen ved å gjøre bonus \emph{lineær} og uavhengig av fastsatt budsjett:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.65\linewidth]{BSZ_kap_16/by_slide/slide_019/BSZ_kap_16_slide_019_asset_01_image4.png}
+  \caption{Jensens forslag: lineær pay-for-performance der bonus er uavhengig av målet. Når bonuskurven ikke skifter med budsjettet, forsvinner motivasjonen for sandbagging og ratchet-tilpasning. (BSZ kap.\ 16, slide 19) [SLIDE]}
+\end{figure}
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{Sovjetisk fabrikkproduksjon (Berliner, Weitzman).} Direktører leverte konsekvent litt over plan, aldri mye over, for å unngå strammere plan neste år. Klassisk historisk dokumentasjon. [BOK]
+\item \textbf{IBM-salgskvoter (1990-tallet).} Salgsledere som overperformerte fikk høyere kvoter neste år; resultatet var en bransjenorm om ``akkurat over kvote''. Endret med innføring av flerårige LTI-program. [EKS]
+\item \textbf{Norske kommunale ABE-krav (effektiviseringskrav).} Etaten som leverer effektiviseringsgevinst får krav om mer neste år. Etater holder igjen tiltak til ``nødvendige år''. [EKS]
+\item \textbf{Mærsk CAPEX-budsjettering.} Hvis PtX-divisjonen oppnår alle prosjektmilestones år 1, kan konsernet skru opp neste års mål. Risiko for sandbagging ved tidsangivelse. [CASE]
+\item \textbf{Vy/NSB og punktlighet.} Hvis 95 \% punktlighet utløser bonus og neste års mål, har ledelsen incentiv til å ikke avsløre at 98 \% er mulig. [EKS]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: \STwo\ (måltallsdesign) og \SThree\ (bonusstrukturer). Relaterte teorier: \thref{performance-measurement-purposes}{Formålene med prestasjonsmåling} (ratchet er konsekvens av flerbruk), \thref{gaming-in-performance-measurement}{Gaming} (samme familie), \thref{absolute-vs-relative-performance}{Absolutt vs.\ relativ prestasjonsmåling} (relativ måling er ratchet-løsning), \thref{principal-agent}{Principal-Agent}, \thref{moral-hazard}{Moral hazard}, \thref{controllability-principle}{Controllability-prinsippet}, \thref{responsibility-centers}{Responsibility centers}, \thref{incentive-coefficient}{Insentivkoeffisient}.
+
+\paragraph{Brukt i spørsmål:} Q10.

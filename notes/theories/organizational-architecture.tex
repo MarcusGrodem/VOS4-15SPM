@@ -1,0 +1,108 @@
+% !TEX root = ../main.tex
+\section{Organizational Architecture -- den tre-benede skammelen}\label{thr:organizational-architecture}
+
+\paragraph{Definisjon.} \emph{Organizational architecture} er Brickley, Smith \& Zimmermans samlebegrep for det system av tre komplementære designvalg som styrer adferd i en virksomhet: (i) \textbf{allokering av beslutningsrettigheter} (S1), (ii) \textbf{prestasjonsmåling} (S2) og (iii) \textbf{belønnings-/insentivstruktur} (S3). De tre elementene må passe sammen som tre ben på en skammel -- endrer man ett ben uten å justere de andre, faller skammelen. [SLIDE]
+
+\subsection*{Forklaring}
+
+Slidene (BSZ kap.\ 11) bruker eksplisitt metaforen \emph{three-legged stool}: arkitekturen er stabil bare når alle tre ben er like lange og like solide. Bakgrunnen er Hayek--Jensen--Mecklings observasjon at viktig informasjon i virksomheter er distribuert og kostbar å overføre (\thref{specific-vs-general-knowledge}{spesifik vs.\ generell viden}), samtidig som ansatte har egne interesser. Resultatet er to grunnproblemer: et \emph{informasjonsproblem} (hvem skal beslutte hva?) og et \emph{insentivproblem} (hvordan får man dem til å beslutte i selskapets interesse?). [SLIDE/BOK]
+
+Arkitekturen løser begge:
+\begin{itemize}
+\item \SOne\ \textbf{Decision rights:} Hvem har myndighet til å initiere, ratifisere, implementere og monitorere hvilke beslutninger? Plasserer beslutningsmakten der den \thref{specific-vs-general-knowledge}{spesifikke videnen} sitter. Reduserer informasjonsproblem.
+\item \STwo\ \textbf{Performance evaluation:} Hva måles, hvordan, av hvem? Erstatter direkte observasjon når desentralisering velges (\thref{controllability-principle}{controllability-prinsippet}, \thref{informativeness-principle}{informativeness}).
+\item \SThree\ \textbf{Reward systems:} Hvordan kobles målte prestasjoner til lønn, bonus, opsjoner, karriereutvikling og status? Reduserer insentivkonflikt -- agentens egennytte vrides mot prinsipalens mål.
+\end{itemize}
+Sammen minimerer de tre søylene \thref{agency-costs}{agentomkostningene} (sum av monitoring + bonding + residual loss). [SLIDE]
+
+\subsection*{Kompletter\-aritet (hvorfor alle tre må endres samtidig)}
+
+De tre elementene er \emph{komplementer} i økonomisk forstand: marginalavkastningen av å forbedre ett er stigende i kvaliteten på de andre. Konsekvenser:
+\begin{itemize}
+\item Desentralisering av beslutningsrett (S1) uten å endre måltall (S2) gir ledere kontroll uten ansvar -- residual loss eksploderer.
+\item Innføring av aksjebasert kompensasjon (S3) uten et meningsfullt prestasjonsmål (S2) skaper bare \emph{noise} eller gaming -- ledere belønnes for makroflaks.
+\item Skarp prestasjonsmåling (S2) uten beslutningsrett (S1) bryter \thref{controllability-principle}{controllability} -- urettferdig og demotiverende.
+\item Insentiver (S3) uten beslutningsrett (S1) er meningsløse -- agenten kan ikke handle på dem.
+\end{itemize}
+
+\subsection*{Determinanter (hva former arkitekturen?)}
+
+Slidene lister fire eksterne faktorer som påvirker valget av arkitektur:
+\begin{itemize}
+\item \textbf{Strategi} (priskonkurranse, kvalitet, service)
+\item \textbf{Teknologi} (IT, automatisering, kommunikasjon)
+\item \textbf{Markeder} (konkurrenter, kunder, leverandører)
+\item \textbf{Regulering} (skatter, antitrust, internasjonale regler)
+\end{itemize}
+Strategi og arkitektur påvirker hverandre toveis -- valgte strategier krever bestemte arkitekturer, men eksisterende arkitektur begrenser hvilke strategier som er mulige. [SLIDE]
+
+\subsection*{Endringsdynamikk}
+
+Arkitekturen må endres når omgivelsene endres, men endring er kostbar:
+\begin{itemize}
+\item \emph{Direkte kostnader:} designkostnad, kommunikasjonskostnad, IT-tilpasning.
+\item \emph{Indirekte kostnader:} medarbeidermotstand, midlertidig fall i ytelse, tap av implisitte kontrakter.
+\end{itemize}
+Beslutningsregelen er klassisk: endre arkitektur så lenge \emph{MR $>$ MC}. Konsernet som ikke endrer arkitektur når omgivelsene gjør det, rammes av \emph{economic Darwinism} -- ineffektive organisasjoner slås ut. [SLIDE]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item Asymmetrisk informasjon mellom ledd / nivåer i organisasjonen.
+\item Interessekonflikt mellom prinsipal og agent (ansatte maksimerer egen nytte, ikke firmaets profit automatisk).
+\item Kontrakter er ufullstendige og kostbare (\thref{costly-contracting}{costly contracting}).
+\item Det er mulig (men ikke gratis) å allokere beslutningsrettigheter, måle prestasjon og koble belønning til mål.
+\item Kompletter\-aritet mellom S1, S2, S3 -- en endring i én søyle krever justering av de andre for å bevare effektivitet.
+\end{itemize}
+
+\subsection*{Muligheter}
+\begin{itemize}
+\item Forklarer hvorfor identiske bransjer velger ulik organisering, og hvorfor samme firma må endre struktur over tid.
+\item Gir et systematisk diagnoseverktøy: ved problemer, sjekk hvilket ben som svikter -- ofte er det et \emph{misalignment} mellom S1, S2 og S3, ikke et enkelt galt valg.
+\item Forener mange spesialteorier (centertyper, transfer pricing, kompensasjonsdesign, decentralisering, decision rights, controllability) til én sammenhengende ramme.
+\item Anvendelig på alle nivå: konsern, divisjon, team, individuelt jobbeskrivelse.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item \textbf{Underspesifisert:} Modellen sier at de tre må passe sammen, men ikke hvilke konkrete kombinasjoner som er optimale i en gitt kontekst -- må kombineres med detaljerte modeller (centertyper, decentraliseringsmodellen, informativeness-prinsippet).
+\item \textbf{Glemmer kultur og uformelle kontrakter:} Slidene nevner kultur, men formaliserer den ikke. I praksis kan stark kultur erstatte deler av S2/S3 (jf.\ Frey, Kreps).
+\item \textbf{Statisk vinkling:} Modellen forklarer \emph{tilstand}, ikke \emph{prosess}. Endring av arkitektur er kostbar og politisk -- det er ikke nok å vite hva som er optimalt.
+\item \textbf{Multi-prinsipal:} Når en agent betjener flere prinsipaler (børsnotert selskap), blir det uklart hvem arkitekturen skal optimalisere for.
+\item \textbf{Path dependence:} Eksisterende arkitektur skaper tilpasninger som er kostbare å reversere -- selv om en ny arkitektur er bedre på papiret.
+\item \textbf{Måleproblem:} Mange relevante prestasjoner kan ikke måles objektivt; subjektiv evaluering åpner for influence costs og spill.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\linewidth]{BSZ_kap_11_2026/by_slide/slide_004/BSZ_kap_11_2026_slide_004_asset_01_image3.png}
+  \caption{Den tre-benede skammelen: Decision rights, Performance evaluation, Reward systems -- arkitekturens tre ben. Endring i ett ben krever justering av de andre. (BSZ kap.\ 11, slide 4) [SLIDE]}
+\end{figure}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}p{3.4cm}p{4.6cm}p{6.0cm}@{}}
+\toprule
+\textbf{Søyle (ben)} & \textbf{Designvariabel} & \textbf{Hovedmekanisme} \\
+\midrule
+\SOne\ Decision rights & Hvem beslutter hva (allokering) & Plasser beslutning der spesifik viden sitter \\
+\STwo\ Performance eval. & Hva måles, hvordan, av hvem & Erstatte direkte observasjon med kontrollerbart måltall \\
+\SThree\ Reward system & Lønn, bonus, opsjoner, karriere & Vri agentens egennytte mot prinsipalens mål \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{Equinor (omorganisering 2020/2021):} Skilte ut \emph{Renewables} som egen forretningsenhet (S1), innførte separate KPI-er for fornybar kapasitet og avkastning (S2), og koblet ledelseskompensasjon til transisjonsmål (S3). Tre-benet endring samtidig. [EKS]
+\item \textbf{Norsk Hydro -- aluminiumsdivisjonene:} Vertikalt integrert virksomhet med separate divisjoner for Bauxite \& Alumina, Aluminium Metal, og Extruded Solutions. Hver divisjon er profit/investment center (S1), måles på LME-justert margin (S2 -- jf.\ controllability), og bonus knyttes til divisjonsresultat (S3). [EKS]
+\item \textbf{IKEA -- franchising:} Beslutningsrett om varehusdrift hos franchisetaker (S1), måles på salg per kvadratmeter og kundetilfredshet (S2), royalty + restprofit til franchisetaker er insentivet (S3). Misalignment-eksempel: hvis konsernet hadde delegert pris (S1) men målt på volum (S2), ville franchisetaker dumpet priser. [EKS]
+\item \textbf{Maersk Line vs.\ APM Terminals:} A.P.\ Møller-Mærsk har bevisst skilt skipsdriften (Maersk Line) fra havnedriften (APM Terminals) i to ulike arkitekturer fordi videnstrukturer, kunder og kapitalbehov er forskjellige. [EKS/CASE]
+\item \textbf{Mærsk Power-to-X-divisjonen:} Beslutningsrett over teknologivalg og partnervalg ligger i divisjonen (S1), måles som investment center på prosjektets risikojusterte avkastning (S2), og lederkompensasjon koblet til langsiktige milestones (S3). Hadde insentivene bare vært knyttet til kortsiktig EBITDA, ville lederen utsatt store CAPEX-beslutninger -- klassisk misalignment. [CASE]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Modellen \emph{er} de tre søylene -- \SOne\ + \STwo\ + \SThree\ samtidig. Relaterte: \thref{specific-vs-general-knowledge}{Spesifik vs.\ generell viden} (begrunner S1), \thref{agency-costs}{Agentomkostninger} (det modellen minimerer), \thref{principal-agent}{Principal--agent} (grunnrelasjonen), \thref{controllability-principle}{Controllability-prinsippet} (regel for S2), \thref{informativeness-principle}{Informativeness-prinsippet} (regel for S2/S3), \thref{responsibility-centers}{Responsibility centers} (konkret implementering av alle tre), \thref{decision-management-control}{Decision Management vs.\ Decision Control} (strukturer S1), \thref{centralization-decentralization}{Centralisering vs.\ desentralisering} (graden av S1-delegering), \thref{transfer-pricing}{Transfer pricing} (oppstår mellom S2-enheter), \thref{boundaries-of-the-firm}{Boundaries of the firm} (når arkitekturen møter markedet).
+
+\paragraph{Brukt i spørsmål:} Q05.

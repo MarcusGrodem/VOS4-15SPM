@@ -1,0 +1,127 @@
+% !TEX root = ../main.tex
+\section{Optimal decentraliseringsmodell}\label{thr:optimal-decentralization-model}
+
+\paragraph{Definisjon.} \emph{Optimal decentraliseringsmodell} er BSZ-rammeverket (kap.\ 12) som operasjonaliserer trade-off-en mellom \thref{centralization-vs-decentralization}{sentralisering og desentralisering} ved å sette opp en nettofordel-funksjon i graden av desentralisering $D$, og finne den graden $D^*$ som maksimerer nettofordelen ved å sette marginal fordel lik marginal kostnad. [SLIDE/BOK]
+
+\subsection*{Forklaring}
+
+La $D \in [0, D_{\max}]$ angi graden av desentralisering (0 = full sentralisering, $D_{\max}$ = full desentralisering). Modellen antar at: [SLIDE]
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item Fordelene ved desentralisering (bedre bruk av lokal viden) vokser \emph{lineært} i $D$ med rate $B > 0$. Total fordel: $B \cdot D$.
+\item Agentkostnadene (linje for direkte ansvarstap) vokser \emph{lineært} i $D$ med rate $A > 0$. Total kostnad ved agentkonflikt: $A \cdot D$.
+\item Koordineringskostnadene vokser \emph{kvadratisk} i $D$ med koeffisient $C > 0$. Dette fanger at koordineringsproblemer eskalerer raskt -- flere autonome enheter $\Rightarrow$ kvadratisk flere grensesnitt: $C \cdot D^2$.
+\end{itemize}
+
+\paragraph{Nettofordel.} Nettofordelen av desentralisering er
+\[
+\mathrm{NB}(D) \;=\; B\,D \;-\; A\,D \;-\; C\,D^{2}.
+\]
+
+\paragraph{First-order condition.} Vi deriverer og setter lik null:
+\[
+\frac{d\,\mathrm{NB}}{dD} \;=\; B - A - 2\,C\,D \;=\; 0 \;\;\Longrightarrow\;\; \boxed{\;D^{*} \;=\; \frac{B-A}{2C}\;}.
+\]
+
+Andreordens-betingelsen er oppfylt: $d^2\mathrm{NB}/dD^2 = -2C < 0$, så $D^*$ er et maksimum. NB$(D)$ er en konkav parabel som tilskjærer null ved $D=0$ og ved $D = (B-A)/C$, og topper seg midtveis -- ved $D^*$. [BOK]
+
+\subsection*{Komparativ statikk}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item $\dfrac{\partial D^*}{\partial B} = \dfrac{1}{2C} > 0$ -- jo større marginal nytte av lokal viden, desto mer desentraliser. Bransjer med mye spesifik viden (E\&P, konsulent, R\&D) ligger høyt på $D^*$.
+\item $\dfrac{\partial D^*}{\partial A} = -\dfrac{1}{2C} < 0$ -- jo høyere marginal agentkostnad (svak måling, svake insentiver, opportunistiske ledere), desto mer sentralisering.
+\item $\dfrac{\partial D^*}{\partial C} = -\dfrac{B-A}{2C^2} < 0$ (når $B>A$) -- jo dyrere koordinering, desto mer sentralisering. Sterkt integrerte verdikjeder (stålverk, raffineri) har høyt $C$ og lavt $D^*$.
+\item Hvis $B \le A$, blir $D^* \le 0$ -- da skal man ikke desentralisere i det hele tatt (marginal fordel av lokal viden er allerede mindre enn marginal agentkostnad ved $D=0$).
+\end{itemize}
+
+\subsection*{Numeriske eksempler}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item \textbf{Eks.\ 1:} $B=10, A=2, C=4 \Rightarrow D^* = (10-2)/(2\cdot 4) = 1.0$. Maksimal NB $= 10\cdot 1 - 2\cdot 1 - 4\cdot 1^2 = 4$.
+\item \textbf{Eks.\ 2 (mer agentkost):} $B=10, A=6, C=4 \Rightarrow D^* = 0.5$. NB $= 5 - 3 - 1 = 1$. Høyere agentkost trekker $D^*$ ned.
+\item \textbf{Eks.\ 3 (mer koordineringskost):} $B=10, A=2, C=8 \Rightarrow D^* = 0.5$. NB $= 5 - 1 - 2 = 2$. Høyere $C$ trekker $D^*$ ned.
+\end{itemize}
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item Fordeler og kostnader er separable og kan måles på samme skala (kroner).
+\item Marginal fordel av desentralisering er konstant (lineær) -- forenkling.
+\item Koordineringskostnaden er konveks i $D$ -- begrunnet i at antall grensesnitt vokser kvadratisk i antall enheter.
+\item Agentkostnaden er lineær -- forenkling som forutsetter at \STwo/\SThree-systemene oppskaleres proporsjonalt med $D$.
+\item Beslutter (prinsipalen) har målet å maksimere total firmaverdi (NB), ikke fordelingen mellom prinsipal og agent.
+\item Parametrene $B, A, C$ er eksogene -- de avhenger ikke selv av $D$ (en sterk forenkling; se kritikk).
+\end{itemize}
+
+\subsection*{Muligheter}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item Gir en kvantitativ logikk for hvorfor optimal grad av desentralisering ligger \emph{innenfor} et kontinuum, ikke i et hjørne (0 eller maks).
+\item Gir entydige komparativ-statikk-prediksjoner som er empirisk testbare: bransjer/firmaer med høy $B$ skal være mer desentralisert.
+\item Knytter direkte til \thref{specific-vs-general-knowledge}{Hayek/J\&M-rammeverket} via parameteren $B$ (marginalverdien av lokal viden) og til \thref{agency-costs}{agentomkostninger} via parameteren $A$.
+\item Forklarer hvorfor bedrifter re-sentraliserer når koordineringsbehovet stiger (globale plattformer, fellestjenester) -- $C$ øker.
+\item Kan utvides: substituere $A$ med en funksjon av kvaliteten på \STwo\ og \SThree\ -- da kobles modellen direkte til \thref{organizational-architecture}{arkitekturen}.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item \textbf{Sterke funksjonsformer.} Antakelsene om lineær fordel og kvadratisk kostnad er stilisterte; virkelige $B$- og $C$-funksjoner kan være ikke-monotone (f.eks.\ stordriftsulemper ved \emph{for} stor sentralisering -- bureaucracy cost).
+\item \textbf{$D$ er endimensjonalt.} I praksis er desentralisering flerdimensjonalt -- ulike beslutningsklasser (prising, ansettelse, CAPEX) har hver sin optimale $D$.
+\item \textbf{Endogene parametre.} $A$ avhenger av hvor godt \STwo/\SThree\ er designet; $C$ avhenger av IT- og koordineringssystemer; $B$ avhenger av om videnen forblir spesifik eller blir kodifisert. Behandler man dem som konstanter, mister man at de er ledelses\emph{valg}.
+\item \textbf{Ignorerer \emph{influence costs}.} Politisk lobbying og rent-seeking er ikke fanget; spesielt relevant ved sterk sentralisering.
+\item \textbf{Statisk.} Modellen sier ingenting om tilpasningshastighet eller adaptive omgivelser -- ``economic Darwinism'' antyder at $D^*$ skifter over tid.
+\item \textbf{Ingen risiko/risikoaversjon.} Mer desentralisering overfører mer risiko til lokale ledere; en risiko-justert modell ville tilpasse $A$ med en risikopremie.
+\item \textbf{Empirisk parameterskjønn.} $B, A, C$ er sjelden direkte målbare; modellen brukes derfor mest \emph{kvalitativt} som ramme for å diskutere hvilken vei optimal $D$ skifter.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+% NB: TikZ-figur. Krever \usepackage{tikz} i preamble — orchestrator må legge til. Fallback hvis tikz ikke er lastet: kommentér ut blokken nedenfor; tabellen og formelen står seg alene.
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.0]
+  % Akser
+  \draw[->, thick] (0,0) -- (7.5,0) node[right] {$D$ (grad av desentralisering)};
+  \draw[->, thick] (0,0) -- (0,5) node[above] {kr};
+  % Marginal Benefit-linje (horisontal): MB = B
+  \draw[thick, blue!70!black] (0,4) -- (7,4) node[right] {$\mathrm{MB} = B$};
+  % Marginal Cost-linje: MC = A + 2CD, starter på A=1, stiger med stigning 2C=1
+  \draw[thick, red!70!black] (0,1) -- (7,4.5) node[right] {$\mathrm{MC} = A + 2CD$};
+  % Krysningspunkt: ved B=4, A+2CD=4 => 1+1*D=4 => D=3
+  \draw[dashed] (3,0) -- (3,4);
+  \filldraw[black] (3,4) circle (1.5pt);
+  \node[below] at (3,0) {$D^{*}$};
+  \node[left] at (0,4) {$B$};
+  \node[left] at (0,1) {$A$};
+  % Optimum-merking
+  \node[above right] at (3,4) {\small Optimum};
+\end{tikzpicture}
+\caption{Marginal-resonnementet: optimum der $\mathrm{MB} = \mathrm{MC}$, dvs.\ $B = A + 2CD^{*}$, som gir $D^{*} = (B-A)/(2C)$. Konstant marginal fordel av lokal viden ($B$) møter stigende marginal kostnad ($A + 2CD$) fra agent- og koordineringskostnader. [SLIDE/EGEN]}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.0]
+  % Akser for NB-parabel
+  \draw[->, thick] (0,0) -- (7.5,0) node[right] {$D$};
+  \draw[->, thick] (0,-0.5) -- (0,3.5) node[above] {$\mathrm{NB}(D)$};
+  % Parabel: NB = (B-A)D - CD^2; med B-A=3, C=0.5 => topp ved D=3, NB(3)=4.5
+  \draw[thick, violet!80!black, domain=0:6, smooth, samples=80, variable=\x]
+    plot ({\x},{3*\x - 0.5*\x*\x});
+  % Topp ved D*=3
+  \draw[dashed] (3,0) -- (3,4.5);
+  \filldraw[black] (3,4.5) circle (1.5pt);
+  \node[below] at (3,0) {$D^{*}$};
+  \node[above right] at (3,4.5) {\small $\mathrm{NB}_{\max}$};
+  \node[below] at (6,0) {$D = (B-A)/C$};
+\end{tikzpicture}
+\caption{Nettofordel-parabelen $\mathrm{NB}(D) = (B-A)D - CD^{2}$. Konkav, topper ved $D^{*} = (B-A)/(2C)$, og krysser null ved $D = 0$ og $D = (B-A)/C$. [SLIDE/EGEN]}
+\end{figure}
+
+\subsection*{Eksempler}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item \textbf{Equinor leting:} Høy $B$ (geologisk spesifik viden), moderat $A$ (gode måltall: ROACE, suksessrate), moderat $C$ $\Rightarrow$ relativt høyt $D^*$, prosjektleder er investment center. [EKS]
+\item \textbf{Stålverk (integrert prosess):} Lavt $B$ (relativt generell prosessviden), høy $C$ (tett integrert verdikjede) $\Rightarrow$ lavt $D^*$, sterkt sentralisert. [EKS]
+\item \textbf{Konsulentselskap:} Høy $B$ (klientspesifik viden), lav $C$ (oppdrag er løst koblet) $\Rightarrow$ høyt $D^*$, partnermodell med vidtgående lokal autonomi. [EKS]
+\item \textbf{Mærsk PtX:} Høy $B$ (teknisk spesifik kompetanse), men også høy $A$ for største CAPEX-beslutninger (svak måling pga.\ lang horisont) $\Rightarrow$ \emph{splittet} struktur: teknologivalg desentralisert, kapitalallokering sentralisert. [CASE]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: Modellen er det kvantitative verktøyet for \SOne\ (decision rights) og styrer indirekte behovet for \STwo\ og \SThree\ via parameteren $A$. Relaterte: \thref{centralization-vs-decentralization}{Centralisering vs.\ desentralisering} (kvalitativ trade-off), \thref{specific-vs-general-knowledge}{Spesifik vs.\ generell viden} (driveren for $B$), \thref{agency-costs}{Agentomkostninger} (driveren for $A$), \thref{organizational-architecture}{Organizational architecture} (rammen), \thref{decision-management-control}{Decision Management vs.\ Decision Control} (komplementær mekanisme når $A$ er høy).
+
+\paragraph{Brukt i spørsmål:} Q06.

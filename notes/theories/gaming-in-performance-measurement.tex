@@ -1,0 +1,70 @@
+% !TEX root = ../main.tex
+\section{Gaming og horisontproblem}\label{thr:gaming-in-performance-measurement}
+
+\paragraph{Definisjon.} \emph{Gaming} er den atferden der en ansatt manipulerer prestasjonsmålet i stedet for å skape den underliggende verdien målet skal speile. \emph{Horisontproblemet} er en spesifikk form: kortsiktig optimering av et målt utfall som ofrer langsiktig verdi. Begge er opportunistisk respons på imperfekte målesystemer og er et empirisk uttrykk for Goodhart's law: ``Når et mål blir et bonusmål, slutter det å være et godt mål.'' [SLIDE]
+
+\subsection*{Forklaring}
+
+Gaming oppstår når tre forhold er oppfylt samtidig: (i) målet er imperfekt korrelert med den verdi prinsipalen egentlig vil oppnå, (ii) det er rom for å påvirke det målte uten å påvirke verdien, og (iii) bonus eller karriereutfall er sterkt koblet til målet. Klassiske former er regnskapsmanipulasjon (\emph{earnings management}), shifting av kostnader mellom perioder, hopping i prosjektklassifisering, og direkte juks. Horisontproblemet er en mildere variant: agenten foretar reelle, men kortsiktig orienterte handlinger -- f.eks.\ utsetter vedlikehold for å pynte på årets EBITDA -- som leverer på målet men reduserer total firmaverdi. [SLIDE/BOK]
+
+BSZ kap.\ 16 fremhever at gaming er en endogen konsekvens av målesystemets design. Det er ikke et tegn på dårlig moral hos den ansatte; det er en \emph{forventet} respons på sterke insentiver og imperfekt måling. Derfor er løsningen ikke ``mer overvåkning'' alene, men \emph{strukturelt smartere måling}: balansert målekort, bonusbanker, flerårig perspektiv, subjektiv overstyringsmulighet, multitasking-bevisst design (Holmström \& Milgrom 1991: når flere oppgaver konkurrerer om innsats, må bonusrelativitet mellom dem balanseres -- ellers vrir agenten innsats mot det målbare). [SLIDE]
+
+Den teoretiske roten ligger i den støyete prestasjonsmodellen $Q = \alpha e + \mu$. Når $Q$ kan manipuleres uten å øke $e$ -- altså når agenten har en ekstra ``manipulasjonshandling'' $m$ som flytter $Q$ uten å skape verdi -- vil enhver sterk bonus på $Q$ stimulere $m$ i tillegg til $e$. Resultatet er det BSZ kaller \emph{dysfunctional behavior}. [BOK]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item Måltallet er en imperfekt proxy for sann verdiskaping (gap mellom $Q$ og det prinsipalen faktisk verdsetter).
+\item Agenten kan påvirke målingen på måter som ikke er observerbare eller kostbart verifiserbare.
+\item Sterk bonus eller karrierebelønning kobler agentens nytte direkte til $Q$.
+\item Multitasking: agenten utfører flere oppgaver; bare noen måles.
+\item Tidshorisonten i bonusen er kortere enn tidshorisonten for verdien (horisontproblem).
+\end{itemize}
+
+\subsection*{Muligheter (hva forklarer/løser teorien?)}
+\begin{itemize}
+\item Forklarer hvorfor regnskapsskandaler ofte oppstår i selskaper med aggressive bonusprogram knyttet til EPS-mål (Enron, WorldCom).
+\item Forklarer hvorfor offentlige KPI-er gir uventede vridninger (NHS A\&E 4-timersmål, skolers ``teaching to the test'').
+\item Begrunner bruk av \emph{balanced scorecard} (Kaplan \& Norton): finansielle + kunde + interne prosess + læringsmål reduserer manipulasjonsrom på hver enkelt akse.
+\item Begrunner \emph{bonusbanker} og \emph{claw-back}: utsetter utbetaling så manipulasjon kan korrigeres senere.
+\item Begrunner subjektiv ``overstyring'': når formelresultatet er åpenbart manipulert, kan en evaluator overstyre.
+\item Forklarer hvorfor multitasking-jobber bør ha \emph{lavere} insentivvekt på det målbare (Holmström \& Milgrom): det reduserer skjevhet i innsatsallokeringen.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item \textbf{Balansert målekort har egne problemer.} Mange mål kan gjøre prioritering uklar; agenten vrir mot det letteste, ikke det viktigste.
+\item \textbf{Subjektiv overstyring} introduserer påvirkningskostnader og partiskhet (jf.\ \thref{subjective-vs-objective-performance}{subjektiv vs.\ objektiv}).
+\item \textbf{Gaming er ikke alltid skadelig.} Noen ganger ``finner'' agenten en kreativ snarvei som faktisk skaper verdi -- skillet mellom innovasjon og gaming er ikke skarpt.
+\item \textbf{Modellene antar opportunistisk agent.} Faktisk handler mange ansatte etter normer og identitet (\emph{intrinsic motivation}) som demper gaming uten formelle mekanismer.
+\item \textbf{Løsningen kan bli verre enn problemet.} Detaljerte anti-gaming-regler øker compliance-kost, byråkrati og residual loss; balansen mot agency-costs (\thref{agency-costs}{agency costs}) er ikke triviell.
+\item \textbf{Vanskelig å skille gaming fra dårlig flaks ex post.} En manager som leverer dårlig kvalitet kan hevde at det var marked, ikke vridd innsats.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+Goodhart's law (1975) formaliseres av Holmström \& Milgrom (1991): for en agent med flere oppgaver $e_1, \dots, e_n$ der bare noen er målte, gjelder
+\[ \beta_i^* \propto \frac{1}{1 + r \sigma_i^2} \cdot \frac{1}{1 + \text{spillover}_i} \]
+-- jo flere ikke-målte oppgaver som påvirkes av $e_i$, desto \emph{lavere} bør insentivvekten på $e_i$ være. Sterk bonus på ett målbart mål gir gaming hvis andre verdiskapende aktiviteter blir fortrengt. [BOK]
+
+Den klassiske horisontfellen ses i Jensens kritikk av budget-bonus-systemer:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.65\linewidth]{BSZ_kap_16/by_slide/slide_016/BSZ_kap_16_slide_016_asset_01_image3.png}
+  \caption{Tradisjonelt budget-bonus-system med ``hurdle'' ved 80\,\% og ``cap'' ved 120\,\%. Den knekkede formen skaper gaming: rett under hurdle har agenten incentiv til å skyve resultater til neste år; rett over cap har hun incentiv til å holde igjen. Jensens løsning er den lineære lønnen i illustrasjonen i \thref{ratchet-effect}{ratchet-effect}-filen. (BSZ kap.\ 16, slide 16) [SLIDE]}
+\end{figure}
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{Wells Fargo (US, 2016).} Aggressive cross-sell-kvoter for filialer utløste 3,5 mill.\ falske kundekontoer -- klassisk gaming. Bonus var sterkt knyttet til antall produkter pr.\ kunde; ansatte manipulerte målet uten å skape verdi. Endte med \$185 mill.\ bot og endring av kompensasjonsmodell. [EKS]
+\item \textbf{Volkswagen Dieselgate (2015).} ``Defeat devices'' i motorstyringssystem -- gaming av utslippsmål uten å redusere faktisk utslipp. Eksempel på at gaming kan eskalere til regelrett juks. [EKS]
+\item \textbf{NHS A\&E 4-timers ventetid (UK).} Sykehus klassifiserte pasienter som ``ferdig behandlet'' rett før 4-timersgrensen, deretter satte dem på ny venteliste. Klassisk re-klassifiserings-gaming. [EKS]
+\item \textbf{Vy/NSB punktlighet (NO).} Tog hopper over små stasjoner for å nå punktlighetsmål på endestasjon -- horisontproblem og gaming kombinert. [EKS]
+\item \textbf{Mærsk Power-to-X.} Hvis kortsiktig OPEX brukes som mål for prosjektledere, kan vedlikehold på elektrolysører utsettes for å pynte på årets tall -- klassisk horisontproblem. Løsning: milestone-basert måling og subjektiv kvalitetsratifisering. [CASE]
+\item \textbf{Enron, WorldCom (US, 2001--2002).} Regnskapsmanipulasjon drevet av aksjebonus knyttet til kvartalsvis EPS -- ekstremvariant av horisontproblem. [EKS]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: \STwo\ (måletekniske valg) og \SThree\ (bonusdesign). Relaterte teorier: \thref{performance-measurement-purposes}{Formålene med prestasjonsmåling}, \thref{ratchet-effect}{Ratchet-effekten}, \thref{absolute-vs-relative-performance}{Absolutt vs.\ relativ prestasjonsmåling}, \thref{subjective-vs-objective-performance}{Subjektiv vs.\ objektiv prestasjonsmåling}, \thref{informativeness-principle}{Informativeness-prinsippet}, \thref{moral-hazard}{Moral hazard}, \thref{principal-agent}{Principal-Agent}, \thref{controllability-principle}{Controllability-prinsippet}, \thref{agency-costs}{Agency costs}, \thref{incentive-coefficient}{Insentivkoeffisient}.
+
+\paragraph{Brukt i spørsmål:} Q10.

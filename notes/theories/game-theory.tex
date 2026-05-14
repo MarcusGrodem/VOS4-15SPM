@@ -1,0 +1,97 @@
+% !TEX root = ../main.tex
+\section{Spilteori (Game Theory)}\label{thr:game-theory}
+
+\paragraph{Definisjon.} Spilteori studerer strategiske beslutninger mellom rasjonelle aktører hvis utfall avhenger av hva de andre aktørene gjør. Den brukes i organisasjons\-økonomi for å analysere konkurranse mellom firmaer (pris/mengde), forhandlinger, koordinering, og -- sentralt for Q03 -- selve principal-agent-interaksjonen (monitor vs.\ shirk-spillet, repeterte kontrakter, implisitt samarbeid). [SLIDE]
+
+\subsection*{Forklaring}
+
+BSZ kap.~9 dekker fire typer spillsituasjoner som er sentrale i pensum:
+\begin{enumerate}
+\item \textbf{Simultane, ikke-repeterte spill} -- aktører velger samtidig og kjenner ikke motpartens valg. Eks.: Boeing/Airbus pris.
+\item \textbf{Sekvensielle spill} -- én aktør velger først, andre reagerer. Løses med \emph{backward induction}. Eks.: ny markedsaktør truer med inngang, etablert aktør responderer.
+\item \textbf{Koordinerings\-spill} -- begge tjener på å velge samme strategi (Alpha/Beta-teknologi). Multiple Nash-likevekter mulig.
+\item \textbf{Repeterte spill} -- samarbeid kan oppstå selv uten formell kontrakt fordi straff senere disiplinerer atferd nå.
+\end{enumerate}
+
+To kjernebegrep:
+\begin{itemize}
+\item \textbf{Dominant strategi:} en strategi som er beste valg \emph{uansett} hva motparten gjør. Identifiseres ved rad-/kolonneanalyse.
+\item \textbf{Nash-likevekt:} en kombinasjon av strategier der ingen spiller kan forbedre sin payoff ved å ensidig endre strategi, gitt at de andre fastholder sin. Stabil, men ikke nødvendigvis Pareto-effektiv (jf.\ fangenes dilemma). [SLIDE]
+\end{itemize}
+
+\subsubsection*{Hvorfor er spilteori relevant for incitamentkonflikter (Q03)?}
+
+Slidene gir et eksplisitt prinsipal-agent-eksempel: Kiana (principal) velger ``Monitor'' eller ``Not monitor'', Len (agent) velger ``Work'' eller ``Shirk''. I dette spillet:
+\begin{itemize}
+\item Det finnes ingen ren-strategi-Nash: hvis Kiana monitorer alltid $\Rightarrow$ Len vil arbeide $\Rightarrow$ Kiana sparer monitoring og slutter $\Rightarrow$ Len shirker $\Rightarrow$ Kiana monitorer igjen, osv.
+\item Likevekten er en \emph{mixed strategy}: Kiana monitorer med en viss sannsynlighet, Len shirker med en viss sannsynlighet. Begge randomiserer. [SLIDE]
+\end{itemize}
+Dette gir to viktige innsikter for Q03:
+\begin{enumerate}
+\item Selv ved costless contracting på \emph{output} kan monitoring av \emph{innsats} være kostbart -- og monitoring--shirking-spillet har en stabil mixed-strategy-likevekt med positiv shirking-rate.
+\item I \emph{repeterte} spill kan principal og agent oppnå et bedre utfall enn one-shot Nash via \emph{trigger strategies} (tit-for-tat, grim trigger): agenten arbeider hardt fordi shirking i én periode ødelegger en lang strøm av fremtidige kontraktsbetalinger. Dette er logikken bak \emph{implicit contracts} og \emph{reputational contracting} -- som BSZ-slidene eksplisitt knytter til hvordan kontrakter kan fungere uten full juridisk håndhevbarhet.
+\end{enumerate}
+
+I Q03's costless-contracting-univers er spilteori altså den naturlige måten å analysere hvordan eier og leder samhandler i situasjoner kontrakten ikke kan dekke direkte: monitoring, reputasjon, gjentatt samhandling og koordinering. [SLIDE/BOK]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item Aktørene er rasjonelle nyttemaksimerere.
+\item Hver aktør kjenner spillets struktur (payoff-matrisen og motpartens valg\-mengde) -- ``common knowledge of rationality''.
+\item Antall aktører er endelig og handlinger er klart definerte.
+\item I Nash-analysen: hver spiller danner korrekte forventninger om andres strategier.
+\item I repeterte spill: aktørene har en diskonteringsfaktor og forventning om gjentakelse.
+\end{itemize}
+
+\subsection*{Muligheter (hva spilteori forklarer/løser)}
+\begin{itemize}
+\item Hvorfor monitoring i prinsipal-agent-relasjoner ofte er stokastisk (mixed strategy), ikke kontinuerlig.
+\item Hvordan reputasjon kan opprettholde samarbeid uten formelle kontrakter (repeterte spill, trigger strategies).
+\item Hvorfor koordinerings\-problemer (standardvalg, plattformer) trenger eksplisitt kommunikasjon eller en first-mover.
+\item Hvorfor first-mover advantage og credible commitments betyr noe i strategiske investeringer.
+\item Modellerer prisoners' dilemma som forklarer hvorfor individuelt rasjonelle valg kan gi kollektivt dårlig utfall (relevant for kartelldannelse, men også for ledere som overinvesterer i strid med eierens samlede interesse).
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item Forutsetter ``common knowledge of rationality'' -- urealistisk i komplekse situasjoner.
+\item Multiple likevekter (særlig i koordinerings\-spill) gir ikke entydige prediksjoner.
+\item Mixed-strategy-likevekter er empirisk vanskelige å verifisere.
+\item Behavioural game theory: virkelige aktører bruker heuristikker, har rettferdighets\-preferanser, gjør systematiske feil.
+\item Modellen abstraherer fra kommunikasjon, kontekst og kultur.
+\item I repeterte spill er utfallet svært følsomt for diskonteringsfaktor og horisont.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon -- monitor/shirk-spillet}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}l|c|c|@{}}
+\textbf{Principal $\backslash$ Agent} & \textbf{Work} & \textbf{Shirk} \\
+\hline
+\textbf{Monitor} & ($V-w-m$,\; $w-c$) & ($-m$,\; $w$) \\
+\hline
+\textbf{Not monitor} & ($V-w$,\; $w-c$) & ($-w$,\; $w$) \\
+\hline
+\end{tabular}
+\end{center}
+\textit{Stilisert payoff-matrise. $V$ = verdi av innsats, $w$ = lønn, $m$ = monitoring-kostnad, $c$ = innsats\-kostnad. Ingen ren-strategi-Nash; mixed-strategy-likevekt der begge randomiserer. [SLIDE -- BSZ kap.\ 9]}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.55\linewidth]{BSZ_kap_9_2026/by_slide/slide_007/BSZ_kap_9_2026_slide_007_asset_01_image2.jpeg}
+  \caption{Boeing/Airbus payoff-matrise (Bertrand-priskonkurranse). Brukes som analogi: dominant strategi og Nash. [SLIDE -- BSZ kap.\ 9]}
+\end{figure}
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{Telenor/Tele2 (Sverige, 2000-tallet):} Pris\-konkurranse på mobil førte til klassisk fangenes dilemma -- begge ville tjent på høyere priser, men ingen kunne forplikte seg uten avtale (forbudt). Repeterte spill via parallell prising oppstod i praksis. [EKS]
+\item \textbf{SAS \& Norwegian rute\-konkurranse:} Begge truer med å åpne nye ruter; backward induction forklarer hvorfor noen rutevarsler er bløff (no credible commitment). [EKS]
+\item \textbf{Internt: skiftarbeid og overvåking:} Sykehus og produksjons\-bedrifter bruker stikkprøvekontroller (mixed strategy) framfor kontinuerlig monitoring -- eksakt mønsteret fra Kiana/Len-spillet. [EKS]
+\item \textbf{Implisitte kontrakter i konsulentbransjen:} Klient/konsulent-relasjoner bygger på reputasjon i et repetert spill -- en konsulent som leverer dårlig én gang, taper en lang strøm av framtidige oppdrag. Disiplinerer kvalitet uten detaljerte kontrakter. [EKS]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: \SThree\ primært (analyserer hvordan insentiver virker når flere aktører velger strategisk), men også \SOne\ (allokering av beslutningsrett er ofte en sekvensiell first-mover-situasjon) og \STwo\ (måling av prestasjon i en monitor/shirk-likevekt). Relaterte teorier: \thref{principal-agent}{Principal-agent}, \thref{incentive-conflicts-owner-manager}{Incentive conflicts}, \thref{costless-contracting}{Costless contracting} (repeterte spill kan tilnærme dets utfall via reputasjon), \thref{moral-hazard}{Moral hazard} (monitoring--shirking-spillet er kjernen).
+
+\paragraph{Brukt i spørsmål:} Q03.

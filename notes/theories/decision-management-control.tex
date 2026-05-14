@@ -1,0 +1,78 @@
+% !TEX root = ../main.tex
+\section{Decision Management vs.\ Decision Control}\label{thr:decision-management-control}
+
+\paragraph{Definisjon.} Fama \& Jensen (1983) deler en hvilken som helst beslutningsprosess i fire trinn og grupperer dem i to roller: \emph{Decision Management} = (1) \textbf{Initiation} (generere forslag) + (3) \textbf{Implementation} (eksekvere), og \emph{Decision Control} = (2) \textbf{Ratification} (godkjenne) + (4) \textbf{Monitoring} (evaluere/sanksjonere). Kjerneideen er at når beslutningstakeren \emph{ikke} er \thref{residual-claimants}{residual claimant} (ikke bærer fulle formueeffekter av sine egne beslutninger), bør Management og Control \emph{separeres} på ulike personer/organer for å begrense opportunisme og redusere agentomkostninger. [SLIDE/BOK]
+
+\subsection*{Forklaring}
+
+Beslutninger inni en virksomhet er sjelden ``ett valg''; de er en sekvens. En divisjonsleder \emph{foreslår} et investeringsprosjekt (Initiation), styret eller en CAPEX-komité \emph{godkjenner} det (Ratification), prosjektorganisasjonen \emph{gjennomfører} det (Implementation), og styret/internrevisjon/aksjonærene \emph{måler resultatet og sanksjonerer} (Monitoring). Det er denne sekvensen som er Fama \& Jensens 4-trinns-modell. [SLIDE]
+
+Når én og samme person både initierer, godkjenner, gjennomfører og monitorer egne beslutninger, har hun frie tøyler. Hvis hun samtidig ikke fanger residualen (er ansatt, ikke eier), vil hun rasjonelt velge beslutninger som maksimerer egennytte (prestige-prosjekter, empire building, lave krav, skjul av dårlige nyheter) på bekostning av residualkravshavere. Løsningen er institusjonell \emph{rolledeling}: la den med \thref{specific-vs-general-knowledge}{spesifik viden} stå for Management (Initiation + Implementation), og la et organ som representerer residualkravshaverne stå for Control (Ratification + Monitoring). Dette er hvorfor styret ikke driver selskapet, men ratifiserer CEOs forslag og monitorerer utfallet. [SLIDE/BOK]
+
+I små virksomheter der \emph{én person er både beslutningstaker og residual claimant} (gründer-eier, enkelmannsforetak, lite partnerskap), gir det ingen mening å separere -- separasjon koster informasjonsoverføring uten å løse noe agentproblem. Da kan management og control samles. Trade-off-en er derfor: tap av lokal viden ved separasjon (forslaget filtreres oppover) vs.\ tap fra opportunisme uten separasjon. [BOK]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item Beslutninger kan dekomponeres i fire identifiserbare trinn.
+\item Beslutningstaker har egne preferanser som kan avvike fra residualkravshaverens (\thref{principal-agent}{principal-agent}-relasjon).
+\item Spesifik viden om Initiation og Implementation sitter typisk \emph{lavt} i organisasjonen (lokal kunnskap).
+\item Ratification og Monitoring kan utføres med generell viden (måltall, budsjetter, rapporter) -- ellers ville styret aldri kunne ratifisere noe.
+\item Det er kostbart, men mulig, å la to ulike organer/personer eie hver sin halvdel av prosessen.
+\item Residualkravshaverens insentiv til verdimaksimering driver kvaliteten på Control.
+\end{itemize}
+
+\subsection*{Muligheter}
+\begin{itemize}
+\item Forklarer hvorfor styreutvalg (revisjons-, kompensasjons-, risikoutvalg) finnes: de er institusjonalisert Control over CEOs Management.
+\item Forklarer hvorfor virksomheter har CAPEX-terskler: under terskel kan divisjonsleder både initiere og ratifisere; over terskel må styret ratifisere -- typisk separasjon der formueeffekter blir store.
+\item Forklarer hvorfor universitetstenure-komiteer, NGO-styrer, kirkesyn og dommerpaneler eksisterer: i \emph{ikke-profitt}-organisasjoner er ikke residualkravshaveren naturlig, og separasjon brukes som substitutt for markedets disiplin.
+\item Gir et diagnoseverktøy: når en skandale skjer, spør \emph{hvilket av de fire trinnene sviktet}? Wells Fargo (2016) = svikt i Monitoring; Lehman (2008) = svikt i Ratification og Monitoring; Enron (2001) = revisor (PwC) kollapset Control-rollen.
+\item Komplementerer \thref{organizational-architecture}{organizational architecture}: separasjon av management/control er en konkret S1-design som krever S2 (måltall som styret kan ratifisere/monitorere) og S3 (insentiver som disiplinerer Management).
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item \textbf{Asymmetrisk informasjon mot Control:} Styret kan ikke ratifisere eller monitorere effektivt hvis det ikke har samme viden som ledelsen. Boards kan derfor bli ``rubber stamps'' -- formell separasjon uten reell kontroll.
+\item \textbf{Kostnader ved separasjon:} Hver ratifikasjonsrunde forsinker, krever rapportering og bryter informasjonsflyten. I små, tidssensitive virksomheter blir Control-leddet en flaskehals.
+\item \textbf{Collusion:} Hvis Control-organet kapres av Management (CEO velger sitt eget styre, eller styrets bonus følger CEOs lønn), kollapser separasjonen i praksis selv om den eksisterer formelt.
+\item \textbf{Multi-prinsipal-problem:} I ikke-profitt-organisasjoner uten klare residualkravshavere (universiteter, statseide selskaper, stiftelser) er det uklart \emph{hvem} Control-organet skal optimalisere for.
+\item \textbf{Glemmer team-beslutninger:} Modellen er en lineær 4-trinns-sekvens; mange reelle beslutninger er iterative og distribuerte mellom mange aktører samtidig.
+\item \textbf{Influence costs:} Når Management vet at Control skal ratifisere, brukes ressurser på lobby, presentasjonspakker og selektiv informasjon -- ren effektivitetstap (Milgrom \& Roberts).
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\linewidth]{BSZ_kap_12_2026/by_slide/slide_014/BSZ_kap_12_2026_slide_014_asset_01_image4.png}
+  \caption{De fire trinnene i en beslutningsprosess: Initiation, Ratification, Implementation, Monitoring. Management = (1)+(3); Control = (2)+(4). Separasjon når beslutningstaker ikke er residual claimant. (BSZ kap.\ 12, slide 14) [SLIDE]}
+\end{figure}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}p{2.3cm}p{5.0cm}p{5.5cm}@{}}
+\toprule
+\textbf{Trinn} & \textbf{Innhold} & \textbf{Rolle} \\
+\midrule
+1. Initiation & Foreslå prosjekt/handling & \textbf{Decision Management} \\
+2. Ratification & Godkjenne forslaget & \textbf{Decision Control} \\
+3. Implementation & Gjennomføre beslutningen & \textbf{Decision Management} \\
+4. Monitoring & Evaluere/sanksjonere utfall & \textbf{Decision Control} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{Equinor styret vs.\ CEO:} Klassisk separasjon -- CEO og ledelsen initierer og implementerer; styret (med uavhengige medlemmer og statlig representasjon) ratifiserer strategi og CAPEX-utvidelser over terskel, og monitorerer via revisjonsutvalg og kvartalsrapporter. Eier (staten + private aksjonærer) er residual claimant. [EKS]
+\item \textbf{Wells Fargo cross-sell-skandale 2016:} Salgsledere både initierte mål, implementerte salgs-KPI-er og skulle monitorere egen praksis. Når Monitoring kollapset, oppsto 3,5 millioner falske kontoer. Bot \$3 mrd. Lærebokeksempel på \emph{manglende} separasjon. [EKS]
+\item \textbf{Lehman Brothers 2008:} Risikokomite ratifiserte CDO-eksponering uten reell forståelse, og monitoreringen sviktet (Repo 105). Selv om strukturen formelt hadde separasjon, var Control-organet kapret av Management. [EKS]
+\item \textbf{Enkeltmannsforetak (Joe's Auto Repair):} En person er både eier, beslutningstaker og residual claimant -- ingen grunn til separasjon. Modellen forklarer hvorfor små selskaper ikke trenger styre. [BOK]
+\item \textbf{Universitetsskirsler (tenure committees):} Ingen residual claimant for fagprofil -- separasjon brukes som substitutt: forsker initierer (publikasjoner), kollegiet ratifiserer, instituttet implementerer ansettelse, eksternevaluering monitorerer kvalitet. [EKS]
+\item \textbf{Mærsk PtX-divisjonen:} PtX-leder initierer prosjektforslag og implementerer; konsernstyrets Audit Committee ratifiserer over CAPEX-terskel og monitorerer milestones/IRR. Lederen er ikke residual claimant -- derfor er separasjon nødvendig. [CASE]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: Modellen er en grunnstruktur for \SOne\ -- den \emph{er} hvordan beslutningsrettighetene faktisk fordeles internt. Driver også \STwo\ (Control trenger måltall) og \SThree\ (Management må insentiveres til å initiere godt). Relaterte: \thref{residual-claimants}{Residual claimants} (sentral driver for separasjon), \thref{decision-rights-allocation}{Allokering av beslutningsrettigheter}, \thref{specific-vs-general-knowledge}{Spesifik vs.\ generell viden} (hvorfor Management må ligge lavt), \thref{agency-costs}{Agentomkostninger} (det modellen minimerer), \thref{principal-agent}{Principal-agent}, \thref{moral-hazard}{Moral hazard} (det separasjon disiplinerer), \thref{organizational-architecture}{Organizational architecture}, \thref{centralization-vs-decentralization}{Centralisering vs.\ desentralisering}, \thref{responsibility-centers}{Responsibility centers}, \thref{externalities}{Eksternaliteter} (Control skal fange interne eksternaliteter).
+
+\paragraph{Brukt i spørsmål:} Q07.

@@ -1,0 +1,76 @@
+% !TEX root = ../main.tex
+\section{Moral Hazard}\label{thr:moral-hazard}
+
+\paragraph{Definisjon.} Moral hazard (\emph{moralsk hasard}) er det \emph{post-kontraktuelle} insentivproblemet som oppstår når én part i en kontrakt -- typisk agenten -- kan ta handlinger som motparten ikke fullt ut kan observere eller verifisere, og dermed opportunistisk velger handlinger som maksimerer egen nytte på bekostning av prinsipalens. Det er et problem om \emph{hidden action} (skjult handling) under asymmetrisk informasjon. [SLIDE]
+
+\subsection*{Forklaring}
+
+Moral hazard forutsetter to ting samtidig: (i) interessekonflikt mellom prinsipal og agent (jf. \thref{incentive-conflicts-owner-manager}{de fem incitamentkonfliktene}) og (ii) at prinsipalen ikke kan observere agentens handling perfekt -- bare et støyete utfall $Q = \alpha e + \mu$. Når lønnen $W$ ikke kan betinges direkte på innsats $e$, men bare på det observerbare resultatet $Q$, vil en risikoavers agent som bærer for lite av $Q$-risikoen velge for lav innsats sett fra prinsipalens side. Det klassiske skole\-eksempelet er \emph{shirking}: medarbeideren reduserer innsats fordi reduksjonen ikke kan tilbakeføres til henne med sikkerhet. [SLIDE/BOK]
+
+Begrepet kommer opprinnelig fra forsikringsbransjen: en huseier som er forsikret mot brann har svakere insentiv til å installere røykvarsler. Innen organisasjonsøkonomi brukes det bredere -- om enhver post-kontraktuell handling agenten kan utføre i smug (innsatsreduksjon, perks-konsum, risiko-unngåelse, korttidstenkning, empire building, gaming av prestasjonsmål). Alle de fem incitamentkonfliktene mellom eier og leder er moral-hazard-problemer i denne forstand. [BOK]
+
+Prinsipalens motiltak deles i tre kategorier som tilsammen utgjør \emph{agency costs} (jf. \thref{agency-costs}{agency costs}):
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item \textbf{Monitoring costs.} Prinsipalen bruker ressurser på å observere agentens handling -- revisjon, KPI-oppfølging, styrets tilsyn, mystery shopping, klokkekortsystemer. Reduserer informasjonsasymmetrien direkte. [SLIDE]
+\item \textbf{Bonding costs.} Agenten bruker ressurser på å \emph{binde} seg til god atferd og signalisere troverdighet -- bonding, kausjon, eierskap i selskapet, vesting, claw-back-klausuler. [SLIDE]
+\item \textbf{Residual loss.} Selv etter optimal monitoring og bonding gjenstår et tap fordi det aldri lønner seg å eliminere all skjult handling. Dette er \emph{residuell loss}. Summen \(=\) agency costs. [SLIDE]
+\end{itemize}
+
+I prinsipal-agent-modellen (jf. \thref{principal-agent}{principal-agent}) løses moral hazard ved å sette en optimal insentivkoeffisient $\beta$ i $W = W_0 + \beta Q$ -- en avveining mellom motivasjon (høyere $\beta$ gir mer innsats) og risikoallokering (høyere $\beta$ legger mer ukontrollerbar støy $\mu$ på den risikoaverse agenten, som krever risikopremie). [SLIDE]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item Asymmetrisk informasjon: agentens handling $e$ er skjult eller umulig å verifisere kontraktrettslig.
+\item Interessekonflikt: agentens og prinsipalens preferanser over $e$ divergerer (innsats er kostbar for agenten).
+\item Begrenset rasjonalitet og costly contracting: kontrakten kan ikke spesifiseres for alle fremtidige tilstander, og enforcement er kostbart.
+\item Risikoaversjon hos agenten gjør at full overføring av risiko ($\beta = 1$) er dyrt.
+\item Begrenset ansvar (limited wealth) -- agenten kan ikke kjøpe seg ut av risikoen ved å betale prinsipalen forhåndsbeløp.
+\end{itemize}
+
+\subsection*{Muligheter (hva forklarer/løser teorien?)}
+\begin{itemize}
+\item Forklarer hvorfor selskaper bruker insentivlønn, opsjoner og bonus selv når dette pålegger ansatte risiko.
+\item Forklarer styrets rolle som monitor på vegne av aksjonærene.
+\item Forklarer eksistensen av eksterne revisorer, internkontroll og audit committees.
+\item Begrunner hvorfor man ofte utstyrer ledere med betydelig egenkapital -- bonding via skin-in-the-game.
+\item Gir grunnlag for designvalg: hvor mye $\beta$, hvor mye monitoring, hvilke prestasjonsmål -- alt avveies mot residual loss og risikopremie.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item Forutsetter at handling er skjult -- i mange jobber kan kollegial kontroll og kultur faktisk gjøre handling synlig.
+\item Forutsetter rasjonelle, opportunistiske aktører. Atferdsøkonomi viser at gjensidighet, identitet og indre motivasjon kan dempe moral hazard uten formelle insentiver -- og noen ganger \emph{forsterke} det (\emph{crowding out}).
+\item Sterke insentiver for å motvirke moral hazard skaper nye problemer: gaming, ratchet-effekt, kortsiktighet, manipulering av regnskap.
+\item Modellen er én-periodisk; gjentatte interaksjoner og reputational contracts kan løse moral hazard uten formell straff (jf. implicit contracts).
+\item Problemet er empirisk vanskelig å skille fra adverse selection -- begge produserer "dårlig utfall" og krever ulike løsninger.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Type problem} & \textbf{Tidspunkt} & \textbf{Skjult variabel} \\
+\midrule
+Adverse selection & Før kontrakt & \emph{Type} (egenskap, kvalitet) \\
+Moral hazard & Etter kontrakt & \emph{Handling} (innsats, atferd) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Total agency costs = Monitoring costs + Bonding costs + Residual loss. Tallpoenget fra forelesning (BSZ kap. 10): med contracting costs på 800, monitoring 400, bonding 400 og residual loss 100, krymper transaksjonens nettoverdi $S' = 2{,}500 - 800 - 100 = 1{,}600$. Hvis agency costs blir for store, faller transaksjonens nettoverdi mot null og handelen finner ikke sted. [SLIDE -- BSZ kap. 10]
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{DNB -- rådgiverprovisjoner (2010-tallet, NO):} DNB-rådgivere fikk provisjon for å selge bankens egne fondsprodukter. Atferden ($e$) var ikke direkte observerbar for kunden eller toppledelsen, og rådgiverne anbefalte produkter med høyere kostnad enn nødvendig. Klassisk moral hazard som først ble synlig gjennom Forbrukerrådets shadow shopping (monitoring) og endte med bortfall av provisjonsmodellen. [EKS]
+\item \textbf{Nordisk Folketrygd og sykefravær:} Generøse sykepengeordninger i Norden er forsikringsmoral-hazard-eksempel: når 100 \% lønn dekkes fra dag 1, øker korttidsfraværet relativt til land med karensdager. Diskutert i SSB- og OECD-rapporter. [EKS]
+\item \textbf{Volkswagen Dieselgate (2015):} Ingeniører innførte "defeat devices" for å bestå utslippstester -- en handling som var skjult for både eiere og myndigheter. Insentivpresset på CO$_2$-mål utløste moral hazard på operasjonelt nivå. Eksternal monitoring (EPA og ICCT) avslørte forholdet. [EKS]
+\item \textbf{Erica Olsson-modellen (BSZ kap. 10):} Når $\beta$ settes til 0, velger Erica $e = 10$, mens fastlønn med $\beta$ tilstrekkelig høy gir $e = 50$. Skjult handling avveies mot risikodeling. [SLIDE]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: \SThree\ primært (insentivdesign), men også \STwo\ (måloppfølging/monitoring) og \SOne\ (når og hvor delegere når handling er skjult).
+
+Relaterte teorier: \thref{principal-agent}{Principal-Agent}, \thref{adverse-selection}{Adverse Selection} (motstykket -- pre-kontraktuelt), \thref{costly-contracting}{Costly Contracting} (forutsetning for at problemet ikke kan kontraktreguleres bort), \thref{costless-contracting}{Costless Contracting} (kontrast: under denne forutsetningen forsvinner moral hazard), \thref{incentive-conflicts-owner-manager}{Incitamentkonflikter}, \thref{agency-costs}{Agency Costs}, \thref{informativeness-principle}{Informativeness-prinsippet}.
+
+\paragraph{Brukt i spørsmål:} Q04, Q10.

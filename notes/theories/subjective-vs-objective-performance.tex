@@ -1,0 +1,82 @@
+% !TEX root = ../main.tex
+\section{Subjektiv vs.\ objektiv prestasjonsmåling}\label{thr:subjective-vs-objective-performance}
+
+\paragraph{Definisjon.} \emph{Objektiv} prestasjonsmåling bygger på forhåndsdefinerte, kvantifiserbare og verifiserbare kriterier som er fastsatt før perioden starter (salgstall, ROA, prosjektmilestones, kvalitetsindikatorer). \emph{Subjektiv} prestasjonsmåling er en helhetsvurdering som evaluator (typisk linjeleder) foretar etter perioden, og som ofte fanger opp dimensjoner som er vanskelige å kvantifisere -- samarbeid, lederskap, kreativitet, mentoring. [SLIDE]
+
+\subsection*{Forklaring}
+
+Det fundamentale problemet er at de fleste jobber er multidimensjonale, men bare noen dimensjoner kan måles billig og verifiserbart. Den klassiske advarselen er ``you get what you measure'': sett en bonus på salgstall, og selgerne presser dårlige produkter på kunder. Sett en bonus på antall publikasjoner, og forskere splitter forskningen i ``minimum publishable units''. Subjektiv evaluering er BSZs svar på dette: en evaluator kan se hele jobben, inkludert det som ikke lar seg telle, og kan ex post overstyre formelle målinger. [SLIDE]
+
+Men subjektiv evaluering er ikke gratis. Den introduserer en ny prinsipal-agent-relasjon -- mellom selskapet og evaluator -- og fører til \emph{påvirkningskostnader} (Milgrom \& Roberts 1988): ansatte bruker tid på å påvirke evaluatoren sin i stedet for å skape verdi. Den åpner også for partiskhet, og for \emph{supervisor shirking}: lederen unngår å gi ærlige negative vurderinger fordi det skaper konflikt -- alle får ``meets expectations'' uavhengig av reell prestasjon. [SLIDE/BOK]
+
+Løsningen er nesten alltid en \emph{hybrid}: en objektiv komponent (verifiserbar, juridisk holdbar) kombinert med en subjektiv komponent (kvalitativ overstyring, kalibrering på tvers av team). En \emph{bonusbank} der utbetalingen kan justeres senere, og en \emph{kalibreringsprosess} der ledere må forklare og forsvare sine vurderinger overfor hverandre, demper ulempene ved subjektivitet. [BOK]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item For \emph{objektiv}: måltallet må være verifiserbart, vanskelig å manipulere, og dekke en stor nok del av den verdiskapende atferden.
+\item For \emph{objektiv}: jobben må kunne fanges meningsfullt i ett eller få kvantifiserbare mål -- bryter sammen ved sterk multitasking.
+\item For \emph{subjektiv}: evaluator må ha innsikt, tilstrekkelig kompetanse og motivasjon til å gi ærlige vurderinger.
+\item For \emph{subjektiv}: organisasjonen må ha mekanismer (kalibrering, peer review) som demper bias og supervisor shirking.
+\item Tillit mellom evaluator og evaluert -- ellers kollapser informasjonsverdien av subjektive vurderinger.
+\item Kontraktsrettslig: subjektive evalueringer er vanskeligere å forsvare i arbeidsrettslige tvister enn objektive.
+\end{itemize}
+
+\subsection*{Muligheter (når hver type bør velges)}
+\begin{itemize}
+\item \textbf{Objektiv} foretrukket når: jobben er énledimensjonal og lett målbar (salg, produksjon, akkord); tillit mellom ledelse og ansatte er lav; det er behov for transparente og rettferdige rangeringer.
+\item \textbf{Subjektiv} foretrukket når: jobben er multidimensjonal (lederskap, FoU, kreative profesjoner); samarbeid og mentoring er kritisk; selskapets verdiskaping ligger i \emph{hvordan} arbeidet gjøres, ikke bare \emph{hvor mye}.
+\item \textbf{Hybrid} foretrukket nesten alltid for ledere: objektiv formel + subjektiv overstyring fanger det målbare uten å miste det viktige.
+\item Subjektiv evaluering kan dempe \thref{gaming-in-performance-measurement}{gaming} -- en evaluator ser at salgstallene er pyntet, eller at OPEX er kjørt ned på bekostning av vedlikehold.
+\item Subjektiv evaluering kan dempe \thref{ratchet-effect}{ratchet-effekten} -- evaluatoren kan velge å ikke straffe overprestasjon med strammere fremtidsmål.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item \textbf{Objektiv: imperfekt proxy.} Måler bare det målbare; lar resten av jobben være ubelønnet. Skaper gaming og multitasking-vridninger.
+\item \textbf{Objektiv: rigid.} Når omgivelsene endrer seg midt i perioden, kan målet bli irrelevant eller umulig -- demotiverende.
+\item \textbf{Objektiv: lett å gamble.} Verifiserbart betyr at agenten vet nøyaktig hvilken atferd som betaler seg -- og kan optimere mot \emph{målet} fremfor mot verdien.
+\item \textbf{Subjektiv: påvirkningskostnader.} Ansatte bruker tid på selvpromotering, nettverksbygging mot evaluator, og på å posisjonere seg i kalibreringsmøter.
+\item \textbf{Subjektiv: bias og diskriminering.} Empirisk dokumentert at subjektive evalueringer systematisk straffer kvinner, minoriteter og folk som ikke ligner evaluatoren.
+\item \textbf{Subjektiv: supervisor shirking.} Det er ubehagelig å gi negative vurderinger -- alle får ``OK'', distribusjonen kollapser, signalverdien forsvinner. Motiveringen for \emph{forced distribution} (men den har egne ulemper).
+\item \textbf{Subjektiv: juridisk sårbarhet.} I norske arbeidsforhold må oppsigelse og sterkt ulik lønn kunne dokumenteres -- ren subjektivitet er ikke holdbar i en konfliktsak.
+\item \textbf{Hybrid:} Krever klar vekting, kalibreringsdisiplin og tillit; bryter sammen i selskaper med svak HR-funksjon.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+I principal-agent-rammen kan kompensasjonen skrives som
+\[ W = W_0 + \beta_O \cdot Q_O + \beta_S \cdot S \]
+der $Q_O$ er det objektive utfallet og $S$ er evaluatorens subjektive score. Optimal vekting $\beta_O$ vs.\ $\beta_S$ avhenger av (a) informasjonsinnholdet i hvert mål om innsats, (b) påvirkningskostnaden $S$ åpner for, og (c) tilliten til evaluator. Når $Q_O$ er en god proxy, dominerer den; når jobben er multidimensjonal, må $\beta_S > 0$. [BOK]
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}p{3.0cm}p{5.0cm}p{5.0cm}@{}}
+\toprule
+\textbf{Dimensjon} & \textbf{Objektiv} & \textbf{Subjektiv} \\
+\midrule
+Verifiserbarhet & Høy & Lav \\
+Gaming-risiko & Høy & Lav (evaluator ser) \\
+Multitasking-dekning & Lav & Høy \\
+Påvirkningskostnader & Lave & Høye \\
+Bias-risiko & Lav & Høy \\
+Juridisk holdbarhet & Høy & Lav \\
+Tillit som krav & Liten & Stor \\
+\bottomrule
+\end{tabular}
+\end{center}
+[SLIDE]
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{McKinsey \& Co.\ partnerevaluering.} Tungt subjektiv -- kolleger og partnere vurderer på dimensjoner som klientimpact, mentoring, firmaets verdier. Få objektive måltall direkte koblet til lønn. Krever sterk kalibreringsdisiplin og er kostbar å administrere, men passer en multidimensjonal kunnskapsjobb. [EKS]
+\item \textbf{Wells Fargo (US, 2016).} Ekstremt objektiv kompensasjon: bonus per kryssolgt produkt. Resultatet var 3,5 mill.\ falske kontoer -- en katastrofal gaming-historie. Etter skandalen lagt om til mer subjektiv balansert evaluering. [EKS]
+\item \textbf{Microsoft (post-2013).} Avskaffet stack ranking (objektivt distribusjons-system) til fordel for ``Connect''-samtaler -- mer subjektiv, holistisk evaluering. Konkret eksempel på pendelsvingning fra objektiv til mer subjektiv. [EKS]
+\item \textbf{DNB rådgivere (NO, 2010-tallet).} Provisjonsbasert objektiv måling skapte gaming (anbefale dyre fond). Endret til hybrid med subjektiv kvalitetsvurdering av kundeanbefalinger. [EKS]
+\item \textbf{Norske akademiske ansettelser.} Hybrid: objektive publikasjonsmål (tellekantsystem) + subjektiv bedømmelsekomité. Tellekantsystemet alene utløste gaming (salami-publikasjoner), så komiteen er motvekt. [EKS]
+\item \textbf{Mærsk PtX prosjektledelse.} Objektive milestones (FID, kontrakter signert, anlegg ferdig) + subjektiv vurdering av partnerkvalitet, sikkerhetskultur og teknologivalg ratifisert av Decision Control. [CASE]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: \STwo\ (måletype) primært, kobler til \SThree\ (utbetalingsformel) og \SOne\ (hvem som skal evaluere -- decision control). Relaterte teorier: \thref{performance-measurement-purposes}{Formålene med prestasjonsmåling}, \thref{gaming-in-performance-measurement}{Gaming}, \thref{ratchet-effect}{Ratchet-effekten}, \thref{absolute-vs-relative-performance}{Absolutt vs.\ relativ prestasjonsmåling}, \thref{informativeness-principle}{Informativeness-prinsippet}, \thref{controllability-principle}{Controllability-prinsippet}, \thref{principal-agent}{Principal-Agent}, \thref{moral-hazard}{Moral hazard}, \thref{agency-costs}{Agency costs}, \thref{decision-management-control}{Decision Management vs.\ Decision Control}, \thref{incentive-coefficient}{Insentivkoeffisient}.
+
+\paragraph{Brukt i spørsmål:} Q10.

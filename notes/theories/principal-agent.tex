@@ -1,0 +1,73 @@
+% !TEX root = ../main.tex
+\section{Principal-Agent-teori}\label{thr:principal-agent}
+
+\paragraph{Definisjon.} Et \emph{principal-agent}-forhold (agency relationship) oppstår når én part -- \emph{principalen} -- engasjerer en annen part -- \emph{agenten} -- til å handle på sine vegne, og delegerer beslutningsmyndighet til agenten. Teorien studerer hvordan principalen kan designe kontrakter og insentiver slik at agentens valg samsvarer med principalens interesser, gitt at de to har forskjellige mål, ulik informasjon og forskjellig holdning til risiko. [SLIDE]
+
+\subsection*{Forklaring}
+
+BSZ definerer virksomheten som et \emph{nexus of contracts} -- et nettverk av kontrakter mellom interessenter (eiere, ledere, ansatte, kunder, leverandører, banker, obligasjonseiere). Hver kontrakt kan analyseres som et principal-agent-forhold. De viktigste relasjonene er aksjonærer$\to$direksjon, eier$\to$leder, leder$\to$medarbeider og virksomhet$\to$leverandør. [SLIDE]
+
+Problemet er at agenten maksimerer sin egen nytte, mens principalen vil ha maksimert profit (eller annen verdi). Agenten har ofte privat informasjon (om egen innsats, egne evner, lokale markedsforhold) og er typisk mer risikoavers enn principalen, fordi en mye større andel av agentens formue og humankapital er bundet til virksomheten. [SLIDE/BOK]
+
+Den grunnleggende modellen i pensum (Erica Olsson-eksemplet, BSZ kap.~10) skriver:
+\begin{align*}
+Q &= \alpha e + \mu \quad \text{(output)}\\
+\Pi &= Q - W \quad \text{(virksomhetens profit)}\\
+W &= W_0 + \beta Q, \quad 0 \le \beta \le 1 \quad \text{(agentens lønn)}
+\end{align*}
+hvor $\alpha$ er agentens marginalprodukt, $e$ er innsats, $\mu$ er støy, $W_0$ er fast lønn og $\beta$ er insentivkoeffisienten. Dilemmaet er at høy $\beta$ gir sterke insentiver, men pålegger agenten risiko hun må kompenseres for. Lav $\beta$ gir effektiv risikodeling, men svake insentiver. [SLIDE]
+
+Teorien skiller mellom to informasjonsproblemer:
+\begin{itemize}
+\item \textbf{Hidden action} (post-kontraktuelt): principalen kan ikke observere agentens innsats $\Rightarrow$ \thref{moral-hazard}{moral hazard}.
+\item \textbf{Hidden information} (pre-kontraktuelt): agenten har privat informasjon om egne evner eller om miljøet $\Rightarrow$ \thref{adverse-selection}{adverse selection}.
+\end{itemize}
+Begge er kjerneårsakene til at kontrakter blir kompliserte og dyre å skrive og håndheve. [SLIDE/BOK]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item Begge parter er rasjonelle nyttemaksimerere.
+\item Asymmetrisk informasjon: agenten vet noe principalen ikke vet (innsats, evner, $\mu$).
+\item Agenten er risikoaversiv; principalen er som regel mer risikonøytral (diversifiserte aksjonærer).
+\item Output $Q$ er observerbart og verifiserbart, men avhenger både av innsats og støy.
+\item Kontraktsdesign er begrenset til verifiserbare variabler (det som kan dokumenteres for en domstol).
+\end{itemize}
+
+\subsection*{Muligheter (hva teorien forklarer/løser)}
+\begin{itemize}
+\item Hvorfor ledere får insentivlønn (aksjeopsjoner, bonusplaner, RSUer) i stedet for kun fast lønn.
+\item Hvorfor risikodeling og insentiver er et fundamentalt \emph{trade-off}.
+\item Hvorfor monitoring (revisor, styret, ekstern rapportering) og bonding (CEO som kjøper aksjer i eget selskap) eksisterer.
+\item Hvorfor implisitte og reputasjonsbaserte kontrakter er viktige der formelle kontrakter er ufullstendige.
+\item Logikken bak \thref{controllability-principle}{controllability-prinsippet} og \thref{informativeness-principle}{informativeness-prinsippet}.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item Modellen forutsetter at $\alpha$ og fordelingen av $\mu$ er kjent for principalen -- i praksis må de estimeres (jf.\ ratchet-effekten).
+\item Behavioural economics: ledere er ikke rene nyttemaksimerere -- normer, identitet, prosedyremessig rettferdighet og indre motivasjon spiller inn.
+\item Sterke insentivkontrakter kan fortrenge intrinsisk motivasjon (\emph{crowding out}).
+\item Kontraktsfokuset undervurderer kultur, tillit og uformelle mekanismer (\emph{relational contracting}).
+\item Modellen er enkeltperiodisk; mange agency-problemer (horisontproblem, ratchet) krever flerperiodisk analyse.
+\item I virkeligheten er det \emph{multiple principals} (aksjonærer, kreditorer, regulator, samfunn) med motstridende mål.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\linewidth]{BSZ_kap_10_2026/by_slide/slide_005/BSZ_kap_10_2026_slide_005_asset_01_image2.png}
+  \caption{Erica Olsson principal-agent-model: $Q=\alpha e+\mu$, $W=W_0+\beta Q$. [SLIDE -- BSZ kap.\ 10]}
+\end{figure}
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{Equinor / aksjonærer:} Konsernsjefen ansettes av styret på vegne av aksjonærene. Lønnen kombinerer fast lønn med langsiktig aksjebasert insentiv (LTI) for å redusere horisontproblemet og koble CEO-formue til aksjekursen. [EKS]
+\item \textbf{Volkswagen-Diesel\-gate (2015):} Agentene (ingeniører/ledere) optimaliserte mot kortsiktige tekniske/salgsmål med ``defeat devices'' i strid med eiernes (og samfunnets) langsiktige interesse -- en ekstrem form for moral hazard og horisontproblem. [EKS]
+\item \textbf{Mærsk -- konsernledelse vs.\ APMM-familieaksjonærer:} A.P.\ Møller Holding eier en stor stabil andel og fungerer som ``dominant principal'' med lengre horisont enn typiske diversifiserte fond. Dette demper enkelte agency-problemer (kortsiktighet) men kan skape andre (minoritetsaksjonærer). [CASE]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: \SOne\ (delegert beslutningsrett er selve agency-relasjonen), \STwo\ (måltallene som lønnen knyttes til), \SThree\ (selve insentivkontrakten). Relaterte teorier: \thref{incentive-conflicts-owner-manager}{De 5 incitamentkonflikter}, \thref{costless-contracting}{Costless contracting} (benchmark), \thref{moral-hazard}{Moral hazard}, \thref{adverse-selection}{Adverse selection}, \thref{agency-costs}{Agency costs}, \thref{informativeness-principle}{Informativeness-prinsippet}, \thref{game-theory}{Spilteori} (sentral for å analysere monitor/shirk-spillet).
+
+\paragraph{Brukt i spørsmål:} Q03, Q04.

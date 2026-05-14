@@ -1,0 +1,67 @@
+% !TEX root = ../main.tex
+\section{Reservation utility}\label{thr:reservation-utility}
+
+\paragraph{Definisjon.} \emph{Reservation utility} ($U_0$) er det minimumsnyttenivået en (potensiell) ansatt krever for å akseptere -- eller bli værende i -- en stilling. Den tilsvarer nytten av neste-beste alternativ, og fungerer som \emph{participation constraint} i alle kontraktsdesignproblemer: en kontrakt blir bare signert (eller ikke sagt opp) hvis den gir minst $U_0$. [SLIDE]
+
+\subsection*{Forklaring}
+
+Reservation utility er gulvet i kompensasjonsdesign. Bedriften har én førsteoppgave: \emph{tiltrekke} og \emph{retentere} medarbeidere -- og det krever at den totale ``nyttepakken'' (lønn + fringe + ikke-monetære goder + karrierevei + status + arbeidsmiljø) ligger over kandidatens reservation utility. Reservation utility er ikke et absolutt nivå; det varierer med konjunktur, geografi, alternative arbeidsgivere, individuelle preferanser, dual-career hensyn, ikke-monetære faktorer og medarbeiderens generell og spesifik viden (jf.\ \thref{specific-vs-general-knowledge}{spesifik vs.\ generell viden}). [SLIDE]
+
+Formelt brukes $U_0$ som bibetingelse i bedriftens kostnadsminimering: bedriften minimerer kompensasjonskostnaden $C(S,F,\ldots)$ for å levere en pakke som tilfredsstiller $U(\text{pakke}) \geq U_0$. Reservation utility er dermed både det \emph{økonomiske gulvet} for kontrakten og koblingen mellom arbeidsmarkedet ute og kompensasjonsdesignet inne. [SLIDE/BOK]
+
+\subsection*{Determinanter av reservation utility}
+\begin{itemize}
+\item \textbf{Neste-beste lønnsalternativ.} For en kandidat med generell viden er $U_0$ tett bundet til markedslønnen for ekvivalente stillinger.
+\item \textbf{Ikke-monetære faktorer.} Geografi, pendletid, work-life balance, arbeidsmiljø, status, autonomi, mening og karriereutsikter.
+\item \textbf{Individuelle forhold.} Familie- og dual-career hensyn, helse, mobilitet, risikoaversjon.
+\item \textbf{Markedet for talent.} Konjunktur, etterspørsel etter spesifik kompetanse, antall konkurrerende arbeidsgivere.
+\item \textbf{Søkekostnader.} Friksjonen ved å finne neste jobb hever inkumbent-arbeidsgivers handlingsrom over $U_0$.
+\item \textbf{Switching cost / firmaspesifikk humankapital.} Investert spesifik humankapital som ikke kan overføres, demper $U_0$ for retention (men ikke for første ansettelse).
+\end{itemize}
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item Den ansatte har et reservasjonsnivå som er identifiserbart (selv om det er privat informasjon -- jf.\ \thref{adverse-selection}{adverse selection}).
+\item Nytte er monotont stigende i lønnskomponentene -- pakker kan rangeres.
+\item Det finnes et alternativ -- en outside option -- som forankrer $U_0$.
+\item Kandidaten er rasjonell og sammenligner nåverdier (medregnet karriereutsikter, pensjon, jobbsikkerhet).
+\end{itemize}
+
+\subsection*{Muligheter}
+\begin{itemize}
+\item Forklarer hvorfor bedrifter må overstige markedet for å rekruttere knappe profiler.
+\item Gir formelt grunnlag for participation constraint i \thref{principal-agent}{prinsipal--agent}-modeller (Holmström 1979): kontrakt $w(\pi)$ må gi $E[u(w)] - c(e) \geq U_0$.
+\item Forklarer hvorfor bedrifter i lavpressmarkeder kan presse marginen ned og hvorfor i pressmarkeder må betale mer (eller flytte mix mot fringe).
+\item Kobler arbeidsmarkedets ytre konkurranse til interne lønnssystemer og fringe-design.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item \textbf{Privat informasjon.} $U_0$ er skjult informasjon -- bedriften observerer den ikke. Dette åpner for \thref{adverse-selection}{adverse selection} (overdrivelse av outside option) og forhandlingsasymmetri.
+\item \textbf{Endogenitet.} $U_0$ kan endre seg med bedriftens egen oppførsel -- en sterk merkevare og kultur senker andres $U_0$ men hever den hos egne ansatte.
+\item \textbf{Reference dependence / loss aversion.} Ansatte sammenligner ikke bare med outside option, men også med kolleger og tidligere lønn (Kahneman/Tversky). Statisk $U_0$ ignorerer dette.
+\item \textbf{Ikke-monetær diskontering varierer.} Reservation utility er multidimensjonal -- vanskelig å redusere til ett tall ved heterogene preferanser.
+\item \textbf{Sosiale normer og fairness.} Lønn under opplevd fair-nivå senker innsats selv om $U_0$ er møtt -- jf.\ Akerlofs gift-exchange og efficiency wages.
+\item \textbf{Dynamikk:} $U_0$ stiger over tid med erfaring og humankapital -- bedrifter kan miste folk de tidligere kunne beholde.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+Bedriftens problem:
+\[
+  \min_{S,F} \; C(S,F) \qquad \text{s.t.} \qquad U(S,F) \;\geq\; U_0 .
+\]
+$U_0$ er den indifferenskurven i $(S,F)$-planet som kontraktstilbudet \emph{minst} må berøre for å bli akseptert (se \thref{salary-fringe-benefits-mix}{salary--fringe-modellen}). Lavere $U_0$ flytter kurven inn mot origo $\Rightarrow$ billigere pakke; høyere $U_0$ flytter den utover $\Rightarrow$ dyrere. [SLIDE]
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{Equinor vs.\ Aker BP (norsk olje- og energi).} Reservation utility for en petroleumsingeniør i Stavanger settes i praksis av Aker BP / ConocoPhillips. Equinor må overstige denne -- og bruker kombinasjon av høy grunnlønn, langsiktig opsjonsprogram og bred karrierevei på tvers av olje/fornybar. [EKS]
+\item \textbf{Norsk offentlig sektor vs.\ konsulentbransjen.} Sykepleier med generell utdanning har $U_0$ satt av offentlige tariffer; bytter sjelden til privat fordi pensjon og jobbsikkerhet hever ``pakkenytten'' over tilsynelatende høyere private lønninger. En konsulent i BCG/McKinsey har $U_0$ definert av investment banking og tech -- høyt og stigende. [EKS]
+\item \textbf{Mærsk Power-to-X.} Reservation utility for en elektrolyse-ingeniør i København defineres av Ørsted (hjemmemarkedet) og Siemens Energy / Topsoe (internasjonalt). PtX-divisjonen må enten matche pengepakke eller vri mix mot fringe og karrierevei. [CASE]
+\item \textbf{Geografisk mobilitet.} Stilling i avsidesliggende lokasjon (offshore-anlegg, gruvedrift) har høyere $U_0$ for kandidater med familie $\Rightarrow$ \thref{compensating-differentials}{compensating differential} må betales på toppen. [EKS]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: primært \SThree\ (insentivstrukturer / kompensasjon), med koblinger til \SOne\ (hvem som tildeles roller) og \STwo\ (prestasjonskobling). Reservation utility er \emph{participation constraint} i \thref{principal-agent}{prinsipal--agent}-modellen; den setter rammen for \thref{compensating-differentials}{compensating differentials}; den tangerer \thref{salary-fringe-benefits-mix}{salary--fringe-mixen} og forklarer hvorfor \thref{superior-assets}{superior assets} gir bedriften fordel ved at den kan levere $U_0$ rimeligere enn konkurrenten. Relatert til \thref{adverse-selection}{adverse selection} (privat informasjon om $U_0$), \thref{moral-hazard}{moral hazard} (incentive constraint kommer i tillegg) og \thref{agency-costs}{agency costs}.
+
+\paragraph{Brukt i spørsmål:} Q08.

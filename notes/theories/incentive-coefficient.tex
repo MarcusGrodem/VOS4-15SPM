@@ -1,0 +1,91 @@
+% !TEX root = ../main.tex
+\section{Incitamentskoefficient ($\beta$)}\label{thr:incentive-coefficient}
+
+\paragraph{Definisjon.} \emph{Incitamentskoefficienten} $\beta$ er parameteren i den lineære lønnskontrakten $W=W_0+\beta Q$ som angir hvor stor andel av en marginal endring i prestasjonsmålet $Q$ som tilfaller agenten. Formelt: $\beta=\partial W/\partial Q$. Den måler styrken på koblingen mellom prestasjon og lønn -- ``pay-performance sensitivity''. [SLIDE]
+
+\subsection*{Forklaring}
+
+I prinsipal-agent-modellen (\thref{principal-agent}{principal-agent}) skrives lønnen som $W=W_0+\beta Q$ med $Q=\alpha e+\mu$. Agenten responderer på \emph{marginalt} utbytte av innsats: hennes FOC er $\beta\alpha=c'(e^{*})$, slik at $e^{*}$ er strengt stigende i $\beta$. Det er derfor $\beta$ -- ikke $W_0$ -- som faktisk vrir innsats. [SLIDE]
+
+\textbf{Tolkning som ``andel residual''.} Ved $\beta=0$ er agenten ren \emph{lønnsmottaker} (alt $W_0$); ved $\beta=1$ er hun \emph{full residual claimant} -- hele Q tilfaller henne på marginen, slik en eier-leder eller franchisetaker er. Mellomliggende verdier reflekterer kompromisset mellom insentiv og risikodeling. [SLIDE/BOK]
+
+\textbf{Optimal $\beta$.} Fra optimal effort-modellen (\thref{optimal-effort-model}{se modell B}) får man Holmström-Milgrom-formelen:
+\[
+\beta^{*}\;=\;\frac{1}{1+\dfrac{r\,\sigma^{2}\,c''(e)}{\alpha^{2}}}.
+\]
+Resultatet er at $\beta^{*}$ stiger med produktivitet $\alpha$ og faller med agentens risikoaversjon $r$, outputstøy $\sigma^{2}$, og konveksitet i innsatskostnaden $c''(e)$. [BOK]
+
+\textbf{Determinanter av $\beta$ (BSZ kap.\ 15).} Høy $\beta$ er optimalt når:
+\begin{itemize}\setlength{\itemsep}{1pt}
+\item output avhenger sterkt av innsats (høy $\alpha$),
+\item agenten er lite risikoavers,
+\item ytre usikkerhet er liten (lavt $\sigma^{2}$),
+\item prestasjonen er lett målbar (informativt $Q$),
+\item agentens respons på insentiver er sterk.
+\end{itemize}
+Motsatt: høy $\sigma^{2}$, høy $r$, eller multitasking trekker $\beta$ ned. [SLIDE]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}\setlength{\itemsep}{1pt}
+\item Lineær kontrakt og lineær teknologi (jf.\ \thref{optimal-effort-model}{optimal effort-modellen}).
+\item Én observerbar prestasjonsmåler $Q$ (ingen multitasking).
+\item Kontrakten er kontraktérbar -- $Q$ er verifiserbar for tredjepart.
+\item Stabil omverden -- $\sigma^{2}$ og $\alpha$ er stabile mellom perioder (ellers \emph{ratchet effect}).
+\end{itemize}
+
+\subsection*{Muligheter}
+\begin{itemize}\setlength{\itemsep}{1pt}
+\item Operasjonaliserer ``hvor sterke skal insentivene være?'' som et tallproblem.
+\item Forklarer empirisk variasjon i pay-performance sensitivity mellom yrker (CEO vs.\ lærer; megler vs.\ butikkansatt).
+\item Forklarer bruken av relative måltall, peer-gruppe-benchmarks og prestasjonsfiltrering (\thref{informativeness-principle}{informativeness}).
+\item Gir et språk for å diskutere bonuspuljer, opsjoner, profit-sharing, piece rates -- alle kan plasseres på en $\beta$-skala.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}\setlength{\itemsep}{1pt}
+\item \textbf{Multitasking (Holmström-Milgrom 1991):} Hvis agenten har flere oppgaver hvorav noen er svært målbare og andre ikke, vil høy $\beta$ på det målbare \emph{vri innsats bort} fra det umålbare. Best praksis blir da lavere $\beta$ eller likere $\beta$ på tvers av oppgaver (``equal compensation principle'').
+\item Lineær form fanger ikke terskler/tak/opsjoner som dominerer reelle bonusplaner -- og som inviterer til gaming (lukke kvartalet for tidlig, dytte salg over årsskifte).
+\item Antar $\beta$ fast over tid -- i praksis justeres mål ofte ned-/oppover når agenten leverer (ratchet effect).
+\item Forutsetter at agenten skjønner kontrakten -- empirisk er CEO-pakker ofte så komplekse at insentiveffekten utvannes.
+\item Diskuteres ikke fordelingseffekter -- høy $\beta$ skaper store lønnsforskjeller som kan ramme samarbeid og legitimitet.
+\item Antar én prinsipal -- når flere måltall fra ulike interessenter konkurrerer, brytes en-dimensjonal $\beta$ ned.
+\end{itemize}
+
+\subsection*{Modell / tabell -- $\beta$ langs yrker}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}p{4.4cm}p{1.4cm}p{2.2cm}p{6.2cm}@{}}
+\toprule
+\textbf{Yrke / situasjon} & \textbf{Typisk $\beta$} & \textbf{Andel $W_0$} & \textbf{Begrunnelse} \\
+\midrule
+Offentlig ansatt (tariff) & $\approx 0$ & Stor & Lavt $\alpha$ målbart, høy $\sigma^{2}$, fordelingshensyn, multitasking. \\
+Industriarbeider (timelønn) & Lav & Stor & Stabil $\alpha$, men kvalitetsdimensjoner umålbare. \\
+Selger på provisjon & Høy & Liten & Høyt $\alpha$ og lavt $\sigma^{2}$ på salgs-KPI. \\
+Eiendomsmegler & Svært høy & Liten & Output (signert kontrakt) tett koblet til innsats. \\
+CEO i børsnotert selskap & Moderat & Moderat & Stort $\sigma^{2}$ (markedsstøy), redusert via relative og langsiktige måltall. \\
+Franchisetaker & $\approx 1$ & 0 & Full residual claimant. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Slide-illustrasjon}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.55\linewidth]{BSZ_kap_15_2026/by_slide/slide_018/BSZ_kap_15_2026_slide_018_asset_01_image6.jpeg}
+\caption{Faktorer som favoriserer høy $\beta$: høy $\alpha$, lavt $\sigma^{2}$, lav risikoaversjon, målbarhet. [SLIDE -- BSZ kap.\ 15, slide 18]}
+\end{figure}
+
+\subsection*{Eksempler}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item \textbf{Equinor-LTI:} CEO har grunnlønn pluss aksjebasert LTI med 3--5-årig opptjening, justert for peer-gruppe (relativ måling). Moderat $\beta$ -- ikke null fordi insentivproblemet er stort, men ikke 1 fordi oljepris ($\mu$) dominerer aksjekursen. [EKS]
+\item \textbf{McDonald's franchising:} Franchisetakeren har $\beta\approx 1$ for restauranten -- klassisk residual claimancy. Selskapet bruker franchising fordi spesifik viden om lokalmarked sitter hos franchisetakeren, mens HQ beholder kontroll over merkevare og prosess. [EKS]
+\item \textbf{Aker Solutions provisjons-selgere:} Høy $\beta$ på salgskommisjon -- men paret med ``claw-back'' hvis kunden trekker seg, for å demme opp for gaming. [EKS]
+\item \textbf{Selger som spurter for å lukke kvartalet:} Klassisk gaming -- høy $\beta$ på kvartalsmål inviterer til å skyve salg frem eller bak. Illustrerer at $\beta$ alene er for grovt verktøy hvis måltallet er tidsmanipulerbart. [EKS]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: \SThree\ (primær -- $\beta$ er insentivstrukturen) og \STwo\ (forutsetter et måltall $Q$). Relaterte: \thref{optimal-effort-model}{Optimal effort-modell}, \thref{principal-agent}{Principal-agent}, \thref{fixed-vs-variable-pay}{Fast vs.\ variabel lønn}, \thref{risk-sharing}{Risikodeling}, \thref{informativeness-principle}{Informativeness-prinsippet}, \thref{moral-hazard}{Moral hazard}, \thref{agency-costs}{Agency costs}.
+
+\paragraph{Brukt i spørsmål:} Q09.

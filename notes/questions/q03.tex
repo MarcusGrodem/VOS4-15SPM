@@ -1,0 +1,104 @@
+% !TEX root = ../main.tex
+\section{Q03: 5 incitamentkonflikter mellem ejere og virksomhedsledere -- costless contracting}\label{q:03}
+
+\begin{quote}
+\emph{Med udgangspunkt i pensums definition af en virksomhed bedes du redegøre for 5 centrale incitamentkonflikter mellem ejere og virksomhedsledere. Relater denne redegørelse til almindelige incitamentkonflikter i en virksomhed og diskuter eventuelt relevansen af spilteori i denne sammenhæng. På baggrund heraf redegøres for hvordan incitamentkonflikter kan organiseres og styres ved hjælp af kontrakter under antagelse af costless contracting.}
+\end{quote}
+
+\subsection*{Svar (kort)}
+Pensum definerer virksomheten som et \emph{nexus of contracts} -- et nettverk av kontrakter mellom interessenter -- og det er denne kontraktstrukturen som genererer de fem klassiske incitamentkonfliktene mellom eier (principal) og leder (agent): \emph{shirking, perks, risk aversion, horizon, empire building}. Under \emph{costless contracting} kan disse konfliktene i prinsippet kontrakteres bort til \emph{first-best}, fordi alle relevante variabler (innsats, evner, prosjektvalg) kan beskrives, observeres og håndheves uten kostnad. Spilteori er relevant fordi det viser hvor lett en stilisert monitor/shirk-interaksjon havner i en mixed-strategy-likevekt med residuell shirking, og at \emph{repeterte} spill (reputasjon) kan tilnærme costless-utfallet selv uten formell kontrakt. Q03 leverer altså benchmark-analysen; Q04 viser hva som svikter når costless-forutsetningen brytes. [SLIDE]
+
+\subsection*{Relevante teorier (kort)}
+
+\paragraph{\thref{principal-agent}{Principal-agent-teori}\quad\SOne/\STwo/\SThree}
+Virksomheten ses som et nettverk av principal-agent-relasjoner; kjernen er aksjonær$\to$direksjon$\to$leder$\to$medarbeider. Modellen $Q=\alpha e+\mu$, $W=W_0+\beta Q$ formaliserer trade-off-en mellom insentiver ($\beta$) og risikodeling. Asymmetrisk informasjon (hidden action / hidden information) er driveren bak alle de fem konfliktene. [SLIDE]
+
+\paragraph{\thref{incentive-conflicts-owner-manager}{De 5 incitamentkonfliktene}\quad\SThree}
+Slidene navngir konfliktene konkret: \textbf{(1) Shirking} (lav innsats), \textbf{(2) Salaries and perks} (overforbruk av frynsegoder), \textbf{(3) Risk aversion} (avviser god risikabel investering fordi humankapitalen er udiversifisert), \textbf{(4) Differential time horizons} (kortsiktighet, kutter R\&D), \textbf{(5) Overinvestment / empire building} (verdi\-ødelggende vekst). Konfliktene gjentar seg i miniatyr i alle prinsipal-agent-relasjoner i virksomheten -- ikke bare eier$\to$CEO. [SLIDE]
+
+\paragraph{\thref{costless-contracting}{Costless contracting}\quad\SThree}
+Forutsetningen om gratis, fullstendig og verifiserbart kontraktsregime gir \emph{first-best}: kontrakten kan spesifisere innsats $e^\ast$ direkte, fordele risiko effektivt mellom diversifisert eier og udiversifisert leder, og lukke alle de fem gapene. Dette er en \emph{benchmark} -- urealistisk, men viktig som referansepunkt. Q04 viser hva som skjer når forutsetningen relaxes. [SLIDE/BOK]
+
+\paragraph{\thref{game-theory}{Spilteori (Chapter 9)}\quad\SThree}
+Når innsats ikke kan kontraktfestes direkte, blir samspillet mellom monitoring og shirking et strategisk spill. Den stiliserte Kiana/Len-versjonen har en mixed-strategy-Nash der monitoring skjer stokastisk og en viss shirking gjenstår. I \emph{repeterte} spill kan eier og leder oppnå et samarbeidsutfall via reputasjon og trigger strategies -- altså \emph{implicit contracting}, som fungerer som en delvis erstatning for costless contracting i den virkelige verden. [SLIDE]
+
+\subsection*{Illustrasjon}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.55\linewidth]{BSZ_kap_10_2026/by_slide/slide_005/BSZ_kap_10_2026_slide_005_asset_01_image2.png}
+  \caption{Erica Olsson-modellen: $Q=\alpha e+\mu$, $W=W_0+\beta Q$. Trade-off mellom insentiver og risikodeling. [SLIDE -- BSZ kap.\ 10]}
+\end{figure}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}p{3.4cm}p{4.4cm}p{5.0cm}@{}}
+\toprule
+\textbf{Konflikt} & \textbf{Hva agenten gjør} & \textbf{Costless-kontraktsløsning} \\
+\midrule
+1. Shirking & For lav innsats & Kontraktfest $e^\ast$ direkte (innsats observerbar) \\
+2. Perks & Overforbruk av frynsegoder & Spesifiser tillatte goder eksplisitt \\
+3. Risk aversion & Avviser god risikabel investering & Pålegg prosjektvalg; eier bærer risiko, leder får fast lønn \\
+4. Horisont & Kortsiktig profit & Kontraktfest investerings\-/R\&D-nivå over hele perioden \\
+5. Empire building & Verdi\-ødelggende vekst & Spesifiser kapital\-disposisjon og oppkjøpsregler \\
+\bottomrule
+\end{tabular}
+\end{center}
+\textit{Tabell: Under costless contracting kan hver av de fem konfliktene lukkes ved direkte kontraktfesting. Q04 viser hva som svikter når forutsetningen brytes. [SLIDE]}
+
+\subsection*{Spilteoriens relevans -- monitor vs.\ shirk}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}l|c|c|@{}}
+\textbf{Principal $\backslash$ Agent} & \textbf{Work} & \textbf{Shirk} \\
+\hline
+\textbf{Monitor} & ($V-w-m$,\; $w-c$) & ($-m$,\; $w$) \\
+\hline
+\textbf{Not monitor} & ($V-w$,\; $w-c$) & ($-w$,\; $w$) \\
+\hline
+\end{tabular}
+\end{center}
+\textit{Ingen ren-strategi-Nash; mixed-strategy-likevekt med stokastisk monitoring og positiv shirking-rate. Repeterte spill (trigger strategies, reputasjon) gir bedre utfall -- \emph{implicit contracting}. [SLIDE -- BSZ kap.\ 9]}
+
+\subsection*{Real-world eksempler}
+
+\textbf{Eks.~1 -- Equinor (NO), CEO-kompensasjonsdesign:}\quad [EKS]
+Konsernsjefen får en pakke med fast lønn, kortsiktig bonus og langsiktig aksjebasert insentiv (LTI) med vesting over flere år. Designet adresserer eksplisitt risiko (3) og horisont (4): jo lengre vesting, desto sterkere insentiv til å bygge langsiktig verdi framfor å maksimere kortsiktig regnskapsmessig EBIT. Dette er en \emph{tilnærming} til costless contracting via sammensatte måltall, ikke en realisering -- et perfekt costless-regime ville bare diktere ``maksimer langsiktig markedsverdi''.
+
+\textbf{Eks.~2 -- Norsk Hydro / Alunorte (2018), sammenligning med Eks.~1:}\quad [EKS]
+Lokale agenter ved alumin\-iumsraffineriet under\-rapporterte miljørisiko -- klassisk shirking (1) på rapporteringsplikt og horisontproblem (4) der lokal bonus var knyttet til driftstall, ikke ESG-konsekvenser. Sammenligningen med Equinor er instruktiv: begge selskaper har sofistikerte insentivkontrakter på CEO-nivå, men problemet flytter seg \emph{nedover} i hierarkiet til lokale agenter. Costless contracting-benchmark-en avslører hvorfor: man kan ikke i praksis kontraktfeste \emph{alt} relevant atferd, så i Q04-verden gjenstår residual loss.
+
+\subsection*{Kobling til Mærsk Power-to-X}
+Mærsks Power-to-X-satsing er et lærebok\-eksempel på alle fem konflikter under én og samme investeringsbeslutning. CEO-en (agent for A.P.\ Møller-familien og minoritets\-aksjonærene) skal vurdere et stort, langsiktig, risikabelt prosjekt: (3) risikoaversjon -- en mislykket PtX-satsing kan koste lederen jobben; (4) horisont -- avkastningen kommer langt etter at dagens CEO har gått av; (5) empire building -- PtX gir prestisje og posisjon i et nytt marked, og kan friste til oppskalering utover NPV-optimalt nivå. Under \emph{costless contracting} ville styret bare ha kontraktfestet ``invester i PtX hvis NPV $> 0$ for valgt risikojustert diskonteringsrente'' og fjernet disse konfliktene. I virkeligheten brukes LTI-vesting, ROIC-mål og styre\-monitoring som \emph{tilnærminger}. [CASE]
+
+\subsection*{Fallgruber}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item Hoppe over \emph{nexus of contracts}-definisjonen -- spørsmålet ber eksplisitt om pensums definisjon av virksomheten.
+\item Liste konfliktene uten å nevne at samme mønster også gjelder leder$\to$medarbeider og virksomhet$\to$leverandør.
+\item Glemme at Q03 sitter under \emph{costless contracting} -- ikke begynn å snakke om moral hazard og adverse selection (det er Q04).
+\item Ikke nevne at costless contracting er en \emph{benchmark}, ikke en realistisk verden.
+\item Hoppe over spilteoriens rolle (monitor/shirk-spill, mixed strategy, repeterte spill / reputasjon).
+\item Bruke samme eksempler og samme disposisjon som Q04 -- de skal være tydelig differensierte.
+\end{itemize}
+
+\subsection*{Håndskrivbar disposisjon (15-min forberedelse)}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item \textbf{Tese:} Pensum: virksomhet = \emph{nexus of contracts}. De 5 konfliktene følger av kontraktstrukturen. Under \thref{costless-contracting}{costless contracting} kan de lukkes til first-best.
+\item \thref{principal-agent}{Principal-agent}: $Q=\alpha e+\mu$, $W=W_0+\beta Q$. Trade-off insentiv vs.\ risiko.
+\item \thref{incentive-conflicts-owner-manager}{De 5 konfliktene}: shirk / perks / risk / horisont / empire.
+  \begin{itemize}
+    \item Konfliktene gjentar seg i alle relasjoner: leder$\to$medarbeider, firma$\to$leverandør.
+  \end{itemize}
+\item \thref{costless-contracting}{Costless contracting}: gratis, fullstendig, verifiserbar $\Rightarrow$ first-best.
+  \begin{itemize}
+    \item Spesifiser $e^\ast$, perks-tak, prosjektvalg, R\&D-nivå direkte i kontrakten.
+    \item Effektiv risikodeling: lav $\beta$, høy $W_0$, eier bærer risiko.
+  \end{itemize}
+\item \thref{game-theory}{Spilteori (kap.~9)}: Kiana/Len monitor vs.\ shirk -- mixed-strategy-Nash. Repeterte spill $\Rightarrow$ reputasjon $\Rightarrow$ implicit contracts som tilnærmer costless-utfallet.
+\item Eks.\ 1: Equinor CEO-pakke (LTI vesting adresserer risk + horisont).
+\item Eks.\ 2: Hydro/Alunorte (shirking flyttet nedover i hierarkiet -- viser benchmarkens grense).
+\item Mærsk PtX: alle 5 konflikter på én investering; costless ville løst alt med ``maks NPV''-klausul.
+\item \textbf{Bro til Q04:} costless er benchmark; slipp asymmetrisk info $\Rightarrow$ Q04 (moral hazard, adverse selection, costly contracting, agency costs).
+\item Søyle: \SThree\ primært, også \SOne\ og \STwo.
+\end{itemize}

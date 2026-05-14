@@ -1,0 +1,108 @@
+% !TEX root = ../main.tex
+\section{Q05: Agentomkostninger, viden, insentiver -- og arkitekturens tre ben}\label{q:05}
+
+\begin{quote}
+\emph{På baggrund af en redegørelse for begreberne: a) agentomkostninger, b) specifik og generel viden, c) incitamenter, forklares hvilke problemer økonomisk organisationsteori (arkitektur) angiver at kunne løse og på hvilken måde. De enkelte ``ben'' i arkitekturen forventes forklaret specifikt i denne sammenhæng og gerne understøttet af gennemgåede cases og/eller opgaver.}
+\end{quote}
+
+\subsection*{Svar (kort)}
+Økonomisk organisasjonsteori (BSZ kap.\ 11) løser to grunnproblemer som oppstår når informasjon er distribuert (Hayek) og ansatte har egne preferanser (Jensen \& Meckling): et \emph{informasjonsproblem} -- hvem skal beslutte når \thref{specific-vs-general-knowledge}{spesifik viden} sitter lokalt -- og et \emph{insentivproblem} -- hvordan får man agenten til å velge i prinsipalens interesse, slik at \thref{agency-costs}{agentomkostningene} (monitoring + bonding + residual loss) minimeres. Løsningen er den tre-benede skammelen \thref{organizational-architecture}{organizational architecture}: beslutningsrettigheter (S1), prestasjonsmåling (S2) og insentivstruktur (S3) må designes \emph{samtidig} og som komplementer -- endrer man ett ben uten de andre, faller skammelen og residual loss eksploderer. [SLIDE]
+
+\subsection*{Begrepene (kort)}
+
+\paragraph{a) \thref{agency-costs}{Agentomkostninger}\quad\SOne/\STwo/\SThree}
+Verditapen som oppstår fordi agenten ikke handler fullt ut i prinsipalens interesse. Jensen \& Meckling (1976) deler den i tre: \emph{monitoring} (prinsipalens overvåkingsutgift), \emph{bonding} (agentens troverdighetssignaler, f.eks.\ opsjoner, covenants) og \emph{residual loss} (gjenværende effektivitetstap). Optimalt designes M og B for å minimere \emph{summen} -- residual loss fjernes ikke helt fordi det er for dyrt. Hele arkitekturen finnes for å minimere agentomkostninger. [SLIDE]
+
+\paragraph{b) \thref{specific-vs-general-knowledge}{Spesifik vs.\ generell viden}\quad\SOne}
+Spesifik viden er kostbar å overføre (lokal, taus, tidssensitiv); generell viden er billig (kvantifiserbar, kodifisert). Hayek (1945): viktig viden er distribuert. Jensen \& Meckling (1992): organisasjonen må enten \emph{flytte videnen til beslutningen} (sentralisere + informasjonsflyt) eller \emph{flytte beslutningen til videnen} (desentralisere + agentstyring). Spesifik viden $\Rightarrow$ desentralisering $\Rightarrow$ men da kreves S2 og S3 for å erstatte tapt direkte kontroll. Dette er det driveren som kobler S1 til S2/S3. [SLIDE/BOK]
+
+\paragraph{c) Incitamenter\quad\SThree}
+\emph{Insentiver} er mekanismer som vrir agentens egennytte mot prinsipalens mål -- prestasjonslønn, bonus, opsjoner, karriereutvikling, status, anerkjennelse. Insentiver virker bare når (i) prestasjon kan måles meningsfullt (S2), (ii) lederen har beslutningsrett over det hun måles på (S1, jf.\ \thref{controllability-principle}{controllability}), og (iii) målene er informative om innsats (jf.\ \thref{informativeness-principle}{informativeness}). Sterke insentiver overfører risiko til en (typisk) risikoavers agent -- løsningen koster derfor en risikopremie. Insentivvalget er det tredje benet i skammelen. [SLIDE]
+
+\subsection*{De tre benene -- hva hver gjør, og hvorfor de er komplementer}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}p{2.7cm}p{4.6cm}p{6.6cm}@{}}
+\toprule
+\textbf{Søyle / ben} & \textbf{Designvariabel} & \textbf{Hva benet gjør} \\
+\midrule
+\SOne\ Decision rights & Allokering av beslutningsmakt & Plasserer beslutningen der \emph{spesifik viden} sitter; reduserer informasjonsproblemet. \\
+\STwo\ Performance eval. & Hva som måles og hvordan & Erstatter direkte observasjon når desentralisering velges; må være kontrollerbart og informativt. \\
+\SThree\ Reward system & Lønn, bonus, opsjoner, karriere & Vri agentens egennytte mot prinsipalens mål; balanserer insentiv mot risikodeling. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Hvorfor komplementer?} Marginalavkastningen av ett ben stiger med kvaliteten på de to andre. Misalignment-eksempler:
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item Desentralisering (S1) uten måltall (S2) $\Rightarrow$ kontroll uten ansvar; residual loss eksploderer.
+\item Aksjebasert bonus (S3) uten meningsfullt måltall (S2) $\Rightarrow$ ledelsen belønnes for makroflaks (gaming).
+\item Skarp måling (S2) uten beslutningsrett (S1) $\Rightarrow$ bryter \thref{controllability-principle}{controllability}; demotiverende.
+\item Insentiv (S3) uten beslutningsrett (S1) $\Rightarrow$ agenten kan ikke handle på det.
+\end{itemize}
+
+\subsection*{Hvilke problemer løses og hvordan?}
+\begin{enumerate}\setlength{\itemsep}{2pt}
+\item \textbf{Informasjonsproblem} (spesifik viden er distribuert). Løses ved S1: flytt beslutningsretten dit videnen er.
+\item \textbf{Insentivproblem} (agenten har egne preferanser). Løses ved S3 koblet til S2: gjør det lønnsomt for agenten å velge prinsipalens optimum.
+\item \textbf{Koordinasjonsproblem} (mange aktører, potensielle eksternaliteter). Løses ved S1+S2 sammen: ansvarsenheter (\thref{responsibility-centers}{responsibility centers}) med klare grensesnitt og evt.\ \thref{transfer-pricing}{transfer pricing} mellom dem.
+\item \textbf{Kontrollproblem} (decentralisering åpner for opportunisme). Løses ved monitoring (S2) + bonding via insentiv (S3) -- minimum av agentomkostninger gitt at residual loss aksepteres.
+\item \textbf{Tilpasningsproblem} (endrede omgivelser). Løses ved at arkitekturen tilpasses så lenge MR $>$ MC; firmaer som ikke endrer seg, rammes av \emph{economic Darwinism}.
+\end{enumerate}
+
+\subsection*{Illustrasjon}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.65\linewidth]{BSZ_kap_11_2026/by_slide/slide_004/BSZ_kap_11_2026_slide_004_asset_01_image3.png}
+  \caption{Den tre-benede skammelen: Decision rights, Performance evaluation, Reward systems -- arkitekturens tre ben må designes samtidig. (BSZ kap.\ 11, slide 4) [SLIDE]}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.55\linewidth]{BSZ_kap_10_2026/by_slide/slide_007/BSZ_kap_10_2026_slide_007_asset_01_image3.png}
+  \caption{Agency cost-dekomponering: monitoring + bonding + residual loss reduserer first-best-verdien av en handel. (BSZ kap.\ 10, slide 7) [SLIDE]}
+\end{figure}
+
+\subsection*{Real-world eksempler}
+
+\textbf{Eks.~1 -- Equinor (omorganisering 2020/2021).}\quad [EKS]
+Da Equinor besluttet å bygge ut fornybar virksomhet betydelig, ble \emph{Renewables} skilt ut som egen forretningsenhet med eget lederskap (S1: ny beslutningsstruktur), separate KPI-er for fornybar kapasitet og avkastning (S2: tilpasset prestasjonsmåling) og ledelseskompensasjon koblet til transisjonsmål (S3: nye insentiver). Hadde Equinor bare flyttet beslutningsrett uten å endre måltall (fortsatt målt på olje-EBITDA), ville fornybarsatsingen kollapset -- klassisk misalignment.
+
+\textbf{Eks.~2 -- Norsk Hydro vs.\ Equinor (sammenligning).}\quad [EKS]
+Norsk Hydro driver vertikalt integrert aluminiumsproduksjon med separate divisjoner (Bauxite \& Alumina, Aluminium Metal, Extruded Solutions). Hver divisjon er investment center (S1), måles på LME-justert margin (S2 -- jf.\ \thref{controllability-principle}{controllability}-prinsippet), og bonus er knyttet til divisjonsresultat (S3). Sammenlignet med Equinor: \emph{samme prinsipp om å designe alle tre ben samtidig}, men i Hydro driver \emph{teknologi og prismekanismen for råvarer} arkitekturen, mens i Equinor er det \emph{strategisk transisjon}. Begge viser at den tre-benede skammelen er anvendbar uavhengig av bransje.
+
+\subsection*{Kobling til Mærsk Power-to-X}
+PtX-divisjonens arkitektur er et lærebokeksempel på de tre benene i sammenheng: [CASE]
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item \SOne\ \emph{Decision rights:} Beslutningsrett om elektrolysørteknologi og partnervalg er delegert ned til PtX-divisjonen, fordi den \thref{specific-vs-general-knowledge}{spesifikke videnen} om kjemi, prosess og partner-økosystem sitter der -- ikke i konsernledelsen.
+\item \STwo\ \emph{Performance evaluation:} Divisjonen drives som \thref{responsibility-centers}{investment center}; måltallet er prosjektets risikojusterte NPV/IRR. Kortsiktig EBITDA-måling ville rammet langsiktige CAPEX-beslutninger og bryte controllability (oljepris- og elprisbevegelser er ikke kontrollerbare).
+\item \SThree\ \emph{Reward system:} Lederkompensasjon koblet til langsiktige milestones (anlegg ferdigstilt, kontrakter signert, IRR-måltall) -- bonding via langsiktig egenkapitalandel reduserer agentomkostninger.
+\end{itemize}
+\textbf{Misalignment-tankeeksperiment:} Hvis ledelsen i PtX hadde fått beslutningsrett (S1) og kompensasjon basert på årets EBITDA (S3), uten et investeringsfølsomt måltall (S2), ville hun utsatt eller skalert ned investeringene -- et klassisk eksempel på horisontproblem og misalignment mellom de tre benene. Caset viser hvorfor alle tre må designes samtidig.
+
+\subsection*{Fallgruber}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item Bare nevne ett eller to ben -- sensor venter at alle tre presenteres eksplisitt og kobles til S1/S2/S3.
+\item Glemme \emph{komplementaritet} -- poenget er at de tre må endres samtidig.
+\item Forveksle bonding med monitoring -- bonding er agentens egen kostnad, monitoring er prinsipalens.
+\item Glemme at residual loss er igjen \emph{etter} optimal monitoring og bonding -- den fjernes ikke helt.
+\item Behandle ``incitamenter'' som synonymt med ``bonus''. Insentiver inkluderer karriere, status, opsjoner, eierandel, jobbdesign.
+\item Ikke knytte spesifik/generell viden til \emph{begrunnelsen} for desentralisering (S1) -- dette er linken Hayek$\to$Jensen\&Meckling.
+\item Glemme caset -- spørsmålet inviterer eksplisitt til å bruke gjennomgåtte cases.
+\end{itemize}
+
+\subsection*{Håndskrivbar disposisjon (15-min forberedelse)}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item \textbf{Tese:} Arkitektur = tre-benet skammel (S1+S2+S3 designet samtidig); løser informasjons- og insentivproblem ved å minimere agentomkostninger.
+\item \textbf{Begrep a -- \thref{agency-costs}{Agentomkostninger}:} Monitoring + Bonding + Residual loss (Jensen \& Meckling 1976). Tallregneksempel fra slide 31 kap.\ 10. Aksepter residual loss -- billigere enn perfekt kontroll.
+\item \textbf{Begrep b -- \thref{specific-vs-general-knowledge}{Spesifik vs.\ generell viden}:} Hayek $\to$ Jensen \& Meckling. Spesifik viden $\Rightarrow$ desentraliser (flytt beslutning) $\Rightarrow$ men da kreves S2 + S3.
+\item \textbf{Begrep c -- Incitamenter:} Vri egennytte mot prinsipal. Krever målbarhet (S2), kontrollerbarhet (S1), informativeness. Risk-incentive trade-off.
+\item \textbf{De tre benene:} S1 Decision rights / S2 Performance eval. / S3 Reward. \emph{Komplementer} $\Rightarrow$ misalignment hvis ett endres alene.
+\item \textbf{Hvilke problemer løses?} (i) informasjonsproblem (S1), (ii) insentivproblem (S2+S3), (iii) koordinasjon (S1+S2), (iv) kontroll (S2+S3 minimerer agency cost), (v) tilpasning (MR$>$MC, economic Darwinism).
+\item \textbf{Eks.\ 1:} Equinor Renewables-utskillelse 2020/2021 -- alle tre ben endret samtidig.
+\item \textbf{Eks.\ 2:} Norsk Hydro aluminiumsdivisjoner -- LME-justert måling (controllability) + investment-center-design.
+\item \textbf{Case:} Mærsk PtX som investment center -- viser hvorfor alle tre ben må designes sammen; misalignment-tankeeksperiment.
+\item \textbf{Søyle:} \SOne\ + \STwo\ + \SThree\ -- spørsmålet spenner alle tre.
+\end{itemize}

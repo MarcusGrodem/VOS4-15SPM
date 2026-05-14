@@ -1,0 +1,81 @@
+% !TEX root = ../main.tex
+\section{Eksternaliteter}\label{thr:externalities}
+
+\paragraph{Definisjon.} En \emph{eksternalitet} oppstår når en handling påvirker en tredjepart som ikke er part i transaksjonen, og effekten ikke er prissatt i markedet. Positive eksternaliteter (f.eks.\ kunnskapsspredning, dekarbonisering) underleveres; negative (forurensning, støy, intern kannibalisering) overleveres. Inni en virksomhet oppstår eksternaliteter når én divisjons beslutninger påvirker en annen divisjons verdi uten at effekten internaliseres -- og det er da \thref{decision-rights-allocation}{allokering av beslutningsrettigheter} må korrigere. [SLIDE/BOK]
+
+\subsection*{Forklaring}
+
+I makro\o konomi er eksternaliteter et velferdsproblem -- markedet feiler fordi prisene ikke reflekterer samfunnskostnader. Standardløsninger er (i) Pigouvian skatt/subsidie (sett en pris på eksternaliteten), (ii) Coase-forhandling (definer eiendomsretter slik at partene selv prissetter), eller (iii) regulering. [BOK]
+
+Inni en virksomhet er fenomenet helt analogt: en avdelings beslutning kan skape en \emph{intern eksternalitet} mot en annen avdeling, og det dukker opp som koordinasjonsproblem i \thref{organizational-architecture}{arkitekturen}. Klassiske eksempler er kannibalisering (én produktlinje stjeler kunder fra en annen), free-rider på delt ressurs (felles markedsbudsjett, IT-systemer), \thref{transfer-pricing}{transfer pricing}-friksjon, og delt merkevare (én divisjon kan ødelegge konsernets omdømme). [SLIDE]
+
+\textbf{Internaliseringsmekanismer i firmaet} (slidens språk: ``koordinasjonskostnader ved desentralisering''):
+\begin{itemize}
+\item \textbf{Sentralisering:} Flytt beslutningen oppover slik at den nye beslutningstakeren \emph{ser} hele effekten -- løser eksternaliteten ved å utvide beslutningsmandatet.
+\item \textbf{Intern pris (transfer price):} Sett en pris på interne leveranser slik at avdelingen ``betaler'' for eksternaliteten -- analogt med Pigou-skatt internt.
+\item \textbf{Måltall som internaliserer:} Mål divisjonen på \emph{konsernresultat} i tillegg til divisjonsresultat (kombinert KPI). Reduserer effekten av eksternaliteten ved S2-design.
+\item \textbf{Regler / corporate policies:} Forbud, godkjenningsterskler, code of conduct. Brukes når prismekanismen er for kostbar.
+\item \textbf{Bonding / ratifikasjon:} Eksterne effekter over terskel må ratifiseres av \thref{decision-management-control}{Decision Control}-organet.
+\end{itemize}
+
+\textbf{Hvorfor koblingen til decision rights?} Hvis beslutningstakeren ikke bærer eksternalitetens effekt (ikke er \thref{residual-claimants}{residual claimant} for hele konsernet), velger hun rasjonelt det som er optimalt for henne -- som er suboptimalt for konsernet. Dette er den \emph{interne} versjonen av Coase' problem. [BOK]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item Beslutningen til én aktør påvirker en annens nyttefunksjon.
+\item Effekten er ikke priset i en markedstransaksjon mellom de to partene.
+\item Eiendomsretter er enten udefinerte eller ikke håndhevelige uten kostnader (Coase-betingelsen).
+\item Transaksjonskostnader er positive (ellers ville Coase-forhandling løse alt gratis).
+\item Information om effekten er asymmetrisk -- ofte vet aktøren med eksternaliteten den best.
+\end{itemize}
+
+\subsection*{Muligheter}
+\begin{itemize}
+\item Forklarer hvorfor full desentralisering aldri er optimal: hver desentralisert beslutning skaper potensielle eksternaliteter mot andre enheter.
+\item Begrunner sentralisering av visse beslutninger (merkevarestrategi, IT-arkitektur, M\&A, store CAPEX) selv når lokal viden taler for desentralisering.
+\item Forklarer \thref{transfer-pricing}{transfer pricing} som internalisering mekanisme.
+\item Forklarer ESG- og bærekraftrammeverk: konsernet internaliserer eksterne (samfunnsmessige) eksternaliteter via interne karbonpriser, scope 1--3-rapportering, science-based targets.
+\item Forklarer korporative \emph{regler} (godkjenningsterskler, etiske retningslinjer): brukes når prismekanismen er for dyr.
+\item Knytter intern organisering til Coase-tradisjonen: firmaet \emph{er} en internaliseringsmaskin.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item \textbf{Måleproblem:} Mange interne eksternaliteter er vanskelige å kvantifisere (kunnskap, kultur, omdømme). Internaliseringsmekanismer som krever måling, fungerer dårlig her.
+\item \textbf{Coase-teoremet gjelder bare i en idealisert verden} med null transaksjonskostnader og fullstendig informasjon -- nettopp betingelsene som ikke holder inni firmaer.
+\item \textbf{Over\-internalisering:} For sterk koordinering (alt skal godkjennes sentralt) kveler initiativ og lokal viden -- pendelen kan slå for langt.
+\item \textbf{Politiske eksternaliteter:} Lobbying, influence costs (Milgrom \& Roberts) er en form for negativ eksternalitet mellom avdelinger -- vanskelig å designe bort.
+\item \textbf{Strategisk overdrivelse:} En divisjonsleder kan \emph{påstå} positiv eksternalitet (``synergi'') for å overleve, eller \emph{ignorere} negativ eksternalitet for å vokse.
+\item \textbf{Dynamikk:} Eksternaliteter endrer seg med teknologi, regulering og markeder; statiske internaliseringsmekanismer (faste transfer prices) går ut på dato.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}p{3.6cm}p{4.4cm}p{5.4cm}@{}}
+\toprule
+\textbf{Type eksternalitet} & \textbf{Inni firmaet} & \textbf{Internaliseringsmekanisme} \\
+\midrule
+Negativ, mellom divisjoner & Kannibalisering, prisdumping & Sentraliser pris; konsern-KPI \\
+Negativ, delt ressurs & Free-rider i fellesbudsjett & Allokeringsregler, intern pris \\
+Positiv, kunnskapsspredning & R\&D mellom divisjoner & Intern subsidie, fellespott \\
+Negativ, samfunn $\to$ firma & Reguleringsrisiko, omdømme & Intern karbonpris, ESG-policy \\
+Positiv, firma $\to$ samfunn & Dekarbonisering, opplæring & Subsidie, skatte\-insentiv (Pigou) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{CO\textsubscript{2}-utslipp (Pigou):} Klassisk negativ eksternalitet. Norge: CO\textsubscript{2}-avgift + EU ETS-kvoter internaliserer utslippskostnaden. [EKS]
+\item \textbf{Apple App Store (intern):} Apple sentraliserer godkjenning av apper for å unngå at én utvikler ødelegger plattformens omdømme (omdømme-eksternalitet på alle andre utviklere og kundene). [EKS]
+\item \textbf{Coca-Cola bottlers (Coase):} Tidlig var bottlers franchisetakere; konflikter om sluttbrukerpris (en bottlers priskutt skadet nabolagets bottler). Coca-Cola reorganiserte mot å eie store bottlers selv -- internalisering via vertikal integrasjon. [EKS]
+\item \textbf{Norsk Hydro -- delt aluminiumsforskning:} Forskningssenter i Sunndal er fellespott; uten subsidie-mekanisme ville hver divisjon underinvestert (free-rider på positiv kunnskaps\-eksternalitet). [EKS]
+\item \textbf{Mærsk PtX:} Selve PtX-prosjektet er en positiv eksternalitet for konsernet -- det internaliserer Mærsks dekarboniseringsforpliktelser (scope 1) og leverer grønt drivstoff til Ocean-divisjonen. Internalisert gjennom intern karbonpris og koordinerte avtaler mellom PtX og Ocean. Uten denne internaliseringen ville PtX vært ulønnsom isolert sett. [CASE]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: Primært \SOne\ (eksternaliteter trekker beslutningsrett oppover for å internalisere), støttet av \STwo\ (måltall som internaliserer effekter). Relaterte: \thref{decision-rights-allocation}{Allokering av beslutningsrettigheter}, \thref{decision-management-control}{Decision Management vs.\ Decision Control} (Control fanger eksternaliteter), \thref{centralization-vs-decentralization}{Centralisering vs.\ desentralisering} (eksternaliteter er kost ved desentralisering), \thref{transfer-pricing}{Transfer pricing}, \thref{responsibility-centers}{Responsibility centers}, \thref{agency-costs}{Agentomkostninger}, \thref{residual-claimants}{Residual claimants}, \thref{organizational-architecture}{Organizational architecture}.
+
+\paragraph{Brukt i spørsmål:} Q07.

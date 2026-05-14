@@ -1,0 +1,78 @@
+% !TEX root = ../main.tex
+\section{Adverse Selection}\label{thr:adverse-selection}
+
+\paragraph{Definisjon.} Adverse selection (\emph{ugunstig utvelgelse}) er det \emph{pre-kontraktuelle} insentivproblemet som oppstår når én part i en potensiell kontrakt har privat informasjon om en relevant egenskap (\emph{type}, kvalitet, risiko, evne) før avtalen inngås, slik at den uinformerte parten ikke kan skille gode fra dårlige motparter og endte opp med å selektere de "feil" -- typisk de dårligste -- inn i kontrakten. Det er et problem om \emph{hidden information} (skjult informasjon). [SLIDE]
+
+\subsection*{Forklaring}
+
+Den klassiske referansen er George Akerlofs "The Market for Lemons" (1970): i et bruktbilmarked vet selgeren om bilen er en "fersken" eller en "lemon", men kjøperen vet ikke. Kjøperen tilbyr derfor en \emph{gjennomsnittspris} som reflekterer en blanding. Til denne prisen trekker eiere av gode biler seg ut (de er undervurdert), og bare lemons blir igjen. I ekstrem form bryter markedet sammen. Mekanismen heter "adverse selection" fordi sammensetningen som ender i markedet er systematisk dårligere enn populasjonen som tilbys. [BOK]
+
+I prinsipal-agent-sammenheng er den klassiske manifestasjonen rekruttering: en jobbsøker kjenner sin egen produktivitet $\alpha$ bedre enn arbeidsgiveren. Hvis arbeidsgiveren ikke kan skille høyproduktive og lavproduktive søkere og tilbyr en gjennomsnittslønn, søker bare lavproduktive. Tilsvarende er adverse selection sentralt i forsikring (de syke kjøper helseforsikring), kreditt (dårlige låntakere er villige til å betale høyere rente), og oppkjøpsmarkedet (selger kjenner selskapet bedre enn kjøper). [BOK]
+
+Mekanismer for å håndtere adverse selection:
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item \textbf{Signaling.} Den informerte parten foretar en kostbar handling som bare lønner seg å utføre dersom man faktisk er av den ønskede typen. Klassisk: utdanning som signal på produktivitet (Spence). Garantier som signal på produktkvalitet. Lange ansettelseskontrakter med vesting som signal om langsiktig commitment. [SLIDE]
+\item \textbf{Screening.} Den uinformerte parten konstruerer en \emph{meny} av kontrakter slik at ulike typer selv-selekterer seg ulikt. Klassiske eksempler: forsikringskontrakter med ulik egenandel/dekning, lønnskontrakter med ulik bonus-/fastlønn-mix (lavproduktive velger fastlønn, høyproduktive velger bonus), prøvetid. [SLIDE]
+\item \textbf{Monitoring/screening i forkant.} Due-diligence, sertifiseringer, tredjepartsattester, kredittratinger, time-and-motion-studier som baseline. [SLIDE]
+\item \textbf{Reputasjon og gjentatt handel} reduserer informasjonsasymmetri over tid. [BOK]
+\end{itemize}
+
+I performance-måling dukker adverse selection opp som \emph{ratchet-problem}: agenten skjuler sin egentlige kapasitet i periode 1 fordi en høy ytelse vil føre til høyere benchmark i periode 2. Dette er et adverse-selection-symptom på prestasjonsmål: agentens \emph{type} (kapasitet) holdes skjult. [SLIDE]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item Pre-kontraktuell informasjonsasymmetri: én part vet noe relevant motparten ikke vet \emph{før} avtalen.
+\item Den skjulte informasjonen er en egenskap (type) -- ikke en handling.
+\item Verifisering er kostbar: prinsipalen kan ikke gratis observere typen.
+\item Heterogenitet i populasjonen av motparter (gode og dårlige typer eksisterer).
+\item Begrenset mulighet til å bruke pris alene som sorteringsmekanisme uten å trigge frafall (lemons-effekten).
+\end{itemize}
+
+\subsection*{Muligheter (hva forklarer/løser teorien?)}
+\begin{itemize}
+\item Forklarer hvorfor markeder noen ganger \emph{kollapser} eller blir veldig tynne (dårlige bruktbilmarkeder, høyrisiko-syke uten forsikring).
+\item Begrunner eksistensen av sertifiseringsorganer, garantier, due-diligence, og statlige kvalitetsstandarder.
+\item Forklarer hvorfor ansettelser ofte involverer prøvetid, intervjuer, tester og referanser -- alt screening.
+\item Begrunner egenkapital-krav i bank, deductibles i forsikring, og lock-up-perioder ved IPOs.
+\item Gir teoretisk grunnlag for menyer av kontrakter (selvseleksjon).
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item Forutsetter at typen er stabil og veldefinert -- i mange situasjoner er "evne" og "kvalitet" ikke entydig.
+\item Signaling-modeller forutsetter en \emph{single-crossing}-egenskap (signalet er billigere for gode typer); brutt blir ekvilibrium ustabilt.
+\item Screening-menyer kan i praksis være vanskelige å designe og kommunisere.
+\item Atferdsøkonomi: kjøpere/prinsipaler er ikke alltid bayesianske og diskonterer ikke alltid lemons-faren.
+\item Empirisk vanskelig å skille fra moral hazard -- begge gir høyere skadefrekvens i forsikrede populasjoner.
+\item Rasjonelle motparter kan også gjøre signaling \emph{for} dyrt -- velferds-tap fordi alle må overinvestere i signal (utdanning som "rat race").
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Type problem} & \textbf{Tidspunkt} & \textbf{Skjult variabel} \\
+\midrule
+\textbf{Adverse selection} & Før kontrakt & \emph{Type} (egenskap, kvalitet) \\
+Moral hazard & Etter kontrakt & \emph{Handling} (innsats, atferd) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Akerlofs lemons-mekanisme i én linje: $E[\text{kvalitet} \mid \text{tilbudt til pris } p] < E[\text{kvalitet} \mid \text{populasjon}]$. Markedet svikter når kjøperens villighet til å betale faller under reservasjonsprisen til de gode typene.
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{Norsk bruktbilmarked og NAF-test:} Akerlofs lemons-problem løses delvis ved at NAF tilbyr uavhengig teknisk tilstandsrapport som signal/screening. Bilfinn.no har innført integrert tilstandsrapport for å løfte gjennomsnittsprisen og redusere adverse selection. [EKS]
+\item \textbf{Statoil-Hydro-fusjonen (2007):} Begge parter måtte gjennomføre omfattende due-diligence på reserver, kontrakter og forpliktelser fordi hver part hadde privat informasjon om egen verdi -- klassisk pre-kontraktuell informasjonsasymmetri. Synergiregnestykker som ikke holdt mål etterpå er et tegn på adverse selection som ikke ble fullt løst i prosessen. [EKS]
+\item \textbf{Storebrand helseforsikring:} Bruker helseerklæring og delvis ekskludering av kjente lidelser ved tegning -- screening for å unngå at bare de syke tegner forsikring. [EKS]
+\item \textbf{Lincoln Electric -- time-and-motion-studies:} Brukes for å fastsette enhetspriser i akkord uten å la nåværende ytelse "rattle" benchmark -- en motvekt mot adverse-selection-aktig ratchet-effekt. [SLIDE]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: \SThree\ primært (insentiv- og kontraktdesign), men også \STwo\ (screening-baserte prestasjonsmål) og \SOne\ (hvem som får myndighet bør ofte være den som har spesifik viden -- jf.\ specific-vs-general-knowledge).
+
+Relaterte teorier: \thref{principal-agent}{Principal-Agent}, \thref{moral-hazard}{Moral Hazard} (motstykket -- post-kontraktuelt), \thref{costly-contracting}{Costly Contracting}, \thref{costless-contracting}{Costless Contracting} (under denne forutsetningen forsvinner adverse selection), \thref{incentive-conflicts-owner-manager}{Incitamentkonflikter}, \thref{agency-costs}{Agency Costs}, \thref{specific-vs-general-knowledge}{Spesifik vs.\ generell viden}.
+
+\paragraph{Brukt i spørsmål:} Q04, Q10.

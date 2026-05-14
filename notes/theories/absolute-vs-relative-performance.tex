@@ -1,0 +1,77 @@
+% !TEX root = ../main.tex
+\section{Absolutt vs.\ relativ prestasjonsmåling}\label{thr:absolute-vs-relative-performance}
+
+\paragraph{Definisjon.} \emph{Absolutt} prestasjonsmåling vurderer en ansatt (eller enhet) uavhengig av andre -- mot et forhåndsdefinert nivå, budsjett eller standard. \emph{Relativ} prestasjonsmåling vurderer den ansatte i forhold til en peer-gruppe: andre ansatte, andre divisjoner, eller eksterne benchmarks. Skillet handler om hva slags støy som filtreres ut av målet. [SLIDE]
+
+\subsection*{Forklaring}
+
+Den teoretiske begrunnelsen for relativ måling kommer fra Holmström (1979) \emph{informativeness principle}: bruk \emph{all} lavkost-informasjon som er korrelert med agentens innsats. Hvis to selgere i samme bransje begge rammes av en pandemi som halverer markedet, sier deres absolutte salgstall lite om innsats -- men forskjellen mellom dem sier mye. Relativ måling filtrerer altså bort felles sjokk ($\mu_{\text{common}}$) og gjør prestasjonsmålet mer informativt om innsats $e$. Konsekvensen i \thref{principal-agent}{principal-agent}-modellen er at man kan sette en høyere insentivkoeffisient \thref{incentive-coefficient}{$\beta$} uten å overlaste agenten med risiko -- billigere insentivkontrakt. [SLIDE/BOK]
+
+Absolutt måling, derimot, har sin styrke der koordinasjon og samarbeid er viktigst. Når alle blir bedømt mot en felles standard og ikke mot hverandre, fjernes incentivet til å sabotere kolleger eller hamstre informasjon. Det er også enklere å kommunisere: ``Du skal selge for 10 millioner'' er lettere enn ``Du skal være blant topp 20 \% av selgerne''. [SLIDE]
+
+I praksis brukes ofte en \emph{hybrid}: en absolutt komponent (treffer budsjett) kombinert med en relativ (rTSR -- relativ Total Shareholder Return -- mot peer-indeks). De fleste børsnoterte selskapers LTI-program er av denne typen. [BOK]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item For relativ måling: peer-gruppen må være tilstrekkelig stor, sammenlignbar, og utsatt for samme felles sjokk som agenten.
+\item For relativ måling: agentene må ikke kunne påvirke hverandres prestasjoner sterkt (lite kooperativ interaksjon), ellers vrir relativ måling mot sabotasje.
+\item For absolutt måling: det må finnes en stabil, kalibrerbar standard. Når omgivelsene endrer seg sterkt, blir absolutt mål raskt utdatert (ratchet-fare).
+\item Informativeness-prinsippet forutsetter at peer-prestasjon er korrelert med agentens støy, ikke med hennes innsats.
+\item Risikoaversjon hos agenten -- ellers spiller risikodelingsargumentet for relativ måling mindre rolle.
+\end{itemize}
+
+\subsection*{Muligheter}
+\begin{itemize}
+\item \textbf{Relativ:} Filtrerer ut bransje-, marked- og makrosjokk. Reduserer risikopremie. Tournament-effekt motiverer topptalenter (Lazear \& Rosen 1981).
+\item \textbf{Relativ:} Gir kontinuerlig benchmarking -- ingen ratchet-fare fra eget historie, siden målet flyttes av andres prestasjoner, ikke av egne.
+\item \textbf{Absolutt:} Enkelt å forstå og kommunisere; kompatibelt med målbasert ledelse (MBO).
+\item \textbf{Absolutt:} Oppmuntrer ikke til sabotasje av kolleger; fremmer samarbeid og kunnskapsdeling.
+\item \textbf{Absolutt:} Bedre når selskapet vil bedrive \emph{koordinasjon} -- felles måltall samler organisasjonen.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item \textbf{Relativ: rat race og sabotasje.} Når kolleger måles relativt, oppstår incentiv til å skade hverandre -- Microsoft stack ranking-eksempelet er klassisk. Reduserer kunnskapsdeling og teamarbeid.
+\item \textbf{Relativ: manipulasjon av peer-pool.} Ledere lobber for å bli sammenlignet med svakere peers; kan også presse selskapet til å ansette dårligere kandidater.
+\item \textbf{Relativ: vanskelig på tvers av selskaper.} Regnskapsstandarder, valutaer, forretningsmodeller varierer; ``sammenlignbarhet'' er ofte konstruksjon.
+\item \textbf{Relativ: gjensidig forsikring.} I små grupper kan ansatte implisitt avtale å ikke yte ekstra -- en form for kollektiv sandbagging.
+\item \textbf{Absolutt: rammes av eksogene sjokk.} En selger som halverer markedssvikt absorberer all risikoen alene -- demotiverende og dyrt for prinsipalen (risikopremie).
+\item \textbf{Absolutt: \thref{ratchet-effect}{ratchet-fare}.} Når neste års standard settes fra dette års prestasjon, oppstår sandbagging.
+\item \textbf{Hybridløsninger} (delvis absolutt + delvis relativ) reduserer ulempene men introduserer kompleksitet og diskusjon om vektingen.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+I principal-agent-rammen filtrerer relativ måling støy: la $Q_i = \alpha e_i + \mu_{\text{common}} + \mu_{i, \text{idio}}$. Da har den relative differansen $Q_i - \bar{Q}_{-i}$ ingen $\mu_{\text{common}}$-komponent og er mer informativ om $e_i$ alene. Informativeness-prinsippet sier at optimal kontrakt bør betinges på $Q_i - \bar{Q}_{-i}$, ikke bare $Q_i$. Pris: man overfører $\mu_{i, \text{idio}}$-risiko mens man fjerner $\mu_{\text{common}}$-risiko -- nettoeffekten avhenger av hvor stor andel av total støy som er felles.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}p{3.5cm}p{5.0cm}p{5.0cm}@{}}
+\toprule
+\textbf{Dimensjon} & \textbf{Absolutt} & \textbf{Relativ} \\
+\midrule
+Filtrerer felles sjokk? & Nei & Ja \\
+Risikopremie & Høyere & Lavere \\
+Insentivkoeffisient $\beta$ & Lavere (av risiko) & Kan settes høyere \\
+Samarbeidseffekt & Positiv/nøytral & Negativ (sabotasje) \\
+Ratchet-fare & Høy & Lav (avhenger ikke av egen historikk) \\
+Enkel å kommunisere & Ja & Nei (sammenligningsgrunnlag) \\
+\bottomrule
+\end{tabular}
+\end{center}
+[SLIDE/BOK]
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{Equinor LTI (NO).} En vesentlig andel av langtidsprogrammet er knyttet til \emph{relative Total Shareholder Return} (rTSR) mot en peer-gruppe av integrerte oljeselskaper (Shell, BP, TotalEnergies, m.fl.). Dette filtrerer bort oljepris-sjokk som ledelsen ikke kontrollerer. [EKS]
+\item \textbf{Microsoft stack ranking (før 2013).} Tvungen relativ rangering der bunn-10\,\% ble vurdert ut. Skapte interne kamper, sabotasje og kunnskapshamstring. Avskaffet i 2013 til fordel for mer absolutt + subjektiv vurdering. [EKS]
+\item \textbf{GE Jack Welch ``vitality curve''.} Klassisk relativ rangering 20-70-10. Lik kritikk som Microsoft. [EKS]
+\item \textbf{Norske banker, kredittsalg.} Salgskvoter er typisk absolutte (selg N produkter), men toppledelsens bonus knyttes til rTSR mot DNB/Nordea/SEB-peer-gruppen. [EKS]
+\item \textbf{Tournaments i akademia.} Stipendiatkonkurranse er relativ -- man får stipend basert på rangering mot medsøkere, ikke en absolutt terskel. [EKS]
+\item \textbf{Mærsk PtX-benchmarking.} Sammenligning av prosjektytelse mot Ørsted, Air Liquide og andre PtX-aktører filtrerer bort bransje-/elprissjokk og isolerer prosjektledernes reelle bidrag. [CASE]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: \STwo\ (måletype) primært, kobler direkte til \SThree\ (bonusberegning). Relaterte teorier: \thref{performance-measurement-purposes}{Formålene med prestasjonsmåling}, \thref{informativeness-principle}{Informativeness-prinsippet} (teoretisk grunnlag), \thref{controllability-principle}{Controllability-prinsippet} (samme motivasjon: filtrer ut ikke-kontrollerbart), \thref{ratchet-effect}{Ratchet-effekten} (relativ er løsning), \thref{gaming-in-performance-measurement}{Gaming}, \thref{subjective-vs-objective-performance}{Subjektiv vs.\ objektiv prestasjonsmåling}, \thref{principal-agent}{Principal-Agent}, \thref{moral-hazard}{Moral hazard}, \thref{agency-costs}{Agency costs}, \thref{incentive-coefficient}{Insentivkoeffisient}.
+
+\paragraph{Brukt i spørsmål:} Q10.

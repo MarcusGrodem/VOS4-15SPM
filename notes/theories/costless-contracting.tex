@@ -1,0 +1,75 @@
+% !TEX root = ../main.tex
+\section{Costless Contracting (benchmark)}\label{thr:costless-contracting}
+
+\paragraph{Definisjon.} \emph{Costless contracting} er den teoretiske forutsetningen om at kontrakter er gratis å skrive, fullstendige (dekker alle fremtidige kontingenser) og kostnadsfritt verifiserbare og håndhevbare. Under denne forutsetningen kan principalen og agenten alltid skrive en kontrakt som realiserer \emph{first-best}: full interesseoverensstemmelse uten tap. Forutsetningen er en \emph{benchmark} -- ikke en realistisk beskrivelse av verden, men et utgangspunkt som viser hva kontrakten i prinsippet kan løse, og hva som går galt når forutsetningen brytes. [SLIDE/BOK]
+
+\subsection*{Forklaring}
+
+Slide-formuleringen i BSZ kap.~10 sier eksplisitt: ``Ved costless contracting ville perfekte kontrakter kunne skape full interesseoverensstemmelse uden omkostninger.'' Konsekvensen er at \emph{alle} fem incitamentkonflikter (shirking, perks, risikoaversjon, horisont, empire building) i prinsippet kan kontrakteres bort: man skriver inn nøyaktig hvilken innsats agenten skal levere i hver mulig fremtidig tilstand, hvilke perks som er tillatt, hvilke prosjekter som skal velges, og hvilken horisont som skal styre beslutninger. [SLIDE]
+
+I Erica Olsson-modellen ($Q = \alpha e + \mu$, $W = W_0 + \beta Q$) tilsvarer costless contracting at:
+\begin{itemize}
+\item Innsats $e$ er observerbar og verifiserbar $\Rightarrow$ kontrakten kan spesifisere ``betal $W$ hvis $e \ge e^\ast$, ellers $0$'' og oppnå first-best uten å pålegge agenten støy fra $\mu$.
+\item Alternativt: kontrakten betinger på $\mu$ direkte (parsering av output i kontrollerbar/ikke-kontrollerbar del).
+\item Risikodelingen blir effektiv: risikoaversjonen til agenten ivaretas (lav $\beta$, høy $W_0$), \emph{samtidig} som innsatsen er optimal (fordi den er kontraktfestet direkte).
+\end{itemize}
+First-best-løsningen er altså $e = e^\ast$ (samme nivå som principalen ville valgt selv hvis hun hadde all kunnskap), full risikoabsorbering hos den minst risiko\-averse parten, og null residual loss. [SLIDE/BOK]
+
+Dette er Q03's hovedpoeng: når man \emph{antar} costless contracting, kan kontrakten \emph{eliminere} de fem konfliktene. Det at virkeligheten har \emph{costly contracting} (Q04) -- kontrakter er dyre å skrive, ufullstendige, og verifikasjon er begrenset -- er presist det som tvinger oss inn i \thref{moral-hazard}{moral hazard}, \thref{adverse-selection}{adverse selection} og \thref{agency-costs}{agency costs}. [SLIDE]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item \textbf{Fullstendige kontrakter:} alle relevante fremtidige hendelser kan beskrives og betinges på.
+\item \textbf{Symmetrisk informasjon:} principalen kan observere innsats $e$, evner $\alpha$ og støy $\mu$ kostnadsfritt.
+\item \textbf{Verifiserbarhet:} variablene kan dokumenteres for en tredjepart (typisk en domstol).
+\item \textbf{Kostnadsfri forhandling, skriving og håndheving:} ingen advokatregninger, ingen monitoring-kostnader, ingen rettsprosesser.
+\item \textbf{Rasjonelle, nyttemaksimerende parter:} ingen behavioural friksjoner.
+\end{itemize}
+
+\subsection*{Muligheter (hva benchmarken brukes til)}
+\begin{itemize}
+\item Definerer first-best og dermed målestokken for hvor stort agency-problemet er.
+\item Viser at agency-problemer ikke er drevet av interessekonflikten \emph{i seg selv}, men av interessekonflikt + informasjons\-asymmetri + kontraktskostnader.
+\item Forklarer hvorfor man i Coase-teoremet får effektive utfall ved klare property rights og lave transaksjonskostnader -- samme logikk.
+\item Gir et naturlig pedagogisk utgangspunkt: bygg modellen ferdig under costless contracting, slipp deretter forutsetningene én etter én og se hva som svikter.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item Forutsetningen er \emph{kontrafaktisk} -- ingen virkelig kontrakt er fullstendig og gratis å håndheve.
+\item Når forutsetningen brytes (asymmetrisk info, ufullstendige kontrakter), forsvinner first-best-resultatet helt: vi havner i \emph{second-best} med residual loss.
+\item Skjuler det viktigste fenomenet i moderne organisasjons\-økonomi: \thref{costly-contracting}{costly contracting}.
+\item Kan misforstås som anbefaling om ``mer kontrakter'' -- mens hovedkonklusjonen tvert imot er at organisasjons\-design (hierarki, kultur, omdømme) erstatter formelle kontrakter der kontrakter er for dyre.
+\item Praktisk verdi er pedagogisk, ikke direkte normativ.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}p{3.6cm}p{5.0cm}p{5.0cm}@{}}
+\toprule
+\textbf{Forutsetning} & \textbf{Costless contracting (Q03)} & \textbf{Costly contracting (Q04)} \\
+\midrule
+Informasjon & Symmetrisk & Asymmetrisk (hidden action / hidden info) \\
+Kontrakt & Fullstendig, gratis & Ufullstendig, dyr å skrive/håndheve \\
+Verifikasjon & Kostnadsfri & Krever monitoring + bonding \\
+Innsatsvalg & First-best $e^\ast$ kontraktfestet direkte & Second-best: $e < e^\ast$ \\
+Risikodeling & Effektiv (lav $\beta$, høy $W_0$) & Trade-off mellom incentive og risk sharing \\
+Resultat & Ingen agency costs & Monitoring + bonding + residual loss \\
+\bottomrule
+\end{tabular}
+\end{center}
+\textit{Tabellen viser overgangen fra benchmark (Q03) til realistisk verden (Q04). [SLIDE]}
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{Veldefinert akkord\-arbeid:} Hvis et plukk-arbeid i et lager kan måles eksakt og objektivt (antall plukk pr.\ time), nærmer man seg costless contracting på den dimensjonen -- man kan kontraktfeste utfallet direkte. Men kvalitet, omsorg for varer, kollegasamarbeid faller utenfor og blir igjen agency-problem. [EKS]
+\item \textbf{Spotmarkeder for standardvarer:} Salg av Brent-råolje på spot er nær costless: standard kvalitet, standard kontrakt, dyp likviditet. Sammenligning med en skreddersydd LNG-kontrakt over 20 år, der hver klausul må forhandles, viser hvor dyrt det blir å nærme seg fullstendighet. [EKS]
+\item \textbf{Akademisk ansettelseskontrakt:} Tenure-systemet er et eksempel på \emph{ufullstendig} kontrakt -- man kan ikke kontraktfeste ``produser god forskning'' direkte, så man bruker en lang prøveperiode (bonding) i stedet. Avstanden fra costless contracting forklarer hele designet. [EKS]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: \SThree\ primært (insentivkontrakter), men virker også på \SOne\ (delegert beslutningsrett kunne kontraktfestes presist) og \STwo\ (perfekte måltall). Relaterte teorier: \thref{principal-agent}{Principal-agent}, \thref{costly-contracting}{Costly contracting} (motstykket), \thref{moral-hazard}{Moral hazard} og \thref{adverse-selection}{Adverse selection} (det som oppstår når forutsetningen brytes), \thref{agency-costs}{Agency costs}, \thref{informativeness-principle}{Informativeness-prinsippet}, \thref{game-theory}{Spilteori} (repeterte spill kan tilnærme costless-utfallet via reputasjon).
+
+\paragraph{Brukt i spørsmål:} Q03, Q04.

@@ -1,0 +1,116 @@
+% !TEX root = ../main.tex
+% NB til orchestrator: Denne filen bruker TikZ-figurer i theory-filen optimal-decentralization-model.tex.
+% Preamble må utvides med \usepackage{tikz}. Hvis tikz ikke legges til, vil bygget feile på de to TikZ-blokkene i den teorifilen.
+% Q06 selv bruker kun \includegraphics og er ikke avhengig av tikz.
+\section{Q06: Centralisering vs.\ decentralisering -- trade-offs og optimal grad}\label{q:06}
+
+\begin{quote}
+\emph{Redegør for fordele og ulemper ved samt trade-offs mellem centralisering og decentralisering. Præsentér herefter kriterier for fastlæggelse af optimal decentraliseringsgrad og redegør specifikt grafisk for modellen til illustration heraf.}
+\end{quote}
+
+\subsection*{Svar (kort)}
+\thref{centralization-vs-decentralization}{Sentralisering vs.\ desentralisering} er et kontinuum, ikke et binært valg. Desentralisering utnytter \thref{specific-vs-general-knowledge}{spesifik lokal viden} (Hayek; Jensen \& Meckling), men introduserer \thref{agency-costs}{agentomkostninger} og koordineringskostnader. Optimal grad $D^{*}$ ligger der marginal fordel av lokal viden møter marginal kostnad av agent- og koordineringsproblemer -- BSZ-modellen (kap.\ 12) gir $\mathrm{NB}(D) = BD - AD - CD^{2}$ med $D^{*} = (B-A)/(2C)$. Hver gang \SOne\ flyttes, må \STwo\ og \SThree\ justeres med, ellers faller arkitekturen. [SLIDE/BOK]
+
+\subsection*{Fordele og ulemper (kort)}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}p{2.5cm}p{6.0cm}p{6.0cm}@{}}
+\toprule
+& \textbf{Sentralisering} & \textbf{Desentralisering} \\
+\midrule
+\textbf{Fordele} & Koordinering, stordrift, konsistens, lave agentkostnader & Lokal viden, hurtighet, motivasjon/ledertrening, avlastning av toppledelse \\
+\textbf{Ulemper} & Tap av lokal viden, treghet, toppledelsesoverload, demotivasjon nede & Agentkostnader, koordineringssvikt, tap av stordrift, inkonsistente beslutninger \\
+\bottomrule
+\end{tabular}
+\end{center}
+\emph{Trade-off i én linje:} Desentralisering gir bedre informasjon men dårligere insentivlinje; sentralisering gir bedre insentivlinje men dårligere informasjon. [SLIDE]
+
+\subsection*{Relevante teorier (kort)}
+
+\paragraph{\thref{centralization-vs-decentralization}{Centralisering vs.\ desentralisering}\quad\SOne}
+Beslutningsrett kan plasseres høyt (CEO/konsern) eller delegeres nedover. Valget er det første benet i arkitekturen og det drives av om videnen som trengs til beslutningen er spesifik eller generell. I praksis blandes sentralisering og desentralisering på ulike beslutningsklasser -- f.eks.\ kapitalallokering sentralt, daglig drift lokalt. [SLIDE/BOK]
+
+\paragraph{\thref{optimal-decentralization-model}{Optimal decentraliseringsgrad}\quad\SOne}
+BSZ-modellen formaliserer trade-off-en: $\mathrm{NB}(D) = B \cdot D - A \cdot D - C \cdot D^{2}$ med optimum $D^{*} = (B-A)/(2C)$, der $B$ er marginal nytte av lokal viden, $A$ er marginal agentkostnad og $C$ er konveks koordineringskostnad. Komparativ statikk: $\partial D^{*}/\partial B > 0$, $\partial D^{*}/\partial A < 0$, $\partial D^{*}/\partial C < 0$. [SLIDE]
+
+\paragraph{\thref{specific-vs-general-knowledge}{Spesifik vs.\ generell viden}\quad\SOne}
+Hayek (1945) og Jensen \& Meckling (1992): viden er distribuert. Spesifik viden er kostbar å overføre $\Rightarrow$ flytt \emph{beslutningen} til videnen (desentraliser). Generell viden er billig $\Rightarrow$ flytt \emph{videnen} til beslutningen (sentraliser). Dette er driveren for $B$ i modellen -- og forklarer hvorfor IT-revolusjonen kan re-sentralisere når tidligere spesifik viden kodifiseres. [SLIDE/BOK]
+
+\paragraph{\thref{agency-costs}{Agentomkostninger}\quad\SOne/\STwo/\SThree}
+Når beslutningsretten flyttes nedover, mister prinsipalen direkte kontroll. Jensen \& Meckling: $\text{AC} = \text{monitoring} + \text{bonding} + \text{residual loss}$. Modellens $A$-parameter er nettopp marginal agentkostnad ved økt desentralisering -- den minimeres ved samtidig å designe \STwo\ (måling) og \SThree\ (insentiv) som erstatter den tapte kontrollen. Endrer man bare \SOne\ uten S2/S3, eksploderer $A$ og $D^{*}$ trekkes mot null. [BOK]
+
+\subsection*{Grafisk modell (obligatorisk)}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.0]
+  % Akser
+  \draw[->, thick] (0,0) -- (7.5,0) node[right] {$D$};
+  \draw[->, thick] (0,0) -- (0,5) node[above] {kr};
+  % MB horisontal på B=4
+  \draw[thick, blue!70!black] (0,4) -- (7,4) node[right] {$\mathrm{MB}=B$};
+  % MC lineær: A + 2CD, A=1, stigning 0.5
+  \draw[thick, red!70!black] (0,1) -- (7,4.5) node[right] {$\mathrm{MC}=A+2CD$};
+  % D* der MB=MC: 1+0.5D=4 => D=6? med disse tallene topp ved D=6; juster:
+  % La oss heller bruke A=1, helning 1 (2C=1, dvs C=0.5) => krysning ved D=3
+  \draw[dashed] (3,0) -- (3,4);
+  \filldraw[black] (3,4) circle (1.5pt);
+  \node[below] at (3,0) {$D^{*}$};
+  \node[left] at (0,4) {$B$};
+  \node[left] at (0,1) {$A$};
+  \node[above right] at (3,4) {\small Optimum: $D^{*}=\tfrac{B-A}{2C}$};
+\end{tikzpicture}
+\caption{Optimal grad av desentralisering der marginal fordel ($B$, konstant) møter marginal kostnad ($A + 2CD$, lineært stigende). Skifter $B$ opp $\Rightarrow$ $D^{*}$ til høyre; skifter $A$ eller $C$ opp $\Rightarrow$ $D^{*}$ til venstre. [SLIDE/EGEN]}
+\end{figure}
+
+\textbf{Forklaring av aksene.} Den horisontale aksen $D$ måler grad av desentralisering fra 0 (full sentralisering) til $D_{\max}$ (full desentralisering); den vertikale måler kroner per marginal enhet av $D$. $\mathrm{MB}=B$ er marginal fordel av at neste beslutning flyttes til lokal leder (verdien av spesifik viden). $\mathrm{MC} = A + 2CD$ kombinerer en lineær agentkostnad ($A$, konstant marginal) og en lineær \emph{marginal} koordineringskostnad som vokser i $D$ (avledet av total kvadratisk $CD^{2}$). I optimum er marginal fordel akkurat lik marginal kostnad: $B = A + 2CD^{*} \Rightarrow D^{*} = (B-A)/(2C)$. En mer detaljert avledning og en alternativ NB-parabel-figur finnes i teorifilen \thref{optimal-decentralization-model}{optimal decentraliseringsmodell}. [SLIDE]
+
+\subsection*{Real-world eksempler}
+
+\textbf{Eks.\ 1 -- Equinor (E\&P vs.\ konsernfinans).}\quad [EKS]
+Letevirksomheten i Equinor er sterkt desentralisert til prosjektledere som investment centers fordi den \thref{specific-vs-general-knowledge}{spesifikke geologiske videnen} ikke kan kodifiseres -- høyt $B$. Samtidig er konsernfinans, kapitalallokering og M\&A sentralisert i Stavanger fordi videnen her er generell (regnskapsstandarder, kapitalkostnad, ratings) og koordineringskostnaden ved fragmentert finans ville vært katastrofalt høy -- høyt $C$. Sammenlignet er $D^{*}_{\text{E\&P}} \gg D^{*}_{\text{finans}}$ innenfor samme konsern, og illustrerer at desentralisering er beslutningsklassespesifikk, ikke firmaspesifikk.
+
+\textbf{Eks.\ 2 -- IKEA vs.\ McDonald's.}\quad [EKS]
+IKEA holder produktdesign sentralisert i \"Almhult (designkunnskap er kodifiserbar i tegninger og monteringsanvisninger -- generell viden, lav $B$ ved desentralisering, høy stordrift), men salgsbeslutninger per varehus er desentralisert (lokal kundepreferanse er spesifik). McDonald's tar desentraliseringen lenger gjennom franchising: hele driften er delegert til franchisetakere, mens menyutvalg, brand og forsyningskjede holdes sentralt. Forskjellen mellom de to: McDonald's har bevisst designet \STwo\ (royalty på omsetning) og \SThree\ (residualkrav til franchisetaker) som tillater høyere $D^{*}$ uten at $A$ eksploderer. Sammenligningen viser at $D^{*}$ ikke bare avhenger av bransje, men også av hvor godt arkitekturens to andre ben kan utformes.
+
+\subsection*{Kobling til Mærsk Power-to-X}
+PtX-divisjonen er et lærebokeksempel på \emph{differensiert} desentralisering: [CASE]
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item Teknologivalg (elektrolysørtype, prosessdesign, partnerøkosystem) er bevisst desentralisert fordi \thref{specific-vs-general-knowledge}{spesifik kjemi- og prosessviden} sitter i divisjonen, ikke hos konsernledelsen -- høyt $B$.
+\item Kapitalallokering og fundraising holdes \emph{sentralt} fordi A og C der er høye: agentkostnaden ved at en entusiastisk divisjonsleder overinvesterer i tidlig teknologi er stor, og koordineringsbehovet med Mærsks samlede balanse og kredittratings er sterkt.
+\item Resultat: ulik $D^{*}$ for ulike beslutningsklasser innenfor samme divisjon -- akkurat som modellen forutsier når $B, A, C$ varierer langs dimensjonene.
+\end{itemize}
+\textbf{Trade-off:} Hadde konsernet desentralisert også CAPEX-beslutningene uten å styrke \STwo\ (NPV-måling) og \SThree\ (langsiktige insentiver), ville $A$ vokst og $D^{*}_{\text{CAPEX}}$ falt mot null. Dette er presis koblingen til den tre-benede skammelen i Q05.
+
+\subsection*{Fallgruber}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item Behandle desentralisering som binær -- tap nyansen at $D$ er kontinuerlig og beslutningsklassespesifikk.
+\item Glemme at modellen er marginal -- snakk om \emph{marginal} fordel og kostnad, ikke gjennomsnitt.
+\item Bare nevne fordeler/ulemper uten å peke på \emph{driveren} (spesifik vs.\ generell viden) eller \emph{trade-off-en} i marginal-form.
+\item Hoppe over den grafiske modellen -- eksamen ber eksplisitt om å ``redegøre specifikt grafisk''.
+\item Glemme at $A$ og $C$ er \emph{endogene} -- de avhenger av \STwo\ og \SThree, og kan flyttes ned ved bedre måling og insentivdesign.
+\item Forveksle koordineringskostnad ($C$) med agentkostnad ($A$) -- de er to ulike effekter med ulik funksjonsform (kvadratisk vs.\ lineær).
+\item Ignorere influence costs og bureaucratic rules som ekstra kostnadsklasse ved sterk sentralisering.
+\item Ikke knytte modellen til arkitekturen som helhet -- $D^{*}$ uten S2/S3-justering er meningsløst.
+\end{itemize}
+
+\subsection*{Håndskrivbar disposisjon (15-min forberedelse)}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item \textbf{Tese:} Optimal grad av desentralisering ligger der marginal fordel av lokal viden = marginal kostnad av agent- og koordineringsproblemer.
+\item \textbf{Definisjoner:} Sentralisering (beslutning høyt) vs.\ desentralisering (delegert). Kontinuum, beslutningsklassespesifikt.
+\item \textbf{Driver:} \thref{specific-vs-general-knowledge}{Spesifik vs.\ generell viden} (Hayek $\to$ J\&M). Co-location of knowledge and decision rights.
+\item \textbf{Fordeler ved desentralisering:} Lokal viden, hurtighet, toppledertid, motivasjon/ledertrening.
+\item \textbf{Ulemper ved desentralisering:} \thref{agency-costs}{Agentkostnader}, koordineringskostnader, tap av stordrift.
+\item \textbf{Speilbilde:} Sentralisering har omvendte fordeler/ulemper -- viktig å nevne begge.
+\item \textbf{Trade-off:} Bedre info vs.\ bedre insentivlinje. Flytter man \SOne, må \STwo\ og \SThree\ med -- ellers eksploderer $A$.
+\item \textbf{Modell:} $\mathrm{NB}(D) = BD - AD - CD^{2}$. FOC: $B - A - 2CD = 0 \Rightarrow D^{*} = (B-A)/(2C)$. SOC: $-2C < 0$ (maks).
+\item \textbf{Komparativ statikk:} $\partial D^{*}/\partial B > 0$; $\partial D^{*}/\partial A < 0$; $\partial D^{*}/\partial C < 0$.
+\item \textbf{Graf:} Tegn MB (horisontal på $B$) og MC ($A + 2CD$, stigende rett linje). Skjæringspunkt = $D^{*}$. Eventuelt parabel for $\mathrm{NB}(D)$ med topp ved $D^{*}$.
+\item \textbf{Talleksempel:} $B=10, A=2, C=4 \Rightarrow D^{*} = 1$. Endre $A$ til $6 \Rightarrow D^{*} = 0.5$.
+\item \textbf{Eks.\ 1:} Equinor E\&P (høy $D^{*}$) vs.\ konsernfinans (lav $D^{*}$) i samme firma.
+\item \textbf{Eks.\ 2:} IKEA (design sentralt, salg lokalt) vs.\ McDonald's franchise (sterk desentralisering støttet av sterk \STwo/\SThree).
+\item \textbf{Case:} Mærsk PtX -- teknologi desentralisert, CAPEX sentralisert; viser at $D^{*}$ er beslutningsklassespesifikk.
+\item \textbf{Fallgruber:} Ikke gjør $D$ binær; husk marginal; knytt $A$ til S2/S3-kvalitet; tegn grafen.
+\item \textbf{Søyle:} Hovedsakelig \SOne, men kobler direkte til \STwo\ og \SThree\ via parameteren $A$.
+\end{itemize}

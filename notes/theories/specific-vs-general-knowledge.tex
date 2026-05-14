@@ -1,0 +1,97 @@
+% !TEX root = ../main.tex
+\section{Spesifik vs.\ generell viden}\label{thr:specific-vs-general-knowledge}
+
+\paragraph{Definisjon.} Skillet mellom \emph{spesifik viden} (specific knowledge) og \emph{generell viden} (general knowledge) handler om hvor dyrt det er å overføre kunnskap mellom personer i en organisasjon. Spesifik viden er kostbar å sende oppover (lokal, kontekstuell, taus, tidssensitiv); generell viden er billig å overføre (kvantifiserbar, kodifisert, dokumenterbar). Skillet stammer fra Hayek (1945) ``The Use of Knowledge in Society'' og operasjonaliseres organisasjonsøkonomisk av Jensen \& Meckling (1992). [SLIDE/BOK]
+
+\subsection*{Forklaring}
+
+Hayeks poeng er at viktig kunnskap i et samfunn er \emph{distribuert}: ingen sentral planlegger sitter på all relevant informasjon om lokale forhold, preferanser eller muligheter. Markedet løser dette med \emph{priser} -- prismekanismen aggregerer spredt kunnskap automatisk. Inni en virksomhet finnes det imidlertid ikke priser i samme grad; viden må enten flyttes (kostbart) eller \emph{beslutningsretten} må flyttes til der videnen sitter (også kostbart, fordi det åpner for agentkonflikt). [SLIDE]
+
+Jensen \& Meckling formaliserte trade-off-en i \emph{co-location of knowledge and decision rights}: organisasjonen står overfor to grunnleggende valg:
+\begin{enumerate}
+\item Sentralisere beslutningen og overføre videnen oppover (sentralisering + informasjonsflyt).
+\item Flytte beslutningsretten ned til der videnen er, og overvåke / insentivere lederen (desentralisering + agentstyring).
+\end{enumerate}
+Ingen av valgene er gratis. Sentralisering taper på dårlig kvalitet av kunnskap (eller høy overføringskost); desentralisering taper på agentkostnader. Optimal organisering balanserer disse to. [BOK]
+
+\subsection*{Konsekvensen for arkitektur}
+
+Dette er hjertet av \thref{organizational-architecture}{organizational architecture}: når beslutningsretten desentraliseres (S1 endres) for å utnytte spesifik viden, må prinsipalen \emph{erstatte} den direkte kontrollen som gikk tapt med to nye mekanismer:
+\begin{itemize}
+\item \STwo\ \textbf{prestasjonsmåling} -- siden man ikke lenger ser \emph{handlingen}, må man måle \emph{resultatet}.
+\item \SThree\ \textbf{insentivstruktur} -- man må kompensere lederen slik at hennes egeninteresse trekker i samme retning som prinsipalens.
+\end{itemize}
+Spesifik viden er derfor det \emph{drivende} argumentet for hvorfor S1 må følges av S2 og S3. Endrer man bare én søyle, skapes misalignment.
+
+\subsection*{Eksempler på spesifik viden}
+\begin{itemize}
+\item Lokal markedskunnskap (en butikksjef vet hva nabolagets kunder etterspør).
+\item Tidssensitiv kunnskap (trader vet at markedet beveger seg \emph{nå}).
+\item Vitenskapelig domenekunnskap (en forsker forstår sitt felt bedre enn lederen).
+\item Kunderelasjoner (en account manager kjenner kundens behov over år).
+\item Teknisk taus kunnskap (en operatør på et raffineri vet når en pumpe må byttes).
+\end{itemize}
+
+\subsection*{Eksempler på generell viden}
+\begin{itemize}
+\item Aksjekurs i sanntid.
+\item Standardiserte regnskapstall.
+\item Ferdige rapporter, dashboards, KPI-data.
+\item Politikkbeslutninger som kan kodifiseres i regler.
+\end{itemize}
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item Det finnes \emph{en} dimensjon ``kostnaden ved å overføre viden'' som meningsfullt skiller spesifik fra generell.
+\item Beslutningsmaker har faktisk insentiv til å bruke videnen riktig (ellers løses ikke problemet ved å flytte beslutningsretten).
+\item Prestasjonsmåling kan brukes som substitutt for direkte observasjon når desentralisering velges.
+\item Markeder og hierarkier er reelle alternativer (Coase). Dersom verken hierarki eller marked løser videnproblemet, oppstår tredje organiseringsformer (allianser, joint ventures).
+\end{itemize}
+
+\subsection*{Muligheter}
+\begin{itemize}
+\item Forklarer \emph{hvorfor} desentralisering er attraktiv: lokal viden brukes uten kostbar overføring.
+\item Forklarer \emph{hvorfor} desentralisering er kostbar: man taper direkte kontroll og må erstatte den med S2/S3.
+\item Begrunner valget av \thref{responsibility-centers}{centertype}: cost center ($\to$ lite spesifik viden), profit/investment center ($\to$ mye spesifik viden).
+\item Knytter seg til \thref{decision-management-control}{Decision Management vs.\ Decision Control}: når beslutningsmaker ikke bærer fulle formueeffekter, separer initiering/implementering fra ratifisering/monitorering.
+\item Forklarer fenomener som franchise, autonome divisjoner, datadrevet sentralisering, og hvorfor IT-revolusjonen har endret balansen (mer kunnskap blir kodifiserbar $\Rightarrow$ generell $\Rightarrow$ rom for re-sentralisering).
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item \textbf{Skillet er glidende.} Mye viden er delvis spesifik og delvis generell -- klassifiseringen er sjelden binær.
+\item \textbf{Endogen viden:} Hva som er ``spesifik'' avhenger av hvilke verktøy organisasjonen har bygget for å overføre informasjon. Bedrifter kan investere i å gjøre tidligere spesifik viden generell (BI-systemer, sensorer, AI).
+\item \textbf{Strategisk underrapportering:} Lokale ledere kan ha insentiv til å \emph{overdrive} hvor spesifik kunnskapen er, for å beholde beslutningsmakt.
+\item \textbf{Modellen sier ikke hvor mye desentralisering som er optimalt.} Den må kombineres med \thref{centralization-decentralization}{decentraliseringsmodellen} (Q06) som balanserer benefits/costs av desentralisering.
+\item \textbf{Kollektiv viden / koordinering:} Hayek/Jensen-Meckling håndterer ikke godt situasjoner der \emph{flere} aktører har overlappende, men inkonsistent spesifik viden -- da kreves teamstrukturer og delte beslutningsrom.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+\begin{center}
+\begin{tabular}{@{}p{4.6cm}p{4.6cm}p{4.6cm}@{}}
+\toprule
+\textbf{Forhold} & \textbf{Spesifik viden} & \textbf{Generell viden} \\
+\midrule
+Overføringskostnad & Høy & Lav \\
+Hvor sitter den? & Lokalt, hos operatør / leder & Sentralt eller i system \\
+Foretrukken organisering & Desentralisering (flytt beslutningsrett) & Sentralisering (flytt informasjon) \\
+Kompletterende mekanismer & S2 + S3 nødvendig & S2/S3 mindre kritisk \\
+Egnet centertype & Profit / investment center & Cost / expense center \\
+\bottomrule
+\end{tabular}
+\end{center}
+\textit{Co-location av kunnskap og beslutningsrett: enten flytter du videnen til beslutningen, eller beslutningen til videnen. [SLIDE/BOK]}
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{Equinor -- E\&P (Letevirksomhet):} Funn på et nytt prospekt avhenger av lokal geologisk kunnskap som ikke kan kodifiseres uten store tap. Beslutningsretten er derfor delegert til prosjektleder med investment-center-ansvar; selskapet erstatter direkte kontroll med ROACE-måling og opsjonsbasert kompensasjon. [EKS]
+\item \textbf{Norges Bank Investment Management (Oljefondet):} Standardisert generell viden (børskurser, indeksvekter) gjør sentralisert beslutningstaking effektivt. Aktive porteføljevalg er likevel desentralisert, fordi seksjonsanalytikere har spesifik viden om enkeltselskaper. [EKS]
+\item \textbf{IKEA Älmhult:} Designkunnskap er konsentrert sentralt fordi den kan kodifiseres i tegninger og monteringsanvisninger. Salgsbeslutninger på det enkelte varehus er desentralisert -- lokale preferanser er spesifik viden. [EKS]
+\item \textbf{Mærsk Power-to-X:} Valg av elektrolysørteknologi krever spesifik teknisk viden hos PtX-divisjonen, ikke i konsernledelsen. Derfor er beslutningsrett om teknologipartner delegert nedover; kompensasjonen knyttes til prosjektets NPV/IRR (investment center) for å løse den nye agentkonflikten. [CASE]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: Skillet er logisk grunn for hele \SOne\ (allokering av beslutningsrett); via følgemekanismene driver det også \STwo\ og \SThree. Relaterte: \thref{principal-agent}{Principal--agent}, \thref{agency-costs}{Agentomkostninger}, \thref{organizational-architecture}{Organizational architecture}, \thref{centralization-decentralization}{Centralisering vs.\ desentralisering}, \thref{decision-management-control}{Decision Management vs.\ Decision Control}, \thref{responsibility-centers}{Responsibility centers}.
+
+\paragraph{Brukt i spørsmål:} Q01, Q05.

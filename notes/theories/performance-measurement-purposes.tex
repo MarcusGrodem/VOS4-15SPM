@@ -1,0 +1,78 @@
+% !TEX root = ../main.tex
+\section{Formålene med individuell prestasjonsmåling og -belønning}\label{thr:performance-measurement-purposes}
+
+\paragraph{Definisjon.} Individuell prestasjonsmåling og -belønning er den systematiske kartleggingen og evalueringen av en ansatts innsats og resultater, koblet til en kompensasjons- eller anerkjennelsesmekanisme. BSZ kap.\ 16 angir fire \emph{simultane} formål med slik måling: (i) gi medarbeideren \emph{feedback}, (ii) støtte \emph{koordinasjon} på tvers av enheter, (iii) gi grunnlag for \emph{belønning og sanksjon}, og (iv) støtte den øvrige \thref{organizational-architecture}{organizational architecture} ved å binde S1, S2 og S3 sammen. [SLIDE]
+
+\subsection*{Forklaring}
+
+Prestasjonsmåling er aldri kun et regnskapsmessig spørsmål -- det er en av de tre søylene som hele organisasjonsdesignet hviler på. BSZ insisterer på at \emph{samme} måltall ofte må tjene flere formål samtidig, og at det er denne flerbruken som gjør design vanskelig: et mål som er fint til feedback (rik, kvalitativ, kontinuerlig) kan være ubrukelig som bonusgrunnlag (krever verifiserbarhet, juridisk holdbarhet), og omvendt. Læreboken understreker at prestasjonsmålet må passe med (a) \emph{kompensasjonsstrukturen} -- ellers blir insentivkoeffisienten (\thref{incentive-coefficient}{$\beta$ i $W = W_0 + \beta Q$}) feilkalibrert -- og (b) \emph{beslutningsrettighetene} -- ellers brytes \thref{controllability-principle}{controllability-prinsippet} og lederen demotiveres. [SLIDE/BOK]
+
+De fire formålene er:
+\begin{enumerate}\setlength{\itemsep}{3pt}
+\item \textbf{Feedback (læring).} Den ansatte trenger informasjon om hvor hun står for å justere atferd. Dette formålet handler om \emph{ex post} forståelse -- 360-graders evaluering, utviklingssamtaler, kontinuerlig coaching. Belønning er ikke nødvendig; det viktige er at signalet er rikt og rettidig.
+\item \textbf{Koordinasjon.} Felles måltall fungerer som retningsangiver: når salg og produksjon måles på samme leveringsindikator, koordinerer de uten direkte forhandling. Måling er her et språk for hva organisasjonen prioriterer.
+\item \textbf{Belønning og sanksjon.} Måltallet er input til kompensasjon, forfremmelse, fyring. Dette formålet stiller harde krav: målet må være verifiserbart, kontrollerbart og informativt om innsats (jf.\ \thref{informativeness-principle}{informativeness-principle}). Det er her gaming-faren er størst.
+\item \textbf{Støtte til organisatorisk arkitektur.} Måltallet binder beslutningsrett (S1) og insentiv (S3) sammen. Endrer man et ben i skammelen, må måltallet justeres -- ellers oppstår misalignment og residual loss eksploderer (jf.\ \thref{agency-costs}{agency costs}).
+\end{enumerate}
+[SLIDE]
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item Innsats $e$ er ikke direkte observerbar -- man må måle et utfall $Q = \alpha e + \mu$ som proxy (jf.\ \thref{principal-agent}{principal-agent-modellen}).
+\item Det finnes et meningsfullt skille mellom innsatsdrevne og eksogene komponenter av utfallet (\thref{controllability-principle}{controllability}).
+\item Måling er kostbar -- det er en marginal benefit / marginal cost-avveining hvor presist man kan måle.
+\item Den ansatte er minst delvis rasjonell og responderer på målene som settes (``you get what you measure'').
+\item Måltallet kan brukes til mer enn ett formål samtidig, men noen ganger må man velge.
+\end{itemize}
+[SLIDE/BOK]
+
+\subsection*{Muligheter}
+\begin{itemize}
+\item Forklarer hvorfor selskaper ofte har \emph{separate} systemer for utviklingsfeedback og bonus -- de fire formålene drar i ulike retninger.
+\item Begrunner balansert målekort (Kaplan \& Norton): finansielle mål alene treffer kun belønningsformålet, ikke koordinasjon eller læring.
+\item Begrunner bonusbanker, deferred compensation og claw-backs -- de redder belønningsformålet uten å ødelegge koordinasjons- og læringsformålet.
+\item Forklarer hvorfor 360-evalueringer ofte holdes adskilt fra lønnsoppgjør: rene feedback-data blir forurenset hvis de også er bonusgrunnlag.
+\item Gir et diagnostisk rammeverk: ``Hvilket formål svikter i vårt målesystem?'' kan stilles direkte.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item \textbf{Trade-off mellom formålene er reell, ikke teoretisk.} Et måltall optimert for belønning (verifiserbart, kvantitativt, individuelt) er ofte dårlig til koordinasjon (krever team og delte mål) og læring (krever rikt kvalitativt innhold).
+\item \textbf{Måleparadokset (Goodhart's law).} ``Når en måling blir et mål, slutter den å være et godt mål.'' Et godt feedback-mål blir et dårlig belønningsmål så snart bonus knyttes til det.
+\item \textbf{Multitasking-problem (Holmström \& Milgrom 1991).} Hvis bare ett av flere jobbaspekter måles, vrir agenten innsats mot det målbare. Eksempel: lærer måles på elevenes prøveresultat $\Rightarrow$ ignorerer kreativitet og samarbeid.
+\item \textbf{Ratchet og gaming} er endogene konsekvenser av at samme mål brukes til alle fire formål (jf.\ \thref{ratchet-effect}{ratchet-effect} og \thref{gaming-in-performance-measurement}{gaming}).
+\item \textbf{Subjektive evalueringer kan virke uretferdige} -- gir påvirkningskostnader og supervisor shirking (jf.\ \thref{subjective-vs-objective-performance}{subjektiv vs.\ objektiv}).
+\item \textbf{Risikoallokering.} Sterk bobus-knytting overfører støy ($\mu$) til en risikoavers agent, som krever risikopremie. Læring og koordinasjon krever ikke slik risikoeksponering.
+\end{itemize}
+
+\subsection*{Modell / illustrasjon}
+
+I lærebokens grunnmodell er ansattes ytelse $Q = \alpha e + \mu$ der $\alpha$ er produktivitet, $e$ innsats og $\mu$ støy. Kompensasjonen $W = W_0 + \beta Q$ knytter belønning til ytelse via insentivkoeffisient $\beta \in [0, 1]$. De fire formålene henter ulike egenskaper fra denne formelen:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}p{3.4cm}p{4.5cm}p{6.0cm}@{}}
+\toprule
+\textbf{Formål} & \textbf{Hovedvariabel} & \textbf{Designkrav til $Q$} \\
+\midrule
+Feedback & Informasjonsinnhold i $Q$ & Rikt, kontinuerlig, kvalitativt; støy tolerert. \\
+Koordinasjon & Felles og kommunisert $Q$ & Synlig, retningsgivende, like for tilstøtende enheter. \\
+Belønning/sanksjon & $\beta$ og verifiserbarhet av $Q$ & Kontrollerbart, juridisk holdbart, lite støy. \\
+Arkitekturstøtte & Kobling $Q \to W$ til S1 og S3 & Måltall som speiler delegerte beslutningsrettigheter. \\
+\bottomrule
+\end{tabular}
+\end{center}
+[SLIDE]
+
+\subsection*{Eksempler}
+\begin{itemize}
+\item \textbf{Equinor (NO).} Bruker tre adskilte systemer: kontinuerlig coaching (feedback), People@Equinor måltall for HMS og leveringspresisjon (koordinasjon på tvers av prosjektenheter), og STI/LTI bonusprogram knyttet til konsernresultat (belønning). Dette er en lærebokmessig oppdeling: ulike mål for ulike formål. [EKS]
+\item \textbf{Microsoft (etter 2013).} Avskaffet ``stack ranking''-bonussystemet som kollapset alle fire formål inn i én årlig rangering. Erstattet det med separat ``Connect''-system (feedback) og en mer kvalitativ kompensasjonsdiskusjon. Eksempel på at \emph{adskillelse} av formålene øker både motivasjon og koordinasjon. [EKS]
+\item \textbf{MBO (Management by Objectives, Drucker).} Klassisk eksempel på at \emph{koordinasjons-} og \emph{belønningsformål} slås sammen: målene settes i dialog (koordinasjon) og kobles til bonus (belønning) -- men dette skaper også ratchet-faren. [BOK]
+\item \textbf{Sykehus-DRG-system.} Aktivitetsbasert finansiering måler antall behandlinger -- godt til koordinasjon og kontroll, men dårlig til feedback om kvalitet. Klassisk multitasking-problem. [EKS]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: \STwo\ primært, men hele poenget er at S2 ikke kan designes alene -- må kobles til \SOne\ (kontrollerbarhet, beslutningsrett) og \SThree\ (kompensasjonskobling). Relaterte teorier: \thref{principal-agent}{Principal-Agent}, \thref{moral-hazard}{Moral hazard}, \thref{controllability-principle}{Controllability-prinsippet}, \thref{informativeness-principle}{Informativeness-prinsippet}, \thref{ratchet-effect}{Ratchet-effekten}, \thref{gaming-in-performance-measurement}{Gaming}, \thref{absolute-vs-relative-performance}{Absolutt vs.\ relativ prestasjonsmåling}, \thref{subjective-vs-objective-performance}{Subjektiv vs.\ objektiv prestasjonsmåling}, \thref{agency-costs}{Agency costs}, \thref{responsibility-centers}{Responsibility centers}, \thref{organizational-architecture}{Organizational architecture}.
+
+\paragraph{Brukt i spørsmål:} Q10.

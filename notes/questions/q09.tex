@@ -1,0 +1,125 @@
+% !TEX root = ../main.tex
+\section{Q09: Optimale valg av medarbeideres innsats -- agentens og prinsipalens side}\label{q:09}
+
+\begin{quote}
+\emph{Vis og forklar modellerne der anviser optimale valg af medarbejderes indsats -- set både fra medarbejderens (agentens) side og virksomhedens (principalens) side. Diskuter forhold som: a) risiko, b) præstationsuafhængig løn, c) incitamentskoefficienter.}
+\end{quote}
+
+\subsection*{Svar (kort)}
+Spørsmålet besvares med den lineære principal-agent-modellen ($Q=\alpha e+\mu$, $W=W_0+\beta Q$): \emph{agenten} velger innsats $e^{*}$ slik at marginalt insentiv $\beta\alpha$ er lik marginal innsatskostnad $c'(e)$, mens \emph{prinsipalen} velger insentivkoeffisienten $\beta^{*}=1/(1+r\sigma^{2}c''/\alpha^{2})$ ved å balansere innsatsgevinst mot risikopremien til en risikoavers agent. (a) Risiko ($r$, $\sigma^{2}$) trekker $\beta^{*}$ ned; (b) den præstationsuafhængige $W_0$ vrir \emph{ikke} innsats men dekker IR og risikopremie; (c) $\beta$ er det eneste insentivverktøyet som vrir innsats. [SLIDE]
+
+\subsection*{De to modellene (oversikt)}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}p{2.8cm}p{3.6cm}p{4.4cm}p{4.6cm}@{}}
+\toprule
+\textbf{Side} & \textbf{Beslutningsvariabel} & \textbf{Mål} & \textbf{Optimum (FOC)} \\
+\midrule
+Agent & Innsats $e$ & Max $\mathbb{E}[W]-\tfrac{r}{2}\mathrm{Var}[W]-c(e)$ & $\beta\alpha=c'(e^{*})$ \\
+Prinsipal & Kontrakt $(W_0,\beta)$ & Max $\mathbb{E}[Q-W]$ s.t.\ IR + IC & $\beta^{*}=\dfrac{1}{1+r\sigma^{2}c''/\alpha^{2}}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Relevante teorier (kort)}
+
+\paragraph{\thref{optimal-effort-model}{Optimal effort-modell (begge sider)}\quad\STwo/\SThree}
+Modellen i BSZ kap.\ 15: output $Q=\alpha e+\mu$, kontrakt $W=W_0+\beta Q$, agent med konveks innsatskostnad $c(e)$. Agentens FOC ($\beta\alpha=c'(e^{*})$) viser at innsats er strengt stigende i $\beta$ og uavhengig av $W_0$. Prinsipalen tar agentens beste respons med i regnestykket og velger $\beta^{*}$ der marginal insentivgevinst lik marginal risikopremie. Modellen leverer dermed begge optimumsbetingelsene i samme ramme og forklarer hvorfor second-best $\beta<1$. [SLIDE]
+
+\paragraph{\thref{fixed-vs-variable-pay}{Præstationsuafhængig løn ($W_0$) vs.\ variabel ($\beta Q$)}\quad\SThree}
+$W_0$ er ren nivåvariabel: oppfyller deltakelsesskranken (IR) og kompenserer agenten for risikopremien $\tfrac{r}{2}\beta^{2}\sigma^{2}$, men vrir \emph{ikke} marginal innsats. $\beta Q$ er ren marginalvariabel: vrir innsats, men pålegger agenten eksogen risiko. Bare $W_0$ gir shirking; bare $\beta Q$ gir ineffektiv risikodeling. Hybridkontrakter er normen fordi de to komponentene løser ulike problemer. [SLIDE]
+
+\paragraph{\thref{incentive-coefficient}{Incitamentskoefficient $\beta=\partial W/\partial Q$}\quad\SThree}
+$\beta$ måler ``pay-performance sensitivity''. Determinanter: $\beta^{*}\uparrow$ med produktivitet $\alpha$; $\beta^{*}\downarrow$ med risikoaversjon $r$, støy $\sigma^{2}$ og kostnadens konveksitet $c''$. Verdier varierer empirisk fra $\beta\approx 0$ (tariffstillinger) til $\beta\approx 1$ (franchising, residual claimancy). Holmström-Milgrom (1991) viser at $\beta$ må senkes ved multitasking for å unngå at agenten dropper umålbare oppgaver. [SLIDE]
+
+\paragraph{\thref{risk-sharing}{Risikodeling}\quad\SThree}
+Risikoavers agent + diversifisert risikonøytral prinsipal $\Rightarrow$ Pareto-optimal risikodeling tilsier først-best fast lønn til agenten. Men da forsvinner insentivet -- second-best krever at agenten bærer \emph{noe} risiko gjennom $\beta>0$, mot en risikopremie. Risikopremien $\tfrac{r}{2}\beta^{2}\sigma^{2}$ er kjernen i \thref{agency-costs}{agency costs} i denne modellen. Når $\sigma^{2}$ er stor, brukes \thref{informativeness-principle}{informativeness}-mekanismer (relative måltall, peer-grupper, indekserte opsjoner) for å filtrere ut støy. [SLIDE]
+
+\subsection*{Grafisk modell -- to bilder (agent + prinsipal)}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.55\linewidth]{BSZ_kap_15_2026/by_slide/slide_014/BSZ_kap_15_2026_slide_014_asset_01_image3.png}
+\caption{Pensumets versjon av principal-agent-modellen: $Q=\alpha e+\mu$ og $W=W_0+\beta Q$. [SLIDE -- BSZ kap.\ 15, slide 14]}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>=latex,scale=0.9]
+  % Akser
+  \draw[->] (0,0) -- (6.7,0) node[right] {$e$};
+  \draw[->] (0,0) -- (0,4.0) node[above] {kr};
+  \node[above left] at (0,4.0) {\small \textbf{(A) Agent}};
+  % MB-linjer
+  \draw[thick,blue] (0,1.0) -- (6.3,1.0) node[right] {\scriptsize $\beta_1\alpha$};
+  \draw[thick,blue!60!black] (0,2.4) -- (6.3,2.4) node[right] {\scriptsize $\beta_2\alpha$};
+  % MC
+  \draw[thick,red] (0,0) -- (6.0,3.6) node[right] {\scriptsize $c'(e)$};
+  % Optima
+  \draw[dashed] (1.7,0) -- (1.7,1.0); \filldraw (1.7,1.0) circle (1.4pt);
+  \node[below] at (1.7,0) {\scriptsize $e_1^{*}$};
+  \draw[dashed] (4.0,0) -- (4.0,2.4); \filldraw (4.0,2.4) circle (1.4pt);
+  \node[below] at (4.0,0) {\scriptsize $e_2^{*}$};
+\end{tikzpicture}\quad
+\begin{tikzpicture}[>=latex,scale=0.9]
+  % Akser
+  \draw[->] (0,0) -- (6.7,0) node[right] {$\beta$};
+  \draw[->] (0,0) -- (0,4.0) node[above] {kr};
+  \node[above left] at (0,4.0) {\small \textbf{(B) Prinsipal}};
+  \draw (5.2,0) node[below] {\scriptsize $1$};
+  \draw[dashed] (5.2,0) -- (5.2,3.2);
+  % MB(β) konkav
+  \draw[thick,blue,domain=0:5.2,samples=60]
+    plot (\x,{3.0*(1-exp(-0.7*\x))}) node[right] {\scriptsize $MB(\beta)$};
+  % MC(β) konveks
+  \draw[thick,red,domain=0:5.2,samples=60]
+    plot (\x,{0.13*\x*\x}) node[right] {\scriptsize $MC(\beta)$};
+  % Krysning
+  \filldraw (2.7,2.2) circle (1.4pt);
+  \draw[dashed] (2.7,0) -- (2.7,2.2);
+  \node[below] at (2.7,0) {\scriptsize $\beta^{*}$};
+\end{tikzpicture}
+\caption{\textbf{(A) Agentens side:} $e^{*}$ der $\beta\alpha=c'(e)$; en høyere $\beta$ skifter $MB$ opp og $e^{*}$ til høyre. \textbf{(B) Prinsipalens side:} $\beta^{*}$ der marginal insentivgevinst lik marginal risikopremie $\tfrac{r}{2}\beta^{2}\sigma^{2}$; $\beta^{*}<1$ i second-best. Krever \texttt{\textbackslash usepackage\{tikz\}} i preamble.}
+\end{figure}
+
+\textbf{Hvordan de to grafene henger sammen.} Grafene leses sekvensielt: prinsipalen velger $\beta^{*}$ i (B) ved å forutse at agenten vil reagere i (A). Hver verdi av $\beta$ i (B) bestemmer hvor høyt $MB$-linja ligger i (A), og dermed agentens $e^{*}$. Når prinsipalen øker $\beta$, øker insentivgevinsten (mer $e$, mer $Q$) -- men også risikopremien som prinsipalen må betale via $W_0$ for å holde IR. Optimum er der \emph{disse to skråningene treffer hverandre}: avtagende marginalgevinst (konkav $MB$) møter stigende marginal risikokostnad (konveks $MC$). Det er nettopp denne trade-offen som gir Holmström-Milgrom-formelen for $\beta^{*}$ og som forklarer hvorfor $\beta^{*}<1$ alltid med risikoavers agent.
+
+\subsection*{Real-world eksempler}
+
+\textbf{Eks.~1 -- Investment banking-trader vs.\ Statoil/Equinor-toppleder.}\quad [EKS]
+Tradere i internasjonale banker har lav $W_0$ (relativt) og høy $\beta$ -- prestasjonen er målbar (P\&L), agenten er typisk lite risikoavers, og produktiviteten ($\alpha$) er stor. I motsetning har Equinor-konsernsjefen en betydelig grunnlønn og en moderat $\beta$ levert via aksjebasert LTI med peer-justering -- fordi oljepris ($\mu$) gir stor støy ($\sigma^{2}$) som må filtreres for at risikopremien ikke skal eksplodere. Samme modell, ulik parametertilstand: traderen sitter ved $\beta\to 1$-enden, Equinor-CEO ved moderat $\beta$.
+
+\textbf{Eks.~2 -- Norsk offentlig sektor vs.\ Aker Solutions provisjons-selger.}\quad [EKS]
+Sykepleier i kommunal helse har $\beta\approx 0$, ren tarifflønn: output er svært vanskelig å måle, agenten er risikoavers, og fordelingshensyn favoriserer fastlønn. Aker Solutions selger av offshore-utstyr har $\beta\approx 0{,}3$--$0{,}5$ på kvartals-salgsmål, lavere $W_0$, og bonusen er ``claw-back''-pliktig hvis kunden trekker seg. Sammenligning: identisk modell, men ulike $(\alpha,r,\sigma^{2})$ tvinger fram diametralt motsatte kontrakter. Dette viser at modellen er en \emph{designkalkulator}, ikke en universaloppskrift.
+
+\subsection*{Kobling til Mærsk Power-to-X}
+PtX-divisjonens utfall avhenger sterkt av eksogen elektrisitetspris og hydrogen-etterspørsel -- et stort $\sigma^{2}$. Modellen tilsier derfor \emph{lav $\beta$} på topplinjeresultat (EBITDA, NPV) for divisjonsledelsen, fordi å overføre denne risikoen til risikoaverse ledere ville krevd en kostbar risikopremie. Likevel: noe $\beta$ kan kobles til \emph{kontrollerbare milestones} -- anlegg ferdigstilt i tide, OPEX innenfor budsjett, kontrakter signert med PtX-avtakere. Dette er \thref{informativeness-principle}{informativeness-prinsippet} i praksis: bruk de måltall som faktisk signalerer innsats, ikke de som domineres av eksogen støy. Hybridkontrakten (høy $W_0$, lav $\beta$ på finansresultater, moderat $\beta$ på milestones) er Mærsk-konsistent med en risikoavers ledelse i et høy-$\sigma^{2}$-prosjekt. [CASE]
+
+\subsection*{Fallgruber}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item Glemme at $W_0$ \emph{ikke} vrir innsats -- klassisk forveksling av nivå og marginal.
+\item Anta at høyere $\beta$ alltid er bedre -- ignorerer risikopremien og multitasking.
+\item Bare beskrive agentens side uten å vise prinsipalens optimeringsproblem (eller omvendt).
+\item Glemme støyen $\mu$ og dens rolle for $\beta^{*}$ -- spørsmålet nevner risiko eksplisitt.
+\item Sette $\beta^{*}=1$ uten å forklare at det krever risikonøytral agent eller observerbar innsats.
+\item Forveksle insentivproblemet (\thref{moral-hazard}{moral hazard}) med risikodelingsproblemet -- de er separate, men koblet via $\beta$.
+\item Tegne MC- og MB-kurvene feil vei (MC stigende, MB i $\beta$ konkav) -- få graf-detaljer galt skader troverdighet.
+\end{itemize}
+
+\subsection*{Håndskrivbar disposisjon (15-min forberedelse)}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item \textbf{Tese:} To FOC -- agentens for $e^{*}$, prinsipalens for $\beta^{*}$ -- innenfor samme lineære principal-agent-modell.
+\item \textbf{Setup:} $Q=\alpha e+\mu$, $W=W_0+\beta Q$, agent CARA + $c(e)$, prinsipal diversifisert.
+\item \textbf{Agentside (Modell A):} Max $\mathbb{E}[W]-\tfrac{r}{2}\mathrm{Var}[W]-c(e)\Rightarrow \beta\alpha=c'(e^{*})$. Ian/AssemCo: $e^{*}=50\beta$. \emph{$W_0$ vrir ikke innsats.}
+\item \textbf{Prinsipalside (Modell B):} Max $\alpha e^{*}-c(e^{*})-\tfrac{r}{2}\beta^{2}\sigma^{2}\Rightarrow \beta^{*}=\tfrac{1}{1+r\sigma^{2}c''/\alpha^{2}}$.
+\item \textbf{(a) Risiko:} $r,\sigma^{2}\uparrow\Rightarrow\beta^{*}\downarrow$. Risikopremien $\tfrac{r}{2}\beta^{2}\sigma^{2}$ er kjernen i agency cost.
+\item \textbf{(b) $W_0$:} Faller ut av FOC; rolle = IR + risikopremie-kompensasjon. \emph{Vrir ikke innsats.}
+\item \textbf{(c) $\beta$:} Eneste innsatsdriver. Pay-performance sensitivity. Determinanter: $\alpha\uparrow$, $r\downarrow$, $\sigma^{2}\downarrow$ $\Rightarrow$ $\beta\uparrow$.
+\item \textbf{Graf A:} $MB=\beta\alpha$ horisontal, $MC=c'(e)$ stigende, kryss = $e^{*}$.
+\item \textbf{Graf B:} $MB(\beta)$ konkav, $MC(\beta)=$ risikopremie konveks, kryss = $\beta^{*}<1$.
+\item \textbf{Eks.\ 1:} IB-trader (høy $\beta$, lav $W_0$) vs.\ Equinor-CEO (moderat $\beta$, høy $W_0$, peer-justering).
+\item \textbf{Eks.\ 2:} Norsk sykepleier (alt $W_0$) vs.\ Aker Solutions selger (provisjon med claw-back).
+\item \textbf{Case:} Mærsk PtX -- stort $\sigma^{2}\Rightarrow$ lav $\beta$ på EBITDA, moderat $\beta$ på milestones (\thref{informativeness-principle}{informativeness}).
+\item \textbf{Søyle:} \STwo\ + \SThree.
+\end{itemize}
