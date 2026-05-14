@@ -1,0 +1,40 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[norsk]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{mdframed}
+
+\geometry{margin=2.5cm}
+\graphicspath{{../extracted_pptx_illustrations/}}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!60!black,
+  urlcolor=blue!60!black,
+  linktoc=all
+}
+
+% Søyle-farger
+\definecolor{s1color}{RGB}{0,102,204}   % blå = S1 beslutningsrettigheter
+\definecolor{s2color}{RGB}{0,153,76}    % grønn = S2 prestasjonsmåling
+\definecolor{s3color}{RGB}{204,0,0}     % rød = S3 insentivstrukturer
+
+\newcommand{\SOne}{\textcolor{s1color}{\textbf{[S1]}}}
+\newcommand{\STwo}{\textcolor{s2color}{\textbf{[S2]}}}
+\newcommand{\SThree}{\textcolor{s3color}{\textbf{[S3]}}}
+
+% Klikkbar teorilenke. Bruk: \thref{principal-agent}{Principal-Agent theory}
+% Forutsetter at teorifilen inneholder \label{thr:principal-agent}.
+\newcommand{\thref}[2]{\hyperref[thr:#1]{\underline{#2}}}
+
+\title{VØS 4 -- Eksamensnotater (15 spørsmål)\\
+\large Brickley, Smith \& Zimmerman -- Organizational Economics}
+\author{}
+\date{CBS, Forår 2026}
