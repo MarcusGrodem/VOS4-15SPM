@@ -55,9 +55,26 @@ Begge er kjerneårsakene til at kontrakter blir kompliserte og dyre å skrive og
 \subsection*{Modell / illustrasjon}
 
 \begin{figure}[h]
-  \centering
-  \includegraphics[width=0.6\linewidth]{BSZ_kap_10_2026/by_slide/slide_005/BSZ_kap_10_2026_slide_005_asset_01_image2.png}
-  \caption{Erica Olsson principal-agent-model: $Q=\alpha e+\mu$, $W=W_0+\beta Q$. [SLIDE -- BSZ kap.\ 10]}
+\centering
+\begin{tikzpicture}[>=latex, every node/.style={font=\small}, node distance=2.4cm]
+  \node[draw, rounded corners, thick, fill=blue!10, minimum width=2.6cm, minimum height=1.2cm, align=center] (P) {\bfseries Prinsipal\\ \footnotesize (eier)};
+  \node[draw, rounded corners, thick, fill=red!10, minimum width=2.6cm, minimum height=1.2cm, align=center, right=4.5cm of P] (A) {\bfseries Agent\\ \footnotesize (Erica Olsson)};
+  % Kontraktspil P -> A
+  \draw[->, thick] ([yshift=8pt]P.east) -- node[above, font=\footnotesize, align=center]
+    {Kontrakt: $W = W_0 + \beta Q$\\ \footnotesize\itshape fast lønn + andel av output} ([yshift=8pt]A.west);
+  % Output-pil A -> P
+  \draw[->, thick] ([yshift=-8pt]A.west) -- node[below, font=\footnotesize, align=center]
+    {Output: $Q = \alpha e + \mu$\\ \footnotesize\itshape produktivitet $\times$ innsats + støy} ([yshift=-8pt]P.east);
+  % Agent valg
+  \node[below=0.7cm of A, align=center, font=\footnotesize, text width=4cm]
+    {velger innsats $e$\\ for å maks.\ $U_A = E[W] - C(e)$};
+  % Prinsipal valg
+  \node[below=0.7cm of P, align=center, font=\footnotesize, text width=4cm]
+    {velger $(W_0, \beta)$\\ for å maks.\ $E[Q] - E[W]$};
+  % Noteboks
+  \node[draw, dashed, gray, fit=(P) (A), inner sep=18pt, label={[gray, font=\scriptsize\itshape]below:trade-off insentiver $\leftrightarrow$ risikodeling: jo større $\beta$, jo sterkere innsatsinsentiv, men jo mer risiko bæres av agenten}] {};
+\end{tikzpicture}
+\caption{\textbf{Erica Olsson principal-agent-modellen.} Agenten velger ikke-observerbar innsats $e$ som påvirker output $Q = \alpha e + \mu$ (med produktivitet $\alpha$ og støy $\mu$). Prinsipalen kan ikke kontraktfeste $e$ direkte, så lønnen kobles til $Q$: $W = W_0 + \beta Q$. Designvalget er $(W_0, \beta)$ -- en avveining mellom insentivstyrke og risikoeksponering. [SLIDE -- BSZ kap.\ 10]}
 \end{figure}
 
 \subsection*{Eksempler}

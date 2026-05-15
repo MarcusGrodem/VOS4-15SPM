@@ -75,9 +75,31 @@ Beslutningsregelen er klassisk: endre arkitektur så lenge \emph{MR $>$ MC}. Kon
 \subsection*{Modell / illustrasjon}
 
 \begin{figure}[h]
-  \centering
-  \includegraphics[width=0.7\linewidth]{BSZ_kap_11_2026/by_slide/slide_004/BSZ_kap_11_2026_slide_004_asset_01_image3.png}
-  \caption{Den tre-benede skammelen: Decision rights, Performance evaluation, Reward systems -- arkitekturens tre ben. Endring i ett ben krever justering av de andre. (BSZ kap.\ 11, slide 4) [SLIDE]}
+\centering
+\begin{tikzpicture}[>=latex, scale=1.0, every node/.style={font=\small}]
+  % Setet
+  \draw[thick, fill=gray!15] (-3,3.0) -- (3,3.0) -- (2.7,3.4) -- (-2.7,3.4) -- cycle;
+  \node[font=\bfseries] at (0,3.2) {Firmaverdi};
+  % Tre ben (kobling fra sete til gulv)
+  \draw[very thick, s1color] (-2.4,3.0) -- (-2.4,0);
+  \draw[very thick, s2color] (0,3.0) -- (0,0);
+  \draw[very thick, s3color] (2.4,3.0) -- (2.4,0);
+  % Gulv
+  \draw[thick, gray] (-3.3,0) -- (3.3,0);
+  % Etiketter under benene
+  \node[s1color, font=\bfseries, below, align=center, text width=3.2cm] at (-2.4,-0.1)
+    {\SOne\\ Decision rights\\ \footnotesize\itshape (hvem beslutter)};
+  \node[s2color, font=\bfseries, below, align=center, text width=3.2cm] at (0,-0.1)
+    {\STwo\\ Performance eval.\\ \footnotesize\itshape (hva måles)};
+  \node[s3color, font=\bfseries, below, align=center, text width=3.2cm] at (2.4,-0.1)
+    {\SThree\\ Reward systems\\ \footnotesize\itshape (hvordan belønnes)};
+  % Komplementaritet-piler nederst
+  \draw[<->, gray, dashed] (-2.1,-2.0) -- (-0.3,-2.0);
+  \draw[<->, gray, dashed] (0.3,-2.0) -- (2.1,-2.0);
+  \draw[<->, gray, dashed, bend right=25] (-2.1,-2.1) to (2.1,-2.1);
+  \node[gray, font=\footnotesize\itshape] at (0,-2.6) {Komplementære -- endring i ett ben krever justering av de andre};
+\end{tikzpicture}
+\caption{\textbf{Den tre-benede skammelen} (BSZ kap.\ 11, slide 4). Organisasjonsarkitekturen hviler på tre komplementære søyler. Som en skammel: kapper du av ett ben (f.eks.\ desentraliserer beslutningsretten uten å tilpasse måling og belønning), velter konstruksjonen. Designet av hvert ben må passe til de to andre. [SLIDE]}
 \end{figure}
 
 \begin{center}

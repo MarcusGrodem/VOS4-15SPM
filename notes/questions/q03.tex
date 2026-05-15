@@ -31,9 +31,14 @@ Når innsats ikke kan kontraktfestes direkte, blir samspillet mellom monitoring 
 \end{figure}
 
 \begin{figure}[h]
-  \centering
-  \includegraphics[width=0.55\linewidth]{BSZ_kap_10_2026/by_slide/slide_005/BSZ_kap_10_2026_slide_005_asset_01_image2.png}
-  \caption{Erica Olsson-modellen: $Q=\alpha e+\mu$, $W=W_0+\beta Q$. Trade-off mellom insentiver og risikodeling. [SLIDE -- BSZ kap.\ 10]}
+\centering
+\begin{tikzpicture}[>=latex, every node/.style={font=\small}]
+  \node[draw, rounded corners, thick, fill=blue!10, minimum width=2.4cm, minimum height=1.1cm, align=center] (P) {\bfseries Prinsipal};
+  \node[draw, rounded corners, thick, fill=red!10, minimum width=2.4cm, minimum height=1.1cm, align=center, right=4.0cm of P] (A) {\bfseries Agent};
+  \draw[->, thick] ([yshift=6pt]P.east) -- node[above, font=\footnotesize] {Kontrakt $W = W_0 + \beta Q$} ([yshift=6pt]A.west);
+  \draw[->, thick] ([yshift=-6pt]A.west) -- node[below, font=\footnotesize] {Output $Q = \alpha e + \mu$} ([yshift=-6pt]P.east);
+\end{tikzpicture}
+\caption{Erica Olsson-modellen: $Q=\alpha e+\mu$, $W=W_0+\beta Q$. Trade-off mellom insentiver og risikodeling. [SLIDE -- BSZ kap.\ 10]}
 \end{figure}
 
 \begin{center}

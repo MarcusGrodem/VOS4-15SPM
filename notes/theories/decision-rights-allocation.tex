@@ -59,9 +59,29 @@ $NB = BD - AD - CD^2 \Rightarrow D^* = (B-A)/2C$, der $B$ = marginalnytte av des
 \subsection*{Modell / illustrasjon}
 
 \begin{figure}[h]
-  \centering
-  \includegraphics[width=0.65\linewidth]{BSZ_kap_12_2026/by_slide/slide_012/BSZ_kap_12_2026_slide_012_asset_01_image3.png}
-  \caption{Trade-off mellom benefits og costs av desentralisering. Optimal $D^* = (B-A)/2C$. (BSZ kap.\ 12, slide 12) [SLIDE]}
+\centering
+\begin{tikzpicture}[>=latex, scale=0.9, every node/.style={font=\small}]
+  % Akser
+  \draw[->] (0,0) -- (7.5,0) node[right] {Desentraliseringsgrad $D$};
+  \draw[->] (0,0) -- (0,5.5) node[above] {Verdi};
+  % Benefit: BD (lineær)
+  \draw[thick, blue!70!black, domain=0:7, samples=2]
+    plot (\x, {0.65*\x});
+  \node[blue!70!black, right, font=\scriptsize] at (7,4.6) {$BD$ (benefits)};
+  % Cost: AD + CD^2 (kvadratisk)
+  \draw[thick, red!70!black, domain=0:6.5, samples=40]
+    plot (\x, {0.18*\x + 0.08*\x*\x});
+  \node[red!70!black, right, font=\scriptsize] at (6.5,4.55) {$AD + CD^2$ (costs)};
+  % Net benefit: BD - AD - CD^2
+  \draw[thick, green!50!black, domain=0:5.9, samples=40]
+    plot (\x, {0.65*\x - 0.18*\x - 0.08*\x*\x});
+  \node[green!50!black, font=\scriptsize] at (5.5,0.5) {$NB = BD - AD - CD^2$};
+  % D*-merking
+  \draw[dashed, gray] (2.94,0) -- (2.94,2.55);
+  \filldraw[green!50!black] (2.94,0.69) circle (2pt);
+  \node[below, font=\bfseries\scriptsize] at (2.94,-0.05) {$D^* = \tfrac{B-A}{2C}$};
+\end{tikzpicture}
+\caption{\textbf{Optimal desentraliseringsgrad.} Lineær gevinst $BD$ (bedre bruk av spesifik viden) minus konvekse kostnader $AD + CD^2$ (agentkostnader + koordinasjon/eksternaliteter). Netto nytte $NB$ maksimeres ved $D^* = (B-A)/2C$. Større lokal viden ($B\uparrow$) skyver $D^*$ til høyre; flere eksternaliteter ($C\uparrow$) skyver $D^*$ til venstre. [SLIDE -- BSZ kap.\ 12, slide 12]}
 \end{figure}
 
 \begin{center}

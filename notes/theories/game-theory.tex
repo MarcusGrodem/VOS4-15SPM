@@ -78,9 +78,30 @@ I Q03's costless-contracting-univers er spilteori altså den naturlige måten å
 \textit{Stilisert payoff-matrise. $V$ = verdi av innsats, $w$ = lønn, $m$ = monitoring-kostnad, $c$ = innsats\-kostnad. Ingen ren-strategi-Nash; mixed-strategy-likevekt der begge randomiserer. [SLIDE -- BSZ kap.\ 9]}
 
 \begin{figure}[h]
-  \centering
-  \includegraphics[width=0.55\linewidth]{BSZ_kap_9_2026/by_slide/slide_007/BSZ_kap_9_2026_slide_007_asset_01_image2.jpeg}
-  \caption{Boeing/Airbus payoff-matrise (Bertrand-priskonkurranse). Brukes som analogi: dominant strategi og Nash. [SLIDE -- BSZ kap.\ 9]}
+\centering
+\begin{tikzpicture}[every node/.style={font=\small}]
+  % Header row
+  \node at (0,3.2) {};
+  \node[font=\bfseries] at (2.0,3.4) {\textbf{Airbus}};
+  \node at (1.0,2.8) {Høy pris};
+  \node at (3.0,2.8) {Lav pris};
+  % Left column header
+  \node[font=\bfseries, rotate=90] at (-1.2,1.0) {Boeing};
+  \node at (-0.4,1.7) {Høy pris};
+  \node at (-0.4,0.3) {Lav pris};
+  % Matrix cells
+  \draw[thick] (0,0) rectangle (4,2);
+  \draw[thick] (2,0) -- (2,2);
+  \draw[thick] (0,1) -- (4,1);
+  % Payoffs (Boeing, Airbus)
+  \node at (1.0,1.5) {$(15,\;15)$};
+  \node[red!70!black] at (3.0,1.5) {$(5,\;20)$};
+  \node[red!70!black] at (1.0,0.5) {$(20,\;5)$};
+  \node[green!50!black, font=\bfseries] at (3.0,0.5) {$(10,\;10)$};
+  % Nash-pil
+  \node[green!50!black, font=\footnotesize, right=0.2cm] at (4.2,0.5) {$\Leftarrow$ Nash};
+\end{tikzpicture}
+\caption{\textbf{Boeing/Airbus payoff-matrise} (Bertrand-priskonkurranse). Begge har \emph{dominant strategi} å sette lav pris: uansett hva motparten gjør, gir lav pris høyere payoff. Nash-likevekt er (Lav, Lav) med payoff $(10, 10)$ -- selv om begge hadde tjent mer på (Høy, Høy) = $(15, 15)$. Klassisk fangens-dilemma: rasjonell individuell atferd $\neq$ kollektivt optimum. [SLIDE -- BSZ kap.\ 9]}
 \end{figure}
 
 \subsection*{Eksempler}

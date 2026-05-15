@@ -34,9 +34,21 @@ Etter kontrakten kan agenten ta skjulte handlinger -- shirke, kutte kvalitet, fo
 \end{figure}
 
 \begin{figure}[h]
-  \centering
-  \includegraphics[width=0.7\linewidth]{BSZ_kap_10_2026/by_slide/slide_005/BSZ_kap_10_2026_slide_005_asset_01_image2.png}
-  \caption{Virksomheten som en \emph{nexus of contracts} -- kontrakter mellom eiere, ledere, ansatte, leverandører, kunder, banker. Q04 fokuserer på principal-agent-kontrakten mellom to virksomheter under costly contracting. [SLIDE -- BSZ kap. 10, slide 5]}
+\centering
+\begin{tikzpicture}[>=latex, every node/.style={font=\footnotesize}]
+  \node[circle, draw, very thick, fill=gray!15, minimum size=2.4cm, font=\bfseries] (F) {Virksomheten};
+  \node[draw, rounded corners, fill=blue!10, minimum width=2.1cm] (E) at (90:3.2)  {Eiere};
+  \node[draw, rounded corners, fill=blue!10, minimum width=2.1cm] (K) at (30:3.6)  {Kunder};
+  \node[draw, rounded corners, fill=blue!10, minimum width=2.1cm] (L) at (-30:3.6) {Leverandører};
+  \node[draw, rounded corners, fill=blue!10, minimum width=2.1cm] (B) at (-90:3.2) {Banker / kreditorer};
+  \node[draw, rounded corners, fill=blue!10, minimum width=2.1cm] (A) at (-150:3.6){Ansatte};
+  \node[draw, rounded corners, fill=blue!10, minimum width=2.1cm] (R) at (150:3.6) {Regulator / stat};
+  \foreach \n in {E,K,L,B,A,R} {
+    \draw[<->, thick, gray!70] (F) -- (\n);
+  }
+  \node[font=\scriptsize\itshape, gray] at (0,-4.0) {hver pil = en (ufullstendig) kontrakt -- alle priset, alle forhandlet};
+\end{tikzpicture}
+\caption{Virksomheten som en \emph{nexus of contracts} (Jensen \& Meckling 1976) -- ingen ``ting'' i seg selv, men et knutepunkt der eiere, ansatte, kunder, leverandører, kreditorer og regulator er knyttet sammen gjennom (ufullstendige) kontrakter. Q04 fokuserer på principal-agent-kontrakten mellom to virksomheter under costly contracting. [SLIDE -- BSZ kap.\ 10]}
 \end{figure}
 
 \begin{center}

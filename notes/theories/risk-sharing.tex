@@ -66,8 +66,31 @@ $0<\beta^{*}<1$ (second-best) & Begge proporsjonalt & Pareto-optimal gitt inform
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.55\linewidth]{BSZ_kap_15_2026/by_slide/slide_007/BSZ_kap_15_2026_slide_007_asset_02_image5.png}
-\caption{Trade-offen risikodeling vs.\ insentiver: ren fastlønn gir effektiv risikodeling men null innsats; full residual claimancy gir maksimal innsats men dyr risikopremie. [SLIDE -- BSZ kap.\ 15, slide 7]}
+\begin{tikzpicture}[>=latex, every node/.style={font=\small}]
+  % Akser
+  \draw[->] (0,0) -- (7.2,0) node[right] {Insentivkoeffisient $\beta$};
+  \draw[->] (0,0) -- (0,5.0) node[above] {Kostnad};
+  % Markering 0 og 1 på x-aksen
+  \node[below, font=\footnotesize] at (0,-0.05) {$0$};
+  \node[below, font=\footnotesize] at (6.5,-0.05) {$1$};
+  % Innsats-tap (synker når β øker)
+  \draw[thick, blue!60!black, domain=0.1:6.4, samples=40]
+    plot (\x, {4.2*exp(-0.55*\x)});
+  \node[blue!60!black, font=\footnotesize, right] at (0.2,4.2) {Innsatstap (shirking)};
+  % Risikopremie (stiger med β²)
+  \draw[thick, red!70!black, domain=0:6.4, samples=40]
+    plot (\x, {0.085*\x*\x});
+  \node[red!70!black, font=\footnotesize, right] at (6.4,3.5) {Risikopremie ($\propto \beta^2 \sigma^2$)};
+  % Total kostnad (sum) -- U-formet
+  \draw[very thick, green!50!black, domain=0.1:6.4, samples=60]
+    plot (\x, {4.2*exp(-0.55*\x) + 0.085*\x*\x});
+  \node[green!50!black, font=\footnotesize, right] at (5.6,4.6) {Total};
+  % β*-markering
+  \draw[dashed, gray] (2.7,0) -- (2.7,1.59);
+  \filldraw[green!50!black] (2.7,1.59) circle (2pt);
+  \node[below, font=\bfseries\footnotesize] at (2.7,-0.05) {$\beta^*$};
+\end{tikzpicture}
+\caption{\textbf{Trade-offen risikodeling vs.\ insentiver.} Ved $\beta = 0$ (fastlønn): effektiv risikodeling, men maksimal shirking. Ved $\beta = 1$ (full residual claimancy): null shirking, men risikopremien koster prinsipalen $r\sigma^2/2$. Second-best $\beta^*$ minimerer summen og ligger strengt mellom 0 og 1. [SLIDE -- BSZ kap.\ 15, slide 7]}
 \end{figure}
 
 \subsection*{Eksempler}

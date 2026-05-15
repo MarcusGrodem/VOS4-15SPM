@@ -74,8 +74,26 @@ $\beta Q$ (variabel) & Vrir innsats, kobler agent til prinsipalens mål & Gir ik
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.55\linewidth]{BSZ_kap_15_2026/by_slide/slide_020/BSZ_kap_15_2026_slide_020_asset_01_image7.jpeg}
-\caption{Lønnskontrakten dekomponert: fast del ($W_0$) + variabel del ($\beta Q$). [SLIDE -- BSZ kap.\ 15, slide 20]}
+\begin{tikzpicture}[>=latex, every node/.style={font=\small}]
+  % Akser
+  \draw[->] (0,0) -- (7.0,0) node[right] {Output $Q$};
+  \draw[->] (0,0) -- (0,5.0) node[above] {Lønn $W$};
+  % W0-linje (horisontal stiplet)
+  \draw[dashed, blue!60!black, thick] (0,1.2) -- (6.5,1.2);
+  \node[blue!60!black, font=\footnotesize, left] at (0,1.2) {$W_0$};
+  % Total W = W0 + beta Q (heltrukket)
+  \draw[very thick, green!50!black] (0,1.2) -- (6.5,4.5);
+  \node[green!50!black, font=\footnotesize, right] at (6.5,4.5) {$W = W_0 + \beta Q$};
+  % Visualiser fast og variabel del på et punkt
+  \draw[dashed, gray] (4.0,0) -- (4.0,3.23);
+  \draw[<->, blue!60!black, thick] (4.3,0) -- (4.3,1.2);
+  \node[blue!60!black, font=\footnotesize, right] at (4.35,0.6) {fast del $W_0$};
+  \draw[<->, red!70!black, thick] (4.3,1.2) -- (4.3,3.23);
+  \node[red!70!black, font=\footnotesize, right] at (4.35,2.2) {variabel del $\beta Q$};
+  % Helningsvinkel
+  \node[font=\footnotesize, gray] at (1.4,2.0) {helning $= \beta$};
+\end{tikzpicture}
+\caption{Lønnskontrakten dekomponert: fast del ($W_0$, dekker reservation utility og risikopremie) + variabel del ($\beta Q$, vrir innsats). Helningen $\beta$ er insentivkoeffisienten -- jo brattere, jo sterkere insentiv, men jo mer risiko bæres av agenten. [SLIDE -- BSZ kap.\ 15, slide 20]}
 \end{figure}
 
 \subsection*{Eksempler}

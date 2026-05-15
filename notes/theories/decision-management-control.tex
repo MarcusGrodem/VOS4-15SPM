@@ -43,9 +43,36 @@ I små virksomheter der \emph{én person er både beslutningstaker og residual c
 \subsection*{Modell / illustrasjon}
 
 \begin{figure}[h]
-  \centering
-  \includegraphics[width=0.7\linewidth]{BSZ_kap_12_2026/by_slide/slide_014/BSZ_kap_12_2026_slide_014_asset_01_image4.png}
-  \caption{De fire trinnene i en beslutningsprosess: Initiation, Ratification, Implementation, Monitoring. Management = (1)+(3); Control = (2)+(4). Separasjon når beslutningstaker ikke er residual claimant. (BSZ kap.\ 12, slide 14) [SLIDE]}
+\centering
+\begin{tikzpicture}[>=latex, every node/.style={font=\small}, node distance=0.5cm]
+  % Fire trinn-bokser
+  \node[draw, rounded corners, thick, fill=blue!15, minimum width=2.6cm, minimum height=1.0cm, align=center] (S1) {\bfseries 1. Initiation\\ \footnotesize forslag, ideer};
+  \node[draw, rounded corners, thick, fill=red!15, minimum width=2.6cm, minimum height=1.0cm, align=center, right=0.6cm of S1] (S2) {\bfseries 2. Ratification\\ \footnotesize godkjenning};
+  \node[draw, rounded corners, thick, fill=blue!15, minimum width=2.6cm, minimum height=1.0cm, align=center, right=0.6cm of S2] (S3) {\bfseries 3. Implementation\\ \footnotesize gjennomføring};
+  \node[draw, rounded corners, thick, fill=red!15, minimum width=2.6cm, minimum height=1.0cm, align=center, right=0.6cm of S3] (S4) {\bfseries 4. Monitoring\\ \footnotesize måling, evaluering};
+  % Piler mellom
+  \draw[->, thick] (S1) -- (S2);
+  \draw[->, thick] (S2) -- (S3);
+  \draw[->, thick] (S3) -- (S4);
+  % DM-klammer under blå-trinn (Management = Initiation + Implementation)
+  \draw[decorate, decoration={brace, mirror, amplitude=6pt}, thick, blue!60!black]
+    (S1.south west) -- (S1.south east)
+    node[midway, below=10pt, font=\footnotesize\bfseries, blue!60!black] {DM};
+  \draw[decorate, decoration={brace, mirror, amplitude=6pt}, thick, blue!60!black]
+    (S3.south west) -- (S3.south east)
+    node[midway, below=10pt, font=\footnotesize\bfseries, blue!60!black] {DM};
+  % DC-klammer under røde trinn (Control = Ratification + Monitoring)
+  \draw[decorate, decoration={brace, mirror, amplitude=6pt}, thick, red!60!black]
+    (S2.south west) -- (S2.south east)
+    node[midway, below=10pt, font=\footnotesize\bfseries, red!60!black] {DC};
+  \draw[decorate, decoration={brace, mirror, amplitude=6pt}, thick, red!60!black]
+    (S4.south west) -- (S4.south east)
+    node[midway, below=10pt, font=\footnotesize\bfseries, red!60!black] {DC};
+  % Forklaringstekst
+  \node[blue!60!black, font=\footnotesize\itshape, below=1.0cm of S1, xshift=1.6cm] {Decision Management = agent med spesifik viden};
+  \node[red!60!black, font=\footnotesize\itshape, below=1.4cm of S2, xshift=1.6cm] {Decision Control = prinsipal / residual claimant};
+\end{tikzpicture}
+\caption{\textbf{De fire trinnene i en beslutningsprosess} (Fama \& Jensen 1983; BSZ kap.\ 12, slide 14). \emph{Decision Management} (initiering + implementering) tildeles agenten med spesifik viden. \emph{Decision Control} (ratifikasjon + monitoring) holdes hos prinsipalen/residual claimant -- ellers ville agenten ratifisere sine egne forslag og monitorere sin egen utførelse. Separasjon er kritisk når beslutningstaker ikke er residual claimant. [SLIDE]}
 \end{figure}
 
 \begin{center}

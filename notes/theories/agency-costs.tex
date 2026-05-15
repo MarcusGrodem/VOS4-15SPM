@@ -72,9 +72,44 @@ Netto verdi $S'$ & 1\,600 \\
 \subsection*{Modell / illustrasjon}
 
 \begin{figure}[h]
-  \centering
-  \includegraphics[width=0.65\linewidth]{BSZ_kap_10_2026/by_slide/slide_007/BSZ_kap_10_2026_slide_007_asset_01_image3.png}
-  \caption{Agency costs i juridisk kontrakt -- dekomponering av verdiavvik fra first-best (BSZ kap.\ 10, slide 7). [SLIDE]}
+\centering
+\begin{tikzpicture}[>=latex, scale=0.95, every node/.style={font=\small}]
+  % First-best baseline
+  \draw[thick] (0,0) rectangle (3.2,4.5);
+  \node[font=\bfseries, align=center] at (1.6,4.85) {First-best\\\footnotesize (costless contracting)};
+  \node[font=\itshape] at (1.6,2.25) {Maksimal verdi};
+  % Pil mellom
+  \draw[->, very thick, gray] (3.5,2.25) -- (4.7,2.25);
+  \node[gray, font=\footnotesize, above] at (4.1,2.3) {agentkostnader};
+  \node[gray, font=\footnotesize, below] at (4.1,2.2) {trekker fra};
+  % Andre kolonne: stablet dekomp
+  \draw[thick] (5,0) rectangle (8.2,4.5);
+  \node[font=\bfseries, align=center] at (6.6,4.85) {Faktisk verdi\\\footnotesize (costly contracting)};
+  % Residual loss (øverst)
+  \fill[red!30] (5,3.2) rectangle (8.2,4.5);
+  \node[font=\bfseries\small, align=center] at (6.6,3.85)
+    {Residual loss\\ \footnotesize (uunngåelig tap)};
+  % Bonding
+  \fill[orange!30] (5,2.3) rectangle (8.2,3.2);
+  \node[font=\bfseries\small, align=center] at (6.6,2.75)
+    {Bonding cost\\ \footnotesize (agent bekoster)};
+  % Monitoring
+  \fill[yellow!40] (5,1.4) rectangle (8.2,2.3);
+  \node[font=\bfseries\small, align=center] at (6.6,1.85)
+    {Monitoring cost\\ \footnotesize (prinsipal bekoster)};
+  % Realiserte verdi
+  \fill[green!25] (5,0) rectangle (8.2,1.4);
+  \node[font=\bfseries\small, align=center] at (6.6,0.7)
+    {Realisert verdi};
+  % Klammer
+  \draw[decorate, decoration={brace, amplitude=6pt}, thick]
+    (8.3,3.2) -- (8.3,4.5)
+    node[midway, right=8pt, font=\scriptsize, align=left] {residual\\ loss};
+  \draw[decorate, decoration={brace, amplitude=6pt}, thick]
+    (8.3,1.4) -- (8.3,3.2)
+    node[midway, right=8pt, font=\scriptsize, align=left] {kontrakt-\\ kostnader\\ ($M+B$)};
+\end{tikzpicture}
+\caption{\textbf{Agency cost-dekomponering} (Jensen \& Meckling 1976; BSZ kap.\ 10, slide 7). Avviket fra first-best splittes i tre: \emph{Monitoring costs} (M, prinsipalens overvåking), \emph{Bonding costs} (B, agentens forpliktelser/risiko-bæring) og \emph{Residual loss} (uunngåelig tap pga.\ ikke alle insentivkonflikter kan utelukkes kostnadseffektivt). Total agency cost = $M + B + \text{residual loss}$. [SLIDE]}
 \end{figure}
 
 \subsection*{Eksempler}
