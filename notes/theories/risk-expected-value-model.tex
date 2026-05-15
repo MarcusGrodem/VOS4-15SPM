@@ -1,0 +1,101 @@
+% !TEX root = ../main.tex
+\section{Risk--Expected Value-modellen (indifferenskurver i $(\sigma, E[W])$-rommet)}\label{thr:risk-expected-value-model}
+
+\paragraph{Definisjon.} BSZ kap.\ 2/15 presenterer en modell der medarbeideren velger mellom kontrakter som gir ulike kombinasjoner av \emph{risiko} ($\sigma$ eller $\sigma^2$, variansen i kompensasjon) og \emph{forventet verdi} ($E[W]$, forventet lønn). Agentens preferanser representeres av indifferenskurver i $(\sigma, E[W])$-rommet, der risikoaversjon bestemmer kurvenes helning: en risikoavers agent krever høyere $E[W]$ for å akseptere mer risiko (\emph{risikopremie}). [SLIDE]
+
+\subsection*{Forklaring}
+
+Modellen kobler sammen \thref{risk-sharing}{risikodeling}, \thref{reservation-utility}{reservation utility} og \thref{incentive-coefficient}{incentive coefficient} i ett grafisk rammeverk. [SLIDE/BOK]
+
+\textbf{Akser:}
+\begin{itemize}\setlength{\itemsep}{1pt}
+\item \textbf{Horisontal:} Risiko -- standardavviket (eller variansen) i kompensasjon, $\sigma_W = \beta\sigma$.
+\item \textbf{Vertikal:} Forventet verdi -- $E[W] = W_0 + \beta\alpha e^*$.
+\end{itemize}
+
+\textbf{Indifferenskurver:} Gitt CARA-nytte ($U = E[W] - \tfrac{r}{2}\mathrm{Var}[W]$) er indifferenskurvene \emph{stigende} og \emph{konvekse oppover} i $(\sigma^2, E[W])$-rommet:
+\[
+E[W] = \bar{U} + \tfrac{r}{2}\sigma_W^2
+\]
+Hvert nyttenivå $\bar{U}$ gir en oppovervåkende parabel. Risikoaversjon $r$ bestemmer helningen: høyere $r$ $\Rightarrow$ brattere kurver $\Rightarrow$ agenten krever mer kompensasjon for ekstra risiko. [BOK]
+
+\textbf{Nøkkelkonsepter:}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item \textbf{Certainty equivalent (CE):} Skjæringspunktet mellom indifferenskurven og vertikalaksen ($\sigma=0$). Det sikre beløpet agenten er indifferent mellom og det usikre alternativet.
+\item \textbf{Risikopremie (RP):} $RP = E[W] - CE = \tfrac{r}{2}\beta^2\sigma^2$. Avstanden mellom forventet verdi og certainty equivalent.
+\item \textbf{Risikonøytral agent ($r=0$):} Indifferenskurvene er horisontale -- agenten bryr seg bare om $E[W]$.
+\item \textbf{Svært risikoavers agent ($r$ stor):} Bratte indifferenskurver -- krever stor $E[W]$-økning for litt mer risiko.
+\end{itemize}
+
+\textbf{Kobling til kontraktsdesign:} Når prinsipalen tilbyr en kontrakt med bestemt $\beta$, bestemmer dette en linje i $(\sigma, E[W])$-rommet. Agenten aksepterer kontrakten bare hvis den tilbudte kombinasjonen når minst \thref{reservation-utility}{reservation utility} ($\bar{U} \geq U_0$). Optimal kontrakt er det punktet på denne linjen som tangerer agentens reservation-indifferenskurve. [SLIDE]
+
+\subsection*{Grafisk modell}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>=latex, scale=0.85, every node/.style={font=\small}]
+  % Akser
+  \draw[->] (0,0) -- (8,0) node[right] {$\sigma_W$ (risiko)};
+  \draw[->] (0,0) -- (0,7) node[above] {$E[W]$};
+  % Indifferenskurver risikoavers (r stor)
+  \draw[thick, blue, domain=0:5.5, samples=40]
+    plot (\x, {1.5 + 0.15*\x*\x});
+  \node[blue, right, font=\scriptsize] at (5.5,6.0) {$U_0$ (risikoavers)};
+  \draw[thick, blue, dashed, domain=0:5.0, samples=40]
+    plot (\x, {2.5 + 0.15*\x*\x});
+  \node[blue, right, font=\scriptsize] at (5.0,6.3) {$U_1 > U_0$};
+  % Indifferenskurver risikonøytral
+  \draw[thick, green!50!black, domain=0:7.0, samples=20]
+    plot (\x, {3.0});
+  \node[green!50!black, right, font=\scriptsize] at (7.0,3.0) {risikonøytral};
+  % CE og RP
+  \draw[dashed] (0,1.5) -- (3.5,1.5);
+  \node[left, font=\scriptsize] at (0,1.5) {$CE$};
+  \filldraw[blue] (3.5, 3.34) circle (1.5pt);
+  \node[above left, font=\scriptsize\bfseries, blue] at (3.5,3.34) {$A$};
+  \draw[dashed] (3.5,0) -- (3.5,3.34);
+  \draw[dashed] (0,3.34) -- (3.5,3.34);
+  \node[left, font=\scriptsize] at (0,3.34) {$E[W]_A$};
+  % RP brace
+  \draw[decorate, decoration={brace, amplitude=4pt, mirror}, red!70!black] (-0.3,1.5) -- (-0.3,3.34);
+  \node[left, font=\scriptsize, red!70!black] at (-0.6,2.42) {$RP$};
+  % Point annotation
+  \node[below, font=\scriptsize] at (3.5,0) {$\sigma_A$};
+\end{tikzpicture}
+\caption{\textbf{Risk--Expected Value.} Indifferenskurver i $(\sigma_W, E[W])$-rommet. Risikoavers agent (blå): stigende, konvekse kurver -- krever høyere $E[W]$ for mer risiko. Punkt $A$: en kontrakt med risiko $\sigma_A$ krever forventet lønn $E[W]_A$; agentens certainty equivalent er $CE$ (skjæring med $y$-aksen). Risikopremien $RP = E[W]_A - CE$ er prinsiplens kostnad. Risikonøytral agent (grønn): flat kurve -- ingen risikopremie nødvendig. [SLIDE -- BSZ kap.\ 2/15]}
+\end{figure}
+
+\subsection*{Kjerneforutsetninger}
+\begin{itemize}
+\item CARA-nytte (konstant absolutt risikoaversjon) for at indifferenskurvene er parallelle.
+\item Risiko representert ved $\sigma_W$ eller $\sigma^2_W$ -- normalfordelt avkastning.
+\item Agenten har \thref{reservation-utility}{reservation utility} $U_0$ som sett av markedet.
+\item Prinsipalen er risikonøytral (diversifisert aksjonær).
+\end{itemize}
+
+\subsection*{Muligheter}
+\begin{itemize}
+\item Visualiserer risikopremien og certainty equivalent grafisk -- intuitivt for eksamen.
+\item Forklarer hvorfor risikoaverse agenter krever høyere forventet lønn for å akseptere variabel kompensasjon.
+\item Kobler direkte til $\beta^*$-formelen: høyere $\beta$ $\Rightarrow$ beveger agenten nordøst langs budsjettlinjen $\Rightarrow$ mer risiko, mer $E[W]$, men stigende $RP$.
+\item Viser forskjell mellom risikoavers, risikonøytral og risikosøkende agent visuelt.
+\end{itemize}
+
+\subsection*{Begrensninger og kritikk}
+\begin{itemize}
+\item CARA-nytte er en sterk forutsetning -- i virkeligheten er risikoaversjon avhengig av formue (DARA er mer realistisk).
+\item Modellen ignorerer loss aversion (Kahneman \& Tversky): nedsiderisiko vektes tyngre enn oppside.
+\item Normalfordeling forutsetter symmetrisk risiko -- i praksis er kompensasjon ofte asymmetrisk (opsjoner har begrenset nedside).
+\item Grafisk representasjon fungerer for to dimensjoner -- med flere risikofaktorer kreves mer formalisering.
+\end{itemize}
+
+\subsection*{Eksempler}
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item \textbf{Nyutdannet konsulent vs.\ erfaren partner.} Konsulenten (lav formue, høy $r$) har bratte indifferenskurver og velger fastlønn. Partneren (høy formue, diversifisert, lav $r$) har flate kurver og aksepterer profittpoolbonus. Samme firma, ulik kontrakt -- forklart av forskjell i indifferenskurve-helning. [EKS]
+\item \textbf{Equinor-ansatte og aksjespareprogram.} Equinor tilbyr aksjer med rabatt -- ansatte velger ulik andel avhengig av risikoaversjon. Risikoaverse (ingeniører med høy gjeld) velger lite, risikotolerante (eldre uten boliggjeld) velger mye. Modellen forklarer seleksjonsmønsteret. [EKS]
+\end{itemize}
+
+\subsection*{Kobling til søyle og andre teorier}
+Søyle: \SThree\ (kompensasjonsdesign bestemmer agentens risiko-avkastnings-profil). Relaterte: \thref{risk-sharing}{Risk sharing}, \thref{reservation-utility}{Reservation utility}, \thref{incentive-coefficient}{Incentive coefficient}, \thref{fixed-vs-variable-pay}{Fast vs.\ variabel lønn}, \thref{optimal-effort-model}{Optimal effort-modell}, \thref{integrity-vs-income-model}{Integrity vs.\ income-modellen} (den andre nyttemodellen i Q15).
+
+\paragraph{Brukt i spørsmål:} Q15.
