@@ -61,19 +61,19 @@ Når beslutningsretten flyttes nedover, mister prinsipalen direkte kontroll. Jen
 \begin{tikzpicture}[scale=1.0]
   % Akser
   \draw[->, thick] (0,0) -- (7.5,0) node[right] {$D$};
-  \draw[->, thick] (0,0) -- (0,5) node[above] {kr};
+  \draw[->, thick] (0,0) -- (0,6) node[above] {kr};
+  % A=1, B=4, 2C=1 (dvs C=0.5) => MC=1+D, krysser MB=4 ved D*=3
   % MB horisontal på B=4
   \draw[thick, blue!70!black] (0,4) -- (7,4) node[right] {$\mathrm{MB}=B$};
-  % MC lineær: A + 2CD, A=1, stigning 0.5
-  \draw[thick, red!70!black] (0,1) -- (7,4.5) node[right] {$\mathrm{MC}=A+2CD$};
-  % D* der MB=MC: 1+0.5D=4 => D=6? med disse tallene topp ved D=6; juster:
-  % La oss heller bruke A=1, helning 1 (2C=1, dvs C=0.5) => krysning ved D=3
+  % MC lineær: A + 2CD = 1 + D, stigning 1, krysser MB=4 ved D=3
+  \draw[thick, red!70!black] (0,1) -- (5,6) node[right] {$\mathrm{MC}=A+2CD$};
+  % D* nøyaktig der MB=MC (D=3)
   \draw[dashed] (3,0) -- (3,4);
   \filldraw[black] (3,4) circle (1.5pt);
   \node[below] at (3,0) {$D^{*}$};
   \node[left] at (0,4) {$B$};
   \node[left] at (0,1) {$A$};
-  \node[above right] at (3,4) {\small Optimum: $D^{*}=\tfrac{B-A}{2C}$};
+  \node[above left] at (3,4) {\small Optimum: $D^{*}=\tfrac{B-A}{2C}$};
 \end{tikzpicture}
 \caption{Optimal grad av desentralisering der marginal fordel ($B$, konstant) møter marginal kostnad ($A + 2CD$, lineært stigende). Skifter $B$ opp $\Rightarrow$ $D^{*}$ til høyre; skifter $A$ eller $C$ opp $\Rightarrow$ $D^{*}$ til venstre. [SLIDE/EGEN]}
 \end{figure}

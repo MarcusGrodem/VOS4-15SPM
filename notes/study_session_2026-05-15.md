@@ -13,6 +13,30 @@ Min jobb: forklare på en måte han lett kan forstå igjen senere, og notere det
 
 ## Notater
 
+### Spm 9 — Hva er meningen med responsibility centers?
+- **Spm:** Er meningen bare at folk skal kunne måles på noe?
+- **Hvor:** `theories/responsibility-centers.tex` l. 4–10
+- **Forklaring:** Ikke bare måling — poenget er at du bare skal måles på det du faktisk *kontrollerer* (controllability-prinsippet). Centertypen matcher myndighet med måltall. Bussjåfør: karakter på punktlighet, ikke trafikkork.
+- **Husk:** Myndighet → centertype → måltall. Feil match = demotivasjon + gale beslutninger.
+
+
+
+### Spm 8 — Q05 og tre-bens-skammelen som rammeverk for hele boken
+- **Spm:** Q05 handler om tre-bens-skammelen — er dette rammeverket for hele boken?
+- **Forklaring:** Ja. S1=beslutningsrettigheter, S2=prestasjonsmåling, S3=insentiver. Alle tre må designes samtidig. Q05 er «hub»; alle andre Q er dypdykk i én/to søyler.
+- **Husk:** Skammelen er ett møbel. Feil i ett ben → hele konstruksjonen faller (misalignment). Spør alltid: er alle tre justert?
+
+### Spm 7 — S1/S2/S3 vs. Q01–Q15
+- **Spm:** Hvorfor er dokumentet delt inn i Q01–Q15, men referansene i arket er til S1, S2…? Gir ikke mening.
+- **Hvor:** `theories/organizational-architecture.tex` l. 4; `questions/q01.tex` l. 9, 14, 80, 85
+- **Forklaring:** S1/S2/S3 er *ikke* andre spørsmål. Det er Brickley/Smith/Zimmermans tre søyler i organizational architecture: S1 = beslutningsrettigheter, S2 = prestasjonsmåling, S3 = belønning/insentiver. "Three-legged stool" — må passe sammen. Q01–Q15 bruker S1/S2/S3 som gjennomgående rammeverk. La inn en forklaringsboks øverst i `main.tex` så det er klart første gang notasjonen dukker opp.
+- **Husk:** S1 = hvem bestemmer. S2 = hva måles. S3 = hvordan belønnes. Endrer du én søyle uten å justere de andre → misalignment.
+
+### Spm 6 — W = W₀ + βQ: idealet er β = 0?
+- **Spm:** Vil man ha W = W₀? Og β+Q øker med asymmetrisk info?
+- **Forklaring:** Ja, idealet er β = 0 (ingen bonus nødvendig under CC). Når CC brytes: β > 0 nødvendig for insentiv → agent bærer risiko (pga. støy μ i Q) → krever risikopremie → W₀ må opp. Begge øker total lønnskostnad.
+- **Husk:** β > 0 = agent bærer risiko. Risiko = risikopremie = sløsing. CC fjerner behovet for β → billigst mulig.
+
 ### Spm 5 — First-best skjer aldri i praksis?
 - **Spm:** Man vil ha first-best men det skjer sjelden i praksis?
 - **Forklaring:** Riktig. Alltid second-best fordi du aldri ser innsats direkte, output har støy, kontrakter er ufullstendige. Alt i faget = verktøy for å krympe gapet mot first-best.
