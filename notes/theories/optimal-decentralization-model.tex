@@ -81,7 +81,7 @@ Andreordens-betingelsen er oppfylt: $d^2\mathrm{NB}/dD^2 = -2C < 0$, så $D^*$ e
   % Marginal Benefit-linje (horisontal): MB = B
   \draw[thick, blue!70!black] (0,4) -- (7,4) node[right] {$\mathrm{MB} = B$};
   % Marginal Cost-linje: MC = A + 2CD, starter på A=1, stiger med stigning 2C=1
-  \draw[thick, red!70!black] (0,1) -- (7,4.5) node[right] {$\mathrm{MC} = A + 2CD$};
+  \draw[thick, red!70!black] (0,1) -- (4,5) node[right] {$\mathrm{MC} = A + 2CD$};
   % Krysningspunkt: ved B=4, A+2CD=4 => 1+1*D=4 => D=3
   \draw[dashed] (3,0) -- (3,4);
   \filldraw[black] (3,4) circle (1.5pt);
@@ -99,7 +99,7 @@ Andreordens-betingelsen er oppfylt: $d^2\mathrm{NB}/dD^2 = -2C < 0$, så $D^*$ e
 \begin{tikzpicture}[scale=1.0]
   % Akser for NB-parabel
   \draw[->, thick] (0,0) -- (7.5,0) node[right] {$D$};
-  \draw[->, thick] (0,-0.5) -- (0,3.5) node[above] {$\mathrm{NB}(D)$};
+  \draw[->, thick] (0,-0.5) -- (0,5.2) node[above] {$\mathrm{NB}(D)$};
   % Parabel: NB = (B-A)D - CD^2; med B-A=3, C=0.5 => topp ved D=3, NB(3)=4.5
   \draw[thick, violet!80!black, domain=0:6, smooth, samples=80, variable=\x]
     plot ({\x},{3*\x - 0.5*\x*\x});

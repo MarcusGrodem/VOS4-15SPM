@@ -44,27 +44,27 @@ Førsteordensbetingelsen sier at marginal politisk gevinst fra økt brancheprofi
   % MC-pris og monopolpris
   \draw[dashed] (1.5,0) -- (1.5,5.0);
   \node[below] at (1.5,0) {\scriptsize $P^{MC}$};
-  \draw[dashed] (6.5,0) -- (6.5,5.0);
-  \node[below] at (6.5,0) {\scriptsize $P^{M}$};
-  % Profit function pi(P) -- invers U
+  \draw[dashed] (4.5,0) -- (4.5,5.0);
+  \node[below] at (4.5,0) {\scriptsize $P^{M}$};
+  % Profit function pi(P) -- invers U, topp ved P^M=4.5 (sin(90°) når (x-1.5)·30=90)
   \draw[thick, blue, domain=1.5:7.5, samples=60]
     plot (\x, {3.5*sin((\x-1.5)*30)});
-  \node[blue, right] at (7.5,1.5) {\scriptsize $\pi(P)$};
+  \node[blue, right] at (7.5,0.5) {\scriptsize $\pi(P)$};
   % CS(P) -- fallende
   \draw[thick, green!50!black, domain=0.5:7.5, samples=40]
     plot (\x, {4.5-0.55*\x});
-  \node[green!50!black, right] at (7.5,0.5) {\scriptsize $CS(P)$};
-  % S(P) -- invers U men toppen forskjøvet til venstre for pi-toppen
-  \draw[thick, red!70!black, domain=1.0:7.5, samples=60]
-    plot (\x, {4.0*sin((\x-0.5)*22)});
-  \node[red!70!black, right] at (7.5,2.8) {\scriptsize $S(P)$};
-  % P* optimum
-  \draw[thick, dashed, red!70!black] (3.6,0) -- (3.6,4.0);
-  \node[below, red!70!black, font=\bfseries] at (3.6,0) {\scriptsize $P^{*}$};
-  \filldraw[red!70!black] (3.6,3.95) circle (1.5pt);
+  \node[green!50!black, right] at (7.5,0.0) {\scriptsize $CS(P)$};
+  % S(P) -- invers U, topp ved P*=3.0 (sin(90°) når (x-0.5)·36=90)
+  \draw[thick, red!70!black, domain=0.5:5.5, samples=60]
+    plot (\x, {4.0*sin((\x-0.5)*36)});
+  \node[red!70!black, right] at (5.5,0.2) {\scriptsize $S(P)$};
+  % P* optimum (S(3.0)=4.0*sin(90°)=4.0)
+  \draw[thick, dashed, red!70!black] (3.0,0) -- (3.0,4.0);
+  \node[below, red!70!black, font=\bfseries] at (3.0,0) {\scriptsize $P^{*}$};
+  \filldraw[red!70!black] (3.0,4.0) circle (1.5pt);
   % Brace
-  \draw[decorate, decoration={brace, amplitude=4pt, mirror}] (1.5,-0.6) -- (6.5,-0.6);
-  \node[below, font=\scriptsize] at (4.0,-0.9) {$P^{*}$ mellom $P^{MC}$ og $P^{M}$};
+  \draw[decorate, decoration={brace, amplitude=4pt, mirror}] (1.5,-0.6) -- (4.5,-0.6);
+  \node[below, font=\scriptsize] at (3.0,-0.9) {$P^{*}$ mellom $P^{MC}$ og $P^{M}$};
 \end{tikzpicture}
 \caption{\textbf{Regulated pricing-modellen.} Brancheprofitt $\pi(P)$ (blå) er invers-U med topp ved monopolpris $P^M$. Konsumentoverskudd $CS(P)$ (grønn) er fallende. Political support $S(P)$ (rød) balanserer de to og topper ved $P^*$ -- mellom $P^{MC}$ og $P^M$. Regulatoren velger $P^*$ der marginal politisk gevinst fra bransjen lik marginal politisk kostnad fra konsumenter. [BOK -- BSZ kap.\ 21]}
 \end{figure}

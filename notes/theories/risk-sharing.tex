@@ -85,10 +85,10 @@ $0<\beta^{*}<1$ (second-best) & Begge proporsjonalt & Pareto-optimal gitt inform
   \draw[very thick, green!50!black, domain=0.1:6.4, samples=60]
     plot (\x, {4.2*exp(-0.55*\x) + 0.085*\x*\x});
   \node[green!50!black, font=\footnotesize, right] at (5.6,4.6) {Total};
-  % β*-markering
-  \draw[dashed, gray] (2.7,0) -- (2.7,1.59);
-  \filldraw[green!50!black] (2.7,1.59) circle (2pt);
-  \node[below, font=\bfseries\footnotesize] at (2.7,-0.05) {$\beta^*$};
+  % β*-markering (min av Total: d/dβ[4.2e^(-0.55β)+0.085β²]=0 ⇒ β*≈2.85, Total≈1.57)
+  \draw[dashed, gray] (2.85,0) -- (2.85,1.57);
+  \filldraw[green!50!black] (2.85,1.57) circle (2pt);
+  \node[below, font=\bfseries\footnotesize] at (2.85,-0.05) {$\beta^*$};
 \end{tikzpicture}
 \caption{\textbf{Trade-offen risikodeling vs.\ insentiver.} Ved $\beta = 0$ (fastlønn): effektiv risikodeling, men maksimal shirking. Ved $\beta = 1$ (full residual claimancy): null shirking, men risikopremien koster prinsipalen $r\sigma^2/2$. Second-best $\beta^*$ minimerer summen og ligger strengt mellom 0 og 1. [SLIDE -- BSZ kap.\ 15, slide 7]}
 \end{figure}

@@ -102,11 +102,11 @@ Dette er den klassiske Holmström-Milgrom-formelen (lineær kontrakt, CARA-nytte
     plot (\x,{3.3*(1-exp(-0.7*\x))}) node[right] {\small $MB(\beta)$ -- insentivgevinst};
   % Marginal cost av β (konveks stigende): risikopremie
   \draw[thick,red,domain=0:5.5,samples=60]
-    plot (\x,{0.13*\x*\x}) node[right] {\small $MC(\beta)$ -- risikopremie};
-  % Krysning (visuell): rundt β=2.8 i diagrammet
-  \filldraw (2.9,2.4) circle (1.6pt);
-  \draw[dashed] (2.9,0) -- (2.9,2.4);
-  \node[below] at (2.9,0) {\small $\beta^{*}$};
+    plot (\x,{0.35*\x*\x}) node[right] {\small $MC(\beta)$ -- risikopremie};
+  % Krysning: MB(2.85)≈2.85, MC(2.85)=0.35·8.12≈2.84
+  \filldraw (2.85,2.85) circle (1.6pt);
+  \draw[dashed] (2.85,0) -- (2.85,2.85);
+  \node[below] at (2.85,0) {\small $\beta^{*}$};
 \end{tikzpicture}
 \caption{\textbf{Modell B -- prinsipalens side.} Prinsipalen velger $\beta^{*}$ der marginalt insentivutbytte ($MB(\beta)$, konkav stigende -- avtagende marginalgevinst av flere insentiver) lik marginal risikokostnad ($MC(\beta)$, konveks stigende -- risikopremien $\tfrac{r}{2}\beta^{2}\sigma^{2}$ stiger raskere enn lineært). $\beta^{*}<1$ i second-best; $\beta^{*}\to 1$ kun ved risikonøytral agent ($r=0$) eller perfekt observerbarhet ($\sigma^{2}=0$). [SLIDE -- BSZ kap.\ 15]}
 \end{figure}

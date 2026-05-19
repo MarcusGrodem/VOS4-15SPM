@@ -44,27 +44,27 @@ BSZ kap.\ 21 / Peltzman (1976): regulatoren maksimerer $S(\pi(P), CS(P))$. Brans
   % MC og PM
   \draw[dashed] (1.5,0) -- (1.5,5.0);
   \node[below] at (1.5,0) {\scriptsize $P^{MC}$};
-  \draw[dashed] (6.5,0) -- (6.5,5.0);
-  \node[below] at (6.5,0) {\scriptsize $P^{M}$};
-  % pi(P)
+  \draw[dashed] (4.5,0) -- (4.5,5.0);
+  \node[below] at (4.5,0) {\scriptsize $P^{M}$};
+  % pi(P) -- topp ved P^M=4.5
   \draw[thick, blue, domain=1.5:7.5, samples=60]
     plot (\x, {3.5*sin((\x-1.5)*30)});
-  \node[blue, right] at (7.5,1.5) {\scriptsize $\pi(P)$};
+  \node[blue, right] at (7.5,0.5) {\scriptsize $\pi(P)$};
   % CS(P)
   \draw[thick, green!50!black, domain=0.5:7.5, samples=40]
     plot (\x, {4.5-0.55*\x});
-  \node[green!50!black, right] at (7.5,0.5) {\scriptsize $CS(P)$};
-  % S(P)
-  \draw[thick, red!70!black, domain=1.0:7.5, samples=60]
-    plot (\x, {4.0*sin((\x-0.5)*22)});
-  \node[red!70!black, right] at (7.5,2.8) {\scriptsize $S(P)$};
+  \node[green!50!black, right] at (7.5,0.0) {\scriptsize $CS(P)$};
+  % S(P) -- topp ved P*=3.0
+  \draw[thick, red!70!black, domain=0.5:5.5, samples=60]
+    plot (\x, {4.0*sin((\x-0.5)*36)});
+  \node[red!70!black, right] at (5.5,0.2) {\scriptsize $S(P)$};
   % P*
-  \draw[thick, dashed, red!70!black] (3.6,0) -- (3.6,4.0);
-  \node[below, red!70!black, font=\bfseries] at (3.6,0) {\scriptsize $P^{*}$};
-  \filldraw[red!70!black] (3.6,3.95) circle (1.5pt);
+  \draw[thick, dashed, red!70!black] (3.0,0) -- (3.0,4.0);
+  \node[below, red!70!black, font=\bfseries] at (3.0,0) {\scriptsize $P^{*}$};
+  \filldraw[red!70!black] (3.0,4.0) circle (1.5pt);
   % Brace
-  \draw[decorate, decoration={brace, amplitude=4pt, mirror}] (1.5,-0.6) -- (6.5,-0.6);
-  \node[below, font=\scriptsize] at (4.0,-0.9) {$P^{*}$ mellom $P^{MC}$ og $P^{M}$};
+  \draw[decorate, decoration={brace, amplitude=4pt, mirror}] (1.5,-0.6) -- (4.5,-0.6);
+  \node[below, font=\scriptsize] at (3.0,-0.9) {$P^{*}$ mellom $P^{MC}$ og $P^{M}$};
 \end{tikzpicture}
 \caption{\textbf{Regulated pricing-modellen.} $\pi(P)$ (blå) topper ved monopolpris; $CS(P)$ (grønn) er fallende; $S(P)$ (rød) maksimeres ved $P^*$ mellom $P^{MC}$ og $P^M$. Regulatoren balanserer bransje- og konsumentinteresser. [BOK -- BSZ kap.\ 21]}
 \end{figure}
