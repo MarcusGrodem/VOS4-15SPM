@@ -6,7 +6,7 @@
 \end{quote}
 
 \subsection*{Svar (kort)}
-Spørsmålet besvares med den lineære principal-agent-modellen ($Q=\alpha e+\mu$, $W=W_0+\beta Q$): \emph{agenten} velger innsats $e^{*}$ slik at marginalt insentiv $\beta\alpha$ er lik marginal innsatskostnad $c'(e)$, mens \emph{prinsipalen} velger insentivkoeffisienten $\beta^{*}=1/(1+r\sigma^{2}c''/\alpha^{2})$ ved å balansere innsatsgevinst mot risikopremien til en risikoavers agent. (a) Risiko ($r$, $\sigma^{2}$) trekker $\beta^{*}$ ned; (b) den præstationsuafhængige $W_0$ vrir \emph{ikke} innsats men dekker IR og risikopremie; (c) $\beta$ er det eneste insentivverktøyet som vrir innsats. [SLIDE]
+Spørsmålet besvares med den lineære principal-agent-modellen: output $Q=\alpha e+\mu$ (innsats $e$ ganger produktivitet $\alpha$, pluss støy $\mu$) og lønn $W=W_0+\beta Q$ (fastlønn $W_0$ pluss en andel $\beta$ av resultatet). \emph{Agenten} velger innsats $e^{*}$ slik at marginalt insentiv $\beta\alpha$ er lik marginal innsatskostnad $c'(e)$ -- altså arbeider hun helt til ekstra kroner fra bonus akkurat dekker ekstra slit. \emph{Prinsipalen} velger insentivkoeffisienten $\beta^{*}=1/(1+r\sigma^{2}c''/\alpha^{2})$. Intuitivt: jo høyere risikoaversjon ($r$) eller støy ($\sigma^{2}$), jo lavere bør $\beta$ settes -- fordi det blir dyrt å lesse risiko over på en risikoavers agent. (a) Risiko ($r$, $\sigma^{2}$) trekker $\beta^{*}$ ned; (b) den prestasjonsuavhengige $W_0$ vrir \emph{ikke} innsats, men dekker deltakelseskravet (IR -- Individual Rationality, dvs.\ at jobben må være verdt det) pluss risikopremie; (c) $\beta$ er det eneste insentivverktøyet som faktisk vrir innsats. [SLIDE]
 
 \subsection*{De to modellene (oversikt)}
 
@@ -25,20 +25,20 @@ Prinsipal & Kontrakt $(W_0,\beta)$ & Max $\mathbb{E}[Q-W]$ s.t.\ IR + IC & $\bet
 \subsection*{Relevante teorier (kort)}
 
 \paragraph{\thref{optimal-effort-model}{Optimal effort-modell (begge sider)}\quad\STwo/\SThree}
-Modellen i BSZ kap.\ 15: output $Q=\alpha e+\mu$, kontrakt $W=W_0+\beta Q$, agent med konveks innsatskostnad $c(e)$. Agentens FOC ($\beta\alpha=c'(e^{*})$) viser at innsats er strengt stigende i $\beta$ og uavhengig av $W_0$. Prinsipalen tar agentens beste respons med i regnestykket og velger $\beta^{*}$ der marginal insentivgevinst lik marginal risikopremie. Modellen leverer dermed begge optimumsbetingelsene i samme ramme og forklarer hvorfor second-best $\beta<1$. [SLIDE]
+Modellen i BSZ kap.\ 15: output $Q=\alpha e+\mu$ (det agenten produserer), kontrakt $W=W_0+\beta Q$, og en konveks innsatskostnad $c(e)$ -- ``konveks'' fordi siste innsats-time gjør mer vondt enn første. Agentens FOC -- førsteordensbetingelsen, dvs.\ regelen for hva som maksimerer agentens nytte -- er $\beta\alpha=c'(e^{*})$. Sagt enkelt: agenten jobber til marginal bonus akkurat dekker marginal slit. Innsats er derfor strengt stigende i $\beta$ (mer bonus $\Rightarrow$ mer innsats) og uavhengig av $W_0$ (fastlønn endrer ikke marginalvurderingen). Prinsipalen tar agentens beste respons med i regnestykket og velger $\beta^{*}$ der marginal insentivgevinst er lik marginal risikopremie. Modellen leverer dermed begge optimumsbetingelsene i samme ramme og forklarer hvorfor \emph{second-best} -- nest-beste utfall, dvs.\ det beste man får når innsats ikke kan observeres -- har $\beta<1$. [SLIDE]
 
-\paragraph{\thref{fixed-vs-variable-pay}{Præstationsuafhængig løn ($W_0$) vs.\ variabel ($\beta Q$)}\quad\SThree}
-$W_0$ er ren nivåvariabel: oppfyller deltakelsesskranken (IR) og kompenserer agenten for risikopremien $\tfrac{r}{2}\beta^{2}\sigma^{2}$, men vrir \emph{ikke} marginal innsats. $\beta Q$ er ren marginalvariabel: vrir innsats, men pålegger agenten eksogen risiko. Bare $W_0$ gir shirking; bare $\beta Q$ gir ineffektiv risikodeling. Hybridkontrakter er normen fordi de to komponentene løser ulike problemer. [SLIDE]
+\paragraph{\thref{fixed-vs-variable-pay}{Prestasjonsuavhengig lønn ($W_0$) vs.\ variabel ($\beta Q$)}\quad\SThree}
+$W_0$ er en ren \emph{nivå}-variabel: den løfter hele lønnsnivået og oppfyller deltakelsesskranken (IR -- jobben må gi minst like mye nytte som beste alternativ), og kompenserer agenten for risikopremien $\tfrac{r}{2}\beta^{2}\sigma^{2}$. Den vrir \emph{ikke} marginal innsats, fordi $W_0$ utbetales uansett hva agenten gjør. $\beta Q$ er derimot en ren \emph{marginal}-variabel: hver ekstra produserte enhet gir mer bonus, så innsats vris -- men risiko fra støyen $\mu$ overføres til agenten. Bare $W_0$ (uten bonus) gir \emph{shirking} (lav innsats / lureri); bare $\beta Q$ (uten fastlønn) gir ineffektiv risikodeling. Hybridkontrakter er derfor normen: $W_0$ håndterer deltakelse og risiko, $\beta Q$ håndterer innsats. [SLIDE]
 
-\paragraph{\thref{incentive-coefficient}{Incitamentskoefficient $\beta=\partial W/\partial Q$}\quad\SThree}
-$\beta$ måler ``pay-performance sensitivity''. Determinanter: $\beta^{*}\uparrow$ med produktivitet $\alpha$; $\beta^{*}\downarrow$ med risikoaversjon $r$, støy $\sigma^{2}$ og kostnadens konveksitet $c''$. Verdier varierer empirisk fra $\beta\approx 0$ (tariffstillinger) til $\beta\approx 1$ (franchising, residual claimancy). Holmström-Milgrom (1991) viser at $\beta$ må senkes ved multitasking for å unngå at agenten dropper umålbare oppgaver. [SLIDE]
+\paragraph{\thref{incentive-coefficient}{Insentivkoeffisient $\beta=\partial W/\partial Q$}\quad\SThree}
+$\beta$ måler ``pay-performance sensitivity'' (lønnsfølsomhet for resultat) -- hvor mange ekstra kroner lønn én ekstra krone resultat gir. Determinanter: $\beta^{*}$ stiger med produktivitet $\alpha$ (sterkere kobling mellom innsats og output $\Rightarrow$ mer å hente på å gi bonus); $\beta^{*}$ faller med risikoaversjon $r$, støy $\sigma^{2}$ og kostnadens konveksitet $c''$ (jo brattere kostnadskurven blir, jo mindre ekstra innsats får man uansett). Empirisk varierer $\beta$ fra omtrent $0$ (tariffstillinger som sykepleier) til omtrent $1$ (\emph{franchising} -- der franchisetaker eier hele residualen, og \emph{residual claimancy} betyr at agenten beholder alt overskudd). Holmström--Milgrom (1991): hvis agenten har flere oppgaver der bare én er målbar (\emph{multitasking}), må $\beta$ senkes -- ellers vil agenten dumpe de umålbare oppgavene og bare jobbe med det som teller på bonusen. [SLIDE]
 
 \paragraph{\thref{risk-sharing}{Risikodeling}\quad\SThree}
-Risikoavers agent + diversifisert risikonøytral prinsipal $\Rightarrow$ Pareto-optimal risikodeling tilsier først-best fast lønn til agenten. Men da forsvinner insentivet -- second-best krever at agenten bærer \emph{noe} risiko gjennom $\beta>0$, mot en risikopremie. Risikopremien $\tfrac{r}{2}\beta^{2}\sigma^{2}$ er kjernen i \thref{agency-costs}{agency costs} i denne modellen. Når $\sigma^{2}$ er stor, brukes \thref{informativeness-principle}{informativeness}-mekanismer (relative måltall, peer-grupper, indekserte opsjoner) for å filtrere ut støy. [SLIDE]
+Risikoavers agent + diversifisert risikonøytral prinsipal (en eier som spør lite om risiko, fordi formuen er spredt) $\Rightarrow$ \emph{Pareto-optimal} (ingen kan bli bedre stilt uten at noen blir verre stilt) risikodeling tilsier first-best, dvs.\ ren fastlønn til agenten -- eieren bærer all risikoen. Men da forsvinner insentivet til å jobbe. Second-best krever at agenten bærer \emph{noe} risiko gjennom $\beta>0$, og prinsipalen må kompensere med en risikopremie. Risikopremien $\tfrac{r}{2}\beta^{2}\sigma^{2}$ -- som intuitivt sier at risikokostnaden vokser med kvadratet av $\beta$ og lineært med agentens risikoaversjon og støyen -- er kjernen i \thref{agency-costs}{agency costs} (kostnaden ved at agenten ikke kan bli direkte styrt) i denne modellen. Når $\sigma^{2}$ er stor, brukes \thref{informativeness-principle}{informativeness-mekanismer} -- altså tilleggssignaler som filtrerer bort eksogen støy -- som relative måltall, peer-grupper og indekserte opsjoner. [SLIDE]
 
 \subsection*{Illustrasjoner fra forelesning}
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.4\linewidth]{BSZ_kap_15_2026/by_slide/slide_002/BSZ_kap_15_2026_slide_002_asset_01_image1.png}
   \caption{Insentivkompensasjon: agenten responderer på $\beta$ -- høyere pay-performance sensitivity gir sterkere innsats, men krever risikopremie. (BSZ kap.\ 15, slide 2) [SLIDE]}
@@ -46,13 +46,13 @@ Risikoavers agent + diversifisert risikonøytral prinsipal $\Rightarrow$ Pareto-
 
 \subsection*{Grafisk modell -- to bilder (agent + prinsipal)}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.55\linewidth]{BSZ_kap_15_2026/by_slide/slide_014/BSZ_kap_15_2026_slide_014_asset_01_image3.png}
 \caption{Pensumets versjon av principal-agent-modellen: $Q=\alpha e+\mu$ og $W=W_0+\beta Q$. [SLIDE -- BSZ kap.\ 15, slide 14]}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=latex,scale=0.9]
   % Akser
@@ -82,10 +82,10 @@ Risikoavers agent + diversifisert risikonøytral prinsipal $\Rightarrow$ Pareto-
     plot (\x,{3.0*(1-exp(-0.7*\x))}) node[right] {\scriptsize $MB(\beta)$};
   % MC(β) konveks
   \draw[thick,red,domain=0:5.2,samples=60]
-    plot (\x,{0.13*\x*\x}) node[right] {\scriptsize $MC(\beta)$};
-  % Krysning
-  \filldraw (2.7,2.2) circle (1.4pt);
-  \draw[dashed] (2.7,0) -- (2.7,2.2);
+    plot (\x,{0.35*\x*\x}) node[right] {\scriptsize $MC(\beta)$};
+  % Krysning -- MB(2.7)=2.55, MC(2.7)=0.35*7.29=2.55
+  \filldraw (2.7,2.55) circle (1.4pt);
+  \draw[dashed] (2.7,0) -- (2.7,2.55);
   \node[below] at (2.7,0) {\scriptsize $\beta^{*}$};
 \end{tikzpicture}
 \caption{\textbf{(A) Agentens side:} $e^{*}$ der $\beta\alpha=c'(e)$; en høyere $\beta$ skifter $MB$ opp og $e^{*}$ til høyre. \textbf{(B) Prinsipalens side:} $\beta^{*}$ der marginal insentivgevinst lik marginal risikopremie $\tfrac{r}{2}\beta^{2}\sigma^{2}$; $\beta^{*}<1$ i second-best. Krever \texttt{\textbackslash usepackage\{tikz\}} i preamble.}
@@ -115,6 +115,7 @@ PtX-divisjonens utfall avhenger sterkt av eksogen elektrisitetspris og hydrogen-
 \item Tegne MC- og MB-kurvene feil vei (MC stigende, MB i $\beta$ konkav) -- få graf-detaljer galt skader troverdighet.
 \end{itemize}
 
+\FloatBarrier
 \subsection*{Håndskrivbar disposisjon (15-min forberedelse)}
 \begin{itemize}\setlength{\itemsep}{2pt}
 \item \textbf{Tese:} To FOC -- agentens for $e^{*}$, prinsipalens for $\beta^{*}$ -- innenfor samme lineære principal-agent-modell.

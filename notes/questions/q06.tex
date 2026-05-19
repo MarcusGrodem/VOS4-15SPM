@@ -9,7 +9,7 @@
 \end{quote}
 
 \subsection*{Svar (kort)}
-\thref{centralization-vs-decentralization}{Sentralisering vs.\ desentralisering} er et kontinuum, ikke et binært valg. Desentralisering utnytter \thref{specific-vs-general-knowledge}{spesifik lokal viden} (Hayek; Jensen \& Meckling), men introduserer \thref{agency-costs}{agentomkostninger} og koordineringskostnader. Optimal grad $D^{*}$ ligger der marginal fordel av lokal viden møter marginal kostnad av agent- og koordineringsproblemer -- BSZ-modellen (kap.\ 12) gir $\mathrm{NB}(D) = BD - AD - CD^{2}$ med $D^{*} = (B-A)/(2C)$. Hver gang \SOne\ flyttes, må \STwo\ og \SThree\ justeres med, ellers faller arkitekturen. [SLIDE/BOK]
+\thref{centralization-vs-decentralization}{Sentralisering vs.\ desentralisering} er et \emph{kontinuum} -- en glidende skala, ikke et binært valg. Desentralisering utnytter \thref{specific-vs-general-knowledge}{spesifik lokal viden} (kunnskap som er kostbar å overføre oppover, jf.\ Hayek; Jensen \& Meckling), men introduserer \thref{agency-costs}{agentomkostninger} (kostnaden ved at lokal leder kan handle i egen interesse) og koordineringskostnader. Optimal grad $D^{*}$ ligger der marginal fordel av lokal viden møter marginal kostnad av agent- og koordineringsproblemer. BSZ-modellen (kap.\ 12) gir nettogevinst $\mathrm{NB}(D) = BD - AD - CD^{2}$, dvs.\ desentraliseringsgraden $D$ ganger nytte minus kostnader; jo mer du desentraliserer, jo mer lokal viden ($BD$) -- men også jo mer agentkostnad ($AD$) og en koordineringskostnad som vokser kvadratisk ($CD^{2}$). Optimum er $D^{*} = (B-A)/(2C)$. Tolkning: jo høyere nytten $B$ av lokal viden, jo høyere optimal desentralisering; jo høyere agent- og koordineringskostnad ($A$ og $C$), jo mindre desentralisering. Hver gang beslutningsrettighetene (\SOne) flyttes, må prestasjonsmåling (\STwo) og insentiver (\SThree) justeres med, ellers faller arkitekturen. [SLIDE/BOK]
 
 \subsection*{Fordele og ulemper (kort)}
 
@@ -31,24 +31,24 @@
 \paragraph{\thref{centralization-vs-decentralization}{Centralisering vs.\ desentralisering}\quad\SOne}
 Beslutningsrett kan plasseres høyt (CEO/konsern) eller delegeres nedover. Valget er det første benet i arkitekturen og det drives av om videnen som trengs til beslutningen er spesifik eller generell. I praksis blandes sentralisering og desentralisering på ulike beslutningsklasser -- f.eks.\ kapitalallokering sentralt, daglig drift lokalt. [SLIDE/BOK]
 
-\paragraph{\thref{optimal-decentralization-model}{Optimal decentraliseringsgrad}\quad\SOne}
-BSZ-modellen formaliserer trade-off-en: $\mathrm{NB}(D) = B \cdot D - A \cdot D - C \cdot D^{2}$ med optimum $D^{*} = (B-A)/(2C)$, der $B$ er marginal nytte av lokal viden, $A$ er marginal agentkostnad og $C$ er konveks koordineringskostnad. Komparativ statikk: $\partial D^{*}/\partial B > 0$, $\partial D^{*}/\partial A < 0$, $\partial D^{*}/\partial C < 0$. [SLIDE]
+\paragraph{\thref{optimal-decentralization-model}{Optimal desentraliseringsgrad}\quad\SOne}
+BSZ-modellen formaliserer trade-off-en: $\mathrm{NB}(D) = B \cdot D - A \cdot D - C \cdot D^{2}$ med optimum $D^{*} = (B-A)/(2C)$, der $B$ er marginal nytte av lokal viden (gevinst per ekstra desentraliseringssteg), $A$ er marginal agentkostnad og $C$ er konveks koordineringskostnad. Setter man derivatet lik null får man $B - A - 2CD = 0$, og løser for $D^{*}$. \emph{Komparativ statikk} -- altså hvordan optimum endres med parametrene: $\partial D^{*}/\partial B > 0$ (mer verdifull lokal viden $\Rightarrow$ mer desentralisering), $\partial D^{*}/\partial A < 0$ (større agentkostnad $\Rightarrow$ mindre desentralisering), $\partial D^{*}/\partial C < 0$ (større koordineringskostnad $\Rightarrow$ mindre desentralisering). [SLIDE]
 
 \paragraph{\thref{specific-vs-general-knowledge}{Spesifik vs.\ generell viden}\quad\SOne}
 Hayek (1945) og Jensen \& Meckling (1992): viden er distribuert. Spesifik viden er kostbar å overføre $\Rightarrow$ flytt \emph{beslutningen} til videnen (desentraliser). Generell viden er billig $\Rightarrow$ flytt \emph{videnen} til beslutningen (sentraliser). Dette er driveren for $B$ i modellen -- og forklarer hvorfor IT-revolusjonen kan re-sentralisere når tidligere spesifik viden kodifiseres. [SLIDE/BOK]
 
 \paragraph{\thref{agency-costs}{Agentomkostninger}\quad\SOne/\STwo/\SThree}
-Når beslutningsretten flyttes nedover, mister prinsipalen direkte kontroll. Jensen \& Meckling: $\text{AC} = \text{monitoring} + \text{bonding} + \text{residual loss}$. Modellens $A$-parameter er nettopp marginal agentkostnad ved økt desentralisering -- den minimeres ved samtidig å designe \STwo\ (måling) og \SThree\ (insentiv) som erstatter den tapte kontrollen. Endrer man bare \SOne\ uten S2/S3, eksploderer $A$ og $D^{*}$ trekkes mot null. [BOK]
+Når beslutningsretten flyttes nedover, mister prinsipalen direkte kontroll. Jensen \& Meckling dekomponerer agentkostnaden: $\text{AC} = \text{monitoring} + \text{bonding} + \text{residual loss}$ -- altså summen av prinsipalens overvåkningsutgifter (monitoring), agentens egne forpliktelsessignaler som covenants og opsjoner (bonding), og det effektivitetstapet som likevel gjenstår (residual loss). Modellens $A$-parameter er nettopp marginal agentkostnad ved økt desentralisering. Den minimeres ved samtidig å designe \STwo\ (hva som måles) og \SThree\ (hvordan agenten belønnes) som erstatter den tapte kontrollen. Endrer man bare \SOne\ uten å justere S2/S3, eksploderer $A$ og $D^{*}$ trekkes mot null. [BOK]
 
 \subsection*{Illustrasjoner fra forelesning}
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.6\linewidth]{BSZ_kap_12_2026/by_slide/slide_004/BSZ_kap_12_2026_slide_004_asset_01_image1.jpeg}
   \caption{Sentralisering vs.\ desentralisering -- trade-off mellom lokal viden og kontroll. (BSZ kap.\ 12, slide 4) [SLIDE]}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.6\linewidth]{BSZ_kap_12_2026/by_slide/slide_018/BSZ_kap_12_2026_slide_018_asset_01_image6.jpeg}
   \caption{Spesifik viden og kommunikasjon -- hvorfor desentralisering kreves når viden er kostbar å overføre. (BSZ kap.\ 12, slide 18) [SLIDE]}
@@ -56,7 +56,7 @@ Når beslutningsretten flyttes nedover, mister prinsipalen direkte kontroll. Jen
 
 \subsection*{Grafisk modell (obligatorisk)}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[scale=1.0]
   % Akser
@@ -109,6 +109,7 @@ PtX-divisjonen er et lærebokeksempel på \emph{differensiert} desentralisering:
 \item Ikke knytte modellen til arkitekturen som helhet -- $D^{*}$ uten S2/S3-justering er meningsløst.
 \end{itemize}
 
+\FloatBarrier
 \subsection*{Håndskrivbar disposisjon (15-min forberedelse)}
 \begin{itemize}\setlength{\itemsep}{2pt}
 \item \textbf{Tese:} Optimal grad av desentralisering ligger der marginal fordel av lokal viden = marginal kostnad av agent- og koordineringsproblemer.

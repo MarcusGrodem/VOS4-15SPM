@@ -14,20 +14,20 @@ Spørsmålet besvares med to nyttemodeller fra BSZ kap.\ 2. \textbf{Modell 1 (in
 Standard nytteteori overført til godsrommet (integritet, indkomst). Indifferenskurver er konvekse mot origo. Budsjettlinjen defineres av kompensasjonsplanen: aggressivt insentiv (høy $\beta$ på lett målbare resultater uten kvalitetssjekk) roterer budsjettlinjen utover og øker payoffen av uetisk atferd. Tangentpunktet skifter fra punkt $A$ (høy integritet) til $B$ (lav integritet, høy inntekt). Nøkkelinnsikt: kompensasjonsdesign påvirker etisk atferd uten å endre preferanser -- det er \emph{systemet}, ikke personen, som er feil. [SLIDE]
 
 \paragraph{\thref{risk-expected-value-model}{Modell 2: Risk--Expected Value}\quad\SThree}
-CARA-nytte gir indifferenskurver $E[W] = \bar{U} + \tfrac{r}{2}\sigma_W^2$ -- stigende og konvekse oppover i $(\sigma_W, E[W])$-rommet. Risikoavers agent ($r>0$): bratte kurver. Risikonøytral ($r=0$): horisontale. Certainty equivalent $CE$ = skjæring med $y$-aksen. Risikopremie $RP = E[W] - CE = \tfrac{r}{2}\beta^2\sigma^2$. Modellen visualiserer \thref{risk-sharing}{risikodeling}: prinsipalen tilbyr en kontrakt (punkt i rommet); agenten aksepterer bare hvis den når minst \thref{reservation-utility}{reservation utility}. [SLIDE]
+\emph{CARA-nytte} (\emph{Constant Absolute Risk Aversion}) er en standard nyttefunksjon der den absolutte risikoaversjonen er konstant -- altså agenten krever samme kronepremie for samme kronerisiko, uavhengig av formuesnivå. Med CARA blir indifferenskurvene i $(\sigma_W, E[W])$-rommet $E[W] = \bar{U} + \tfrac{r}{2}\sigma_W^2$ -- stigende og konvekse oppover. Intuitivt: jo høyere risiko ($\sigma_W$), jo høyere forventet lønn må til for å bevare samme nytte. Risikoavers agent ($r>0$): bratte kurver -- liten økning i risiko krever stor økning i forventet lønn. Risikonøytral ($r=0$): horisontale kurver -- agenten bryr seg bare om forventning. \emph{Certainty equivalent} (CE -- sikkerhetsekvivalent) er det \emph{sikre} beløpet som gir samme nytte som det usikre alternativet; geometrisk er det indifferenskurvens skjæring med $y$-aksen (der $\sigma = 0$). Risikopremien $RP = E[W] - CE = \tfrac{r}{2}\beta^2\sigma^2$ -- prinsipalen må betale dette ekstra for at agenten skal akseptere risikoen. Modellen visualiserer \thref{risk-sharing}{risikodeling}: prinsipalen tilbyr en kontrakt (et punkt i rommet); agenten aksepterer bare hvis nytten i punktet er minst lik \thref{reservation-utility}{reservation utility}. [SLIDE]
 
 \paragraph{\thref{incentive-coefficient}{Incentive coefficient $\beta$}\quad\SThree}
 $\beta$ kobler de to modellene: i modell 1 driver $\beta$ rotasjonen av budsjettlinjen (høy $\beta$ øker fristelsen til uetisk atferd). I modell 2 driver $\beta$ risikoen $\sigma_W = \beta\sigma$ og dermed risikopremien. Samme designparameter, to konsekvenser -- understreker at insentivdesign er en \emph{trade-off} mellom innsatsgevinst, risikokostnad \emph{og} etisk atferd. [SLIDE]
 
 \subsection*{Illustrasjoner fra forelesning}
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.55\linewidth]{BSZ_kap_2_2026/by_slide/slide_006/BSZ_kap_2_2026_slide_006_asset_01_image5.jpeg}
   \caption{Rasjonelt valg mellom alternativ A og B -- nytteteorien i BSZ kap.\ 2: individer velger det alternativet som gir høyest nytte gitt budsjettbetingelsen. (BSZ kap.\ 2, slide 6) [SLIDE]}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.4\linewidth]{BSZ_kap_2_2026/by_slide/slide_005/BSZ_kap_2_2026_slide_005_asset_01_image4.png}
   \caption{Illustrasjon av opportunity cost: valg har konsekvenser -- velger man høy inntekt, kan man ``drukne'' i redusert integritet. (BSZ kap.\ 2, slide 5) [SLIDE]}
@@ -35,7 +35,7 @@ $\beta$ kobler de to modellene: i modell 1 driver $\beta$ rotasjonen av budsjett
 
 \subsection*{Grafisk modell 1 -- Integrity vs.\ Income}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=latex, scale=0.8, every node/.style={font=\small}]
   \draw[->] (0,0) -- (8,0) node[right] {Integritet};
@@ -64,7 +64,7 @@ $\beta$ kobler de to modellene: i modell 1 driver $\beta$ rotasjonen av budsjett
 
 \subsection*{Grafisk modell 2 -- Risk vs.\ Expected Value}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=latex, scale=0.8, every node/.style={font=\small}]
   \draw[->] (0,0) -- (8,0) node[right] {$\sigma_W$ (risiko)};
@@ -113,6 +113,7 @@ Equinor tilbyr aksjeprogram med rabatt: ansatte velger frivillig mellom lav-risi
 \item Glemme at modell 1 viser atferdsendring \emph{uten preferanseendring} -- det er budsjettlinjen, ikke indifferenskurvene, som endres.
 \end{itemize}
 
+\FloatBarrier
 \subsection*{Håndskrivbar disposisjon (15-min forberedelse)}
 \begin{itemize}\setlength{\itemsep}{2pt}
 \item \textbf{Tese:} To nyttemodeller: (1) integritet vs.\ indkomst -- kompensasjonsdesign påvirker etisk atferd; (2) risiko vs.\ forventet verdi -- risikoaversjon bestemmer risikopremie.

@@ -6,12 +6,17 @@
 \end{quote}
 
 \subsection*{Svar (kort)}
-Informativeness-prinsippet (Holmström 1979) sier at et signal $y$ bør inkluderes i kontrakten hvis og bare hvis det er statistisk informativt om agentens innsats -- dvs.\ at det endrer posterior for $e$ gitt det primære målet $Q$. Prinsippet binder de fire delspørsmålene sammen: (a) controllability er et \emph{spesialtilfelle} -- informativeness er bredere, fordi ukontrollerbare mål kan likevel være informative; (b) mer informative signaler forbedrer risikodelingen ved å senke effektiv støy; (c) presise mål (lav $\sigma^2$) er mer informative og bør vektes høyere ($\beta$ opp); (d) risikopremien $RP = \tfrac{r}{2}\beta^2\sigma^2$ synker når signaler filtrerer bort støy. [SLIDE]
+Informativeness-prinsippet (Holmström 1979) sier at et signal $y$ bør inkluderes i kontrakten hvis og bare hvis det er statistisk informativt om agentens innsats. Med statistisk språk: signalet endrer \emph{posterior} for $e$ gitt det primære målet $Q$. På norsk: posterior er sannsynlighetsvurderingen din \emph{etter} at du har sett dataene -- altså, gjør $y$ at vi tror noe nytt om hvor hardt agenten har jobbet, gitt at vi allerede vet $Q$? Hvis ja, skal $y$ med i kontrakten. Prinsippet binder de fire delspørsmålene sammen: (a) controllability (kontrollerbarhet -- at agenten kan styre målet) er et \emph{spesialtilfelle} -- informativeness er bredere, fordi ukontrollerbare mål kan likevel være informative; (b) mer informative signaler forbedrer risikodelingen ved å senke effektiv støy; (c) presise mål (lav varians $\sigma^2$) er mer informative og bør vektes høyere ($\beta$ opp); (d) risikopremien $RP = \tfrac{r}{2}\beta^2\sigma^2$ -- prisen prinsipalen må betale for å lesse risiko på en risikoavers agent -- synker når signaler filtrerer bort støy. [SLIDE]
 
 \subsection*{Relevante teorier (kort)}
 
 \paragraph{\thref{informativeness-principle}{Informativeness-prinsippet}\quad\STwo/\SThree}
-Holmströms tilstrekkelighets\-kriterium: inkludér signal $y$ i kontrakten $\Leftrightarrow$ $f(Q|e,y)\neq f(Q|e)$ for noen $(Q,y)$. Kontrakt utvides til $W=W_0+\beta_1 Q + \beta_2 y$. Effekten: lavere effektiv varians $\sigma^2_{\text{eff}} < \sigma^2$, dermed lavere risikopremie for gitt insentivnivå, eller sterkere insentiver for gitt risikopremie. Sufficient statistic-poenget: hvis $Q$ allerede fanger all informasjon om $e$, skal $y$ \emph{ikke} brukes. [SLIDE]
+Holmströms tilstrekkelighetskriterium (på statistikkspråk: \emph{sufficient statistic}-betingelsen): inkluder signal $y$ i kontrakten hvis og bare hvis $f(Q|e,y)\neq f(Q|e)$ for noen $(Q,y)$. Med ord: legg til $y$ bare hvis sannsynlighetsfordelingen for $Q$ endrer seg når vi også vet $y$ -- ellers tilfører $y$ ingen informasjon utover det $Q$ allerede gir. Kontrakt utvides til $W=W_0+\beta_1 Q + \beta_2 y$, altså lønn med vekter på to ulike måltall. Effekten: lavere effektiv varians $\sigma^2_{\text{eff}} < \sigma^2$ (signalet filtrerer bort en del av støyen), dermed lavere risikopremie for gitt insentivnivå, eller sterkere insentiver for gitt risikopremie. \emph{Sufficient statistic}-poenget (en ``tilstrekkelig'' størrelse fanger all relevant informasjon): hvis $Q$ allerede fanger all informasjon om $e$, skal $y$ \emph{ikke} brukes -- ekstra mål gir bare ekstra støy. [SLIDE]
+
+\begin{tcolorbox}[colback=blue!4, colframe=blue!50!black, boxrule=0.4pt, arc=2pt, left=6pt, right=6pt, top=4pt, bottom=4pt]
+\textbf{Intuisjon:} $Q$ er alltid støyfullt. Legg til signal $y$ \emph{kun hvis} $y$ hjelper deg å skille innsats ($e$) fra flaks -- dvs.\ filtrerer bort noe av støyen. Konsekvens: $\sigma^2_{\text{eff}} \downarrow \Rightarrow$ presisjon $\uparrow$, kontrollerbarhet $\uparrow$, risikodeling bedres, $RP = \tfrac{1}{2} r \beta^2 \sigma^2_{\text{eff}} \downarrow$.\\[2pt]
+Viktig: det er \emph{produktet} $\beta^2 \cdot \sigma^2$ som bestemmer kostnaden. Selv om $\beta^*$ stiger når $y$ legges til, faller $\sigma^2$ raskere $\Rightarrow$ nettokostnaden (risikopremien) faller. Relativ prestasjonsmåling (peer-gruppe) er klassisk eksempel -- filtrerer felles markedssjokk.
+\end{tcolorbox}
 
 \paragraph{\thref{controllability-principle}{(a) Controllability-prinsippet}\quad\STwo}
 Lederen skal kun evalueres på det hun kontrollerer. Men informativeness \emph{generaliserer} dette: et ukontrollerbart mål (f.eks.\ bransjeavkastning, oljepris) kan \emph{forbedre} kontrakten hvis det filtrerer ut felles sjokk fra agentens mål. Controllability er nødvendig i snever forstand (ikke straff for eksogene sjokk), men informative mål som er ukontrollerbare er likevel verdifulle som filtreringsinstrumenter. [SLIDE]
@@ -20,11 +25,11 @@ Lederen skal kun evalueres på det hun kontrollerer. Men informativeness \emph{g
 Risikoavers agent + risikonøytral prinsipal $\Rightarrow$ first-best er fast lønn. Men \thref{moral-hazard}{moral hazard} krever $\beta>0$ for å vri innsats $\Rightarrow$ agenten bærer risiko $\Rightarrow$ risikopremie. Informativeness forbedrer trade-offen: med mer informative signaler kan man oppnå \emph{samme} innsatsnivå med \emph{lavere} risiko for agenten, eller \emph{høyere} innsats med \emph{samme} risiko. Risikodelingen blir Pareto-bedre. [SLIDE]
 
 \paragraph{\thref{incentive-coefficient}{(c) Målingers presisjon og (d) risikopremie}\quad\STwo/\SThree}
-Presisjon = invers varians: høy presisjon $\Rightarrow$ lav $\sigma^2$ $\Rightarrow$ høyere $\beta^*$ (\thref{incentive-coefficient}{$\beta^* = 1/(1+r\sigma^2 c''/\alpha^2)$}). Risikopremien $RP = \tfrac{r}{2}\beta^2\sigma^2$ er stigende i støy -- upresise mål er dyre å bruke som insentivgrunnlag. Informativeness-prinsippet sier: legg til signaler som øker presisjonen (senker effektiv $\sigma^2$), og unngå signaler som bare tilfører støy. Relative prestasjonsmål (\thref{absolute-vs-relative-performance}{rTSR}) er det viktigste eksemplet: peer-avkastning filtrerer felles markedssjokk og øker presisjonen av det individuelle signalet. [SLIDE/BOK]
+Presisjon defineres som invers varians: høy presisjon $\Rightarrow$ lav $\sigma^2$ $\Rightarrow$ høyere $\beta^*$ via formelen \thref{incentive-coefficient}{$\beta^* = 1/(1+r\sigma^2 c''/\alpha^2)$}. Intuitivt: når målet er presist, kan man trygt vekte det tungt i kontrakten -- agenten påføres ikke unødig risiko. Risikopremien $RP = \tfrac{r}{2}\beta^2\sigma^2$ stiger med støyen $\sigma^2$, så upresise mål er dyre å bruke som insentivgrunnlag. Informativeness-prinsippet sier: legg til signaler som øker presisjonen (senker effektiv $\sigma^2$), og unngå signaler som bare tilfører støy. Relative prestasjonsmål -- der man måler agenten mot en peer-gruppe i stedet for mot et absolutt mål -- er det viktigste eksemplet (\thref{absolute-vs-relative-performance}{rTSR}, dvs.\ \emph{relative Total Shareholder Return}, måler aksjeavkastning mot konkurrenter): peer-avkastning filtrerer felles markedssjokk og øker presisjonen av det individuelle signalet. [SLIDE/BOK]
 
 \subsection*{Illustrasjoner fra forelesning}
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\linewidth]{BSZ_kap_14_2026/by_slide/slide_013/BSZ_kap_14_2026_slide_013_asset_02_image3.jpeg}
   \caption{Relativ prestasjonsmåling som turnering: informativeness-prinsippet begrunner bruk av peer-signaler for å filtrere felles sjokk. (BSZ kap.\ 14, slide 13) [SLIDE]}
@@ -32,7 +37,7 @@ Presisjon = invers varians: høy presisjon $\Rightarrow$ lav $\sigma^2$ $\Righta
 
 \subsection*{Illustrasjon -- informativeness-prinsippet}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=latex, scale=0.8, every node/.style={font=\small}]
   % Q bare
@@ -73,7 +78,7 @@ Presisjon = invers varians: høy presisjon $\Rightarrow$ lav $\sigma^2$ $\Righta
 
 \subsection*{Slide-figur fra BSZ kap.\ 15}
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.55\linewidth]{BSZ_kap_15_2026/by_slide/slide_014/BSZ_kap_15_2026_slide_014_asset_01_image3.png}
   \caption{Principal-agent-modellens notasjon fra BSZ kap.\ 15: $Q=\alpha e + \mu$, $W=W_0+\beta Q$. Informativeness-prinsippet utvider denne rammen med tilleggssignaler. [SLIDE -- BSZ kap.\ 15, slide 14]}
@@ -106,6 +111,7 @@ PtX-divisionens ledelse illustrerer alle fire aspekter: [CASE]
 \item Glemme multitasking-begrensningen (Holmström--Milgrom): sterke insentiver på informative men ensidige mål vrir innsats.
 \end{itemize}
 
+\FloatBarrier
 \subsection*{Håndskrivbar disposisjon (15-min forberedelse)}
 \begin{itemize}\setlength{\itemsep}{2pt}
 \item \textbf{Tese:} Informativeness-prinsippet (Holmström 1979) er det overordnede rammeverket; (a)--(d) er konsekvenser/aspekter av det.
