@@ -30,190 +30,192 @@
 \contentsline {paragraph}{\hyperref [thr:optimal-decentralization-model]{\underline {Optimal desentraliseringsgrad}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{25}{section*.72}%
 \contentsline {paragraph}{\hyperref [thr:specific-vs-general-knowledge]{\underline {Spesifik vs.\ generell viden}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{25}{section*.73}%
 \contentsline {paragraph}{\hyperref [thr:agency-costs]{\underline {Agentomkostninger}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}/\leavevmode {\color {s2color}\textbf {[S2]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{25}{section*.74}%
-\contentsline {section}{\numberline {7}Q07: Decision Management og Decision Control -- de 4 elementene}{28}{section.7}%
-\contentsline {paragraph}{\hyperref [thr:decision-management-control]{\underline {Decision Management vs.\ Decision Control}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{29}{section*.84}%
-\contentsline {paragraph}{\hyperref [thr:decision-rights-allocation]{\underline {Allokering av beslutningsrettigheter}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{29}{section*.85}%
-\contentsline {paragraph}{\hyperref [thr:residual-claimants]{\underline {Residual claimants}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{29}{section*.86}%
-\contentsline {paragraph}{\hyperref [thr:externalities]{\underline {Eksternaliteter}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{29}{section*.87}%
-\contentsline {section}{\numberline {8}Q08: Tiltrekke og aflønne medarbeidere -- reservation utility, compensating differentials, superior assets, salary--fringe-mix}{32}{section.8}%
-\contentsline {paragraph}{\hyperref [thr:reservation-utility]{\underline {Reservation utility}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{33}{section*.96}%
-\contentsline {paragraph}{\hyperref [thr:compensating-differentials]{\underline {Compensating differentials}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{33}{section*.97}%
-\contentsline {paragraph}{\hyperref [thr:superior-assets]{\underline {Superior assets (firm-specific assets)}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{33}{section*.98}%
-\contentsline {paragraph}{\hyperref [thr:salary-fringe-benefits-mix]{\underline {Salary vs.\ fringe benefits-modellen}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{33}{section*.99}%
-\contentsline {section}{\numberline {9}Q09: Optimale valg av medarbeideres innsats -- agentens og prinsipalens side}{37}{section.9}%
-\contentsline {paragraph}{\hyperref [thr:optimal-effort-model]{\underline {Optimal effort-modell (begge sider)}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{38}{section*.109}%
-\contentsline {paragraph}{\hyperref [thr:fixed-vs-variable-pay]{\underline {Prestasjonsuavhengig lønn ($W_0$) vs.\ variabel ($\beta Q$)}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{38}{section*.110}%
-\contentsline {paragraph}{\hyperref [thr:incentive-coefficient]{\underline {Insentivkoeffisient $\beta =\partial W/\partial Q$}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{38}{section*.111}%
-\contentsline {paragraph}{\hyperref [thr:risk-sharing]{\underline {Risikodeling}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{39}{section*.112}%
-\contentsline {section}{\numberline {10}Q10: Individuell prestasjonsmåling og -belønning -- formål og begreper}{42}{section.10}%
-\contentsline {paragraph}{a) \hyperref [thr:ratchet-effect]{\underline {Ratchet-system og ratchet-effekt}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{42}{section*.122}%
-\contentsline {paragraph}{b) \hyperref [thr:gaming-in-performance-measurement]{\underline {Gaming og horisontproblem}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}}{43}{section*.123}%
-\contentsline {paragraph}{c) \hyperref [thr:absolute-vs-relative-performance]{\underline {Absolutt vs.\ relativ prestasjonsmåling}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}}{43}{section*.124}%
-\contentsline {paragraph}{d) \hyperref [thr:subjective-vs-objective-performance]{\underline {Subjektiv vs.\ objektiv prestasjonsmåling}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}}{43}{section*.125}%
-\contentsline {section}{\numberline {11}Q11: Boundaries of the Firm -- vertikal integrasjon, outsourcing og market power}{45}{section.11}%
-\contentsline {paragraph}{\hyperref [thr:boundaries-of-the-firm]{\underline {Boundaries of the Firm}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{46}{section*.133}%
-\contentsline {paragraph}{\hyperref [thr:accounting-vs-economic-profit]{\underline {Regnskabsmæssig vs.\ økonomisk profit}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}}{46}{section*.134}%
-\contentsline {paragraph}{\hyperref [thr:vertical-integration-outsourcing]{\underline {Vertikal integrasjon og outsourcing}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{46}{section*.135}%
-\contentsline {paragraph}{\hyperref [thr:vertical-integration-market-power]{\underline {VI som instrument til market power}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{46}{section*.136}%
-\contentsline {section}{\numberline {12}Q12: Vertikal integrasjon vs.\ outsourcing -- hold-up, free-rider, double markup}{49}{section.12}%
-\contentsline {paragraph}{\hyperref [thr:vertical-integration-outsourcing]{\underline {Vertikal integrasjon og outsourcing (bredt)}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{49}{section*.146}%
-\contentsline {paragraph}{\hyperref [thr:hold-up-problem]{\underline {Hold-up-problemet}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{50}{section*.147}%
-\contentsline {paragraph}{\hyperref [thr:free-rider-problem]{\underline {Free-rider-problemet (nedstrøms)}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{50}{section*.148}%
-\contentsline {paragraph}{\hyperref [thr:double-markup-problem]{\underline {Double markup-problemet}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{50}{section*.149}%
-\contentsline {section}{\numberline {13}Q13: Regulering -- offentlig indgriben, branche-profit og political support}{53}{section.13}%
-\contentsline {paragraph}{\hyperref [thr:market-failure-regulation]{\underline {Markedssvikt og regulering}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{54}{section*.159}%
-\contentsline {paragraph}{\hyperref [thr:regulated-pricing-model]{\underline {Regulated pricing-modellen (political support)}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{54}{section*.160}%
-\contentsline {section}{\numberline {14}Q14: Informativeness-prinsippet -- kontrollerbarhed, risikodeling, presisjon, risikopræmie}{57}{section.14}%
-\contentsline {paragraph}{\hyperref [thr:informativeness-principle]{\underline {Informativeness-prinsippet}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{57}{section*.170}%
-\contentsline {paragraph}{\hyperref [thr:controllability-principle]{\underline {(a) Controllability-prinsippet}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}}{58}{section*.171}%
-\contentsline {paragraph}{\hyperref [thr:risk-sharing]{\underline {(b) Risikodeling}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{58}{section*.172}%
-\contentsline {paragraph}{\hyperref [thr:incentive-coefficient]{\underline {(c) Målingers presisjon og (d) risikopremie}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{58}{section*.173}%
-\contentsline {section}{\numberline {15}Q15: Nyttefunksjoner -- integritet vs.\ indkomst, risiko vs.\ forventet verdi}{60}{section.15}%
-\contentsline {paragraph}{\hyperref [thr:integrity-vs-income-model]{\underline {Modell 1: Integrity vs.\ Income}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{61}{section*.184}%
-\contentsline {paragraph}{\hyperref [thr:risk-expected-value-model]{\underline {Modell 2: Risk--Expected Value}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{61}{section*.185}%
-\contentsline {paragraph}{\hyperref [thr:incentive-coefficient]{\underline {Incentive coefficient $\beta $}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{61}{section*.186}%
-\contentsline {part}{II\hspace {1em}Teorier (utdypende)}{64}{part.2}%
-\contentsline {section}{\numberline {16}Responsibility Centers -- de 5 centertyper}{64}{section.16}%
-\contentsline {paragraph}{Definisjon.}{64}{section*.194}%
-\contentsline {paragraph}{Brukt i spørsmål:}{68}{section*.207}%
-\contentsline {section}{\numberline {17}Controllability-prinsippet}{68}{section.17}%
-\contentsline {paragraph}{Definisjon.}{68}{section*.208}%
-\contentsline {paragraph}{Brukt i spørsmål:}{70}{section*.216}%
-\contentsline {section}{\numberline {18}Transfer Pricing -- interne afregningspriser}{70}{section.18}%
-\contentsline {paragraph}{Definisjon.}{70}{section*.217}%
-\contentsline {paragraph}{(a) Costless information (symmetrisk, full informasjon).}{70}{section*.219}%
-\contentsline {paragraph}{(b) Asymmetrisk informasjon.}{71}{section*.220}%
-\contentsline {paragraph}{1. Market-based transfer pricing.}{71}{section*.222}%
-\contentsline {paragraph}{2. Marginal cost (MC) pricing.}{71}{section*.223}%
-\contentsline {paragraph}{3. Full cost pricing.}{71}{section*.224}%
-\contentsline {paragraph}{4. Full cost plus markup (cost-plus).}{71}{section*.225}%
-\contentsline {paragraph}{5. Negotiated transfer pricing.}{71}{section*.226}%
-\contentsline {paragraph}{(Bonus) Dual pricing.}{71}{section*.227}%
-\contentsline {paragraph}{Brukt i spørsmål:}{74}{section*.234}%
-\contentsline {section}{\numberline {19}Principal-Agent-teori}{74}{section.19}%
-\contentsline {paragraph}{Definisjon.}{74}{section*.235}%
-\contentsline {paragraph}{Brukt i spørsmål:}{76}{section*.243}%
-\contentsline {section}{\numberline {20}De 5 incitamentkonflikter mellom eiere og virksomhetsledere}{76}{section.20}%
-\contentsline {paragraph}{Definisjon.}{76}{section*.244}%
-\contentsline {paragraph}{Brukt i spørsmål:}{80}{section*.258}%
-\contentsline {section}{\numberline {21}Costless Contracting (benchmark)}{80}{section.21}%
-\contentsline {paragraph}{Definisjon.}{80}{section*.259}%
-\contentsline {paragraph}{Brukt i spørsmål:}{82}{section*.267}%
-\contentsline {section}{\numberline {22}Costly Contracting}{82}{section.22}%
-\contentsline {paragraph}{Definisjon.}{82}{section*.268}%
-\contentsline {paragraph}{Brukt i spørsmål:}{85}{section*.276}%
-\contentsline {section}{\numberline {23}Spilteori (Game Theory)}{85}{section.23}%
-\contentsline {paragraph}{Definisjon.}{85}{section*.277}%
-\contentsline {paragraph}{Brukt i spørsmål:}{88}{section*.286}%
-\contentsline {section}{\numberline {24}Moral Hazard}{88}{section.24}%
-\contentsline {paragraph}{Definisjon.}{88}{section*.287}%
-\contentsline {paragraph}{Brukt i spørsmål:}{91}{section*.295}%
-\contentsline {section}{\numberline {25}Adverse Selection}{91}{section.25}%
-\contentsline {paragraph}{Definisjon.}{91}{section*.296}%
-\contentsline {paragraph}{Brukt i spørsmål:}{94}{section*.304}%
-\contentsline {section}{\numberline {26}Organizational Architecture -- den tre-benede skammelen}{94}{section.26}%
-\contentsline {paragraph}{Definisjon.}{94}{section*.305}%
-\contentsline {paragraph}{Brukt i spørsmål:}{97}{section*.316}%
-\contentsline {section}{\numberline {27}Agentomkostninger (Agency Costs)}{97}{section.27}%
-\contentsline {paragraph}{Definisjon.}{97}{section*.317}%
-\contentsline {paragraph}{Brukt i spørsmål:}{100}{section*.329}%
-\contentsline {section}{\numberline {28}Spesifik vs.\ generell viden}{100}{section.28}%
-\contentsline {paragraph}{Definisjon.}{100}{section*.330}%
-\contentsline {paragraph}{Brukt i spørsmål:}{104}{section*.341}%
-\contentsline {section}{\numberline {29}Centralisering vs.\ desentralisering}{104}{section.29}%
-\contentsline {paragraph}{Definisjon.}{104}{section*.342}%
-\contentsline {paragraph}{Brukt i spørsmål:}{107}{section*.355}%
-\contentsline {section}{\numberline {30}Optimal decentraliseringsmodell}{107}{section.30}%
-\contentsline {paragraph}{Definisjon.}{107}{section*.356}%
-\contentsline {paragraph}{Nettofordel.}{107}{section*.358}%
-\contentsline {paragraph}{First-order condition.}{108}{section*.359}%
-\contentsline {paragraph}{Brukt i spørsmål:}{110}{section*.368}%
-\contentsline {section}{\numberline {31}Decision Management vs.\ Decision Control}{110}{section.31}%
-\contentsline {paragraph}{Definisjon.}{110}{section*.369}%
-\contentsline {paragraph}{Brukt i spørsmål:}{113}{section*.377}%
-\contentsline {section}{\numberline {32}Eksternaliteter}{113}{section.32}%
-\contentsline {paragraph}{Definisjon.}{113}{section*.378}%
-\contentsline {paragraph}{Brukt i spørsmål:}{116}{section*.386}%
-\contentsline {section}{\numberline {33}Residual claimants}{116}{section.33}%
-\contentsline {paragraph}{Definisjon.}{116}{section*.387}%
-\contentsline {paragraph}{Brukt i spørsmål:}{119}{section*.395}%
-\contentsline {section}{\numberline {34}Allokering av beslutningsrettigheter}{119}{section.34}%
-\contentsline {paragraph}{Definisjon.}{119}{section*.396}%
-\contentsline {paragraph}{Brukt i spørsmål:}{123}{section*.404}%
-\contentsline {section}{\numberline {35}Reservation utility}{123}{section.35}%
-\contentsline {paragraph}{Definisjon.}{123}{section*.405}%
-\contentsline {paragraph}{Brukt i spørsmål:}{126}{section*.414}%
-\contentsline {section}{\numberline {36}Compensating differentials}{126}{section.36}%
-\contentsline {paragraph}{Definisjon.}{126}{section*.415}%
-\contentsline {paragraph}{Brukt i spørsmål:}{129}{section*.424}%
-\contentsline {section}{\numberline {37}Superior assets (firm-specific assets)}{129}{section.37}%
-\contentsline {paragraph}{Definisjon.}{129}{section*.425}%
-\contentsline {paragraph}{Brukt i spørsmål:}{132}{section*.434}%
-\contentsline {section}{\numberline {38}Salary vs.\ fringe benefits-modellen}{132}{section.38}%
-\contentsline {paragraph}{Definisjon.}{132}{section*.435}%
-\contentsline {paragraph}{First-order condition.}{132}{section*.438}%
-\contentsline {paragraph}{Hvordan grafen flyttes av endringer.}{133}{section*.440}%
-\contentsline {paragraph}{Brukt i spørsmål:}{135}{section*.446}%
-\contentsline {section}{\numberline {39}Optimal effort-modell (agent- og prinsipalside)}{135}{section.39}%
-\contentsline {paragraph}{Definisjon.}{135}{section*.447}%
-\contentsline {paragraph}{Brukt i spørsmål:}{139}{section*.458}%
-\contentsline {section}{\numberline {40}Incitamentskoefficient ($\beta $)}{139}{section.40}%
-\contentsline {paragraph}{Definisjon.}{139}{section*.459}%
-\contentsline {paragraph}{Brukt i spørsmål:}{142}{section*.468}%
-\contentsline {section}{\numberline {41}Risk sharing (risikodeling)}{142}{section.41}%
-\contentsline {paragraph}{Definisjon.}{142}{section*.469}%
-\contentsline {paragraph}{Brukt i spørsmål:}{144}{section*.477}%
-\contentsline {section}{\numberline {42}Præstationsuafhængig vs.\ variabel lønn ($W_0$ vs.\ $\beta Q$)}{144}{section.42}%
-\contentsline {paragraph}{Definisjon.}{144}{section*.478}%
-\contentsline {paragraph}{Brukt i spørsmål:}{147}{section*.486}%
-\contentsline {section}{\numberline {43}Formålene med individuell prestasjonsmåling og -belønning}{147}{section.43}%
-\contentsline {paragraph}{Definisjon.}{147}{section*.487}%
-\contentsline {paragraph}{Brukt i spørsmål:}{150}{section*.495}%
-\contentsline {section}{\numberline {44}Ratchet-system og ratchet-effekten}{150}{section.44}%
-\contentsline {paragraph}{Definisjon.}{150}{section*.496}%
-\contentsline {paragraph}{Brukt i spørsmål:}{152}{section*.504}%
-\contentsline {section}{\numberline {45}Gaming og horisontproblem}{152}{section.45}%
-\contentsline {paragraph}{Definisjon.}{152}{section*.505}%
-\contentsline {paragraph}{Brukt i spørsmål:}{155}{section*.513}%
-\contentsline {section}{\numberline {46}Absolutt vs.\ relativ prestasjonsmåling}{155}{section.46}%
-\contentsline {paragraph}{Definisjon.}{155}{section*.514}%
-\contentsline {paragraph}{Brukt i spørsmål:}{158}{section*.522}%
-\contentsline {section}{\numberline {47}Subjektiv vs.\ objektiv prestasjonsmåling}{158}{section.47}%
-\contentsline {paragraph}{Definisjon.}{158}{section*.523}%
-\contentsline {paragraph}{Brukt i spørsmål:}{161}{section*.531}%
-\contentsline {section}{\numberline {48}Boundaries of the Firm}{161}{section.48}%
-\contentsline {paragraph}{Definisjon.}{161}{section*.532}%
-\contentsline {paragraph}{Brukt i spørsmål:}{163}{section*.540}%
-\contentsline {section}{\numberline {49}Accounting vs.\ Economic Profit}{163}{section.49}%
-\contentsline {paragraph}{Definisjon.}{163}{section*.541}%
-\contentsline {paragraph}{Brukt i spørsmål:}{165}{section*.549}%
-\contentsline {section}{\numberline {50}Vertikal integrasjon og outsourcing}{165}{section.50}%
-\contentsline {paragraph}{Definisjon.}{165}{section*.550}%
-\contentsline {paragraph}{Brukt i spørsmål:}{168}{section*.558}%
-\contentsline {section}{\numberline {51}Vertikal integrasjon og market power}{168}{section.51}%
-\contentsline {paragraph}{Definisjon.}{168}{section*.559}%
-\contentsline {paragraph}{Brukt i spørsmål:}{169}{section*.567}%
-\contentsline {section}{\numberline {52}Hold-up-problemet}{170}{section.52}%
-\contentsline {paragraph}{Definisjon.}{170}{section*.568}%
-\contentsline {paragraph}{Brukt i spørsmål:}{172}{section*.576}%
-\contentsline {section}{\numberline {53}Free-rider-problemet (nedstrøms)}{172}{section.53}%
-\contentsline {paragraph}{Definisjon.}{172}{section*.577}%
-\contentsline {paragraph}{Brukt i spørsmål:}{174}{section*.585}%
-\contentsline {section}{\numberline {54}Double markup-problemet (dobbel marginalisering)}{174}{section.54}%
-\contentsline {paragraph}{Definisjon.}{174}{section*.586}%
-\contentsline {paragraph}{Brukt i spørsmål:}{176}{section*.595}%
-\contentsline {section}{\numberline {55}Markedssvikt og regulering}{176}{section.55}%
-\contentsline {paragraph}{Definisjon.}{176}{section*.596}%
-\contentsline {paragraph}{Brukt i spørsmål:}{179}{section*.604}%
-\contentsline {section}{\numberline {56}Regulated pricing-modellen (branche-profit og political support)}{179}{section.56}%
-\contentsline {paragraph}{Definisjon.}{179}{section*.605}%
-\contentsline {paragraph}{Brukt i spørsmål:}{181}{section*.614}%
-\contentsline {section}{\numberline {57}Informativeness-prinsippet}{181}{section.57}%
-\contentsline {paragraph}{Definisjon.}{181}{section*.615}%
-\contentsline {paragraph}{Brukt i spørsmål:}{183}{section*.623}%
-\contentsline {section}{\numberline {58}Integrity vs.\ Income-modellen}{184}{section.58}%
-\contentsline {paragraph}{Definisjon.}{184}{section*.624}%
-\contentsline {paragraph}{Brukt i spørsmål:}{186}{section*.632}%
-\contentsline {section}{\numberline {59}Risk--Expected Value-modellen (indifferenskurver i $(\sigma , E[W])$-rommet)}{186}{section.59}%
-\contentsline {paragraph}{Definisjon.}{186}{section*.633}%
-\contentsline {paragraph}{Brukt i spørsmål:}{188}{section*.641}%
+\contentsline {paragraph}{Fra totalnivå til marginalnivå -- utledning av $D^{*}$.}{26}{section*.77}%
+\contentsline {paragraph}{Geometrisk kobling mellom de to panelene.}{26}{section*.78}%
+\contentsline {section}{\numberline {7}Q07: Decision Management og Decision Control -- de 4 elementene}{29}{section.7}%
+\contentsline {paragraph}{\hyperref [thr:decision-management-control]{\underline {Decision Management vs.\ Decision Control}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{30}{section*.86}%
+\contentsline {paragraph}{\hyperref [thr:decision-rights-allocation]{\underline {Allokering av beslutningsrettigheter}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{30}{section*.87}%
+\contentsline {paragraph}{\hyperref [thr:residual-claimants]{\underline {Residual claimants}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{30}{section*.88}%
+\contentsline {paragraph}{\hyperref [thr:externalities]{\underline {Eksternaliteter}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{30}{section*.89}%
+\contentsline {section}{\numberline {8}Q08: Tiltrekke og aflønne medarbeidere -- reservation utility, compensating differentials, superior assets, salary--fringe-mix}{33}{section.8}%
+\contentsline {paragraph}{\hyperref [thr:reservation-utility]{\underline {Reservation utility}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{34}{section*.98}%
+\contentsline {paragraph}{\hyperref [thr:compensating-differentials]{\underline {Compensating differentials}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{34}{section*.99}%
+\contentsline {paragraph}{\hyperref [thr:superior-assets]{\underline {Superior assets (firm-specific assets)}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{34}{section*.100}%
+\contentsline {paragraph}{\hyperref [thr:salary-fringe-benefits-mix]{\underline {Salary vs.\ fringe benefits-modellen}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{34}{section*.101}%
+\contentsline {section}{\numberline {9}Q09: Optimale valg av medarbeideres innsats -- agentens og prinsipalens side}{38}{section.9}%
+\contentsline {paragraph}{\hyperref [thr:optimal-effort-model]{\underline {Optimal effort-modell (begge sider)}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{39}{section*.111}%
+\contentsline {paragraph}{\hyperref [thr:fixed-vs-variable-pay]{\underline {Prestasjonsuavhengig lønn ($W_0$) vs.\ variabel ($\beta Q$)}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{39}{section*.112}%
+\contentsline {paragraph}{\hyperref [thr:incentive-coefficient]{\underline {Insentivkoeffisient $\beta =\partial W/\partial Q$}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{39}{section*.113}%
+\contentsline {paragraph}{\hyperref [thr:risk-sharing]{\underline {Risikodeling}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{40}{section*.114}%
+\contentsline {section}{\numberline {10}Q10: Individuell prestasjonsmåling og -belønning -- formål og begreper}{43}{section.10}%
+\contentsline {paragraph}{a) \hyperref [thr:ratchet-effect]{\underline {Ratchet-system og ratchet-effekt}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{43}{section*.124}%
+\contentsline {paragraph}{b) \hyperref [thr:gaming-in-performance-measurement]{\underline {Gaming og horisontproblem}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}}{44}{section*.125}%
+\contentsline {paragraph}{c) \hyperref [thr:absolute-vs-relative-performance]{\underline {Absolutt vs.\ relativ prestasjonsmåling}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}}{44}{section*.126}%
+\contentsline {paragraph}{d) \hyperref [thr:subjective-vs-objective-performance]{\underline {Subjektiv vs.\ objektiv prestasjonsmåling}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}}{44}{section*.127}%
+\contentsline {section}{\numberline {11}Q11: Boundaries of the Firm -- vertikal integrasjon, outsourcing og market power}{46}{section.11}%
+\contentsline {paragraph}{\hyperref [thr:boundaries-of-the-firm]{\underline {Boundaries of the Firm}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{47}{section*.135}%
+\contentsline {paragraph}{\hyperref [thr:accounting-vs-economic-profit]{\underline {Regnskabsmæssig vs.\ økonomisk profit}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}}{47}{section*.136}%
+\contentsline {paragraph}{\hyperref [thr:vertical-integration-outsourcing]{\underline {Vertikal integrasjon og outsourcing}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{47}{section*.137}%
+\contentsline {paragraph}{\hyperref [thr:vertical-integration-market-power]{\underline {VI som instrument til market power}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{47}{section*.138}%
+\contentsline {section}{\numberline {12}Q12: Vertikal integrasjon vs.\ outsourcing -- hold-up, free-rider, double markup}{50}{section.12}%
+\contentsline {paragraph}{\hyperref [thr:vertical-integration-outsourcing]{\underline {Vertikal integrasjon og outsourcing (bredt)}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{50}{section*.148}%
+\contentsline {paragraph}{\hyperref [thr:hold-up-problem]{\underline {Hold-up-problemet}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{51}{section*.149}%
+\contentsline {paragraph}{\hyperref [thr:free-rider-problem]{\underline {Free-rider-problemet (nedstrøms)}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{51}{section*.150}%
+\contentsline {paragraph}{\hyperref [thr:double-markup-problem]{\underline {Double markup-problemet}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{51}{section*.151}%
+\contentsline {section}{\numberline {13}Q13: Regulering -- offentlig indgriben, branche-profit og political support}{54}{section.13}%
+\contentsline {paragraph}{\hyperref [thr:market-failure-regulation]{\underline {Markedssvikt og regulering}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{55}{section*.161}%
+\contentsline {paragraph}{\hyperref [thr:regulated-pricing-model]{\underline {Regulated pricing-modellen (political support)}}\hskip 1em\relax \leavevmode {\color {s1color}\textbf {[S1]}}}{55}{section*.162}%
+\contentsline {section}{\numberline {14}Q14: Informativeness-prinsippet -- kontrollerbarhed, risikodeling, presisjon, risikopræmie}{58}{section.14}%
+\contentsline {paragraph}{\hyperref [thr:informativeness-principle]{\underline {Informativeness-prinsippet}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{58}{section*.172}%
+\contentsline {paragraph}{\hyperref [thr:controllability-principle]{\underline {(a) Controllability-prinsippet}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}}{59}{section*.173}%
+\contentsline {paragraph}{\hyperref [thr:risk-sharing]{\underline {(b) Risikodeling}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{59}{section*.174}%
+\contentsline {paragraph}{\hyperref [thr:incentive-coefficient]{\underline {(c) Målingers presisjon og (d) risikopremie}}\hskip 1em\relax \leavevmode {\color {s2color}\textbf {[S2]}}/\leavevmode {\color {s3color}\textbf {[S3]}}}{59}{section*.175}%
+\contentsline {section}{\numberline {15}Q15: Nyttefunksjoner -- integritet vs.\ indkomst, risiko vs.\ forventet verdi}{61}{section.15}%
+\contentsline {paragraph}{\hyperref [thr:integrity-vs-income-model]{\underline {Modell 1: Integrity vs.\ Income}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{62}{section*.186}%
+\contentsline {paragraph}{\hyperref [thr:risk-expected-value-model]{\underline {Modell 2: Risk--Expected Value}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{62}{section*.187}%
+\contentsline {paragraph}{\hyperref [thr:incentive-coefficient]{\underline {Incentive coefficient $\beta $}}\hskip 1em\relax \leavevmode {\color {s3color}\textbf {[S3]}}}{62}{section*.188}%
+\contentsline {part}{II\hspace {1em}Teorier (utdypende)}{65}{part.2}%
+\contentsline {section}{\numberline {16}Responsibility Centers -- de 5 centertyper}{65}{section.16}%
+\contentsline {paragraph}{Definisjon.}{65}{section*.196}%
+\contentsline {paragraph}{Brukt i spørsmål:}{69}{section*.209}%
+\contentsline {section}{\numberline {17}Controllability-prinsippet}{69}{section.17}%
+\contentsline {paragraph}{Definisjon.}{69}{section*.210}%
+\contentsline {paragraph}{Brukt i spørsmål:}{71}{section*.218}%
+\contentsline {section}{\numberline {18}Transfer Pricing -- interne afregningspriser}{71}{section.18}%
+\contentsline {paragraph}{Definisjon.}{71}{section*.219}%
+\contentsline {paragraph}{(a) Costless information (symmetrisk, full informasjon).}{71}{section*.221}%
+\contentsline {paragraph}{(b) Asymmetrisk informasjon.}{72}{section*.222}%
+\contentsline {paragraph}{1. Market-based transfer pricing.}{72}{section*.224}%
+\contentsline {paragraph}{2. Marginal cost (MC) pricing.}{72}{section*.225}%
+\contentsline {paragraph}{3. Full cost pricing.}{72}{section*.226}%
+\contentsline {paragraph}{4. Full cost plus markup (cost-plus).}{72}{section*.227}%
+\contentsline {paragraph}{5. Negotiated transfer pricing.}{72}{section*.228}%
+\contentsline {paragraph}{(Bonus) Dual pricing.}{72}{section*.229}%
+\contentsline {paragraph}{Brukt i spørsmål:}{75}{section*.236}%
+\contentsline {section}{\numberline {19}Principal-Agent-teori}{75}{section.19}%
+\contentsline {paragraph}{Definisjon.}{75}{section*.237}%
+\contentsline {paragraph}{Brukt i spørsmål:}{77}{section*.245}%
+\contentsline {section}{\numberline {20}De 5 incitamentkonflikter mellom eiere og virksomhetsledere}{77}{section.20}%
+\contentsline {paragraph}{Definisjon.}{77}{section*.246}%
+\contentsline {paragraph}{Brukt i spørsmål:}{81}{section*.260}%
+\contentsline {section}{\numberline {21}Costless Contracting (benchmark)}{81}{section.21}%
+\contentsline {paragraph}{Definisjon.}{81}{section*.261}%
+\contentsline {paragraph}{Brukt i spørsmål:}{83}{section*.269}%
+\contentsline {section}{\numberline {22}Costly Contracting}{83}{section.22}%
+\contentsline {paragraph}{Definisjon.}{83}{section*.270}%
+\contentsline {paragraph}{Brukt i spørsmål:}{86}{section*.278}%
+\contentsline {section}{\numberline {23}Spilteori (Game Theory)}{86}{section.23}%
+\contentsline {paragraph}{Definisjon.}{86}{section*.279}%
+\contentsline {paragraph}{Brukt i spørsmål:}{89}{section*.288}%
+\contentsline {section}{\numberline {24}Moral Hazard}{89}{section.24}%
+\contentsline {paragraph}{Definisjon.}{89}{section*.289}%
+\contentsline {paragraph}{Brukt i spørsmål:}{92}{section*.297}%
+\contentsline {section}{\numberline {25}Adverse Selection}{92}{section.25}%
+\contentsline {paragraph}{Definisjon.}{92}{section*.298}%
+\contentsline {paragraph}{Brukt i spørsmål:}{95}{section*.306}%
+\contentsline {section}{\numberline {26}Organizational Architecture -- den tre-benede skammelen}{95}{section.26}%
+\contentsline {paragraph}{Definisjon.}{95}{section*.307}%
+\contentsline {paragraph}{Brukt i spørsmål:}{98}{section*.318}%
+\contentsline {section}{\numberline {27}Agentomkostninger (Agency Costs)}{98}{section.27}%
+\contentsline {paragraph}{Definisjon.}{98}{section*.319}%
+\contentsline {paragraph}{Brukt i spørsmål:}{101}{section*.331}%
+\contentsline {section}{\numberline {28}Spesifik vs.\ generell viden}{101}{section.28}%
+\contentsline {paragraph}{Definisjon.}{101}{section*.332}%
+\contentsline {paragraph}{Brukt i spørsmål:}{105}{section*.343}%
+\contentsline {section}{\numberline {29}Centralisering vs.\ desentralisering}{105}{section.29}%
+\contentsline {paragraph}{Definisjon.}{105}{section*.344}%
+\contentsline {paragraph}{Brukt i spørsmål:}{108}{section*.357}%
+\contentsline {section}{\numberline {30}Optimal decentraliseringsmodell}{108}{section.30}%
+\contentsline {paragraph}{Definisjon.}{108}{section*.358}%
+\contentsline {paragraph}{Nettofordel.}{108}{section*.360}%
+\contentsline {paragraph}{First-order condition.}{109}{section*.361}%
+\contentsline {paragraph}{Brukt i spørsmål:}{111}{section*.370}%
+\contentsline {section}{\numberline {31}Decision Management vs.\ Decision Control}{111}{section.31}%
+\contentsline {paragraph}{Definisjon.}{111}{section*.371}%
+\contentsline {paragraph}{Brukt i spørsmål:}{114}{section*.379}%
+\contentsline {section}{\numberline {32}Eksternaliteter}{114}{section.32}%
+\contentsline {paragraph}{Definisjon.}{114}{section*.380}%
+\contentsline {paragraph}{Brukt i spørsmål:}{117}{section*.388}%
+\contentsline {section}{\numberline {33}Residual claimants}{117}{section.33}%
+\contentsline {paragraph}{Definisjon.}{117}{section*.389}%
+\contentsline {paragraph}{Brukt i spørsmål:}{120}{section*.397}%
+\contentsline {section}{\numberline {34}Allokering av beslutningsrettigheter}{120}{section.34}%
+\contentsline {paragraph}{Definisjon.}{120}{section*.398}%
+\contentsline {paragraph}{Brukt i spørsmål:}{124}{section*.406}%
+\contentsline {section}{\numberline {35}Reservation utility}{124}{section.35}%
+\contentsline {paragraph}{Definisjon.}{124}{section*.407}%
+\contentsline {paragraph}{Brukt i spørsmål:}{127}{section*.416}%
+\contentsline {section}{\numberline {36}Compensating differentials}{127}{section.36}%
+\contentsline {paragraph}{Definisjon.}{127}{section*.417}%
+\contentsline {paragraph}{Brukt i spørsmål:}{130}{section*.426}%
+\contentsline {section}{\numberline {37}Superior assets (firm-specific assets)}{130}{section.37}%
+\contentsline {paragraph}{Definisjon.}{130}{section*.427}%
+\contentsline {paragraph}{Brukt i spørsmål:}{133}{section*.436}%
+\contentsline {section}{\numberline {38}Salary vs.\ fringe benefits-modellen}{133}{section.38}%
+\contentsline {paragraph}{Definisjon.}{133}{section*.437}%
+\contentsline {paragraph}{First-order condition.}{133}{section*.440}%
+\contentsline {paragraph}{Hvordan grafen flyttes av endringer.}{134}{section*.442}%
+\contentsline {paragraph}{Brukt i spørsmål:}{136}{section*.448}%
+\contentsline {section}{\numberline {39}Optimal effort-modell (agent- og prinsipalside)}{136}{section.39}%
+\contentsline {paragraph}{Definisjon.}{136}{section*.449}%
+\contentsline {paragraph}{Brukt i spørsmål:}{141}{section*.460}%
+\contentsline {section}{\numberline {40}Incitamentskoefficient ($\beta $)}{141}{section.40}%
+\contentsline {paragraph}{Definisjon.}{141}{section*.461}%
+\contentsline {paragraph}{Brukt i spørsmål:}{143}{section*.470}%
+\contentsline {section}{\numberline {41}Risk sharing (risikodeling)}{143}{section.41}%
+\contentsline {paragraph}{Definisjon.}{143}{section*.471}%
+\contentsline {paragraph}{Brukt i spørsmål:}{146}{section*.479}%
+\contentsline {section}{\numberline {42}Præstationsuafhængig vs.\ variabel lønn ($W_0$ vs.\ $\beta Q$)}{146}{section.42}%
+\contentsline {paragraph}{Definisjon.}{146}{section*.480}%
+\contentsline {paragraph}{Brukt i spørsmål:}{148}{section*.488}%
+\contentsline {section}{\numberline {43}Formålene med individuell prestasjonsmåling og -belønning}{148}{section.43}%
+\contentsline {paragraph}{Definisjon.}{148}{section*.489}%
+\contentsline {paragraph}{Brukt i spørsmål:}{151}{section*.497}%
+\contentsline {section}{\numberline {44}Ratchet-system og ratchet-effekten}{151}{section.44}%
+\contentsline {paragraph}{Definisjon.}{151}{section*.498}%
+\contentsline {paragraph}{Brukt i spørsmål:}{154}{section*.506}%
+\contentsline {section}{\numberline {45}Gaming og horisontproblem}{154}{section.45}%
+\contentsline {paragraph}{Definisjon.}{154}{section*.507}%
+\contentsline {paragraph}{Brukt i spørsmål:}{156}{section*.515}%
+\contentsline {section}{\numberline {46}Absolutt vs.\ relativ prestasjonsmåling}{157}{section.46}%
+\contentsline {paragraph}{Definisjon.}{157}{section*.516}%
+\contentsline {paragraph}{Brukt i spørsmål:}{159}{section*.524}%
+\contentsline {section}{\numberline {47}Subjektiv vs.\ objektiv prestasjonsmåling}{159}{section.47}%
+\contentsline {paragraph}{Definisjon.}{159}{section*.525}%
+\contentsline {paragraph}{Brukt i spørsmål:}{162}{section*.533}%
+\contentsline {section}{\numberline {48}Boundaries of the Firm}{162}{section.48}%
+\contentsline {paragraph}{Definisjon.}{162}{section*.534}%
+\contentsline {paragraph}{Brukt i spørsmål:}{164}{section*.542}%
+\contentsline {section}{\numberline {49}Accounting vs.\ Economic Profit}{164}{section.49}%
+\contentsline {paragraph}{Definisjon.}{164}{section*.543}%
+\contentsline {paragraph}{Brukt i spørsmål:}{166}{section*.551}%
+\contentsline {section}{\numberline {50}Vertikal integrasjon og outsourcing}{166}{section.50}%
+\contentsline {paragraph}{Definisjon.}{166}{section*.552}%
+\contentsline {paragraph}{Brukt i spørsmål:}{169}{section*.560}%
+\contentsline {section}{\numberline {51}Vertikal integrasjon og market power}{169}{section.51}%
+\contentsline {paragraph}{Definisjon.}{169}{section*.561}%
+\contentsline {paragraph}{Brukt i spørsmål:}{171}{section*.569}%
+\contentsline {section}{\numberline {52}Hold-up-problemet}{171}{section.52}%
+\contentsline {paragraph}{Definisjon.}{171}{section*.570}%
+\contentsline {paragraph}{Brukt i spørsmål:}{173}{section*.578}%
+\contentsline {section}{\numberline {53}Free-rider-problemet (nedstrøms)}{173}{section.53}%
+\contentsline {paragraph}{Definisjon.}{173}{section*.579}%
+\contentsline {paragraph}{Brukt i spørsmål:}{176}{section*.587}%
+\contentsline {section}{\numberline {54}Double markup-problemet (dobbel marginalisering)}{176}{section.54}%
+\contentsline {paragraph}{Definisjon.}{176}{section*.588}%
+\contentsline {paragraph}{Brukt i spørsmål:}{178}{section*.597}%
+\contentsline {section}{\numberline {55}Markedssvikt og regulering}{178}{section.55}%
+\contentsline {paragraph}{Definisjon.}{178}{section*.598}%
+\contentsline {paragraph}{Brukt i spørsmål:}{181}{section*.606}%
+\contentsline {section}{\numberline {56}Regulated pricing-modellen (branche-profit og political support)}{181}{section.56}%
+\contentsline {paragraph}{Definisjon.}{181}{section*.607}%
+\contentsline {paragraph}{Brukt i spørsmål:}{183}{section*.616}%
+\contentsline {section}{\numberline {57}Informativeness-prinsippet}{183}{section.57}%
+\contentsline {paragraph}{Definisjon.}{183}{section*.617}%
+\contentsline {paragraph}{Brukt i spørsmål:}{185}{section*.625}%
+\contentsline {section}{\numberline {58}Integrity vs.\ Income-modellen}{186}{section.58}%
+\contentsline {paragraph}{Definisjon.}{186}{section*.626}%
+\contentsline {paragraph}{Brukt i spørsmål:}{188}{section*.634}%
+\contentsline {section}{\numberline {59}Risk--Expected Value-modellen (indifferenskurver i $(\sigma , E[W])$-rommet)}{188}{section.59}%
+\contentsline {paragraph}{Definisjon.}{188}{section*.635}%
+\contentsline {paragraph}{Brukt i spørsmål:}{190}{section*.643}%

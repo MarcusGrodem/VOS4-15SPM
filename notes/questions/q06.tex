@@ -56,29 +56,85 @@ Når beslutningsretten flyttes nedover, mister prinsipalen direkte kontroll. Jen
 
 \subsection*{Grafisk modell (obligatorisk)}
 
+\paragraph{Fra totalnivå til marginalnivå -- utledning av $D^{*}$.}
+Modellen opererer på to nivåer. Først definerer vi \emph{totalkurvene}:
+\[
+  \mathrm{TB}(D) = B \cdot D \qquad \text{(total fordel -- lineær i $D$)}
+\]
+\[
+  \mathrm{TC}(D) = A \cdot D + C \cdot D^{2} \qquad \text{(total kostnad -- konveks i $D$)}
+\]
+Nettofordel er differansen mellom total fordel og total kostnad:
+\[
+  \mathrm{NB}(D) \;=\; \mathrm{TB}(D) - \mathrm{TC}(D) \;=\; BD - AD - CD^{2}
+\]
+For å finne den $D$ som \emph{maksimerer} NB, deriverer vi NB med hensyn på $D$ og setter lik null:
+\[
+  \frac{d\,\mathrm{NB}}{dD}
+  \;=\; \underbrace{\frac{d(\mathrm{TB})}{dD}}_{=\;\mathrm{MB}\,=\,B}
+  \;-\; \underbrace{\frac{d(\mathrm{TC})}{dD}}_{=\;\mathrm{MC}\,=\,A+2CD}
+  \;=\; B - A - 2CD \;=\; 0
+\]
+\[
+  \boxed{\;D^{*} = \frac{B-A}{2C}\;}
+\]
+Altså: å derivere $\mathrm{NB}(D)$ og løse for $D$ gir \emph{direkte} $D^{*}$. Og fordi derivatet av TB er MB og derivatet av TC er MC, er betingelsen $d\mathrm{NB}/dD = 0$ \emph{identisk} med betingelsen $\mathrm{MB} = \mathrm{MC}$. Det er to fremstillinger av \emph{samme} optimum.
+
+\paragraph{Geometrisk kobling mellom de to panelene.}
+Figuren nedenfor viser begge nivåer:
+\begin{itemize}[nosep]
+  \item \textbf{Øvre panel (TC/TB):} NB er den \emph{vertikale avstanden} mellom TB og TC. Denne avstanden er størst ved $D^{*}$.
+  \item \textbf{Nedre panel (MC/MB):} $D^{*}$ er skjæringspunktet mellom MB og MC.
+\end{itemize}
+De to panelene er ekvivalente: der totalkurvene har størst avstand, er også der marginalkurvene krysser -- fordi størst avstand betyr at \emph{stigningsratene} (derivatene) er like.
+
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[scale=1.0]
-  % Akser
+  % === ØVRE PANEL: TC og TB (totalkurver) ===
+  \begin{scope}[yshift=7.5cm]
+    \draw[->, thick] (0,0) -- (7.5,0) node[right] {$D$};
+    \draw[->, thick] (0,0) -- (0,7) node[above] {kr (totalt)};
+    % TB = BD = 4D, skalert /4 => D
+    \draw[thick, blue!70!black, domain=0:6.8, samples=80]
+      plot (\x, {\x}) node[right] {$\mathrm{TB}=BD$};
+    % TC = AD + CD^2 = D + 0.5D^2, skalert /4 => 0.25D + 0.125D^2
+    \draw[thick, red!70!black, domain=0:6.5, samples=80]
+      plot (\x, {0.25*\x + 0.125*\x*\x}) node[right] {$\mathrm{TC}=AD+CD^{2}$};
+    % D* striplet linje
+    \draw[dashed, gray] (3,0) -- (3,3);
+    \node[below] at (3,0) {$D^{*}$};
+    % Dobbeltpil for max NB ved D*
+    \draw[<->, thick, green!60!black] (3,1.875) -- (3,3);
+    \node[right, green!60!black, font=\small] at (3.15,2.44) {$\max\;\mathrm{NB}(D^{*})$};
+    % Prikk ved break-even D=6 der TB=TC
+    \filldraw[black] (6,6) circle (1.5pt);
+    \node[above left, font=\footnotesize] at (6,6) {$\mathrm{TB}=\mathrm{TC}$};
+    % Prikker på kurvene ved D*
+    \filldraw[blue!70!black] (3,3) circle (1.5pt);
+    \filldraw[red!70!black] (3,1.875) circle (1.5pt);
+  \end{scope}
+  % === Forbindelseslinje mellom panelene ===
+  \draw[dashed, gray, thin] (3,4) -- (3,7.5);
+  % === NEDRE PANEL: MC og MB (marginalkurver) ===
   \draw[->, thick] (0,0) -- (7.5,0) node[right] {$D$};
-  \draw[->, thick] (0,0) -- (0,6) node[above] {kr};
-  % A=1, B=4, 2C=1 (dvs C=0.5) => MC=1+D, krysser MB=4 ved D*=3
-  % MB horisontal på B=4
+  \draw[->, thick] (0,0) -- (0,6) node[above] {kr (marginal)};
+  % MB = B = 4, konstant
   \draw[thick, blue!70!black] (0,4) -- (7,4) node[right] {$\mathrm{MB}=B$};
-  % MC lineær: A + 2CD = 1 + D, stigning 1, krysser MB=4 ved D=3
+  % MC = A + 2CD = 1 + D
   \draw[thick, red!70!black] (0,1) -- (5,6) node[right] {$\mathrm{MC}=A+2CD$};
-  % D* nøyaktig der MB=MC (D=3)
-  \draw[dashed] (3,0) -- (3,4);
+  % D* striplet linje
+  \draw[dashed, gray] (3,0) -- (3,4);
   \filldraw[black] (3,4) circle (1.5pt);
   \node[below] at (3,0) {$D^{*}$};
   \node[left] at (0,4) {$B$};
   \node[left] at (0,1) {$A$};
-  \node[above left] at (3,4) {\small Optimum: $D^{*}=\tfrac{B-A}{2C}$};
+  \node[above left, font=\small] at (3,4) {$\mathrm{MB}=\mathrm{MC}$};
 \end{tikzpicture}
-\caption{Optimal grad av desentralisering der marginal fordel ($B$, konstant) møter marginal kostnad ($A + 2CD$, lineært stigende). Skifter $B$ opp $\Rightarrow$ $D^{*}$ til høyre; skifter $A$ eller $C$ opp $\Rightarrow$ $D^{*}$ til venstre. [SLIDE/EGEN]}
+\caption{Øvre panel: totalkurvene TB (lineær) og TC (konveks) -- størst vertikal avstand ved $D^{*}$. Nedre panel: marginalkurvene MB (horisontal) og MC (stigende) -- krysser ved $D^{*}$. Panelene viser \emph{samme} optimum: maks avstand mellom totalkurvene inntreffer \emph{nøyaktig} der marginalkurvene er like. Talleksempel: $B=4,\; A=1,\; C=0{,}5 \;\Rightarrow\; D^{*}=3$. Skifter $B$ opp $\Rightarrow$ $D^{*}$ til høyre; skifter $A$ eller $C$ opp $\Rightarrow$ $D^{*}$ til venstre. [SLIDE/EGEN]}
 \end{figure}
 
-\textbf{Forklaring av aksene.} Den horisontale aksen $D$ måler grad av desentralisering fra 0 (full sentralisering) til $D_{\max}$ (full desentralisering); den vertikale måler kroner per marginal enhet av $D$. $\mathrm{MB}=B$ er marginal fordel av at neste beslutning flyttes til lokal leder (verdien av spesifik viden). $\mathrm{MC} = A + 2CD$ kombinerer en lineær agentkostnad ($A$, konstant marginal) og en lineær \emph{marginal} koordineringskostnad som vokser i $D$ (avledet av total kvadratisk $CD^{2}$). I optimum er marginal fordel akkurat lik marginal kostnad: $B = A + 2CD^{*} \Rightarrow D^{*} = (B-A)/(2C)$. En mer detaljert avledning og en alternativ NB-parabel-figur finnes i teorifilen \thref{optimal-decentralization-model}{optimal decentraliseringsmodell}. [SLIDE]
+\textbf{Leseveiledning for figuren.} Den horisontale aksen $D$ måler grad av desentralisering fra 0 (full sentralisering) mot høyre (mer desentralisering). I det øvre panelet er TB-linjen rett (stigning $B$) og TC-kurven konveks (stigning $A + 2CD$ som øker i $D$); den grønne pilen markerer $\max\mathrm{NB}$, dvs.\ nettofordelen ved $D^{*}$. I det nedre panelet er MB horisontal på $B$ og MC stiger fra $A$ med stigning $2C$; skjæringspunktet er $D^{*}$. Den stiplede linjen viser at $D^{*}$ i begge paneler er \emph{samme} punkt -- dette er kjernen i modellen: \emph{derivert} $\mathrm{NB}$ lik null $\Leftrightarrow$ $\mathrm{MB} = \mathrm{MC}$. En mer detaljert avledning og en alternativ NB-parabel-figur finnes i teorifilen \thref{optimal-decentralization-model}{optimal decentraliseringsmodell}. [SLIDE]
 
 \subsection*{Real-world eksempler}
 
@@ -121,7 +177,7 @@ PtX-divisjonen er et lærebokeksempel på \emph{differensiert} desentralisering:
 \item \textbf{Trade-off:} Bedre info vs.\ bedre insentivlinje. Flytter man \SOne, må \STwo\ og \SThree\ med -- ellers eksploderer $A$.
 \item \textbf{Modell:} $\mathrm{NB}(D) = BD - AD - CD^{2}$. FOC: $B - A - 2CD = 0 \Rightarrow D^{*} = (B-A)/(2C)$. SOC: $-2C < 0$ (maks).
 \item \textbf{Komparativ statikk:} $\partial D^{*}/\partial B > 0$; $\partial D^{*}/\partial A < 0$; $\partial D^{*}/\partial C < 0$.
-\item \textbf{Graf:} Tegn MB (horisontal på $B$) og MC ($A + 2CD$, stigende rett linje). Skjæringspunkt = $D^{*}$. Eventuelt parabel for $\mathrm{NB}(D)$ med topp ved $D^{*}$.
+\item \textbf{Graf (to paneler):} Øvre panel: TB=$BD$ (rett linje) og TC=$AD+CD^{2}$ (konveks kurve); vis at størst avstand er ved $D^{*}$. Nedre panel: MB=$B$ (horisontal) og MC=$A+2CD$ (stigende); skjæringspunkt = $D^{*}$. Poenget: maks avstand oppe = kryss nede $\Leftrightarrow$ derivert NB = 0.
 \item \textbf{Talleksempel:} $B=10, A=2, C=4 \Rightarrow D^{*} = 1$. Endre $A$ til $6 \Rightarrow D^{*} = 0.5$.
 \item \textbf{Eks.\ 1:} Equinor E\&P (høy $D^{*}$) vs.\ konsernfinans (lav $D^{*}$) i samme firma.
 \item \textbf{Eks.\ 2:} IKEA (design sentralt, salg lokalt) vs.\ McDonald's franchise (sterk desentralisering støttet av sterk \STwo/\SThree).
