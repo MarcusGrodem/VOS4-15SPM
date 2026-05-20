@@ -52,6 +52,35 @@ Risikoavers agent + diversifisert risikonøytral prinsipal (en eier som spør li
 \caption{Pensumets versjon av principal-agent-modellen: $Q=\alpha e+\mu$ og $W=W_0+\beta Q$. [SLIDE -- BSZ kap.\ 15, slide 14]}
 \end{figure}
 
+Agentens side kan tegnes på to måter, som henger sammen som ``totalbildet'' og ``marginalbildet'' av samme optimum: (1) \emph{totalkurver} -- kompensasjon $W=W_0+\beta\alpha e$ som rett linje og kostnad $c(e)=e^{2}$ som konveks kurve, hvor $e^{*}$ er der tangenten til kostnadskurven er parallell med kompensasjonslinjen; (2) \emph{deriverte kurver} -- $MB=\beta\alpha$ horisontal og $MC=c'(e)=2e$ stigende, hvor $e^{*}$ er rett krysningspunkt. Det er samme FOC ($\beta\alpha=c'(e^{*})$), bare lest ut av to forskjellige grafer.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[>=latex]
+  % Skalafaktorer: 1 effort-enhet = 0.13 cm, 1 kr = 0.0019 cm
+  % Akser (i cm)
+  \draw[->] (-0.1,0) -- (6.4,0) node[right] {$e$};
+  \draw[->] (0,-0.1) -- (0,4.6) node[above] {kr};
+  \node[below=8pt] at (3.1,0) {\small Innsatsnivå $e$};
+  \node[rotate=90] at (-0.7,2.2) {\small Kostnader (kr)};
+  % Kompensasjonslinje W = 1000 + 20e (cm: x=e*0.13, y=W*0.0019)
+  \draw[thick,blue] (0,1.9) -- (6.11,3.686);
+  \node[blue,above,align=left] at (3.6,3.2) {\scriptsize Kompensasjon:\\ \scriptsize $W_0+\beta\alpha e=1000+20e$};
+  % Kostnadskurve c(e) = e^2
+  \draw[thick,red,domain=0:46,samples=80,smooth]
+    plot ({\x*0.13},{\x*\x*0.0019});
+  \node[red,above] at (4.5,2.4) {\scriptsize Kostnad: $c(e)=e^{2}$};
+  % Tangent ved e*=10 (stigning 20): y = 20e - 100
+  \draw[dashed,blue!70!black] (0.39,-0.076) -- (2.08,0.418);
+  % Hjelpe-streker for e*=10 og W=1200
+  \draw[dashed] (1.3,0) -- (1.3,2.28);
+  \draw[dashed] (0,2.28) -- (1.3,2.28);
+  \node[left] at (0,2.28) {\scriptsize $1\,200$};
+  \node[below] at (1.3,0) {\scriptsize $e^{*}=10$};
+\end{tikzpicture}
+\caption{\textbf{Agentens side -- totalmodellen (ikke-derivert).} Kompensasjonslinjen $W=W_0+\beta\alpha e$ (her $W_0=1000$, $\beta\alpha=20$) og den konvekse kostnadskurven $c(e)=e^{2}$. Agenten velger $e^{*}=10$ der tangenten til kostnadskurven er parallell med kompensasjonslinjen -- altså $c'(e^{*})=2e^{*}=20=\beta\alpha$. Total kompensasjon ved $e^{*}$: $W=1\,200$. Krever \texttt{\textbackslash usepackage\{tikz\}} i preamble.}
+\end{figure}
+
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=latex,scale=0.9]
