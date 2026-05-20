@@ -17,6 +17,46 @@ Fire argumenter: (1) \textbf{Naturlig monopol}: fallende $AC$ $\Rightarrow$ én 
 \textbf{Intuisjon:} Offentlig gode = ikke-ekskluderbart + ikke-rivaliserende. Ingen kan hindres fra å bruke det $\Rightarrow$ ingen grunn til å betale $\Rightarrow$ alle venter på at andre betaler $\Rightarrow$ privat marked underleverer. Fyrtårnet: Rederi A bygger, B free-rider $\Rightarrow$ neste gang bygger ingen. Løsning: skatt + statlig tilbud eliminerer free-rider-problemet.
 \end{tcolorbox}
 
+\paragraph{Monopolets dødvektstap -- motivasjonen for regulering\quad\SOne}
+Før vi forklarer \emph{hvilken} pris regulatoren velger, må vi forstå \emph{hvorfor} det er noe å regulere. Uten regulering setter monopolisten kvantum der $MR=MC$ -- ikke der $D=MC$ som perfekt konkurranse ville gjort. Resultatet: kvantum $Q^*<Q_e$, pris $P^M>P^{MC}$, og en \textbf{dødvektstap-trekant (DWL)} mellom $Q^*$ og $Q_e$ -- velferd som forsvinner fordi enheter som kjøperen verdsetter høyere enn $MC$ ikke blir produsert. I tillegg overføres et stort \emph{monopolprofittrektangel} fra forbrukere til bransjen. \emph{Det er denne DWL-trekanten + profittrektangelet som er ``kaken'' regulering kan omfordele.} [SLIDE/BOK]
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[>=latex, scale=0.85, every node/.style={font=\small}]
+  \draw[->] (0,0) -- (9,0) node[right] {$Q$};
+  \draw[->] (0,0) -- (0,6) node[above] {$P,\,MC$};
+  % Demand: P = 5 - x/2, from (0,5) to (10,0)
+  \draw[thick, black] (0,5) -- (10,0) node[pos=0.95, above right] {$D$};
+  % MR: P = 5 - x, from (0,5) to (5,0)
+  \draw[thick, gray!70!black, dashed] (0,5) -- (5,0) node[pos=0.95, below right] {$MR$};
+  % MC: horizontal at y=1
+  \draw[thick, blue!70!black] (0,1) -- (9,1) node[right] {$MC$};
+  % Monopoly profit rectangle: x in [0,4], y in [1,3]
+  \fill[blue!15] (0,1) rectangle (4,3);
+  \node[blue!50!black] at (2,2) {\scriptsize Monopol-};
+  \node[blue!50!black] at (2,1.6) {\scriptsize profitt};
+  % DWL triangle: (4,3) -- (4,1) -- (8,1)
+  \fill[red!25] (4,3) -- (4,1) -- (8,1) -- cycle;
+  \node[red!70!black] at (5.3,1.55) {\scriptsize \textbf{DWL}};
+  % Q* and Q_e
+  \draw[dashed] (4,0) -- (4,3);
+  \draw[dashed] (0,3) -- (4,3);
+  \node[below] at (4,0) {\scriptsize $Q^{*}$};
+  \node[left] at (0,3) {\scriptsize $P^{M}$};
+  \draw[dashed] (8,0) -- (8,1);
+  \node[below] at (8,0) {\scriptsize $Q_{e}$};
+  \node[left] at (0,1) {\scriptsize $P^{MC}$};
+  % Points
+  \filldraw (4,3) circle (1.5pt);
+  \filldraw (8,1) circle (1.5pt);
+\end{tikzpicture}
+\caption{\textbf{Monopolets dødvektstap.} Uten regulering: monopolisten velger $Q^*$ der $MR=MC$ og tar prisen $P^M$ fra etterspørselskurven. Effektivt utfall ville vært $Q_e$ til pris $P^{MC}=MC$. Blå rektangel = profitt overført fra forbruker til bransje. Rød trekant = ren velferdsbrenning (DWL). [BOK -- BSZ kap.\ 6]}
+\end{figure}
+
+\begin{tcolorbox}[colback=yellow!6, colframe=orange!60!black, boxrule=0.4pt, arc=2pt, left=6pt, right=6pt, top=4pt, bottom=4pt]
+\textbf{Hvordan de to modellene henger sammen:} Monopoldiagrammet over er \emph{problemet} -- det viser hvor høyt prisen kan presses ($P^M$) og hvor lavt regulatoren \emph{kunne} satt den ($P^{MC}=MC$). Political support-modellen under er \emph{utfallet} -- den forklarer hvor mellom disse to ytterpunktene den faktiske regulerte prisen $P^*$ havner. De samme to vertikale stiplete linjene ($P^{MC}$ og $P^M$) finnes i begge diagrammer: i monopoldiagrammet er de \emph{kvantum-/prisaksens ytterpunkter}, i political support-diagrammet er de \emph{politikerens valgrom}. Bransjeprofittkurven $\pi(P)$ i neste diagram er rett og slett størrelsen på det blå rektangelet som funksjon av $P$ -- null ved $P^{MC}$, maks ved $P^M$, og fallende igjen om prisen settes så høyt at kundene forsvinner.
+\end{tcolorbox}
+
 \paragraph{\thref{regulated-pricing-model}{Regulated pricing-modellen (political support)}\quad\SOne}
 BSZ kap.\ 21 / Peltzman (1976). Tenk deg politikeren som mekler i en \emph{dragkamp om prisen}: bransjen drar prisen oppover, forbrukerne drar nedover. Politikeren får ``stemmer'' fra begge sider og prøver å maksimere total støtte $S$.
 
