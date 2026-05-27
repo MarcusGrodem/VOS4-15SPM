@@ -1,0 +1,523 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[norsk]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{multicol}
+\usepackage{csquotes}
+\usepackage{eurosym}
+
+\geometry{margin=1.5cm, top=1.2cm, bottom=1.2cm}
+
+\definecolor{s1color}{RGB}{0,102,204}
+\definecolor{s2color}{RGB}{0,153,76}
+\definecolor{s3color}{RGB}{204,0,0}
+\definecolor{boxbg}{RGB}{245,245,250}
+\definecolor{boxborder}{RGB}{80,80,120}
+\definecolor{formulabg}{RGB}{255,250,230}
+
+\newcommand{\SOne}{\textcolor{s1color}{\textbf{[S1]}}}
+\newcommand{\STwo}{\textcolor{s2color}{\textbf{[S2]}}}
+\newcommand{\SThree}{\textcolor{s3color}{\textbf{[S3]}}}
+
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=2pt, parsep=0pt}
+
+\newtcolorbox{keybox}[1]{
+  colback=boxbg, colframe=boxborder, boxrule=0.5pt,
+  arc=2pt, left=4pt, right=4pt, top=2pt, bottom=2pt,
+  title=#1, fonttitle=\bfseries\small,
+  coltitle=white, colbacktitle=boxborder
+}
+
+\newtcolorbox{formulabox}{
+  colback=formulabg, colframe=orange!60!black, boxrule=0.4pt,
+  arc=2pt, left=4pt, right=4pt, top=2pt, bottom=2pt
+}
+
+\newcommand{\qhead}[2]{%
+  \noindent
+  \begin{tcolorbox}[colback=boxborder, colframe=boxborder, arc=2pt, left=6pt, right=6pt, top=2pt, bottom=2pt]
+    \color{white}\textbf{\large Q#1 -- #2}
+  \end{tcolorbox}
+}
+
+\newcommand{\huskeord}[1]{%
+  \vspace{2pt}
+  \begin{tcolorbox}[colback=yellow!15, colframe=orange!70!black, boxrule=0.4pt, arc=2pt, left=4pt, right=4pt, top=2pt, bottom=2pt]
+    \footnotesize\textbf{Huskeord:} #1
+  \end{tcolorbox}
+}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% ==================== Q01 ====================
+\qhead{01}{Responsibility centers -- de 5 sentertyper}
+
+\begin{keybox}{Tese}
+Centertype = beslutningsrett \SOne\ + måltall \STwo\ + insentiv \SThree. Velg sentertype etter \emph{controllability-prinsippet}: mål dekker det lederen faktisk styrer.
+\end{keybox}
+
+\begin{multicols}{2}
+\textbf{De 5 typene (stige av kontroll):}
+\begin{itemize}
+  \item \textbf{Cost center} -- kontrollerer kost (gitt output)
+  \item \textbf{Expense center} -- kontrollerer budsjett (output uobs.)
+  \item \textbf{Revenue center} -- kontrollerer inntekt
+  \item \textbf{Profit center} -- inntekt + kost
+  \item \textbf{Investment center} -- profit + kapital
+\end{itemize}
+
+\columnbreak
+
+\textbf{Ulemper pr.\ type:}
+\begin{itemize}
+  \item Cost: kvalitet ofres
+  \item Expense: empire building
+  \item Revenue: $MR=0 \neq MR=MC$
+  \item Profit: transfer pricing-problem
+  \item Investment: ROA kortsiktig $\Rightarrow$ EVA
+\end{itemize}
+\end{multicols}
+
+\begin{formulabox}
+\textbf{Controllability:} Måltallet skal dekke \emph{nøyaktig} det lederen kan styre -- ikke mer, ikke mindre.
+\end{formulabox}
+
+\textbf{Eks.:} Equinor (Leting = investment, Mongstad = cost). Mærsk PtX = investment center med EVA.
+
+\huskeord{Cost--Expense--Revenue--Profit--Investment $\;\big|\;$ stige $\;\big|\;$ controllability $\;\big|\;$ ROA $\to$ EVA $\;\big|\;$ \STwo}
+
+\vfill\newpage
+
+% ==================== Q02 ====================
+\qhead{02}{Transfer Pricing -- costless vs.\ asymmetrisk info}
+
+\begin{keybox}{Tese}
+TP $=$ opportunity cost. (a) Costless $\Rightarrow$ first-best. (b) Asymmetrisk $\Rightarrow$ trade-off, ingen metode dominerer.
+\end{keybox}
+
+\begin{formulabox}
+TP$^{*}$ $=$ MC (ledig kapasitet) $\;\;\big|\;\;$ TP$^{*}$ $=$ MC $+$ fortrengt DB (kapasitetsbinding)
+\end{formulabox}
+
+\textbf{5 metoder:}
+\begin{itemize}
+  \item \textbf{Market-based} -- lik opp.cost, krever likvid marked
+  \item \textbf{Marginal cost} -- optimal v/ledig kap., MC overrapporteres
+  \item \textbf{Full cost} -- enkel, gir double markup
+  \item \textbf{Full cost + markup} -- selger får margin, sterk gaming
+  \item \textbf{Negotiated} -- bruker lokal info, forhandlingsstyrke skjevhet
+\end{itemize}
+
+\textbf{Asymmetrisk info-problemer:}
+\begin{itemize}
+  \item Selger overrapporterer MC $\Rightarrow$ for lav intern mengde
+  \item Kjøper underdriver WTP $\Rightarrow$ presser pris ned
+  \item \emph{Decision management} (riktig mengde) vs.\ \emph{decision control} (riktig insentiv) -- samme tall fungerer ikke til begge
+\end{itemize}
+
+\textbf{Eks.:} Equinor (Brent, market-based), Mærsk Ocean/L\&S (cost-plus, friksjon), Mærsk PtX (intet marked $\Rightarrow$ strategisk subsidie).
+
+\huskeord{Opportunity cost $\;\big|\;$ 5 metoder $\;\big|\;$ double markup $\;\big|\;$ mgmt vs.\ control $\;\big|\;$ \STwo}
+
+\vfill\newpage
+
+% ==================== Q03 ====================
+\qhead{03}{Costless contracting -- firmaet og de 5 konfliktene}
+
+\begin{keybox}{Tese}
+Firma = \emph{nexus of contracts}. Under costless contracting kan alle 5 owner--manager-konflikter kontraktfestes vekk $\Rightarrow$ first-best.
+\end{keybox}
+
+\textbf{De 5 konfliktene:}
+\begin{enumerate}
+  \item \textbf{Shirking} -- innsats under optimum
+  \item \textbf{Perks/konsum} -- privat forbruk på firmaets regning
+  \item \textbf{Risikoaversjon} -- agent unngår positiv-NPV-risiko
+  \item \textbf{Horisont} -- agent ser kortsiktig, eier langsiktig
+  \item \textbf{Overinvestering/empire building} -- vekst foran verdi
+\end{enumerate}
+
+\begin{formulabox}
+Costless contracting: ingen kostnad ved \emph{search, forhandling, drafting, monitoring, enforcement} $\Rightarrow$ kontrakten lukker alle gap.
+\end{formulabox}
+
+\textbf{Principal-agent (lineær):} $Q=\alpha e + \mu$, $W = W_0 + \beta Q$. Costless $\Rightarrow$ $\beta$ kan settes uten risiko-trade-off.
+
+\textbf{Spilteori:} monitor vs.\ shirk -- mixed strategy; repetert spill $\Rightarrow$ reputasjon (implicit contracting).
+
+\textbf{Eks.:} Equinor CEO-LTI (tilnærming via vesting). Kontrast Q04: når forutsetningene brytes $\to$ second-best.
+
+\huskeord{Nexus of contracts $\;\big|\;$ 5 konflikter (shirk-perks-risk-horisont-empire) $\;\big|\;$ first-best $\;\big|\;$ \SThree}
+
+\vfill\newpage
+
+% ==================== Q04 ====================
+\qhead{04}{Costly contracting + asymmetrisk info -- agency costs}
+
+\begin{keybox}{Tese}
+Samme 5 konflikter som Q03, men kontraktskostnader + asymmetrisk info $\Rightarrow$ ufullstendig kontrakt $\Rightarrow$ second-best + residual loss.
+\end{keybox}
+
+\textbf{Costly contracting -- 5 kostnadstyper:}
+\begin{itemize}
+  \item Search, forhandling, drafting, monitoring, enforcement
+\end{itemize}
+
+\textbf{To info-problemer:}
+\begin{itemize}
+  \item \textbf{Adverse selection} (pre-kontrakt, skjult \emph{type}) $\Rightarrow$ signaling, screening, due diligence
+  \item \textbf{Moral hazard} (post-kontrakt, skjult \emph{handling}) $\Rightarrow$ monitoring, bonding, insentiv ($\beta > 0$)
+\end{itemize}
+
+\begin{formulabox}
+\textbf{Agency costs} $=$ Monitoring $+$ Bonding $+$ Residual loss $\;\;$(Jensen \& Meckling 1976)
+\end{formulabox}
+
+\textbf{Lineær PA-modell:} optimal $\beta < 1$ balanserer motivasjon mot risikopremie + agency cost.
+
+\textbf{Eks.:} Statoil-Hydro 2007 (adverse selection $\to$ due-diligence). DNB rådgivere (moral hazard $\to$ regulert $\beta$). Mærsk PtX: teknologipartner = AS, EPC = MH.
+
+\huskeord{Adverse selection (type, pre) $\;\big|\;$ Moral hazard (handling, post) $\;\big|\;$ MBR = agency cost $\;\big|\;$ second-best $\;\big|\;$ \SThree}
+
+\vfill\newpage
+
+% ==================== Q05 ====================
+\qhead{05}{Organizational architecture -- 3-benet skammel}
+
+\begin{keybox}{Tese}
+Arkitektur = \SOne\ + \STwo\ + \SThree\ designet \emph{samtidig}. Endring i ett ben krever justering av de andre, ellers eksploderer agentomkostninger.
+\end{keybox}
+
+\textbf{3 ben:}
+\begin{itemize}
+  \item \SOne\ Decision rights -- hvem bestemmer hva
+  \item \STwo\ Performance evaluation -- hva måles
+  \item \SThree\ Reward system -- hvordan belønnes
+\end{itemize}
+
+\textbf{Begrep a -- Agentomkostninger:} Monitoring + Bonding + Residual loss. Aksepter residual loss (billigere enn perfekt kontroll).
+
+\textbf{Begrep b -- Spesifik vs.\ generell viden:} Hayek $\to$ J\&M. Spesifik viden $\Rightarrow$ desentraliser $\Rightarrow$ krever \STwo\ + \SThree.
+
+\textbf{Begrep c -- Insentiver:} vri egennytte mot prinsipal. Krever målbarhet, kontrollerbarhet, informativeness. Risk-incentive trade-off.
+
+\begin{formulabox}
+Komplementer: $\partial^{2} \Pi / \partial S_i \partial S_j > 0$. Misalignment når ett ben endres alene.
+\end{formulabox}
+
+\textbf{Eks.:} Equinor Renewables-utskillelse 2020/21 (alle 3 ben endret). Mærsk PtX investment center.
+
+\huskeord{3-benet skammel $\;\big|\;$ MBR $\;\big|\;$ Hayek $\;\big|\;$ komplementer $\;\big|\;$ \SOne+\STwo+\SThree}
+
+\vfill\newpage
+
+% ==================== Q06 ====================
+\qhead{06}{Sentralisering vs.\ desentralisering -- optimal grad}
+
+\begin{keybox}{Tese}
+Optimal $D^{*}$ der marginal fordel av lokal viden $=$ marginal kostnad av agent- og koordineringsproblemer.
+\end{keybox}
+
+\begin{formulabox}
+$\mathrm{NB}(D) = BD - AD - CD^{2}$ \\
+FOC: $B - A - 2CD = 0 \;\Rightarrow\; D^{*} = (B-A)/(2C)$ \\
+SOC: $-2C < 0$ (maks)
+\end{formulabox}
+
+\textbf{Komparativ statikk:}
+\begin{itemize}
+  \item $\partial D^{*}/\partial B > 0$ -- mer lokal viden $\Rightarrow$ desentraliser
+  \item $\partial D^{*}/\partial A < 0$ -- mer agentkost $\Rightarrow$ sentraliser
+  \item $\partial D^{*}/\partial C < 0$ -- mer koord.kost $\Rightarrow$ sentraliser
+\end{itemize}
+
+\textbf{Driver:} spesifik vs.\ generell viden (Hayek). \emph{Co-location of knowledge and decision rights}.
+
+\textbf{Fordeler desentralisering:} lokal viden, hurtighet, toppledertid, motivasjon. \textbf{Ulemper:} agentkost, koordinasjon, tap av stordrift.
+
+\textbf{Eks.:} Equinor E\&P (høy $D^{*}$) vs.\ konsernfinans (lav). IKEA (sentral design, lokal salg). McDonald's franchise. Mærsk PtX: tek desentralt, CAPEX sentralt.
+
+\huskeord{$D^{*}=(B-A)/(2C)$ $\;\big|\;$ Hayek $\;\big|\;$ co-location $\;\big|\;$ \SOne\ flytter \STwo+\SThree}
+
+\vfill\newpage
+
+% ==================== Q07 ====================
+\qhead{07}{Decision management vs.\ decision control}
+
+\begin{keybox}{Tese}
+Beslutninger har 4 trinn. \emph{Mgmt} $=$ 1+3, \emph{Control} $=$ 2+4. Separer når beslutningstaker $\neq$ residual claimant.
+\end{keybox}
+
+\textbf{4 trinn (Fama \& Jensen 1983):}
+\begin{enumerate}
+  \item \textbf{Initiation} (mgmt)
+  \item \textbf{Ratification} (control)
+  \item \textbf{Implementation} (mgmt)
+  \item \textbf{Monitoring} (control)
+\end{enumerate}
+
+\textbf{(a) Allokering:} co-location -- mgmt der spesifik viden er, control der residualkravshaver representeres.
+
+\textbf{(b) Eksternaliteter:} lokale beslutninger med konsernkonsekvenser krever ratification høyere oppe. Internalisering via interne priser/sentral ratifikasjon/KPI.
+
+\textbf{(c) Residual claimants:} driveren.
+\begin{itemize}
+  \item Sole proprietor: ingen separasjon
+  \item Børsnotert: full separasjon
+  \item Franchise: lokal residual $\Rightarrow$ delvis desentralisering OK
+\end{itemize}
+
+\textbf{Eks.:} Equinor styre (ratification + monitoring). Wells Fargo 2016 (monitoring kollapset $\to$ 3,5 mill.\ falske kontoer). Mærsk PtX: leder initierer, styret ratifiserer CAPEX.
+
+\huskeord{IRIM (Init-Ratify-Impl-Monitor) $\;\big|\;$ Fama \& Jensen $\;\big|\;$ separasjon disiplinerer $\;\big|\;$ \SOne}
+
+\vfill\newpage
+
+% ==================== Q08 ====================
+\qhead{08}{Tiltrekke og kompensere ansatte}
+
+\begin{keybox}{Tese}
+Sett sammen pakke ($S$, $F$, ikke-monetær) som passerer reservation utility $U_0$ til \emph{lavest kostnad}. Optimum = tangering indifferens $\leftrightarrow$ isokost.
+\end{keybox}
+
+\textbf{Mål med kompensasjon:} \emph{tiltrekke, retentere, motivere}.
+
+\begin{formulabox}
+$\min c_S S + c_F F \quad \text{s.t.} \quad U(S,F) \geq U_0$ \\
+Optimum: $\mathrm{MRS}_{S,F} = c_S / c_F$
+\end{formulabox}
+
+\textbf{Kjernebegreper:}
+\begin{itemize}
+  \item \textbf{Reservation utility $U_0$} -- gulv, neste-beste alternativ, multidim., participation constraint
+  \item \textbf{Compensating differentials} -- tillegg for risiko/skift/isolasjon (Smith $\to$ Rosen 1974)
+  \item \textbf{Superior assets} -- firmaspesifikke fordeler som senker $c_F$ (skatt, skala, brand, karriere)
+  \item \textbf{Salary--fringe-mix} -- konvekse indifferenskurver, rett isokost
+\end{itemize}
+
+\textbf{Eks.:} Equinor (skattefordel pensjon), Mærsk shipping-tillegg for sjøtid, Google-perks (kultur som superior asset).
+
+\huskeord{Tiltrekke-retentere-motivere $\;\big|\;$ $U_0$ $\;\big|\;$ MRS = $c_S/c_F$ $\;\big|\;$ comp.\ diff.\ $\;\big|\;$ superior assets $\;\big|\;$ \SThree}
+
+\vfill\newpage
+
+% ==================== Q09 ====================
+\qhead{09}{Principal-Agent -- innsats og insentivintensitet}
+
+\begin{keybox}{Tese}
+To FOC i samme lineære PA-modell: agentens for $e^{*}$, prinsipalens for $\beta^{*}$.
+\end{keybox}
+
+\textbf{Setup:} $Q = \alpha e + \mu$, $W = W_0 + \beta Q$, agent CARA + $c(e)$, prinsipal diversifisert.
+
+\begin{formulabox}
+\textbf{Agentens FOC:} $\beta \alpha = c'(e^{*})$ \\
+\textbf{Prinsipalens FOC:} $\displaystyle \beta^{*} = \frac{1}{1 + r \sigma^{2} c'' / \alpha^{2}}$
+\end{formulabox}
+
+\textbf{(a) Risiko:} $r, \sigma^{2} \uparrow \;\Rightarrow\; \beta^{*} \downarrow$. Risikopremie $= \tfrac{r}{2}\beta^{2}\sigma^{2}$.
+
+\textbf{(b) $W_0$ (fast lønn):} \emph{vrir ikke innsats}. Rolle: IR-constraint + risikopremie-kompensasjon.
+
+\textbf{(c) $\beta$ (variabel andel):} \emph{eneste} innsatsdriver = pay-performance sensitivity.
+
+\textbf{Determinanter for $\beta^{*}$:} $\alpha \uparrow$, $r \downarrow$, $\sigma^{2} \downarrow$, $c'' \downarrow \;\Rightarrow\; \beta^{*} \uparrow$.
+
+\textbf{Eks.:} IB-trader (høy $\beta$, lav $W_0$) vs.\ Equinor-CEO (moderat $\beta$, høy $W_0$). Mærsk PtX: høy $\sigma^{2}$ $\Rightarrow$ lav $\beta$ på EBITDA, moderat på milestones.
+
+\huskeord{$\beta\alpha = c'(e)$ $\;\big|\;$ $\beta^{*} = 1/(1+r\sigma^{2}c''/\alpha^{2})$ $\;\big|\;$ $W_0$ vrir ikke innsats $\;\big|\;$ \STwo+\SThree}
+
+\vfill\newpage
+
+% ==================== Q10 ====================
+\qhead{10}{Performance measurement -- 4 formål og 4 problemer}
+
+\begin{keybox}{Tese}
+Måling tjener 4 formål samtidig $\Rightarrow$ konflikter $\Rightarrow$ problemene i (a)--(d). Løs med smartere systemdesign, ikke ``bedre måling''.
+\end{keybox}
+
+\textbf{4 formål:}
+\begin{itemize}
+  \item Feedback, Koordinasjon, Belønning/sanksjon, Arkitekturstøtte
+\end{itemize}
+
+\textbf{(a) Ratchet effect:} mål fra historie $\Rightarrow$ sandbagging. (Sovjet). Løs: flerårig LTI, ekstern benchmark, lineær pay (Jensen).
+
+\textbf{(b) Gaming + horisont:} Goodhart, multitasking (Holmström \& Milgrom 1991). Løs: BSC, bonusbank, claw-back, subjektiv overstyring.
+
+\textbf{(c) Absolutt vs.\ relativ:} Holmström '79 -- relativ filtrerer felles støy, men inviterer sabotasje. Hybrid (rTSR).
+
+\textbf{(d) Subjektiv vs.\ objektiv:} obj.\ verifiserbar men gaming-utsatt; subj.\ fanger multidim.\ men gir påvirkningskost + bias. Hybrid.
+
+\begin{formulabox}
+Goodhart's law: ``When a measure becomes a target, it ceases to be a good measure.''
+\end{formulabox}
+
+\textbf{Eks.:} Wells Fargo 2016 (obj.+abs.+høy $\beta$ $\to$ falske kontoer). Microsoft stack ranking $\to$ ``Connect''. Mærsk PtX: milestones + subj.\ + rel.\ peer-benchmark.
+
+\huskeord{Feedback-Koord-Belønning-Arkitektur $\;\big|\;$ Ratchet $\;\big|\;$ Gaming $\;\big|\;$ rTSR $\;\big|\;$ \STwo}
+
+\vfill\newpage
+
+% ==================== Q11 ====================
+\qhead{11}{Vertikal integrasjon vs.\ outsourcing}
+
+\begin{keybox}{Tese}
+Firmagrenser bestemmes av transaksjonskost vs.\ byråkratikost. VI lønner seg ved spesifikke aktiva, usikkerhet, markedsmakt.
+\end{keybox}
+
+\textbf{Teoretisk fundament:} Coase, Williamson, Grossman-Hart-Moore (eierskap = residuell kontroll).
+
+\begin{formulabox}
+\textbf{Economic profit:} $\pi_{\text{econ}} = R - C_{\text{exp}} - C_{\text{opp}}$ \\
+(Skiller seg fra accounting profit ved alternativkostnad.)
+\end{formulabox}
+
+\textbf{Fordeler outsourcing:} markedsdisiplin, skala, fleksibilitet, sterkere insentiver.
+
+\textbf{Fordeler VI:} hold-up eliminert, kontroll, koordinasjon, IP-beskyttelse, market power.
+
+\textbf{Market power-modell:} $U$ monopol $\to$ integrerer $D_1$ $\to$ foreclosure av $D_2$.
+
+\textbf{Chicago-kritikk:} VI tilfører ikke ny markedsmakt hvis $U$ allerede ekstraherer via inputpris (\emph{one monopoly rent theorem}).
+
+\textbf{Eks.:} De Beers (foreclosure). Mærsk/APM Terminals (effektivitet + delvis foreclosure). Mærsk PtX: make-or-buy elektrolyse.
+
+\huskeord{Coase-Williamson-GHM $\;\big|\;$ Acc.\ vs.\ econ.\ profit $\;\big|\;$ foreclosure $\;\big|\;$ Chicago $\;\big|\;$ \SOne+\STwo}
+
+\vfill\newpage
+
+% ==================== Q12 ====================
+\qhead{12}{Outsourcing -- hold-up, free-rider, double markup}
+
+\begin{keybox}{Tese}
+Tre kontraktproblemer forklarer når outsourcing feiler og VI lønner seg.
+\end{keybox}
+
+\textbf{1. Hold-up:} spesifikke aktiva $\Rightarrow$ quasi-rente approprieres $\Rightarrow$ \emph{underinvestering}.
+\begin{itemize}
+  \item 5 typer asset specificity: site, physical, human, dedicated, brand
+  \item Løs: VI, langsiktig kontrakt, mutual hostage
+\end{itemize}
+
+\textbf{2. Free-rider:} distributør underinvesterer i service (\emph{showrooming}).
+\begin{itemize}
+  \item Løs: franchise, eksklusive territorier, resale price maintenance (RPM)
+\end{itemize}
+
+\textbf{3. Double markup:} hvert ledd legger på margin $\Rightarrow$ pris for høy, kvantum for lavt.
+
+\begin{formulabox}
+Eks.: $c=20$, $P_w=60$ (oppstrøms), $P=80$, $Q=20$ \\
+Integrert: $P=60$, $Q=40$ \\
+Løs: VI, two-part tariff (fee + per-unit)
+\end{formulabox}
+
+\textbf{Eks.:} IKEA rammeavtaler (hold-up), McDonald's franchise (free-rider), Mærsk PtX (alle tre problemene representert).
+
+\huskeord{Hold-up (spes.aktiva) $\;\big|\;$ Free-rider (service) $\;\big|\;$ Double markup (margin-stacking) $\;\big|\;$ \SOne+\SThree}
+
+\vfill\newpage
+
+% ==================== Q13 ====================
+\qhead{13}{Regulering og det politiske støttemarkedet}
+
+\begin{keybox}{Tese}
+Regulering hensiktsmessig ved 4 markedssvikter, men kun hvis reguleringsgevinst $>$ reguleringskostnad. $P^{*}$ er politisk kompromiss, ikke velferdsmaks.
+\end{keybox}
+
+\textbf{4 markedssvikter:}
+\begin{enumerate}
+  \item Naturlig monopol ($AC$ fallende)
+  \item Eksternaliteter (Pigou)
+  \item Offentlige goder (free-rider)
+  \item Informasjonsasymmetri (lemons)
+\end{enumerate}
+
+\textbf{Politisk støttemodell (Stigler/Peltzman):}
+\begin{formulabox}
+Maks $S(P) = f(\pi(P), CS(P))$ \\
+$\pi(P)$ invers-U (topp ved $P^M$); $CS(P)$ fallende \\
+$P^{*}$ der bransjens marginale pull opp $=$ konsumentens pull ned
+\end{formulabox}
+
+\textbf{Komparativ statikk:} sterkere lobby $\Rightarrow$ $P^{*} \to P^{M}$; sterkere konsument $\Rightarrow$ $P^{*} \to P^{MC}$.
+
+\textbf{Kritikk:} government failure, capture (Stigler), Averch-Johnson overinvestering, Olsons kollektive handling.
+
+\textbf{Eks.:} Norsk farmasiregulering (monopol + lemons). EU ETS (eksternalitet). Mærsk PtX (subsidier + IMO Pigou).
+
+\huskeord{4 svikter $\;\big|\;$ Stigler/Peltzman $\;\big|\;$ capture $\;\big|\;$ AJ $\;\big|\;$ $P^{*}$ = kompromiss $\;\big|\;$ \SOne}
+
+\vfill\newpage
+
+% ==================== Q14 ====================
+\qhead{14}{Informativeness-prinsippet}
+
+\begin{keybox}{Tese}
+Holmström (1979): inkluder signal $y$ i kontrakten \emph{bare} hvis det tilfører informasjon om $e$ utover $Q$. Sufficient statistic.
+\end{keybox}
+
+\begin{formulabox}
+$y$ informativt $\Leftrightarrow$ posterior for $e$ endres gitt $(Q, y)$ vs.\ gitt $Q$ alene. \\
+$\beta^{*} = \dfrac{1}{1 + r \sigma^{2} c'' / \alpha^{2}}$
+\end{formulabox}
+
+\textbf{(a) Kontrollerbarhet:} spesialtilfelle av informativeness; ukontrollerbare mål kan filtrere felles støy.
+
+\textbf{(b) Risikodeling:} bedre signaler $\Rightarrow$ Pareto-bedre risk-sharing for gitt innsats.
+
+\textbf{(c) Presisjon:} lav $\sigma^{2}$ $\Rightarrow$ høyere $\beta^{*}$ -- mer pay-for-performance når støy er lav.
+
+\textbf{(d) Risikopremie:} $RP = \tfrac{r}{2}\beta^{2}\sigma^{2}$; lavere effektiv $\sigma^{2}$ $\Rightarrow$ lavere RP.
+
+\textbf{Hovedeksempel:} \emph{Relativ TSR (rTSR)} -- peer-signal filtrerer markedssjokk.
+
+\textbf{Kritikk:} multitasking (Holmström \& Milgrom 1991), kognitiv overbelastning, informasjonskostnad.
+
+\textbf{Eks.:} Equinor CEO med rTSR. Sykehuslege (upresise mål $\to$ subjektiv evaluering). Mærsk PtX milestones + peer-benchmark.
+
+\huskeord{Holmström '79 $\;\big|\;$ sufficient statistic $\;\big|\;$ rTSR $\;\big|\;$ presisjon $\to$ $\beta\uparrow$ $\;\big|\;$ \STwo+\SThree}
+
+\vfill\newpage
+
+% ==================== Q15 ====================
+\qhead{15}{Nyttemodeller -- integritet og risiko}
+
+\begin{keybox}{Tese}
+To nyttemodeller: (1) integritet vs.\ inntekt -- kompensasjon påvirker etisk atferd; (2) risiko vs.\ forventet verdi -- risikoaversjon bestemmer risikopremie.
+\end{keybox}
+
+\textbf{Modell 1 -- Integritet vs.\ inntekt:}
+\begin{itemize}
+  \item Akser: integritet (x), inntekt (y)
+  \item Konvekse indifferenskurver; budsjettlinje $=$ kompensasjonsplan
+  \item Aggressivt insentiv $\Rightarrow$ rotasjon av budsjett $\Rightarrow$ A $\to$ B (mindre integritet)
+  \item Innsikt: \emph{system, ikke person}. $\beta$ driver rotasjonen.
+\end{itemize}
+
+\textbf{Modell 2 -- Risiko vs.\ E[W]:}
+\begin{formulabox}
+Risikoavers indifferens: $E[W] = \bar{U} + \tfrac{r}{2}\sigma^{2}$ \\
+Certainty equivalent: $CE = E[W] - \tfrac{r}{2}\sigma^{2}$ \\
+Risikopremie: $RP = \tfrac{r}{2}\beta^{2}\sigma^{2}$
+\end{formulabox}
+
+\begin{itemize}
+  \item Risikoavers: stigende, konveks indifferenskurve
+  \item Risikonøytral: flat indifferenskurve
+\end{itemize}
+
+\textbf{Kobling:} $\beta$ er felles designvariabel. Høy $\beta$ $\Rightarrow$ (1) mer fristelse + (2) mer risiko.
+
+\textbf{Eks.:} Wells Fargo 2016 (modell 1 -- falske kontoer). Equinor aksjeprogram (modell 2). Mærsk PtX: prognoseinflasjon + lederrekruttering med høy $\sigma$.
+
+\huskeord{Modell 1: integritet--inntekt $\;\big|\;$ Modell 2: $E[W]$--$\sigma$ $\;\big|\;$ $RP = \tfrac{r}{2}\beta^{2}\sigma^{2}$ $\;\big|\;$ system $\neq$ person $\;\big|\;$ \SThree}
+
+\end{document}
